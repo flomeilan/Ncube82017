@@ -1,6 +1,6 @@
 {
     "credentials": {
-        "email": "fmeilan@netsuite.com",
+        "email": "arichero@netsuite.com",
         "account": "TSTDRV1843409",
         "role": 3,
         "hostname": "rest.na2.netsuite.com",
