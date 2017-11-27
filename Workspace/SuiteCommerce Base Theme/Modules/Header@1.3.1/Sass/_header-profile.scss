@@ -67,6 +67,9 @@
 
 .header-profile-menu-login-container{
 	margin-right:$sc-margin-lv1;
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
 }
 
 .header-profile-menu-login li{
