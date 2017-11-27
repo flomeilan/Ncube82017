@@ -10,6 +10,21 @@
 <div class="header-main-wrapper">
 	<div class="header-subheader">
 		<div class="header-subheader-container">
+		
+			<ul class="header-subheader-login">
+				<li>
+					<a class="header-subheader-login-link" data-touchpoint="login" data-hashtag="login-register" href="#">
+						{{translate 'Login'}}
+					</a>
+				</li>
+				<li> or </li>
+				<li>
+					<a class="header-subheader-register-link" data-touchpoint="register" data-hashtag="login-register" href="#">
+						{{translate 'Register'}}
+					</a>
+				</li>
+			</ul>
+		
 		<ul class="header-subheader-options">
 			{{#if showLanguagesOrCurrencies}}
 			<li class="header-subheader-settings">
@@ -49,6 +64,7 @@
 				<div data-view="Header.Logo"></div>
 			</div>
 
+			<div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar">
 
 			<div class="header-right-menu">
 				<div class="header-menu-profile" data-view="Header.Profile">
@@ -72,7 +88,6 @@
 </div>
 
 <div class="header-sidebar-overlay" data-action="header-sidebar-hide"></div>
-<div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar">
 </div>
 
 <div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
