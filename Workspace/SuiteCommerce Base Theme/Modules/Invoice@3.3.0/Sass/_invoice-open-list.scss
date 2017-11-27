@@ -1,0 +1,102 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.invoice-open-list-button-back {
+	@extend .button-back;
+}
+
+.invoice-open-list-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.invoice-open-list-header{
+	margin-bottom: $sc-margin-lv2;
+}
+
+.invoice-open-list-header-nav{
+	margin-bottom: $sc-margin-lv4;
+	position:relative;
+}
+
+.invoice-open-list-header-button-group {
+	@extend .pill-button-group;
+}
+
+.invoice-open-list-header-button-open{
+	@extend .button-medium;
+	@extend .pill-button;
+	@extend .pill-button-active;
+}
+
+.invoice-open-list-header-button-paid{
+	@extend .button-medium;
+	@extend .pill-button;
+}
+
+.invoice-open-list-button-payment{
+	@extend .button-medium;
+	@extend .button-primary;
+	width:auto;
+	position:absolute;
+	top:62px;
+	right:0px;
+	z-index: 99;
+
+	@media (min-width: $screen-sm-min){
+		top:0px;
+	}
+}
+
+.invoice-open-list-button-payment[disabled]{
+	@extend .button-primary-disabled;
+}
+
+.invoice-open-list-records{
+	@extend .table-flex-record-selectable-navigable;
+}
+
+.invoice-open-list-records-head tr{
+	display: none;
+	@media (min-width: $screen-md-min){
+		display: table-row;
+	}
+}
+
+.invoice-open-list-records-head th{
+	text-align: right;
+	padding-bottom: $sc-padding-lv2;
+	font-weight: normal;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+
+.invoice-open-list-records-body td{
+	vertical-align: middle;
+
+	@media (min-width: $screen-md-min){
+		height: 60px;
+	}
+}
+
+.invoice-open-list-records-body {
+	.recordviews-selectable-td-amount {
+		margin-bottom:$sc-padding-lv3;
+
+		@media (min-width: $screen-md-min){
+			margin-bottom:0;
+		}
+	}
+}
+
+.invoice-open-list-no-records {
+	padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+ 	text-align:center;
+}
+
+.invoice-open-list-title{}
+.invoice-open-list-body{}
+.invoice-open-list-records-head-row{}
+.invoice-open-list-anchor-paid{}

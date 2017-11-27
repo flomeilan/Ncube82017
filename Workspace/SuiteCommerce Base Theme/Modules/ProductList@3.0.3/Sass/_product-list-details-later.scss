@@ -1,0 +1,92 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-details-later {
+	margin-bottom:$sc-margin-lv8;
+	border-bottom:1px solid $sc-color-theme-border-light;
+	h3{
+		margin-bottom:$sc-margin-lv2;
+	}
+	.product-list-details-later-explanation{
+		margin-bottom:$sc-margin-lv8;
+		clear:both;
+	}
+}
+
+.product-list-details-later-row{
+}
+
+.product-list-details-later-header-no-items {
+	clear: both;
+}
+
+.button-saveforlater-addtocart{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.button-saveforlater-remove {
+	@extend .button-small;
+	@extend .button-tertiary;
+}
+
+.products-detail-later-cell{
+	@extend .col-sm-3;
+	overflow: hidden
+}
+
+.saveforlater-quantity-add, .saveforlater-quantity-minus {
+	@extend .button-secondary;
+
+	background-color:lighten($sc-color-theme-900, 20%);
+	border:1px solid lighten($sc-color-theme-900, 20%);;
+	width: $sc-target-size-mobile;
+	height: $sc-target-size-mobile;
+	float:left;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.product-list-details-later-shopping-cart-title-details-count {
+	display:block;
+	color:$sc-color-primary;
+	text-transform: capitalize;
+	@media(min-width: $screen-sm-min){
+		display:inline-block;
+	}
+}
+
+.product-list-details-later-confirm-message {
+	clear:both;
+}
+
+.product-list-details-later-list-header-title{
+	@extend .list-header-title;
+}
+
+.product-list-details-later-button-saveforlater-pusher{
+	@extend .push-button-primary;
+
+	margin-top: $sc-margin-lv5;
+	font-weight: $sc-font-weight-semibold;
+	position: relative;
+
+	i {
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		height: 26px;
+		margin-top: -12px;
+	}
+}
+
+.product-list-details-later-list-items{
+}
+
+.product-list-details-later-col{}

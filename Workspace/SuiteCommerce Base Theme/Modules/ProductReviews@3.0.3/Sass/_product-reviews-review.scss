@@ -1,0 +1,185 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-reviews-form-preview {
+  @extend .product-reviews-form;
+}
+.product-reviews-review-title{
+    @extend .product-reviews-form-content-title;
+}
+.product-reviews-form-preview-content-label-required {
+    @extend .product-reviews-form-content-label-required;
+}
+.product-reviews-form-preview-content-required {
+    @extend .product-reviews-form-content-required;
+}
+.product-reviews-form-preview-content-group {
+    @extend .product-reviews-form-content-group;
+}
+.product-reviews-form-preview-content-groups {
+    @extend .product-reviews-form-content-groups;
+}
+.product-reviews-form-preview-content-group-input {
+    @extend .product-reviews-form-content-group-input;
+}
+.product-reviews-form-preview-content-group-text {
+    @extend .product-reviews-form-content-group-text;
+}
+.product-reviews-form-preview-help {
+    @extend .input-optional;
+}
+.product-reviews-form-preview-actions {
+    @extend .product-reviews-form-actions;
+}
+.product-reviews-form-preview-actions-button-submit {
+    @extend .product-reviews-form-actions-button-submit;
+}
+.product-reviews-form-preview-actions-button-edit {
+    @extend .product-reviews-form-actions-button-preview;
+}
+
+.product-reviews-center-list .backbone-collection-view-row {
+	margin: 0;
+}
+.reviews-comments{
+	clear:both;
+	display:block;
+	overflow:hidden;
+}
+.product-reviews-review-comment-item-cell{
+	text-align:left;
+	@extend .clearfix;
+}
+.product-reviews-review-comment-item-cell-date{
+	font-size: $sc-font-size-xxs;
+	color: $sc-color-secondary;
+	vertical-align: middle;
+}
+.product-reviews-review{
+	padding: 0 0 $sc-padding-lv4 0;
+
+	@media (min-width: $screen-sm-min){
+		padding-bottom: $sc-padding-lv2;
+	}
+	h5 {
+		text-transform:uppercase;
+	}
+}
+[data-action="sc-pushing"] .product-reviews-review{
+	padding:$sc-padding-lv4 0 0;
+
+}
+[data-action="sc-pushing"] .list-header-view {
+	border-bottom: 0;
+	margin: 0 -20px;
+	padding: $sc-padding-lv4;
+	background: $sc-neutral-shade-0;
+}
+.comment-username-icon-verified {
+	@extend .icon-ok-sign;
+}
+.product-reviews-review-review {
+	clear:both;
+	display:inline-block;
+	width: 100%;
+}
+.product-reviews-review-review-description {
+	@extend .col-sm-8;
+	@extend .col-xs-12;
+	padding-left: 0;
+	padding-right: 0;
+}
+.product-reviews-review-review-rating {
+	@extend .col-sm-4;
+	@extend .col-xs-12;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: $sc-margin-lv3;
+
+	@media (min-width: $screen-sm-min){
+		margin-top: 0;
+	}
+	.product-review-rating-per-attribute {
+		@media (min-width: $screen-sm-min){
+			float: right;
+		}
+	}
+	.global-views-star-rating {
+	  min-width: 210px;
+	}
+}
+.product-review-comment-description-rating {
+	@extend .col-sm-3;
+	@extend .col-xs-12;
+	padding-left: 0;
+	padding-right: 0;
+}
+.product-review-comment-footer{
+	margin: 0 0 $sc-margin-lv4;
+
+	p {
+		color: saturate(lighten($sc-color-secondary, 4), 4);
+		margin-right: $sc-margin-lv2;
+		display: inline-block;
+
+		@media (max-width: $screen-xs-min) {
+			display: block;
+		}
+	}
+
+	button.product-review-comment-footer-button:first-child {
+		padding-right: $sc-padding-lv1;
+	}
+}
+.product-review-comment-footer-button {
+	@extend .button-link;
+
+	display: inline-block;
+	padding: $sc-padding-lv2;
+
+	.product-reviews-review-comment-footer-button-icon-like {
+		@extend .icon-like;
+	}
+
+	.product-reviews-review-comment-footer-button-icon-unlike {
+		@extend .icon-unlike;
+	}
+}
+
+.product-reviews-review-comment-footer-button:hover,
+.product-reviews-review-comment-footer-button:focus:hover {
+    text-decoration: none;
+}
+
+.product-reviews-review-voted, .product-reviews-review-voted:focus, .product-reviews-review-voted:hover, .product-reviews-review-voted:focus:hover {
+	color: $sc-neutral-shade-0;
+	background: $sc-color-secondary;
+	text-decoration: none;
+	pointer-events: none;
+}
+
+.product-reviews-review-icon-ok-sign{
+	@extend .icon-ok-sign;
+}
+
+.product-reviews-review-rating-per-attribute{
+	@extend .product-review-rating-per-attribute;
+}
+
+.product-reviews-review-comment-footer{
+	@extend .product-review-comment-footer;
+}
+
+.product-reviews-review-comment-footer-button{
+	@extend .product-review-comment-footer-button;
+}
+
+.product-reviews-review-comment-username{
+	margin-bottom: $sc-margin-lv2;
+	font-size: $sc-font-size-s;
+}
+

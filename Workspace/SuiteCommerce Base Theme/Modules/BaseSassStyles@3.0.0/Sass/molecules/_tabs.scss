@@ -1,0 +1,118 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Tabs
+//
+// Tabs are used in medium and large devices to divide content into different meaningful sections
+// with a clear "tab" visual indicator of what section the user is currently viewing.
+// Tabs resemble folder tabs. Users request the content they are interested in by clicking on the content corresponding to the tab.
+// Tabs are only used for tablet and bigger screen sizes.
+//
+// Markup:
+// <div role="tabpanel">
+//   <ul class="content-tabs" role="tablist">
+//     <li class="content-tabs-title active" role="presentation">
+//       <a href="#"data-toggle="tab" data-target="#tab-1" aria-expanded="true">Tab 1</a>
+//     </li>
+//     <li class="content-tabs-title" role="presentation">
+//       <a href="#"data-toggle="tab" data-target="#tab-2">Tab 2</a>
+//     </li>
+//   </ul>
+//   <div class="tab-content"  data-action="tab-content">
+//     <div role="tabpanel" class="tab-content-panel active" id="tab-1"">
+//       <h3 class="tab-content-panel-title">Lorem Ipsum</h3>
+//       <div class="tab-content-container">Content tab 1</div>
+//     </div>
+//     <div role="tabpanel" class="tab-content-panel" id="tab-2"">
+//       <h3 class="tab-content-panel-title">Lorem Ipsum</h3>
+//       <div class="tab-content-container">Content tab 2</div>
+//     </div>
+//   </div>
+// </div>
+//
+// Styleguide 3.8
+
+.content-tabs {
+	display: none;
+	margin-bottom: $sc-margin-lv3;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.content-tabs-title {
+	&.active a, &:hover a {
+		color: $sc-color-secondary;
+		border-bottom: 2px solid $sc-color-theme-900;
+	}
+
+	&:only-child {
+		display: none;
+	}
+
+	a {
+		padding: $sc-padding-lv3;
+		float: left;
+		font-size: $sc-font-size-xl;
+		color: $sc-color-copy-light;
+		border-bottom: 2px solid $sc-color-theme-border-light;
+	}
+}
+
+.tab-content {
+	clear:both;
+
+	@media (min-width: $screen-sm-min){
+		padding: $sc-padding-lv3 0;
+	}
+}
+
+.tab-content-panel {
+
+	@media (min-width: $screen-sm-min){
+		padding-bottom: 0;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+
+		overflow: hidden;
+		max-height: 400px;
+
+		opacity: 0;
+		height: 0;
+		overflow: hidden;
+		&.active {
+			opacity: 1;
+			height: auto;
+		}
+	}
+}
+
+.tab-content-panel-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.tab-action {
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.tab-action-more {
+	margin-top: $sc-margin-lv2;
+	display:block;
+}
+
+.tab-action-less {
+	display: none;
+	margin-top: $sc-margin-lv2;
+}

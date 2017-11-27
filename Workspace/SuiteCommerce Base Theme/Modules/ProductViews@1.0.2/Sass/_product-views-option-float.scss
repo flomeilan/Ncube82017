@@ -1,0 +1,28 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-option-float {
+	width: 100%;
+	margin-bottom:$sc-margin-lv4;
+
+	[data-validation-error="block"]{
+  		display:table;
+  		margin-top:$sc-margin-lv1;
+  	}
+}
+
+.product-views-option-float-label {}
+.product-views-option-float-label-required {
+	@extend .input-required;
+}
+.product-views-option-float-input {
+	@extend .input-medium;
+}
+
+[data-action="sc-pushing"] .product-views-option-float-input {
+    width: 100%;
+}

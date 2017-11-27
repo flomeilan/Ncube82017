@@ -1,0 +1,94 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/ 
+.<%= sass_class_name %>-layout {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.<%= sass_class_name %>-container {
+    width: 50%;
+    margin: 0 auto $sc-margin-lv4 auto;
+    border: 1px solid $sc-color-theme-border-light;
+    box-shadow: 0 3px 0 $sc-color-theme-background;
+    -moz-box-shadow: 0 3px 0 $sc-color-theme-background;
+    -webkit-box-shadow: 0 3px 0 $sc-color-theme-background;
+}
+
+.<%= sass_class_name %>-button-container {
+    @extend .info-card-button-container;
+}
+
+.<%= sass_class_name %>-list-card {
+    @extend .info-card;
+    line-height: 40px;
+}
+
+.<%= sass_class_name %>-form {    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: auto;
+
+    input {
+        width: 88%;
+    }
+}
+
+.<%= sass_class_name %>-clear {
+    clear: both;
+}
+
+// <%= sass_class_name %> fields
+
+.<%= sass_class_name %>-form-title {
+    @extend .summary-title;
+}
+
+.<%= sass_class_name %>-todo-title {
+    display: inline-block;
+}
+
+.<%= sass_class_name %>-completed {
+    text-decoration: line-through;
+}
+
+// %= sass_class_name %> buttons
+
+.<%= sass_class_name %>-button-add {
+    @extend .button-primary;
+    @extend .button-medium;
+}
+
+.<%= sass_class_name %>-button-edit {
+    @extend .button-secondary;
+    @extend .button-small;
+
+    float: right;
+    margin-right: $sc-margin-lv3;
+    margin-top: $sc-margin-lv1;
+}
+
+.<%= sass_class_name %>-button-delete {
+    @extend .icon-button;
+    @extend .icon-button-controls;
+    float: right;
+    border-radius: 1.5em;
+}
+
+.<%= sass_class_name %>-delete-icon {
+    @extend .fa;
+    @extend %fa-remove;
+    color: none;
+    margin-left: -1px;
+    font-size: $sc-font-size-s;
+}
+
+.<%= sass_class_name %>-submit-button {
+    @extend .button-primary;
+    @extend .button-medium;
+}

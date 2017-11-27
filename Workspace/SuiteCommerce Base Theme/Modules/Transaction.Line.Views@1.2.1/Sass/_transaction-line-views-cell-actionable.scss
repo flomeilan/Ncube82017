@@ -1,0 +1,165 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.transaction-line-views-cell-actionable{
+	display:block;
+	clear:both;
+	&:hover{
+		background:none;
+	}
+}
+
+.transaction-line-views-cell-actionable-image{
+	@extend .col-xs-3;
+	@extend .col-sm-3;
+}
+
+.transaction-line-views-cell-actionable-details{
+	@extend .col-xs-9;
+	@extend .col-sm-6;
+}
+
+.transaction-line-views-cell-actionable-actions{
+	@extend .col-xs-offset-3;
+	@extend .col-xs-9;
+	@extend .col-sm-offset-0;
+	@extend .col-sm-3;
+}
+
+.transaction-line-views-cell-actionable-name{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.transaction-line-views-cell-actionable-name-link{
+	@extend .medium-title-navigable;
+}
+
+.transaction-line-views-cell-actionable-name-viewonly{
+	@extend .medium-title-viewonly;
+}
+
+.transaction-line-views-cell-actionable-thumbnail{
+	img{
+		width:$img-large;
+	}
+}
+
+.transaction-line-views-cell-actionable-price{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.transaction-line-views-cell-actionable-price .transaction-line-views-price-lead{
+	@extend .middle-price;
+}
+
+.transaction-line-views-cell-actionable-sku{
+	font-size:$sc-font-size-s;
+}
+
+.transaction-line-views-cell-actionable-qty{
+	clear:both;
+	display:block;
+	width:100%;
+	font-size:$sc-font-size-m;
+}
+
+.transaction-line-views-cell-actionable-qty input[type=number]{
+    float: left;
+    width: 60px;
+    height: 40px;
+    padding: 0;
+    padding-right: $sc-padding-lv1;
+    text-transform: uppercase;
+    text-align: right;
+    color: $sc-color-copy;
+    background: $sc-color-theme-background;
+    outline: none;
+    border: 0px;
+}
+
+.transaction-line-views-cell-actionable-label-qty{
+	@extend .sc-label;
+	display: block;
+	margin-right: 15px;
+	line-height: 1.2;
+	overflow:hidden;
+	margin-top:$sc-margin-lv1;
+	margin-bottom:$sc-margin-lv1;
+}
+
+.transaction-line-views-cell-actionable-input-qty{
+	display:block;
+	margin-bottom:$sc-margin-lv2;
+	overflow:hidden;
+}
+
+.transaction-line-views-cell-actionable-sku{
+	color:$sc-color-theme-900;
+}
+
+.transaction-line-views-cell-actionable-details{
+	.cart-option{
+	margin-bottom:$sc-margin-lv1;
+	}
+}
+
+.transaction-line-views-cell-actionable-options{
+	.cart-option{
+		font-size:$sc-font-size-m;
+	}
+}
+
+.transaction-line-views-cell-actionable-amount{
+	clear:both;
+	display:block;
+	font-size:$sc-font-size-m;
+	margin-bottom:$sc-margin-lv4;
+	@media (min-width: $screen-sm-min){
+		margin-bottom:0px;
+	}
+
+}
+
+.transaction-line-views-cell-actionable-amount-label{
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-actionable-table{
+	@extend .table-flex-item-actionable;
+	table-layout: fixed;
+}
+
+.transaction-line-views-cell-actionable-table td{
+	padding-left:$sc-padding-lv3;
+	padding-right:$sc-padding-lv3;
+	vertical-align:top;
+}
+
+.transaction-line-views-cell-actionable-table-first{
+	 @extend .table-flex-tdfirst;
+	 width:25%;
+}
+
+.transaction-line-views-cell-actionable-table-middle {
+	@extend .table-flex-middle;
+}
+
+.transaction-line-views-cell-actionable-table-last{
+	 @extend .table-flex-tdlast;
+	 vertical-align:top;
+	 @media (min-width: $screen-sm-min){
+		width:25%;
+	}
+}
+.transaction-line-views-cell-actionable-alert-placeholder{
+	margin:$sc-margin-lv2 0;
+}
+
+
+.transaction-line-views-cell-actionable-stock{}
+.transaction-line-views-cell-actionable-summary{}
+.transaction-line-views-cell-actionable-line-tr{}

@@ -1,0 +1,84 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Atoms
+//
+// Atoms are the abstract basic building blocks of matter.
+// Applied to web interfaces, atoms are the HTML tags, such as a form label, an input or a button.
+// They can’t be broken down any further.
+//
+// Styleguide 2.
+
+// Buttons
+//
+// Buttons are tools that enable users to perform a task. Some tasks are more important than others, and creating effective buttons with the right combination of size, color, position and wording is required.
+// Good design can subconsciously communicate priority to users. Using the right combination of these components buttons will guide the user through the tasks required to achieve the main purpose or use case of a website.
+//
+// Styleguide 2.1.
+
+@import "atoms/buttons.scss";
+
+// Copy
+//
+// Copy refers to the text that appears within a user interface. Users rarely read every word on a page.
+// Thus, creating visual hierarchy is essential for users to understand the information. It also impacts how users scan a website.
+// To make copy scannable you should provide good contrast between the different elements.
+// This creates different focus points and guides the user through the content.
+// For example, highlighting links and bolding important information creates scannable focus-points.
+// Poor contrast results in users getting lost in the content and causes them to scan more slowly.
+//
+// Styleguide 2.2.
+
+@import "atoms/typography.scss";
+
+// Form elements
+//
+// Web forms establish or enhance a relationship between the user and the organization.
+// They establish a dialogue and, therefore, represent a two way communication between two parties. Form elements enable this communication.
+//
+// Styleguide 2.3.
+
+@import "atoms/forms.scss";
+
+// Icons
+//
+// Icons are a visual representation of an object, action, or idea that communicate meaning in a graphical way.
+//
+// Styleguide 2.4.
+
+@import "atoms/icons.scss";
+
+// Messages
+//
+// When users are interacting with an application they often expect feedback. This feedback can have different tones or communicate different types of information.
+// For example, the application may display confirmation messages if a form is submitted successfully or error message if there were problems.
+//
+// Styleguide 2.5.
+
+@import "atoms/messages.scss";
+
+// Purchase controls
+//
+// Purchase controls are a set of elements that enable the user to filter and narrow a list of items.
+// For example, while shopping, a user can search according to multiple criteria.
+// Purchase Controls enable the user to select the desired item options and add it to their shopping cart or wishlist.
+//
+// Styleguide 2.6.
+
+@import "atoms/purchase-controls.scss";
+
+// Menu and Navigation
+//
+// Menu and Navigation atoms are used for navigating the website.
+// A well designed navigation allows users to easily understand where they are at in the website and where they can go to.
+//
+// Styleguide 2.7.
+
+@import "atoms/breadcrumb.scss";
+@import "atoms/stepped-process.scss";
+
+@import "atoms/thumbnails.scss";

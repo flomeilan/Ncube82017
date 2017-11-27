@@ -1,0 +1,75 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.item-cell {
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-cell-link-image {
+	height:250px;
+	line-height:250px;
+}
+
+.item-cell-image {
+	vertical-align:middle;
+}
+
+.item-cell-title {
+	@extend .xsmall-title-navigable;
+	padding: $sc-padding-lv2 0;
+	display: block;
+	text-align: left;
+}
+
+.item-cell-price {
+	@extend .small-price;
+	text-align: left;
+}
+
+.item-cell-rate {
+	text-align: left;
+}
+
+.item-cell-rate-filled {
+	@extend .icon-star-filled;
+}
+
+.item-cell-rate-empty {
+	@extend .icon-star;
+}
+
+///////////////////////////////////////////////////////////////
+//Quick view
+
+.item-cell-image-wrapper {
+	position: relative;
+}
+
+.item-cell-quick-view-wrapper {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 45%;
+}
+
+.item-cell:hover .item-cell-quick-view-wrapper {
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.item-cell-quick-view-link {
+	@extend .button-primary;
+	@extend .button-small;
+}
+
+.icon-cell-quick-view-icon {
+	@extend .fa;
+	@extend %fa-search;
+}

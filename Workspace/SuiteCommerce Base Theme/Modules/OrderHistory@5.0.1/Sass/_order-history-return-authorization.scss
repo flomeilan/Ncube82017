@@ -1,0 +1,85 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-return-authorization {
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	padding-bottom:$sc-padding-lv3;
+	margin-bottom:$sc-margin-lv3;
+}
+
+.order-history-return-authorization:last-child{
+	border-bottom: 0;
+	padding-bottom:$sc-padding-lv3;
+	margin-bottom:0;
+}
+
+.order-history-return-authorization-table {
+	@extend .table-flex-item-navigable;
+
+	.transaction-line-views-cell-navigable-item-unit-price-label,
+	.transaction-line-views-cell-navigable-item-quantity-label,
+	.transaction-line-views-cell-navigable-item-amount-label{
+		display:inline-block;
+		float: left;
+		margin-right:$sc-margin-lv1;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity-value{
+		text-align:left;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity,
+	.transaction-line-views-cell-navigable-item-unit-price,
+	.transaction-line-views-cell-navigable-amount {
+		text-align:left;
+	}
+
+}
+
+.order-history-return-authorization-table-head{
+	display:none;
+}
+
+.order-history-return-authorization-table-header,
+.order-history-return-authorization-table-header-quantity,
+.order-history-return-authorization-table-header-unit-price,
+.order-history-return-authorization-table-header-amount{
+	@extend .sc-label;
+
+	font-weight: $sc-font-weight-normal;
+	padding-bottom: $sc-padding-lv2;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	display: none;
+}
+
+.order-history-return-authorization-table-header-quantity,
+.order-history-return-authorization-table-header-unit-price,
+.order-history-return-authorization-table-header-amount{
+	text-align: right;
+}
+
+.order-history-return-authorization-header{
+	margin-bottom:$sc-margin-lv3;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	padding-bottom:$sc-padding-lv3;
+}
+
+.order-history-return-authorization-status-label{
+	@extend .sc-label;
+	margin-right:$sc-margin-lv1;
+}
+
+.order-history-return-authorization-number-label{
+	@extend .sc-label;
+}
+
+.order-history-return-authorization-status-value{
+	@extend .sc-value;
+}
+
+.order-history-return-authorization-id{}
+.order-history-return-authorization-status-id-link{}

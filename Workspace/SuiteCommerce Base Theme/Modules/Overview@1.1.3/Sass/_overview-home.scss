@@ -1,0 +1,204 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.overview-home-orders-title {
+	padding: $sc-padding-lv3 0;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	border-top: 1px solid $sc-color-theme-border-light;
+	display: inline-block;
+	width: 100%;
+	h3 {
+		@media (min-width: $screen-sm-min) {
+			float: left;
+		}
+	}
+}
+.overview-home-orders-title-link {
+	margin-top: $sc-margin-lv1;
+	font-size:14px;
+
+	@media (min-width: $screen-sm-min) {
+		float: right
+	}
+}
+.overview-home-orders-empty-list {
+	margin: $sc-margin-lv2 0 $sc-margin-lv4;
+}
+.overview-home-mysettings {
+	@extend .address-edit;
+	margin-top: $sc-margin-lv1;
+	@extend .row;
+
+	@media (min-width: $screen-sm-min) {
+		margin: $sc-margin-lv5 0 0;
+	}
+}
+.overview-home-mysettings-row {
+	@extend .row;
+	margin-top: $sc-margin-lv3;
+}
+.overview-home-mysettings-profile,
+.overview-home-mysettings-shipping,
+.overview-home-mysettings-payment {
+	@extend .col-md-4;
+	@extend .col-sm-6;
+}
+
+//LIST
+
+.overview-home-content-table {
+	@extend .recordviews-row-header;
+}
+
+.overview-home-content-table-header-row {
+	@extend .recordviews-table;
+}
+
+.overview-home-content-table-header-row-title {
+	@extend .recordviews-header !optional;
+	width: 20%;
+}
+.overview-home-content-table-header-row-date {
+	@extend .recordviews-date-header;
+	width: 15%;
+}
+.overview-home-content-table-header-row-currency {
+	@extend .recordviews-currency-header;
+	width: 20%;
+}
+.overview-home-content-table-header-row-origin {
+	@extend .recordviews-status-header;
+	width: 25%;
+}
+.overview-home-content-table-header-row-status {
+	@extend .recordviews-status-header;
+	width: 25%;
+}
+.overview-home-content-table-header-row-track {
+	@extend .recordviews-header !optional;
+	width: 20%;
+
+	@media (min-width: $screen-md-min) {
+		text-align: right;
+	}
+}
+
+.overview-home-order-history-results-container {
+	.recordviews-tracking-number-header	{
+		color: $sc-color-copy-dark;
+	}
+
+	.recordviews-tracking-number {
+		color: $sc-color-primary;
+		padding-bottom: $sc-padding-lv3;
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+		.recordviews-tracking-number-header{
+			width: 50%;
+			text-align: right;
+			padding-right: $sc-padding-lv3;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+		.recordviews-tracking-number-header,
+		.recordviews-tracking-number {
+			 width: 20%;
+			 text-align: right;
+		}
+
+		.recordviews-title {
+			width: 20%;
+		}
+		.recordviews-date-header,
+		.recordviews-date {
+			width: 15%;
+		}
+		.recordviews-currency-header,
+		.recordviews-currency {
+			width: 20%;
+		}
+		.recordviews-status-header,
+		.recordviews-status {
+			width: 25%;
+		}
+	}
+}
+
+.overview-home-header-links{
+	@extend .pull-right;
+}
+
+
+.overview-home-orders-list-table{
+	@extend .table-flex-record-navigable;
+
+	.overview-home-content-table-header-row-origin,
+	.recordviews-origin{
+		width:100%;
+	}
+
+	.overview-home-content-table-header-row-currency,
+	.recordviews-currency{
+		width:100%;
+	}
+
+	.overview-home-content-table-header-row-date,
+	.recordviews-date{
+		width:100%;
+	}
+
+	.overview-home-content-table-header-row-title,
+	.recordviews-title{
+		width:100%;
+	}
+
+	.overview-home-content-table-header-row-track,
+	.recordviews-tracking-number {
+		width:100%;
+	}
+
+	@media (min-width: $screen-md-min) {
+		td {
+			vertical-align:middle;
+		}
+		.overview-home-content-table-header-row-origin,
+		.recordviews-origin{
+			width:15%;
+		}
+
+		.overview-home-content-table-header-row-currency,
+		.recordviews-currency{
+			width:20%;
+		}
+
+		.overview-home-content-table-header-row-date,
+		.recordviews-date{
+			width:10%;
+		}
+
+		.overview-home-content-table-header-row-title,
+		.recordviews-title{
+			width:20%;
+		}
+
+		.overview-home-content-table-header-row-track,
+		.recordviews-tracking-number {
+			width:35%;
+		}
+	}
+
+}
+
+.overview-home-purchases-list {}
+
+.overview-home-orders-empty-section{
+	padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+	text-align:center;
+}

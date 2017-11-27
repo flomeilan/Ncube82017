@@ -1,0 +1,71 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.newsletter-suscription-form {}
+
+.newsletter-subscription-form-label {
+    @extend .col-sm-12;
+    text-align: center;
+    margin-bottom: $sc-margin-lv2;
+    padding-left: 0;
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+}
+
+.newsletter-subscription-form-container {
+    input.newsletter-suscription-form-input {
+        @extend .col-sm-7;
+        @extend .col-xs-12;
+
+        margin: 0 auto;
+        height: $sc-target-size;
+        margin-bottom: $sc-margin-lv2;
+    }
+}
+
+.newsletter-subscription-form-button-subscribe {
+    @extend .button-secondary;
+    @extend .col-sm-5;
+    @extend .col-xs-12;
+
+    height: $sc-target-size;
+    margin-bottom: $sc-margin-lv2;
+
+    border-radius: $sc-border-radius;
+
+    @media (min-width: $screen-sm-min) {
+        border-radius: 0 $sc-border-radius $sc-border-radius 0;
+    }
+}
+
+ .newsletter-subscription-form-container {
+    [data-validation-error="block"] {
+        @extend .col-sm-12;
+        text-align: left;
+    }
+}
+
+.newsletter-alert-placeholder {
+    padding: 0px;
+    @extend .col-sm-12;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+}
+
+.newsletter-alert-placeholder .global-views-message {
+    @extend .col-sm-12;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+}
+
+input.newsletter-suscription-form-input {}
+.newsletter-suscription-form-button-suscribe {}

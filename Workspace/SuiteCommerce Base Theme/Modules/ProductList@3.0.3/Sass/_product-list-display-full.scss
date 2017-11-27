@@ -1,0 +1,96 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+////////////////////////////////////////////////////////////
+//layout
+
+.product-list-display-full-wrapper{
+	padding-top: $sc-margin-lv3;
+	padding-bottom: $sc-margin-lv3;
+
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+
+.product-list-display-full-wrapper:hover{
+	background-color: $sc-color-theme-background;
+}
+
+.product-list-display-full-wrapper.active{
+	background-color: $sc-color-theme-background;
+}
+
+.product-list-display-full{
+	@extend .table-flex-item-actionable-navigable-selectable;
+}
+
+.product-list-display-full-select{
+	@extend .table-flex-tdfirst;
+	@extend .column-type-select;
+}
+
+.product-list-display-full-thumnail{
+	@extend .table-flex-tdfirst;
+	@extend .column-type-image;
+}
+
+.product-list-display-full-actions{
+	@extend .table-flex-tdlast;
+	@extend .column-type-actions;
+}
+
+////////////////////////////////////////////////////////////
+//element styles
+
+.product-list-display-full-name-anchor{
+	@extend .small-title-navigable;
+}
+
+.product-list-display-full-edit{
+	@extend .button-small;
+	@extend .button-secondary;
+	min-width: 100px;
+}
+
+.product-list-display-full-extras{
+	@extend .table-flex-middle-last;
+}
+
+.product-list-display-full-details {
+	@extend .table-flex-middle-first;
+	.item-view-actionable-selected-option-cell {
+		padding-left: 0;
+	}
+}
+.product-list-display-full-quantity-label,
+.product-list-display-full-priority-label,
+.product-list-display-full-date-label,
+.product-list-display-full-notes-label {
+	@extend .sc-label;
+}
+.product-list-display-full-quantity-value,
+.product-list-display-full-priority-value,
+.product-list-display-full-date-value,
+.product-list-display-full-notes-value {
+	@extend .sc-value;
+}
+
+// Modal
+.global-views-modal-content .product-list-display-full-actions {
+	display: none;
+}
+
+.product-list-display-full-price{}
+.product-list-display-full-rating{}
+.product-list-display-full-stock{}
+.product-list-display-full-extras{}
+.product-list-display-full-date{}
+.product-list-display-full-move {
+	.product-list-control-item {
+		line-height: normal;
+		height: auto;
+	}
+}

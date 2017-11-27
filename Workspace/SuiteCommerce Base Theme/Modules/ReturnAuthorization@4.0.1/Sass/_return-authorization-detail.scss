@@ -1,0 +1,348 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.return-authorization-detail-back{
+    @extend .button-back;
+}
+.return-authorization-detail {}
+.return-authorization-detail-header-total {
+	display: none;
+	float: right;
+
+	@media(min-width: $screen-sm-min){
+		display: block;
+	}
+}
+.return-authorization-detail-header-info {}
+.return-authorization-detail-header-row {
+	@extend .row;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.return-authorization-detail-header-info-left{
+	@extend .col-sm-6;
+}
+.return-authorization-detail-header-info-right{
+	@extend .col-sm-6;
+	text-align:left;
+
+	@media(min-width: $screen-sm-min){
+		text-align:right;
+	}
+}
+.return-authorization-detail-header-info-from {
+	@extend .sc-label;
+}
+.return-authorization-detail-header-info-return-date {
+	@extend .sc-label;
+}
+.return-authorization-detail-header-info-amount {
+	@extend .sc-label;
+
+	@media(min-width: $screen-sm-min){
+		display: none;
+	}
+}
+.return-authorization-detail-header-info-status {
+	@extend .sc-label;
+}
+.return-authorization-detail-header-info-return-date-value {
+	@extend .sc-value;
+}
+.return-authorization-detail-header-info-amount-value {
+	@extend .sc-value;
+}
+.return-authorization-detail-header-info-status-value {
+	color: $sc-color-primary;
+}
+
+.return-authorization-detail-header-info-status-label {
+	@extend .sc-label;
+}
+
+// Items View
+.return-authorization-detail-row {
+	@extend .row;
+}
+.return-authorization-detail-content-col {
+	@extend .col-md-8;
+	margin-bottom:$sc-margin-lv4;
+}
+.return-authorization-detail-accordion-divider {
+	@extend .accordion-divider;
+}
+.return-authorization-detail-accordion-head {
+	@extend .accordion-head;
+}
+.return-authorization-detail-head-toggle {
+	@extend .accordion-head-toggle;
+}
+.return-authorization-detail-head-toggle-icon {
+	@extend .accordion-toggle-icon;
+}
+.return-authorization-detail-body {
+	@extend .accordion-body;
+}
+.return-authorization-detail-headers {
+	display:none;
+}
+.return-authorization-detail-headers-image {}
+.return-authorization-detail-headers-product {}
+.return-authorization-detail-headers-reason {}
+.return-authorization-detail-headers-quantity,
+.return-authorization-detail-headers-amount {
+	text-align: right;
+}
+
+// Summary
+.return-authorization-detail-summary-col {
+	@extend .col-md-4;
+}
+.return-authorization-detail-summary-container {
+	@extend .summary-container;
+	margin-bottom:$sc-margin-lv2;
+}
+.return-authorization-detail-summary-title{
+	@extend .summary-title;
+}
+.return-authorization-detail-tax {
+
+}
+.return-authorization-detail-summary-tax-label {
+}
+.return-authorization-detail-summary-tax-label-value {
+
+}
+.return-authorization-detail-summary-handling {
+
+}
+.return-authorization-detail-summary-handling-label {
+}
+.return-authorization-detail-summary-handling-value {
+}
+.return-authorization-detail-summary-total {
+	p{
+		@extend .summary-total;
+	}
+}
+.return-authorization-detail-summary-total-label {
+	@extend .col-xs-6;
+	text-align:left;
+}
+.return-authorization-detail-summary-total-value {
+	@extend .col-xs-6;
+	text-align:right;
+}
+.return-authorization-detail-summary-pdf {}
+.return-authorization-detail-summary-cancel-request {}
+
+.return-authorization-detail-summary-pdf-download-button {
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+	display:block;
+}
+
+.return-authorization-detail-summary-cancel-request-button {
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+	display:block;
+}
+
+
+.return-authorization-detail--summary-total{
+	p{
+		@extend .summary-total;
+	}
+}
+
+.return-authorization-detail-summary-subtotal{
+	p{
+		@extend .summary-subtotal;
+	}
+}
+
+.return-authorization-detail-summary-grid{
+
+}
+
+.return-authorization-detail-summary-grid-float{
+	@extend .summary-grid-float;
+}
+
+.return-authorization-detail-summary-amount-tax{
+	@extend .summary-grid-right;
+}
+
+.return-authorization-detail-summary-amount-discount {
+	@extend .summary-grid-right;
+}
+
+.return-authorization-detail-summary-amount-shipping{
+	@extend .summary-grid-right;
+}
+
+.return-authorization-detail-summary-amount-handling{
+	@extend .summary-grid-right;
+}
+
+.return-authorization-detail-summary-subtotal {
+	@extend .summary-grid-right;
+}
+
+.return-authorization-detail-summary-subtotal-items {
+	font-weight:$sc-font-weight-bold;
+}
+
+.return-authorization-detail-summary-amount-total{
+	@extend .summary-grid-right;
+}
+
+
+.return-authorization-detail-summary-grid-left{
+	@extend .col-xs-6;
+	text-align:left;
+}
+
+.return-authorization-detail-summary-grid-right{
+	@extend .col-xs-6;
+	text-align:right;
+}
+
+.return-authorization-detail-comments{
+	padding-left:$sc-padding-lv3;
+	padding-bottom:$sc-padding-lv4;
+}
+
+.return-authorization-detail-products-table{
+	@extend .table-flex-item-navigable;
+
+	.transaction-line-views-cell-navigable-item-unit-price-label,
+	.transaction-line-views-cell-navigable-item-quantity-label,
+	.transaction-line-views-cell-navigable-item-amount-label {
+		display:inline-block;
+		float: left;
+		margin-right:$sc-margin-lv1;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity-value {
+		text-align:left;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity,
+	.transaction-line-views-cell-navigable-item-unit-price,
+	.transaction-line-views-cell-navigable-amount {
+		text-align:left;
+	}
+}
+
+.return-authorization-detail-comments-row{}
+.return-authorization-detail-creditmemo-accordion-row{}
+.return-authorization-detail-header-info-from-label{}
+.return-authorization-detail-status{}
+
+.return-authorization-detail-title {
+	margin-bottom:$sc-margin-lv4;
+}
+
+.return-authorization-detail-creditmemo-accordion-divider {
+	@extend .accordion-divider;
+}
+
+.return-authorization-detail-creditmemo-accordion-head {
+	@extend .accordion-head;
+}
+
+.return-authorization-detail-creditmemo-accordion-head-toggle {
+	@extend .accordion-head-toggle;
+}
+
+.return-authorization-detail-creditmemo-accordion-toggle-icon {
+	@extend .acordion-head-toggle-icon;
+}
+
+.return-authorization-detail-creditmemo-accordion-body {
+	@extend .accordion-body;
+}
+
+.return-authorization-detail-creditmemo-table-product {
+	@extend .table-flex-item-navigable;
+
+	.recordviews-title{
+		margin-top:$sc-margin-lv2;
+	}
+
+	.recordviews-currency {
+		margin-bottom:$sc-margin-lv2;
+	}
+
+	@media(min-width: $screen-md-min) {
+		.recordviews-title{
+			margin-top:0;
+		}
+
+		.recordviews-currency {
+			margin-bottom:0;
+		}
+	}
+}
+
+.return-authorization-detail-creditmemo-table-invoices-header {
+	display:none;
+
+	@media(min-width: $screen-md-min) {
+		display:table-row-group;
+		border-bottom:1px solid $sc-color-theme-border-light;
+		width:100%;
+		color:$sc-color-copy-light;
+
+		th {
+			font-weight:$sc-font-weight-normal;
+			font-size:$sc-font-size-m;
+		}
+	}
+}
+
+.return-authorization-detail-creditmemo-table-invoices-header-title-record {
+	@extend .recordviews-title;
+}
+.return-authorization-detail-creditmemo-table-invoices-header-date-record {
+	@extend .recordviews-date;
+	color:$sc-color-copy-light;
+}
+.return-authorization-detail-creditmemo-table-invoices-header-amount-record {
+	@extend .recordviews-currency;
+	color:$sc-color-copy-light;
+}
+
+.return-authorization-detail-creditmemo-accordion-body-container-payment-total {
+	text-align: right;
+	padding: $sc-padding-lv2 $sc-padding-lv4 $sc-padding-lv2;
+	@media(min-width: $screen-md-min) {
+		padding: 0 $sc-padding-lv4 $sc-padding-lv2;
+	}
+}
+
+.return-authorization-detail-creditmemo-accordion-body-container-payment-total-label {
+	@extend .sc-label;
+}
+
+.return-authorization-detail-creditmemo-accordion-body-container-payment-subtotal-value {
+	@extend .sc-value;
+}
+
+.return-authorization-detail-creditmemo-accordion-body-container-payment-total-value-remaining {
+	@extend .sc-value;
+}
+
+.return-authorization-detail-creditmemo-accordion-body-container-message {
+	padding: $sc-padding-lv4;
+}
+.return-authorization-detail-number{}

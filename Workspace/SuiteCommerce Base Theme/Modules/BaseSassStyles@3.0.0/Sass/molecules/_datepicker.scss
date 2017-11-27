@@ -1,0 +1,218 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Datepicker
+//
+// Dates have many possible representations varying by culture and personal preference.
+// Providing a visual representation of dates, in a familiar calendar format, facilitates entering dates in a consistent format.
+// The Date picker is used by the user either to select a date or to filter by a range of dates.
+// In cases where it is available, system native pickers are preferred since they are familiar to the user.
+// For cases in which there is no native date picker available, SuiteCommerce Advanced relies on the bootstrap-datepicker component.
+//
+// It's required include 'bootstrap-datepicker' library in your Backbone.View.
+//
+// Markup:
+// <div class="datepicker-container">
+//   <label for="sample-datepicker">Date:</label>
+//   <div class="datepicker-container-input">
+//     <input
+//       type="text"
+//       data-provide="datepicker"
+//       class="sample-datepicker"
+//       name="sample-datepicker"
+//       autocomplete="off"
+//       data-format="yyyy-mm-dd"
+//       data-todayhighlight="true"/>
+//     <i class="datepicker-calendar-icon"></i>
+//     <a data-action="clear-value">
+//       <i class="datepicker-clear-icon"></i>
+//     </a>
+//   </div>
+// </div>
+//
+// Styleguide 3.13
+
+.datepicker-container {
+	display: inline-block;
+
+	.datepicker-container-input {
+		position: relative;
+
+		input {
+			margin: 0;
+		}
+
+		.datepicker-calendar-icon {
+			@extend .fa;
+			@extend %fa-calendar;
+			position: absolute;
+			padding: $sc-padding-lv3;
+			//width: 44px;
+			//height: 44px;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+
+			@media (min-width: $screen-md-min) {
+				right: 0;
+				top: 0;
+			}
+		}
+
+		a {
+			display: none;
+
+			.datepicker-clear-icon {
+				@extend .fa;
+				@extend %fa-times-circle;
+				color: $sc-color-theme-400;
+				font-size: $sc-font-size-l;
+			}
+		}
+	}
+}
+
+.datepicker {
+	position:absolute;
+	z-index:1;
+	display:none;
+	left: 0;
+	width: 300px;
+	border:1px solid $sc-color-theme-border-light;
+
+	box-shadow: 0 $sc-flyout-arrow-shadow-height $sc-flyout-arrow-shadow-height * 2 transparentize($sc-neutral-shade-600, 1-0.175);
+	padding: $sc-padding-lv4;
+	margin-top: $sc-flyout-arrow-height;
+	background: $sc-neutral-shade-0;
+
+	&:before {
+		position: absolute;
+		top: -$sc-flyout-arrow-height;
+		left: 14px;
+		display: inline-block;
+		border-right: $sc-flyout-arrow-height solid transparent;
+		border-bottom: $sc-flyout-arrow-height solid $sc-color-theme-border-light;
+		border-left: $sc-flyout-arrow-height solid transparent;
+		content: '';
+	}
+
+	&:after {
+		position: absolute;
+		top: -$sc-flyout-arrow-shadow-height;
+		left: 15px;
+		display: inline-block;
+		border-right: $sc-flyout-arrow-shadow-height solid transparent;
+		border-bottom: $sc-flyout-arrow-shadow-height solid $sc-neutral-shade-0;
+		border-left: $sc-flyout-arrow-shadow-height solid transparent;
+		content: '';
+	}
+
+	.datepicker-switch {
+		width: 100%;
+		cursor: pointer;
+		text-align: center;
+		color: $sc-color-secondary;
+	}
+
+	.day {
+		cursor:pointer;
+		text-align: center;
+		color: $sc-color-theme-900;
+		padding: $sc-padding-lv1 $sc-padding-lv2;
+	}
+
+	.day.today {
+		background-color: $sc-color-theme-900;
+		color: $sc-neutral-shade-0;
+
+		&:hover {
+			background-color: $sc-color-theme-400;
+	  	}
+	}
+
+	.next, .prev {
+		color: white;
+		cursor: pointer;
+		width: $sc-target-size;
+		height: $sc-target-size;
+		line-height: $sc-target-size;
+
+		@extend .fa;
+		font-size:20px;
+		display:inline;
+		&:before{
+			color: $sc-color-theme-900;
+		}
+	}
+
+	.prev {
+		text-align: left;
+		@extend %fa-angle-double-left;
+	}
+
+	.next {
+		text-align: right;
+		@extend %fa-angle-double-right;
+	}
+
+	.month, .year {
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		width: $sc-target-size;
+		height: $sc-target-size;
+		line-height: $sc-target-size;
+		float: left;
+		margin: 1%;
+	}
+
+	.day:hover, .month:hover, .year:hover {
+		background-color: $sc-color-theme-background;
+	}
+
+	.day.active {
+		background-color: $sc-color-primary;
+		color: $sc-neutral-shade-0;
+	}
+
+	.day.old {
+		color: $sc-color-theme-400;
+	}
+
+	.day.new,
+	.day.disabled,
+	.month.disabled,
+	.year.disabled {
+		color:  $sc-color-theme-400;
+	}
+}
+
+.datepicker-orient-top {
+	margin-top: $sc-margin-lv2;
+}
+
+.datepicker-orient-bottom {
+	margin-bottom: $sc-margin-lv2;
+
+	&:before {
+		top: initial;
+		bottom: -7px;
+		border-top: $sc-flyout-arrow-height solid $sc-color-theme-border-light;
+		border-bottom: 0;
+	}
+
+	&:after {
+		top: initial;
+		bottom: -6px;
+		border-top: $sc-flyout-arrow-height solid $sc-neutral-shade-0;
+		border-bottom: 0;
+	}
+}
+
+.datepicker-days table thead tr th {
+	color: $sc-color-secondary;
+}

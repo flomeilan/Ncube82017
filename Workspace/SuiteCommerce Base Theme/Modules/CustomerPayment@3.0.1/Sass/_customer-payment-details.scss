@@ -1,0 +1,203 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.customer-payment-details-back {
+    @extend .button-back;
+}
+
+.customer-payment-details-header {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.customer-payment-details-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.customer-payment-details-header-amount,
+.customer-payment-details-header-payment-amount {
+	float: right;
+}
+
+.customer-payment-details-information-col-status-label {
+	@extend .sc-label;
+}
+
+.customer-payment-details-information-date{
+	@extend .sc-value;
+}
+
+.customer-payment-details-date-label,
+.customer-payment-details-status-label {
+	@extend .sc-label;
+}
+
+.customer-payment-details-information {
+	@extend .row;
+}
+
+.customer-payment-details-information-col-date-text,
+.customer-payment-details-information-col-status-text {
+	@extend .info;
+}
+
+.customer-payment-details-information-col-date,
+.customer-payment-details-information-col-status {
+	@extend .col-sm-6;
+}
+
+.customer-payment-details-information-col-status {
+	@media (min-width: $screen-sm-min) {
+		text-align: right;
+	}
+}
+
+.customer-payment-details-information-col-button {
+	@extend .button-medium;
+	@extend .button-secondary;
+	float: right;
+	margin-top: $sc-margin-lv4;
+}
+
+.customer-payment-details-information-status {
+	@extend .sc-value;
+	color:$sc-color-primary;
+}
+
+.customer-payment-details-accordion-head {
+	@extend .accordion-head;
+	margin-top: $sc-margin-lv4;
+}
+
+.customer-payment-details-accordion-head-toggle {
+	@extend .accordion-head-toggle;
+}
+
+.customer-payment-details-accordion-toggle-icon {
+	@extend .acordion-head-toggle-icon;
+}
+
+.customer-payment-details-accordion-container {
+	@extend .accordion-container;
+}
+
+.customer-payment-details-accordion-body {
+	@extend .accordion-body;
+
+	.accordion-container {
+		margin: 0;
+	}
+}
+
+.customer-payment-details-accordion-body-container {
+	@extend .row;
+	padding: $sc-padding-lv4;
+}
+
+.customer-payment-details-accordion-body-container-payment-method,
+.customer-payment-details-accordion-body-container-payment-memo {
+	@extend .col-sm-6;
+}
+
+.customer-payment-details-accordion-body-container-payment-method {
+	margin-bottom: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: 0;
+	}
+}
+
+.customer-payment-details-accordion-body-container-payment-memo-card,
+.customer-payment-details-accordion-body-container-payment-memo-card-info,
+.customer-payment-details-accordion-body-container-payment-method-card {
+	@extend .info-card;
+}
+
+.customer-payment-details-accordion-body-container-payment-total {
+	text-align: right;
+	padding: $sc-padding-lv4;
+}
+
+.customer-payment-details-accordion-body-container-recordviews-row {
+	@extend .recordviews-row;
+	display:none;
+
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+
+	&:hover {
+		background: none;
+	}
+}
+
+.customer-payment-details-accordion-body-container-recordviews-table {
+	@extend .recordviews-table;
+
+	thead {
+		border-bottom: 1px solid $sc-color-theme-border-light;
+	}
+
+	tfoot {
+		display:table-row-group;
+	}
+
+	.recordviews-currency {
+		margin-bottom:$sc-margin-lv3;
+
+		@media (min-width: $screen-md-min) {
+			margin-bottom:0;
+		}
+	}
+}
+
+.customer-payment-details-accordion-body-container-recordviews-table td:last-child {
+	@extend .table-flex-td-last;
+}
+
+.customer-payment-details-payment-total-label {
+	@extend .sc-label;
+}
+
+.customer-payment-details-payment-total-value {
+	@extend .sc-value;
+}
+
+.customer-payment-details-accordion-body-container-recordviews-table-header {
+	display:none;
+
+	@media (min-width: $screen-md-min) {
+		display: table-row-group;
+	}
+}
+
+.customer-payment-details-accordion-body-container-recordviews-title {
+	@extend .recordviews-title;
+	color: $sc-color-copy;
+	text-transform: capitalize;
+}
+
+.customer-payment-details-accordion-body-container-recordviews-date {
+	@extend .recordviews-date;
+}
+
+.customer-payment-details-accordion-body-container-recordviews-discount {
+}
+
+.customer-payment-details-accordion-body-container-recordviews-currency {
+	@extend .recordviews-currency;
+}
+
+.customer-payment-details-noinvoices-message {
+	padding:$sc-padding-lv4;
+	font-size:$sc-font-size-m;
+}
+
+.customer-payment-details-header-number {}
+
+.customer-payment-details-message-warning {
+	@extend .order-history-details-message-warning;
+}

@@ -1,0 +1,104 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-faceted-navigation-results{
+	padding-top: $sc-padding-lv4;
+	padding-left: $sc-padding-lv3;
+	padding-right: $sc-padding-lv3;
+
+	font-size: $sc-font-size-m;
+
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.facets-faceted-navigation-title-alt {
+	color: $sc-color-primary;
+}
+
+.facets-faceted-navigation-facet-group {
+	padding: $sc-padding-lv2 $sc-padding-lv3;
+
+	@media (min-width: $screen-md-min) {
+		padding-left: 0;
+	}
+}
+
+.facets-faceted-navigation-title {
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		font-size: $sc-font-size-l;
+		font-weight: $sc-font-weight-semibold;
+		text-align: left;
+		display: block;
+		padding: $sc-padding-lv3;
+		padding-left: 0;
+	}
+}
+
+.facets-faceted-navigation-category-wrapper {}
+
+.facets-faceted-navigation-facets-clear {
+	@extend .filter-generic;
+
+	width: inherit;
+	font-size: $sc-font-size-xs;
+
+	@media (min-width: $screen-md-min) {
+		position: inherit;
+		display: inline-block;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		margin-left: $sc-padding-lv3;
+	}
+}
+
+.facets-faceted-navigation-facets-clear-icon {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+.facets-faceted-navigation-facet-group-expander:hover {
+	text-decoration: none;
+}
+
+.facets-faceted-navigation-facet-group-title {
+	font-size: $sc-font-size-m;
+}
+
+.facets-faceted-navigation-facet-group-expander {
+	display:block;
+	padding: $sc-padding-lv2 0;
+}
+
+.facets-faceted-navigation-facet-group-expander-icon {
+	float: right;
+	color: $sc-color-copy;
+	font-size: $sc-navigation-icon-size;
+	margin-top: -3px;
+	@extend .icon-angle-up;
+	@include transition-transform(300ms ease);
+}
+
+.collapsed .facets-faceted-navigation-facet-group-expander-icon{
+	@include rotate(180deg);
+}
+
+/*  */
+.facets-faceted-navigation-facet-option {
+	@extend .single-select-option;
+}
+
+.facets-faceted-navigation-facet-option-circle {
+	@extend .single-select-icon-close;
+}
+/* */
+
+.facets-faceted-navigation-content .sc-pusher-header{
+	margin:0;
+}

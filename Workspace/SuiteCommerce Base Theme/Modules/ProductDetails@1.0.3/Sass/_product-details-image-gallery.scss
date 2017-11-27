@@ -1,0 +1,106 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-details-image-gallery {
+	position: relative;
+
+	.bx-wrapper img {
+		margin: auto;
+		display: block;
+	}
+}
+
+.product-details-image-gallery-container {
+	display: inline-block;
+	height: 250px;
+
+	@media (min-width: $screen-sm-min) {
+		height: 400px;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		height: 555px;
+	}
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
+.product-details-image-gallery .social-sharing-flyout-content-social-pinterest {
+	display: none;
+}
+
+.product-details-image-gallery:hover .social-sharing-flyout-content-social-pinterest {
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.product-details-image-gallery-detailed-image {
+	height: 250px;
+
+	@media (min-width: $screen-sm-min) {
+		height: 400px;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		height: 555px;
+	}
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.zoomImg {
+		background-color: white;
+	}
+}
+
+.product-details-image-gallery-prev-icon, .product-details-image-gallery-next-icon{
+	position: absolute;
+	top: 40%;
+	width: $sc-target-size-mobile;
+	height: $sc-target-size-mobile;
+	font-size: 50px;
+	color:#c5d7e0;
+	text-align: center;
+	line-height: 0.8;
+	@extend .fa;
+}
+.product-details-image-gallery-prev-icon:focus, .product-details-image-gallery-next-icon:focus {
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.product-details-image-gallery-prev-icon{
+	left: 30px;
+	@extend %fa-angle-left;
+}
+
+.product-details-image-gallery-next-icon{
+	right:30px;
+	@extend %fa-angle-right;
+}

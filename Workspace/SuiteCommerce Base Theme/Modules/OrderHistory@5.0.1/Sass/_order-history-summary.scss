@@ -1,0 +1,125 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-summary-summary-title{
+	@extend .summary-title;
+}
+
+.order-history-summary-summary-container{
+	@extend .summary-container;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-summary-summary-total{
+	p{
+		@extend .summary-total;
+	}
+}
+
+.order-history-summary-summary-subtotal{
+	@extend .summary-subtotal;
+	margin-bottom:$sc-margin-lv3;
+}
+
+.order-history-summary-summary-grid-float{
+	@extend .summary-grid-float;
+}
+
+.order-history-summary-summary-amount-subtotal{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-amount-discount{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-amount-shipping{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-amount-handling{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-amount-certificate{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-amount-promocode{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-amount-tax{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-amount-total{
+	@extend .summary-grid-right;
+}
+
+.order-history-summary-summary-grid-left{
+
+}
+
+.order-history-summary-summary-grid-right{
+
+}
+
+.order-history-summary-summary-col{
+	@extend .col-md-4;
+}
+
+.order-history-summary-button-reorder{
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+	display:block;
+}
+
+.order-history-summary-button-download-pdf{
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+	display:block;
+}
+
+.order-history-summary-button-request-return{
+	@extend .button-tertiary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+	display:block;
+}
+
+.order-history-summary-button-view-invoice{
+	@extend .button-tertiary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+	display:block;
+	@media(min-width: $screen-sm-min) {
+		margin-bottom:0;
+	}
+}
+
+.order-history-summary-row-fluid{
+}
+
+.order-history-summary-button-cancel-order{
+	@extend .button-tertiary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+	display:block;
+}
+
+.order-history-summary-pickup-label-free {
+	@extend .summary-grid-right;
+	color: $sc-color-success;
+}

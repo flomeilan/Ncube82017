@@ -1,0 +1,55 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.requestquote-wizard-layout-content {}
+.requestquote-wizard-step-header-title{
+	@extend .wizard-header-title;
+}
+.requestquote-wizard-step-title{}
+.requestquote-wizard-step-content-main{}
+.requestquote-wizard-step-content-secondary{}
+.requestquote-wizard-step-button-container{}
+.requestquote-wizard-step-button-continue{}
+.requestquote-wizard-step-button-back{}
+.requestquote-wizard-step-content-wrapper {}
+
+.requestquote-wizard-step-content-main {}
+
+.requestquote-wizard-step-content-right{
+	@extend .col-xs-12;
+	@extend .col-sm-4;
+	float: right;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.requestquote-wizard-step-actions{
+	@extend .clearfix;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.requestquote-wizard-step-button-container{
+}
+
+.requestquote-wizard-step-button-back{
+	@extend .wizard-step-button-back;
+}
+
+.requestquote-wizard-step-actions .requestquote-wizard-step-button-container .requestquote-wizard-step-button-continue{
+	@extend .button-medium;
+	@extend .button-primary;
+	min-width: 190px;
+}
+.requestquote-wizard-step-disclaimer-bottom-content{
+	margin-bottom: $sc-margin-lv4;
+	margin-top:$sc-margin-lv2;
+	display: inline-block;
+}
+.requestquote-wizard-step-disclaimer-message {}
+.requestquote-wizard-step-content-wrapper-bottom-content {}
+.requestquote-wizard-step-content-wrapper-disclaimer-message {
+	margin-bottom: $sc-margin-lv4;
+}

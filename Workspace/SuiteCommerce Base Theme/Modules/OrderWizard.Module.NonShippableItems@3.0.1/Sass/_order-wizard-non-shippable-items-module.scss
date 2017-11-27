@@ -1,0 +1,162 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-non-shippable-items-module {
+
+
+	.order-wizard-non-shippable-items-module-header-img {
+		@extend .column-type-image;
+	}
+
+	.order-wizard-non-shippable-items-module-header-qty,
+	.order-wizard-non-shippable-items-module-header-unit-price,
+	.order-wizard-non-shippable-items-module-header-amount	,
+
+	.item-view-cell-navigable-item-quantity,
+	.item-view-cell-navigable-item-unit-price,
+	.item-view-cell-navigable-amount{
+		@media(min-width: $screen-md-min){
+			width: 15%;
+			text-align: right;
+		}
+	}
+
+	.item-views-item-options-container {
+		margin-bottom: $sc-margin-lv2;
+		line-height: normal;
+	}
+
+	.item-view-cell-navigable-item-quantity,
+	.item-view-cell-navigable-item-unit-price,
+	.item-view-cell-navigable-item-amount {
+		margin-bottom: $sc-margin-lv2;
+	}
+
+	.item-view-cell-navigable-amount {
+		text-align: left;
+		@media (min-width: $screen-md-min) {
+			text-align: right;
+		}
+	}
+}
+
+.order-wizard-non-shippable-items-module-headers-table {
+	width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		.transaction-line-views-cell-navigable-item-quantity {
+			text-align: right;
+		}
+	}
+}
+
+.order-wizard-non-shippable-items-module-accordion-divider {
+	margin: 0 0 $sc-margin-lv2;
+
+	@media (min-width: $screen-sm-min){
+		margin: 0 0 $sc-margin-lv4;
+	}
+}
+
+.order-wizard-non-shippable-items-module-accordion-head {
+	@extend .accordion-head;
+}
+
+.order-wizard-non-shippable-items-module-accordion-head-toggle-secondary {
+	@extend .accordion-head-toggle-secondary;
+	height: auto;
+}
+
+.order-wizard-non-shippable-items-module-accordion-head-title-container {}
+
+.order-wizard-non-shippable-items-module-accordion-head-info {
+ 	max-width: 50%;
+	display: inline-block;
+	line-height: 1.6;
+	padding-top: $sc-padding-lv2;
+	font-weight: normal;
+
+	@media (min-width: $screen-sm-min) {
+		max-width: 100%;
+	}
+}
+
+.order-wizard-non-shippable-items-module-accordion-toggle-icon-secondary {
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.order-wizard-non-shippable-items-module-accordion-head-count {
+	margin-right: $sc-margin-lv2;
+	font-weight: normal;
+}
+
+.order-wizard-non-shippable-items-module-accordion-body {
+	@extend .accordion-body;
+}
+
+.order-wizard-non-shippable-items-module-headers-table-header {
+	@extend .table-flex-item-viewonly;
+	display:none;
+	@media(min-width: $screen-md-min){
+		display:table-row-group;
+		border-bottom:1px solid $sc-color-theme-border-light;
+	}
+}
+
+.order-wizard-non-shippable-items-module-headers-table {
+	@extend .table-flex-item-navigable;
+}
+
+.lg2sm-first.order-wizard-non-shippable-items-module-headers-table {
+	table-layout: fixed;
+
+	.transaction-line-views-cell-navigable-item-quantity-label,
+	.transaction-line-views-cell-navigable-item-unit-price-label,
+	.transaction-line-views-cell-navigable-item-amount-label,
+	.transaction-line-views-cell-navigable-item-quantity-label {
+		display: inline;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity .transaction-line-views-cell-navigable-item-quantity-value {
+		display: inline-block;
+		text-align: left;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity .transaction-line-views-cell-navigable-item-quantity-value {
+		display: inline-block;
+		text-align: left;
+	}
+
+	.transaction-line-views-cell-navigable-product-title {
+		font-size: $sc-font-size-m;
+	}
+
+	.transaction-line-views-cell-navigable-item-unit-price,
+	.transaction-line-views-cell-navigable-item-quantity,
+	.transaction-line-views-cell-navigable-amount {
+		text-align: left;
+	}
+
+	.transaction-line-views-cell-navigable-item-image {
+		width: $img-small;
+	    min-width: $img-small;
+		padding-right: 0;
+	}
+}
+
+.order-wizard-non-shippable-items-module-edit-cart-link-container{
+	margin: $sc-margin-lv4;
+}
+
+.order-wizard-non-shippable-items-module-edit-cart-link{
+	@extend .button-tertiary;
+    @extend .button-small;
+}
+
+.order-wizard-non-shippable-items-module-accordion-container{}
+.order-wizard-non-shippable-items-module-multishipto-package{}
+.order-wizard-non-shippable-items-module-header-details{}

@@ -1,0 +1,36 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-registeremail-module-show-addresses-container {
+	@extend .box-column;
+	overflow: hidden;
+}
+
+.order-wizard-registeremail-module-title {
+	margin-bottom: $sc-margin-lv2;
+}
+
+.order-wizard-registeremail-module-edit-fields-group-label {}
+
+.order-wizard-registeremail-module-edit-fields-group-input {
+	@extend .input-large;
+}
+
+.order-wizard-registeremail-module-checkbox {
+	margin-bottom: $sc-margin-lv4;
+	display: block;
+}
+
+.order-wizard-registeremail-module-input-required {
+	@extend .input-required;
+}
+
+.order-wizard-registeremail-module-input-help {
+	@extend .help-text;
+}
+
+.order-wizard-registeremail-module-form-placeholder {}

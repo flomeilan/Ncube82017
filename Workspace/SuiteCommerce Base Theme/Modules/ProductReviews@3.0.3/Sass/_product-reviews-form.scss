@@ -1,0 +1,227 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-reviews-form {
+  @extend .container;
+    .product-reviews-form-global-star-rating {
+        .global-views-star-rating-label{
+            display:none;
+        }
+    }
+}
+.product-reviews-form-item-cell {
+    @extend .row;
+    margin-top: $sc-margin-lv2;
+    .facets-item-cell-list-left {
+        @extend .col-xs-12;
+        @extend .col-md-10;
+        margin-bottom: $sc-margin-lv3;
+        @extend .col-md-2;
+        @extend .col-xs-2;
+        @media (min-width: $screen-md-min){
+            margin-bottom: $sc-margin-lv6;
+        }
+    }
+    .facets-item-cell-list-right{
+        @extend .col-xs-8;
+        @extend .col-md-12;
+    }
+    .facets-item-cell-list-title {
+        padding-top: 0;
+        a {
+            @extend .medium-title-navigable;
+        }
+        span {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $sc-color-copy-dark;
+            font-size: 16px;
+        }
+    }
+    @extend .col-md-3;
+    @media (min-width: $screen-md-min){
+        margin: 0;
+        padding-left: 0;
+    }
+    .item-views-option-tile,
+    .item-views-stock,
+    .item-views-price,
+    .facets-item-cell-list-quick-view-link,
+    .item-cell-rating {
+        display: none;
+    }
+}
+.product-reviews-form-content {
+    @extend .row;
+    background: $sc-color-theme-background;
+    padding: 0;
+    @extend .col-md-9;
+    @media (min-width: $screen-md-min){
+        margin: 0;
+    }
+}
+
+.product-reviews-form-new {
+    padding: 0 $sc-padding-lv3;
+
+    .global-views-star-rating-label {
+        font-weight: $sc-font-weight-normal;
+        margin-bottom: $sc-margin-lv1;
+        font-size: 14px;
+    }
+    .global-views-star-rating-empty-pegs {
+    }
+    .global-views-star-rating-empty-pegs-error {
+    }
+    .global-views-star-rating-area-writable-pegs{
+        top: 0;
+    }
+
+    .global-views-star-rating {
+        display: inline-flex;
+        margin-bottom: $sc-margin-lv4;
+    }
+    .product-reviews-form-global-star-rating {
+        .global-views-star-rating-empty, .global-views-star-rating-filled, .global-views-star-rating-error {
+            font-size: 35px;
+        }
+        .global-views-star-rating-empty {
+            @extend %fa-star-o;
+        }
+        .global-views-star-rating-error {
+            @extend %fa-star-o;
+        }
+        .global-views-star-rating-area {
+            margin-bottom: $sc-margin-lv1;
+        }
+        button {
+            width: 32.5px;
+            height: 34px;
+            position: relative;
+            float: none;
+            top: 0;
+        }
+    }
+    .product-reviews-form-content-rating {
+        .global-views-star-rating-empty-pegs,
+        .global-views-star-rating-area-writable-pegs button {
+            width: 40px;
+            height: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+.product-reviews-form-content-title {
+    display:inline-block;
+    font-size: $sc-font-size-m;
+    font-weight: $sc-font-weight-semibold;
+    color: $sc-color-copy-dark;
+    margin-top: $sc-margin-lv4;
+    margin-bottom: $sc-margin-lv2;
+}
+.product-reviews-form-content-label-required {
+    @extend .input-optional;
+    display: block;
+}
+.product-reviews-form-content-required {
+    @extend .input-required;
+}
+.product-reviews-form-content-rating {
+    @extend .clearfix;
+}
+.product-reviews-form-content-group {
+    clear: both;
+    padding: 0;
+    margin-top: $sc-margin-lv4;
+
+    .product-reviews-form-help {
+        margin-top: $sc-margin-lv1;
+        margin-bottom: $sc-margin-lv1;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.product-reviews-form-content-groups {
+    padding:0;
+    float: left;
+    clear: both;
+    margin-bottom: $sc-margin-lv3;
+    @extend .col-md-8;
+    @media (min-width: $screen-md-min){
+        margin-bottom: $sc-margin-lv4;
+        clear: both;
+    }
+}
+.product-reviews-form-content-group-label {
+    margin-bottom: $sc-margin-lv1;
+}
+.product-reviews-form-content-group-input {
+
+    margin-bottom: $sc-margin-lv1;
+}
+.product-reviews-form-content-group-text {
+
+    min-width: 100%;
+    max-width: 294px;
+    min-height: 105px;
+}
+.product-reviews-form-help {
+    @extend .input-optional;
+}
+.product-reviews-form-actions {
+    @extend .row;
+    padding: $sc-margin-lv6 $sc-margin-lv3 $sc-margin-lv4;
+    background: $sc-neutral-shade-0;
+    clear: both;
+
+    @media (min-width: $screen-md-min){
+        padding: $sc-margin-lv6 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        text-align: center;
+    }
+}
+.product-reviews-form-actions-button-submit {
+    @extend .button-medium;
+    @extend .button-primary;
+    margin-bottom: $sc-margin-lv2;
+}
+.product-reviews-form-actions-button-preview {
+    @extend .button-secondary;
+    @extend .button-medium;
+    margin-bottom: $sc-margin-lv2;
+    margin-left: 0;
+
+    @media (min-width: $screen-sm-min){
+        margin-left: $sc-margin-lv2;
+    }
+}
+
+.product-reviews-form-divider {
+    margin-bottom: $sc-margin-lv6;
+
+    @media (min-width: $screen-md-min) {
+        border-top: 1px solid $sc-color-theme-border-light;
+        margin: $sc-margin-lv6 0;
+    }
+}
+
+.product-reviews-form-actions-button-back {
+    @extend .button-link;
+    margin-right: 0;
+
+    @media (min-width: $screen-sm-min){
+          float: right;
+    }
+}
+
+.product-reviews-form-controls{}

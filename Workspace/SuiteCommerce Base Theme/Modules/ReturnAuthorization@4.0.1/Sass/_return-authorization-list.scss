@@ -1,0 +1,96 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.return-authorization-list-button-back {
+    @extend .button-back;
+}
+
+.return-authorization-list-button-back-icon {
+    @extend .button-back-icon;
+}
+
+.return-authorization-list-header {
+	border-top: 1px solid $sc-color-theme-border-light;
+	padding: $sc-padding-lv3 0;
+}
+
+.return-authorization-list-content-table {
+	@extend .recordviews-row-header;
+}
+
+.return-authorization-list-records-list {
+	.recordviews-status {
+		.recordviews-value {
+			color:$sc-color-primary;
+		}
+	}
+}
+
+.return-authorization-list-content-table-header-row-title {
+	@extend .recordviews-header !optional;
+	width: 20%;
+}
+.return-authorization-list-content-table-header-row-date {
+	@extend .recordviews-date-header;
+	width: 15%;
+}
+.return-authorization-list-content-table-header-row-items {
+	@extend .recordviews-items-header;
+	width: 15%;
+}
+.return-authorization-list-content-table-header-row-currency {
+	@extend .recordviews-currency-header;
+	width: 25%;
+}
+.return-authorization-list-content-table-header-row-status {
+	@extend .recordviews-status-header;
+	width: 25%;
+}
+
+
+.return-authorization-list-container {
+	@media (min-width: $screen-md-min) {
+
+		.recordviews-title-header,
+		.recordviews-title {
+			width: 20%;
+		}
+		.recordviews-date-header,
+		.recordviews-date {
+			width: 15%;
+		}
+		.recordviews-items-header,
+		.recordviews-items {
+			width: 15%;
+		}
+		.recordviews-currency-header,
+		.recordviews-currency {
+			width: 25%;
+		}
+		.recordviews-status-header,
+		.recordviews-status {
+			width: 25%;
+		}
+	}
+}
+
+.return-authorization-list-empty {
+	@extend .list-empty;
+}
+
+.return-authorization-list-results-list{
+	@extend .table-flex-record-navigable;
+}
+
+.return-authorization-list-paginator {
+	@extend .case-list-paginator;
+}
+
+.return-authorization-list-empty-section {
+	padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+ 	text-align:center;
+}

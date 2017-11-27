@@ -1,0 +1,33 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.requestquote-wizard-module-confirmation {
+	display: block;
+	padding: 35px;
+	background: $sc-color-success-background;
+	margin-bottom: $sc-margin-lv6;
+}
+.requestquote-wizard-module-confirmation-title {
+	color: $sc-color-success;
+	margin: 0 0 10px;
+}
+.requestquote-wizard-module-confirmation-body {
+	color: $sc-color-success;
+}
+.requestquote-wizard-module-confirmation-continue {
+	@extend .button-medium;
+	@extend .button-tertiary;
+	display:inline-block;
+	margin-top: $sc-margin-lv3;
+}
+.requestquote-wizard-module-confirmation-new-quote {
+	@extend .button-medium;
+	@extend .button-tertiary;
+	display:inline-block;
+	margin-top: $sc-margin-lv3;
+	margin-right: $sc-margin-lv3;
+}

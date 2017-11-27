@@ -1,0 +1,145 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Image gallery
+//
+// Carousels are used to display multiple pieces of content in a single, noticeable space.
+// In our implementation, this organism is used in different ways:
+//   - To display interactive banners for example, Home Page
+//   - To display images of a product for example, Product Details
+//   - To display a list of products for example, Merchandizing Zone
+//
+// It's required call to BxSlider plugin in order to build the gallery.
+// To do that, you have to execute from the Backbone.View the following; Utils.initBxSlider($('[data-slider]'), [options]).
+//
+// Markup:
+// <ul class="image-gallery bxslider" data-slider>
+//   <li>
+//     <img src="/assets/img/carousel-home-1.png" itemprop="image">
+//   </li>
+//   <li>
+//     <img src="/assets/img/carousel-home-2.png" itemprop="image">
+//   </li>
+//   <li>
+//     <img src="/assets/img/carousel-home-3.png" itemprop="image">
+//   </li>
+// </ul>
+//
+// Styleguide 3.3
+
+.image-gallery {
+	list-style: none;
+	margin: 0;
+}
+
+.image-gallery li {
+	display: inline-block;
+}
+
+.image-gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Wrapped in HTML tag to add the smallest hevier selector
+// to fix bug on IE
+html {
+
+	.bx-controls {
+		margin-top: $sc-margin-lv4;
+	}
+
+	.bx-wrapper {
+		margin-bottom: 0;
+
+		.bx-viewport {
+			border: none;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			left: 0;
+		}
+
+		.bx-pager {
+
+			text-align: center;
+			margin-top: $sc-margin-lv4;
+
+			.touch & {
+				overflow-x: scroll;
+				-webkit-overflow-scrolling: touch;
+				white-space: nowrap;
+			}
+
+			a {
+				display: block;
+				width:10px;
+				height: 10px;
+				border-radius:100%;
+				opacity: 0.5;
+
+				background-color: desaturate(darken($sc-color-theme-400, 13), 25);
+				margin: 0 $sc-margin-lv1;
+			}
+
+			a.active{
+				opacity: 1;
+			}
+
+			img{
+				display: none;
+			}
+
+			@media (min-width: $screen-md-min) {
+				margin-bottom: $sc-margin-lv4;
+				position: static;
+
+				img{
+					display: inline;
+				}
+
+				a {
+					margin: 0 8px;
+					padding: 3px;
+
+					width:	auto;
+					height: auto;
+					border-radius:0;
+					background-color: transparent;
+				}
+
+			}
+		}
+
+		img {
+			margin: 0 auto;
+		}
+
+
+	}
+
+	.bx-pager-item img {
+		max-width: 50px;
+	}
+
+}
+
+/* 271491 IE8 styles for carousel */
+.bx-wrapper .bx-pager .bx-pager-item {
+  display: inline-block;
+}
+
+.carousel-next-arrow {
+	@extend .fa;
+	@extend %fa-angle-right;
+}
+
+.carousel-prev-arrow {
+	@extend .fa;
+	@extend %fa-angle-left;
+}

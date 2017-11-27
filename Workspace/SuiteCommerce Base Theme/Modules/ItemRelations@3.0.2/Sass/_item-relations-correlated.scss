@@ -1,0 +1,26 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.item-relations-correlated {
+	position: relative;
+}
+
+.item-relations-correlated .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-relations-correlated h3 {
+    margin-bottom: $sc-margin-lv8;
+}
+
+.item-relations-correlated .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+.item-relations-correlated-row{
+}

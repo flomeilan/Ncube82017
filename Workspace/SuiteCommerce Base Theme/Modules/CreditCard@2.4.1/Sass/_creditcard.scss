@@ -1,0 +1,123 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+$credit-card-height: 230px;
+$credit-card-height-offset: 20px;
+
+.creditcard {
+    @extend .col-lg-4;
+    @extend .col-sm-6;
+    margin-bottom: $sc-margin-lv4;
+}
+
+.creditcard-require-field {
+    margin-bottom: $sc-margin-lv4;
+    margin-top: $sc-margin-lv2;
+    display: inline-block;
+}
+
+.creditcard-required {
+    @extend .input-required
+}
+
+.overview-payment .creditcard,
+.order-wizard-paymentmethod-creditcard-module .creditcard {
+    width: 100%;
+    padding: 0;
+}
+
+.creditcard-content {
+    width: 100%;
+}
+
+.creditcard-list .creditcard-content,
+.creditcard-module-list-placeholder .creditcard-content {
+    @extend .info-card;
+
+    @media(min-width: $screen-sm-min) {
+        min-height: $credit-card-height + $credit-card-height-offset;
+    }
+}
+
+.creditcard-section {
+    @extend .col-xs-12;
+    margin-bottom:$sc-margin-lv2;
+    padding: 0;
+}
+
+.creditcard-number {
+    line-height:40px;
+}
+
+.creditcard-security-code-section {
+    @extend .col-xs-12;
+    padding: 0;
+}
+
+.creditcard-header-icon {
+    float: left;
+    margin-right: $sc-margin-lv1;
+    width:auto;
+    height:$sc-target-size-mobile;
+}
+
+.creditcard-default {
+    @extend .address-details-default-billing;
+}
+
+.creditcard-default-icon {
+    @extend .address-details-default-shipping-icon;
+}
+
+.creditcard-actions {
+    clear: both;
+    margin-top: $sc-margin-lv3;
+}
+
+.creditcard-edit-form-button-edit {
+    @extend .button-tertiary;
+    @extend .button-small;
+    margin-left: 0;
+    text-align: center;
+    margin-right:$sc-margin-lv2;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-lg-min)  {
+        margin-bottom:$sc-margin-lv2;
+    }
+}
+
+.creditcard-use-this-card-button {
+    @extend .button-primary;
+    @extend .button-medium;
+    @extend .button-generic;
+    margin-top:$sc-margin-lv2;
+    margin-bottom:$sc-margin-lv2;
+
+    @media (min-width: $screen-sm-min) {
+        margin-bottom:0px;
+    }
+}
+
+.creditcard-edit-form {
+    clear:both;
+}
+
+.creditcard-edit-form-button-remove {
+    @extend .button-tertiary;
+    @extend .button-small;
+}
+
+.creditcard-expdate {
+    margin-bottom:$sc-margin-lv2;
+}
+
+// checkout specific (hide back to myaccount btn)
+.checkout-layout ~ .modal-container .creditcard-edit-back {
+    display: none;
+}
+
+.creditcard-name{}

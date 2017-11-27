@@ -1,0 +1,411 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quote-details-summary-title {
+  @extend .summary-title;
+}
+
+.quote-details-summary-container {
+  @extend .summary-container;
+  margin-bottom: $sc-margin-lv2;
+}
+
+.quote-details-summary-total {
+  p {
+    @extend .summary-total;
+  }
+}
+
+.quote-details-summary-subtotal {
+  p {
+    @extend .summary-subtotal;
+  }
+}
+
+.quote-details-summary-grid {
+}
+
+.quote-details-summary-grid-float {
+  @extend .summary-grid-float;
+}
+
+.quote-details-summary-amount-subtotal {
+  @extend .summary-grid-right;
+}
+
+.quote-details-summary-amount-discount {
+  @extend .summary-grid-right;
+}
+
+.quote-details-summary-handling-cost-formatted {
+  @extend .summary-grid-right;
+}
+
+.quote-details-summary-promo-code {
+  @extend .summary-grid-right;
+}
+
+.quote-details-summary-amount-tax {
+  @extend .summary-grid-right;
+}
+
+.quote-details-summary-amount-shipping {
+  @extend .summary-grid-right;
+}
+
+.quote-details-summary-amount-total {
+  @extend .summary-grid-right;
+}
+
+.quote-details-summary-grid-left {
+
+}
+
+.quote-details-summary-grid-right {
+
+}
+
+.quote-details-summary-col {
+  @extend .col-md-4;
+}
+
+.quote-details-content-col {
+  @extend .col-md-8;
+  margin-bottom: $sc-margin-lv4;
+
+  @media (min-width: $screen-md-min) {
+  margin-bottom: 0;
+  }
+}
+
+.quote-details-summary-grid {
+  @extend .row;
+  clear: both;
+  margin: 0px;
+}
+
+.quote-details-summary-promocode-text-success {
+  padding-left: $sc-padding-lv3;
+  padding-bottom: $sc-padding-lv1;
+}
+
+.quote-details-summary-promocode-code {
+  color: $sc-color-secondary;
+}
+
+.quote-details-summary-amount-discount-text-success {
+  padding-left: $sc-padding-lv3;
+  padding-bottom: $sc-padding-lv1;
+}
+
+.quote-details-summary-amount-discount-code {
+  color: $sc-color-secondary;
+}
+
+.quote-details-header-title {
+  margin-bottom: $sc-margin-lv2;
+}
+
+.quote-details-header-back-btn {
+  @extend .button-back;
+}
+
+.quote-details-header-information {
+  margin-bottom: $sc-margin-lv4;
+}
+
+.quote-details-button-review-and-order {
+  @extend .button-primary;
+  @extend .button-medium;
+  @extend .button-generic;
+  margin-bottom: $sc-margin-lv2;
+}
+
+.quote-details-button-review-and-order[disabled] {
+  @extend .button-primary-disabled;
+}
+
+.quote-details-button-download-pdf {
+  @extend .button-secondary;
+  @extend .button-medium;
+  @extend .button-generic;
+  margin-bottom: $sc-margin-lv2;
+}
+
+.quote-details-row-fluid {
+}
+
+.quote-details-header-row,
+.quote-details-row,
+.quote-details-accordion-row {
+  @extend .row;
+}
+
+.quote-details-order-title {
+  margin-bottom: $sc-margin-lv2;
+}
+
+.quote-details-header-row {
+  margin-bottom: $sc-margin-lv2;
+}
+
+.quote-details-header-col-left,
+.quote-details-header-col-right {
+  @extend .col-sm-6;
+}
+
+.quote-details-header-col-right {
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
+}
+
+.quote-details-header-amount {
+  @extend .col-xs-12;
+}
+
+/* Quote Accordions */
+.quote-details-accordion-container {
+  @extend .accordion-container;
+  overflow: hidden;
+}
+
+.quote-details-accordion-head {
+  @extend .accordion-head;
+}
+
+.quote-details-accordion-head-toggle-secondary {
+  @extend .accordion-head-toggle-secondary;
+}
+
+.quote-details-accordion-head-toggle {
+  @extend .accordion-head-toggle;
+}
+
+.quote-details-accordion-toggle-icon {
+  @extend .accordion-toggle-icon;
+}
+
+.quote-details-accordion-body {
+  @extend .accordion-body;
+}
+
+.quote-details-accordion-table-header {
+
+  th {
+    font-weight: $sc-font-weight-normal;
+    display: none;
+  }
+}
+
+.quote-details-accordion-divider {
+  @extend .accordion-divider;
+}
+
+.quote-details-header-amount-total {
+  float: right;
+}
+
+.quote-details-header-label-salesrep,
+.quote-details-header-info-expiration-date-label,
+.quote-details-header-label-expiration-date,
+.quote-details-header-info-expiration-date-label-overdue,
+.quote-details-header-info-expiration-date-label-closeoverdue,
+.quote-details-header-label-request-date,
+.quote-details-header-label-amount,
+.quote-details-header-label-status,
+.quote-details-accordion-label-coupon-code,
+.quote-details-accordion-label-promo-code,
+.quote-details-accordion-label-exchange-rate,
+.quote-details-accordion-label-discount,
+.quote-details-accordion-label-rate,
+.quote-details-expiration-date-label {
+  @extend .sc-label;
+}
+
+.quote-details-header-value-salesrep,
+.quote-details-header-value-date,
+.quote-details-header-info-expiration-date-value,
+.quote-details-header-value-amount,
+.quote-details-header-value-status,
+.quote-details-accordion-value-coupon-code,
+.quote-details-accordion-value-promo-code,
+.quote-details-accordion-value-exchange-rate,
+.quote-details-accordion-value-discount,
+.quote-details-accordion-value-rate,
+.quote-details-expiration-date-value {
+  @extend .sc-value;
+}
+
+.quote-details-header-value-status {
+  color: $sc-color-primary;
+}
+
+.quote-details-billing-info-card {
+  @extend .col-sm-6;
+}
+
+.quote-details-billing-info-card-title {
+  margin-bottom: $sc-margin-lv2;
+}
+
+.quote-details-content-col {
+  .item-view-cell-navigable-header-col-amount {
+    text-align: right;
+  }
+}
+
+.quote-details-products-table {
+  @extend .table-flex-item-navigable;
+
+  .transaction-line-views-cell-navigable-details {
+    padding-bottom: 0;
+  }
+
+  .transaction-line-views-cell-navigable-item-quantity,
+  .transaction-line-views-cell-navigable-item-unit-price,
+  .transaction-line-views-cell-navigable-amount {
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  td:last-child {
+    padding-bottom: $sc-padding-lv3;
+  }
+
+  span {
+    display: inline;
+  }
+
+  .item-views-stock-icon-out {
+    display: inline-block;
+  }
+}
+
+.quote-details-products-table-header-image {
+
+}
+
+.quote-details-products-table-header-product {
+}
+
+.quote-details-products-table-header-qty {
+}
+
+.quote-details-products-table-header-unitprice {
+
+}
+
+.quote-details-products-table-header-amount {
+  @extend .item-view-cell-navigable-header-col-amount;
+}
+
+.quote-details-disclaimer-bottom-content,
+.quote-details-disclaimer-bottom {
+  margin-bottom: $sc-margin-lv4;
+  margin-top: $sc-margin-lv2;
+}
+
+.quote-details-disclaimer-bottom-content {
+  display: none;
+
+  @media (min-width: $screen-md-min) {
+  display: block;
+  }
+}
+
+.quote-details-disclaimer-bottom {
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+
+.quote-details-disclaimer-message {
+  color: $sc-color-secondary;
+}
+
+.quote-details-header-info-expiration-date-icon-overdue,
+.quote-details-header-info-expiration-date-icon-closeoverdue {
+  @extend .icon-flag;
+  margin-left: $sc-margin-lv1;
+}
+
+.quote-details-header-info-expiration-date-icon-overdue {
+  color: $sc-color-error;
+}
+
+.quote-details-header-info-expiration-date-icon-closeoverdue {
+  color: $sc-color-warning;
+}
+
+.quote-details-view {
+}
+
+.quote-details-header-info-sales {
+}
+
+.quote-details-header-info-request-date {
+}
+
+.quote-details-header-info-expiration-date {
+}
+
+.quote-details-header-info-amount {
+}
+
+.quote-details-header-info-status {
+}
+
+.quote-details-quote-id {
+}
+
+.quote-details-msg {
+  @extend .message-info;
+  margin-top: $sc-margin-lv1;
+  margin-bottom: $sc-margin-lv2;
+  width: 100%;
+  padding: $sc-margin-lv4;
+  font-size: $sc-font-size-xs;
+
+  p {
+    @extend .message;
+    color: $sc-color-theme-900;
+    padding: 0;
+    margin-bottom: $sc-margin-lv2;
+    font-size: $sc-font-size-xs;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-bottom: $sc-margin-lv2;
+  }
+
+  li {
+    color: $sc-color-theme-900;
+  }
+}
+
+.quote-details-msg-certificate {
+  @extend .quote-details-msg;
+  padding: $sc-margin-lv2 $sc-margin-lv4;
+}
+.quote-details-msg-certificate-icon {
+  @extend .icon-info;
+  color: $sc-color-theme-900;
+  margin-right: $sc-margin-lv1;
+}
+.quote-details-billing-row {
+  @extend .row;
+}
+.quote-details-comments-row {
+}
+.quote-details-message-row {
+}

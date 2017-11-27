@@ -1,0 +1,244 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-cart-summary-accordion-head{
+	@extend .accordion-head;
+}
+
+.order-wizard-cart-summary-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.order-wizard-cart-summary-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.order-wizard-cart-summary-accordion-body{
+	@extend .accordion-body;
+
+	td{
+		text-align: left;
+	}
+
+	td.item-view-cell-navigable-item-unit-price{
+		display: none;
+	}
+
+	.item-view-cell-navigable-item-image{
+		padding-left: 0;
+		width: 25%;
+	}
+	.item-views-cell-navigable-item-quantity-label,
+	.item-views-cell-navigable-item-unit-price-label,
+	.item-views-cell-navigable-item-amount-label,
+	.item-views-cell-navigable-item-quantity-value {
+		@media (min-width: $screen-md-min){
+			display: inline-block;
+		}
+	}
+}
+
+.order-wizard-cart-summary-item-quantity-subtotal{
+	font-weight: $sc-font-weight-normal;
+}
+
+.order-wizard-cart-summary-accordion-container{
+	@extend .accordion-container;
+}
+
+.order-wizard-cart-summary-edit-cart-link{
+	font-size:$sc-font-size-m;
+}
+
+.order-wizard-cart-summary-edit-cart-label{
+	margin:-$sc-margin-lv4;
+	margin-bottom:$sc-margin-lv3;
+	padding: $sc-padding-lv3 $sc-padding-lv4;
+	border-bottom:1px solid $sc-color-theme-border-light;
+}
+
+.order-wizard-cart-summary-edit-cart-label-mst{
+	margin-bottom:$sc-margin-lv3;
+	padding: 0 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+	border-bottom:1px solid $sc-color-theme-border-light;
+}
+
+.order-wizard-cart-summary-order-message{
+
+	display: none;
+	@media(min-width: $screen-sm-min){
+		display: block;
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+/* Summary Styles */
+
+.order-wizard-cart-summary-title{
+	@extend .summary-title;
+}
+
+.order-wizard-cart-summary-container{
+	@extend .summary-container;
+}
+
+.order-wizard-cart-summary-subtotal{
+	@extend .summary-subtotal;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.order-wizard-cart-summary-total{
+	p{
+		@extend .summary-total;
+	}
+}
+
+.order-wizard-cart-summary-grid-right{
+	@extend .summary-grid-right;
+}
+
+.order-wizard-cart-summary-grid-float{
+	@extend .summary-grid-float;
+}
+
+.order-wizard-cart-summary-tax {
+	@extend .order-wizard-cart-summary-grid-right;
+}
+
+.order-wizard-cart-summary-handling-cost-formatted{
+	@extend .order-wizard-cart-summary-grid-right;
+}
+
+.order-wizard-cart-summary-shipping-cost-formatted{
+	@extend .order-wizard-cart-summary-grid-right;
+}
+
+.order-wizard-cart-summary-discount-total{
+	@extend .order-wizard-cart-summary-grid-right;
+}
+
+.order-wizard-cart-summary-discount-rate{
+	@extend .order-wizard-cart-summary-grid-right;
+}
+.order-wizard-cart-summary-message {
+	p {
+		@extend .summary-grid-float;
+	}
+}
+.order-wizard-cart-summary-products-scroll{
+	@media (min-width: $screen-sm-min){
+		max-height:570px;
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+	.item-view-cell-navigable-item-quantity-label {
+		display: inline-block;
+	}
+}
+
+.order-wizard-promocode-tooltip{
+	@extend .sc-tooltip;
+}
+
+.order-wizard-cart-summary-button-container{
+	@extend .col-xs-12;
+	background:$sc-color-theme-background;
+	padding:$sc-padding-lv3;
+	margin-bottom:$sc-margin-lv2;
+	display:none;
+
+	@media (min-width: $screen-sm-min) {
+		display:block;
+	}
+}
+
+.order-wizard-cart-summary-button-place-order{
+	@extend .button-primary;
+	@extend .button-large;
+	@extend .button-generic;
+}
+
+/* Promo Code */
+
+.order-wizard-cart-summary-promo-code-applied{
+	@extend .summary-grid-float;
+	margin-bottom:0px;
+}
+.order-wizard-cart-summary-gift-certificate {
+	@extend .summary-grid-float;
+	margin-bottom:0px;
+}
+.order-wizard-cart-summary-giftcertificate-grid-float {
+	@extend .order-wizard-cart-summary-grid-float;
+	padding-right:$sc-padding-lv3;
+}
+
+.order-wizard-cart-summary-giftcertificate-applied {
+	padding-bottom: $sc-padding-lv2;
+
+	.global-views-format-payment-method-gift-certificate {
+		color: $sc-color-secondary;
+}
+}
+
+.order-wizard-cart-summary-giftcertificate-applied{
+	.cart-summary-gift-certificate-cell {
+		padding-left:$sc-padding-lv3;
+	}
+}
+
+.order-wizard-cart-summary-remove-container{
+	@extend .icon-container-info;
+}
+
+
+.order-wizard-cart-summary-remove-icon{
+	@extend .icon-remove;
+	font-size: $sc-font-size-s;
+	line-height: 10px;
+}
+
+.order-wizard-cart-summary-grid{
+	@extend .row;
+	clear:both;
+	margin:0px;
+}
+
+.order-wizard-cart-summary-promocode-text-success{
+	padding-left:$sc-padding-lv3;
+	padding-bottom: $sc-padding-lv2;
+}
+
+.order-wizard-cart-summary-promocode-code {
+	color: $sc-color-secondary;
+}
+
+.order-wizard-cart-summary-pickup-label-free{
+	@extend .cart-summary-grid-right;
+	color: $sc-color-success;
+}
+
+.order-wizard-cart-summary-subtotal-legend{
+	font-size:$sc-font-size-s;
+	text-transform:capitalize;
+	font-weight:$sc-font-weight-normal;
+	margin:0px $sc-margin-lv3 $sc-margin-lv3 $sc-margin-lv3;
+}
+
+.order-wizard-cart-summary-body{}
+.order-wizard-cart-summary-subtotal-label{}
+.order-wizard-cart-summary-promocode-applied{}
+.order-wizard-cart-summary-discount-applied{}
+.order-wizard-cart-summary-shipping-cost-applied{}
+
+.order-wizard-cart-summary-warning{
+	@extend .global-views-message;
+	@extend .global-views-message-warning;
+	margin-left: $sc-padding-lv3;
+	margin-right:$sc-padding-lv3;
+	margin-bottom:$sc-padding-lv3;
+}

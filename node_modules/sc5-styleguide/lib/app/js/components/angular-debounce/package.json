@@ -1,0 +1,47 @@
+{
+  "name": "angular-debounce",
+  "version": "1.1.0",
+  "description": "Tiny debouncing function for Angular.JS.",
+  "main": "dist/angular-debounce.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt ci",
+    "prepublish": "grunt build"
+  },
+  "keywords": [
+    "angular",
+    "filter"
+  ],
+  "author": {
+    "name": "Ruben Vermeersch",
+    "email": "ruben@rocketeer.be",
+    "url": "http://rocketeer.be/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "~1.9.0",
+    "grunt": "^1.0.0",
+    "grunt-bump": "~0.8.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-karma": "^1.0.0",
+    "grunt-ngmin": "0.0.3",
+    "karma": "^0.13.22",
+    "karma-chai": "~0.1.0",
+    "karma-chrome-launcher": "^1.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "mocha": "~2.4.5",
+    "phantomjs-prebuilt": "^2.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rubenv/angular-debounce.git"
+  }
+}

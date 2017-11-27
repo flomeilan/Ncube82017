@@ -1,0 +1,29 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-item-list-display-selector{
+	@extend .icon-button;
+	@extend .icon-button-controls;
+}
+
+//hide active on mobile
+.facets-item-list-display-selector.active{
+	display:none;
+
+	@media (min-width: $screen-sm-min){
+		display: inline-block;
+	}
+}
+
+//dispaly the grid icon
+.facets-item-list-display-selector-grid{
+	display:none;
+
+	@media (min-width: $screen-sm-min ){
+		display: inline-block;
+	}
+}

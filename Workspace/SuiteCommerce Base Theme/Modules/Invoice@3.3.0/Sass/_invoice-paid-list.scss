@@ -1,0 +1,87 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.invoice-paid-list-button-back {
+	@extend .button-back;
+}
+
+.invoice-paid-list-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.invoice-paid-list-header{
+	margin-bottom: $sc-margin-lv2;
+}
+
+.invoice-paid-list-header-nav{
+	margin-bottom: $sc-margin-lv4;
+}
+
+.invoice-paid-list-header-button-group{
+	@extend .pill-button-group;
+}
+
+.invoice-paid-list-header-button-open{
+	@extend .button-medium;
+	@extend .pill-button;
+}
+
+.invoice-paid-list-header-button-paid{
+	@extend .button-medium;
+	@extend .pill-button;
+	@extend .pill-button-active;
+}
+
+.invoice-paid-list-records{
+	@extend .table-flex-record-selectable-navigable;
+}
+
+.invoice-paid-list-records-head tr{
+	display: none;
+	@media (min-width: $screen-md-min){
+		display: table-row;
+	}
+}
+
+.invoice-paid-list-records-head th{
+	text-align: right;
+	padding-bottom: $sc-padding-lv2;
+	font-weight: normal;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	width: 25%;
+}
+
+.invoice-paid-list-records-head .invoice-paid-list-head-invoicenumber{
+	text-align: left;
+}
+
+
+.invoice-paid-list-records-body {
+		.recordviews-currency{
+		margin-bottom:$sc-padding-lv3;
+
+		@media (min-width: $screen-md-min){
+			margin-bottom:0;
+		}
+	}
+}
+
+.invoice-paid-list-body{
+	.recordviews-currency {
+		@extend .table-flex-td-last;
+	}
+
+	.recordviews-row{
+		cursor: pointer;
+	}
+}
+
+.invoice-paid-list-title{}
+.invoice-paid-list-records-head-row{}
+.invoice-paid-list-records-body{}
+.invoice-paid-list-no-records{}
+.invoice-paid-list-anchor-open{}

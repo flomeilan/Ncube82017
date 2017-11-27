@@ -1,0 +1,273 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-details-full {
+	@extend .container;
+}
+
+.product-details-full-content {
+
+	@media (min-width: $screen-md-min) {
+		margin-top: $sc-margin-lv5;
+	}
+}
+
+.product-details-full-main {
+	.product-views-price-lead {
+		@extend .large-price;
+		color: $sc-color-primary;
+	}
+	.product-views-price-old {
+		font-size:$sc-font-size-m;
+	}
+}
+
+.product-details-full-divider {
+
+	margin: $sc-margin-lv5 0;
+	height:1px;
+	background-color: $sc-color-theme-300;
+	clear:both;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.product-details-full-divider-desktop {
+	display: none;
+	@extend .product-details-full-divider;
+	@media (min-width: $screen-md-min) {
+		margin-top:20px;
+		border: none;
+		display: block;
+	}
+}
+
+.product-details-full-main-content {
+	@extend .row;
+}
+
+.product-details-full-content-header {
+	.global-views-star-rating-empty, .global-views-star-rating-filled {
+		font-size: 20px;
+	}
+	float:none;
+	@extend .col-md-6;
+	@media (min-width: $screen-md-min) {
+		float:right;
+	}
+}
+
+.product-details-full-rating {
+	margin-top: $sc-margin-lv1;
+	margin-bottom: $sc-margin-lv4;
+
+	.global-views-star-rating {
+		float: none;
+	}
+}
+
+.product-details-full-image-gallery-container{
+	margin-bottom: 0;
+	width:100%;
+
+	@media (min-width: $screen-md-min) {
+		margin-bottom: $sc-margin-lv8;
+	}
+}
+
+.product-details-full-gallery-prev-icon, .product-details-full-gallery-next-icon{
+	position: absolute;
+	top: 40%;
+	width: $sc-target-size-mobile;
+	height: $sc-target-size-mobile;
+	font-size: 50px;
+	color:#c5d7e0;
+	text-align: center;
+	line-height: 0.8;
+	@extend .fa;
+}
+.product-details-full-gallery-prev-icon:focus, .product-details-full-gallery-next-icon:focus {
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.product-details-full-gallery-prev-icon{
+	left: 30px;
+	@extend %fa-angle-left;
+}
+
+.product-details-full-gallery-next-icon{
+	right:10px;
+	@extend %fa-angle-right;
+}
+
+.product-details-full-carousel-next{
+	@extend .button-tertiary;
+	@extend .button-small;
+	margin-left:$sc-margin-lv2;
+	cursor:pointer;
+	cursor:hand;
+	position:absolute;
+	right:0px;
+	top:50%;
+}
+
+.product-details-full-carousel-prev{
+	@extend .button-tertiary;
+	@extend .button-small;
+	cursor:pointer;
+	cursor:hand;
+	position:absolute;
+	left:0px;
+	top:50%;
+}
+.product-details-full-carousel-next.disabled,
+.product-details-full-carousel-prev.disabled {
+	display: none;
+}
+.control-text{
+	display:none;
+}
+
+.product-details-full-price {
+	margin-top:$sc-margin-lv2;
+}
+
+.product-details-full-price .item-views-price-lead {
+	@extend .large-price;
+}
+
+.product-details-full-sku-container {
+	margin-top: $sc-margin-lv6;
+	margin-bottom: $sc-margin-lv1;
+}
+
+.product-details-full-actions {
+	margin-bottom: $sc-margin-lv2;
+	clear: both;
+}
+
+
+.product-details-full-add-to-cart-help{
+	@extend .message-info;
+	margin-top: $sc-margin-lv3;
+}
+
+.product-details-full-add-to-cart-help-icon{
+	@extend .fa;
+	@extend %fa-info-circle;
+	margin-right: $sc-margin-lv1;
+}
+
+.product-details-full-actions-container {
+	@extend .row;
+}
+
+.product-details-full-add-to-wishlist {
+	@extend .col-sm-6;
+	position: static;
+	padding-left: $sc-padding-lv2;
+	padding-right: $sc-padding-lv2;
+}
+
+
+
+.product-details-full-social-share {
+	// @extend .message-box;
+	// @extend .message-box-info;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.product-details-full-price-message {
+    @extend .message;
+ }
+
+.product-details-full-price-msg-description {
+	@extend .message-info;
+	margin-top: $sc-margin-lv2;
+    margin-bottom: $sc-margin-lv2;
+}
+
+.product-details-full-price-login-to-see-price {
+	font-weight: normal;
+}
+
+
+@media (min-width: $screen-md-min) {
+
+	.product-details-full-image-gallery-container {
+		float: left;
+	}
+}
+
+.pdp-item-more-info-content {
+	background: $sc-color-theme-background;
+
+	@media (min-width: $screen-sm-min) {
+		background: transparent;
+		overflow: auto;
+	}
+}
+
+.product-details-full-action {
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+.product-details-full-main-bottom-banner {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.product-details-full-rating-header {
+	.global-views-star-rating-area {
+		margin-right: $sc-margin-lv1;
+	}
+	.global-views-star-rating i {
+		font-size: 20px;
+	}
+}
+
+
+.product-details-full-main-content-left {
+	@extend .col-xs-12;
+	@extend .col-md-6;
+	float:left;
+	min-height:1px;
+}
+
+.product-details-full-main-content-right {
+	@extend .col-xs-12;
+	@extend .col-md-6;
+	min-height:1px;
+	float:right;
+	clear:right;
+}
+
+.product-details-full-actions-addtowishlist,
+.product-details-full-actions-addtoquote {
+	@extend .col-sm-6;
+}
+
+.product-details-full-social-sharing {}
+.product-details-full-header{}
+.product-details-full-banner-top{}
+.product-details-full-banner-top-details{}
+.product-details-full-content-header-title{}
+.product-details-full-banner-summary-bottom{}
+.product-details-full-banner-details-bottom{}
+.product-details-full-content-related-items{}
+.product-details-full-content-correlated-items{}
+.product-details-full-sku-value{}
+.product-details-full-add-to-cart-help-text{}
+.product-details-full-add-to-cart-form{}
+.product-details-full-rating-header-rating{}
+.product-details-full-info{}

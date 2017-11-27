@@ -1,0 +1,283 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+body {
+    @extend %scroll-y;
+    font-size: $sc-font-size-m;
+}
+
+// Font styles
+//
+// Markup:
+// <h1>H1 heading</h1><br/>
+// <h2>H2 heading</h2><br/>
+// <h3>H3 heading</h3><br/>
+// <h4>H4 heading</h4><br/>
+// <h5>H5 heading</h5><br/>
+// <p>Lorem ipsum dolor sit amet</p>
+// <p><strong>Lorem ipsum dolor sit amet</strong></p>
+// <p><small>Lorem ipsum dolor sit amet</small></p>
+// <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+//
+// Styleguide 2.2.1
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: $sc-font-weight-bold;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: $sc-font-size-xxl;
+    color: $sc-color-copy-dark;
+    line-height: 1.2;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $sc-font-size-xxxl;
+    }
+}
+
+h2 {
+    font-size: $sc-font-size-xl;
+    color: $sc-color-copy-dark;
+    line-height: 1.2;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $sc-font-size-xxl;
+    }
+}
+
+h3 {
+    font-size: $sc-font-size-l;
+    color: $sc-color-secondary;
+    line-height: 1.2;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $sc-font-size-xl;
+    }
+}
+
+h4 {
+    font-size: $sc-font-size-m;
+    color: $sc-color-copy-dark;
+    line-height: 1.4;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $sc-font-size-l;
+    }
+}
+
+h5 {
+    font-size: $sc-font-size-s;
+    color: $sc-color-secondary;
+    line-height: 1.4;
+
+    @media (min-width: $screen-md-min) {
+        font-size: $sc-font-size-m;
+    }
+}
+
+p {
+    font-size: $sc-font-size-m;
+    color: $sc-color-copy;
+    line-height: 1.6;
+}
+
+small {
+    font-size: $sc-font-size-xs;
+}
+
+b, strong {
+    font-weight: $sc-font-weight-bold;
+}
+
+
+// Titles styles
+//
+// .xsmall-title    - Product Titles XSmall & Product Titles XSmall navigatable
+// .small-title     - Product Titles Small & Product Titles Small navigatable
+// .middle-title    - Product Titles Medium & Product Titles Medium navigatable
+// .large-title     - Product Titles Large & Product Titles Large navigatable
+//
+// Markup:
+// <div class="xsmall-title">Lorem ipsum dolor sit amet</div>
+// <div class="small-title">Lorem ipsum dolor sit amet</div>
+// <div class="middle-title">Lorem ipsum dolor sit amet</div>
+// <div class="large-title">Lorem ipsum dolor sit amet</div>
+//
+// Styleguide 2.2.2
+
+.large-title {
+    @extend h1;
+}
+
+.large-title-navigable {
+    @extend h1;
+    color: $sc-color-secondary;
+
+    :hover{
+        color: $sc-color-link-hover;
+        text-decoration: none;
+    }
+}
+
+.large-title-viewonly {
+    @extend h1;
+    color: $sc-color-copy-dark;
+}
+
+.medium-title {
+    font-weight: $sc-font-weight-semibold;
+    font-size: $sc-font-size-l;
+    color: $sc-color-copy-dark;
+}
+
+.medium-title-navigable {
+    color:$sc-color-secondary;
+    font-size: $sc-font-size-l;
+    font-weight:$sc-font-weight-semibold;
+
+    &:hover{
+        color: $sc-color-link-hover;
+        text-decoration:none;
+    }
+}
+
+.medium-title-viewonly {
+    font-size: $sc-font-size-l;
+    color: $sc-color-copy-dark;
+    font-weight:$sc-font-weight-semibold;
+}
+
+.small-title {
+    font-size: $sc-font-size-m;
+    font-weight: $sc-font-weight-semibold;
+}
+
+.small-title-navigable {
+    font-size: $sc-font-size-m;
+    font-weight: $sc-font-weight-semibold;
+    color: $sc-color-secondary;
+
+    :hover{
+        color: $sc-color-link-hover;
+        text-decoration: none;
+    }
+}
+
+.small-title-viewonly {
+    font-size: $sc-font-size-m;
+    font-weight: $sc-font-weight-semibold;
+}
+
+.xsmall-title {
+    font-size: $sc-font-size-m;
+    color: $sc-color-copy-dark;
+    font-weight: $sc-font-weight-normal;
+    text-transform: capitalize;
+}
+
+.xsmall-title-navigable {
+    color: $sc-color-secondary;
+    font-size: $sc-font-size-m;
+    font-weight: $sc-font-weight-normal;
+    text-transform: capitalize;
+
+    &:hover{
+        color: $sc-color-link-hover;
+        text-decoration:none;
+    }
+}
+
+.xsmall-title-viewonly {
+    font-size: $sc-font-size-m;
+    font-weight: $sc-font-weight-normal;
+    text-transform: capitalize;
+}
+
+//  Price styles
+//
+// .old-price       - Old price
+// .small-price     - Small price
+// .middle-price    - Middle price
+// .large-price     - Large price
+//
+// Markup:
+// <div class="old-price">$100</div>
+// <div class="small-price">$100</div>
+// <div class="middle-price">$100</div>
+// <div class="large-price">$100</div>
+//
+// Styleguide 2.2.3
+
+.large-price {
+    @extend h1;
+    color: $sc-color-copy-dark;
+    font-weight: $sc-font-weight-semibold;
+}
+
+.middle-price {
+    font-size: $sc-font-size-m;
+    font-weight: $sc-font-weight-semibold;
+    color: $sc-color-primary;
+}
+
+.small-price {
+    font-size:14px;
+    color: $sc-color-primary;
+}
+
+.old-price {
+    font-size: $sc-font-size-xs;
+    color: $sc-color-theme-900;
+    font-weight: $sc-font-weight-light;
+    text-decoration:line-through;
+}
+
+// SKU
+//
+// Markup:
+// <p>
+//     <span class="sc-sku-label">SKU: </span>
+//     <span class="sc-sku-value">FARIDA D8-X OP ACOUSTIC GUITAR</span>
+// </p>
+//
+// Styleguide 2.2.4
+
+.sc-sku-label, .sc-sku-value {
+    font-size: $sc-font-size-s;
+    color: $sc-color-copy-light;
+}
+
+// Labels
+//
+// Markup:
+// <span class="sc-label">Color: </span><span class="sc-value">Blue</span>
+//
+// Styleguide 2.2.5
+
+.sc-label {
+    color: $sc-color-copy-light;
+    font-size: $sc-font-size-s;
+}
+
+.sc-value {
+    color: $sc-color-copy-dark;
+    font-size: $sc-font-size-s;
+}
+
+.sc-highlighted {
+    color: $sc-color-primary;
+}
+
+.sc-mobile-label {
+    @media (min-width: $screen-sm-min){
+        display: none;
+    }
+}

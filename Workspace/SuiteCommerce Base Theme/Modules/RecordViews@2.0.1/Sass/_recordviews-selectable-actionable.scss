@@ -1,0 +1,110 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.recordviews-selectable-actionable-row {
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	cursor: pointer;
+}
+
+.recordviews-selectable-actionable-row.disabled{
+	cursor: default;
+}
+
+.recordviews-selectable-actionable-row:hover{
+	background-color: $sc-color-theme-background;
+}
+
+.recordviews-selectable-actionable-row.recordviews-selectable-actionable-active{
+	background-color: $sc-color-theme-background;
+}
+
+.recordviews-selectable-actionable-td-selectable{
+	@extend .table-flex-tdfirst;
+	@extend .column-type-select;
+
+	padding-top: $sc-padding-lv3;
+	padding-bottom: $sc-padding-lv3;
+
+	@media (min-width: $screen-md-min){
+		padding-top: 0;
+		padding-bottom:0;
+	}
+}
+
+.recordviews-selectable-actionable-td-title{
+	padding-top: $sc-padding-lv3;
+	width:100%;
+
+	@media (min-width: $screen-md-min){
+		padding-top: 0;
+		width:25%;
+	}
+}
+
+.recordviews-selectable-actionable-td-amount{
+
+	@media (min-width: $screen-sm-min){
+		padding-bottom: $sc-padding-lv3;
+	}
+
+	@media (min-width: $screen-md-min){
+		padding-bottom: 0;
+	}
+}
+
+.recordviews-selectable-actionable-td-action{
+	padding-top: $sc-padding-lv1;
+	padding-bottom: $sc-padding-lv3;
+
+	@media (min-width: $screen-sm-min){
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+
+.recordviews-selectable-actionable-label{
+	@extend .sc-label;
+}
+
+.recordviews-selectable-actionable-value{
+	@extend .sc-value;
+}
+
+.recordviews-selectable-actionable-anchor{
+	@extend .small-title-navigable;
+}
+
+.recordviews-selectable-actionable-title{
+	@extend .sc-value;
+}
+
+.recordviews-selectable-actionable-td-amount{
+	.recordviews-selectable-actionable-value{
+		color: $sc-color-primary;
+	}
+}
+
+.recordviews-selectable-actionable-label{
+
+	@media (min-width:$screen-md-min){
+		display: none;
+	}
+}
+
+.recordviews-selectable-actionable-td,
+.recordviews-selectable-actionable-td-action
+{
+	@media (min-width: $screen-md-min){
+		text-align: right;
+	}
+}
+
+.recordviews-selectable-actionable-td-action{
+	@extend .table-flex-tdlast;
+}
+.recordviews-selectable-actionable-checkbox{}

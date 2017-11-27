@@ -1,0 +1,53 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.address-edit-fields {
+    margin-bottom: $sc-margin-lv4;
+    margin-top: $sc-margin-lv2;
+    display: inline-block;
+}
+.address-edit-fields-group-label {}
+.address-edit-fields-required,
+.address-edit-fields-group-label-required {
+    @extend .input-required
+}
+.address-edit-fields-group-input {
+    @extend .input-large
+}
+.address-edit-fields-group-input-zip {
+    @extend .input-small
+}
+.address-edit-fields-group-input-checkbox {
+    font-weight: $sc-font-weight-normal;
+}
+.address-edit-fields-group-form-controls p {
+    margin-bottom: $sc-margin-lv3;
+}
+
+.address-edit-fields-company-optional-label,
+.address-edit-fields-phone-optional-label {
+	@extend .input-optional;
+	font-weight: $sc-font-weight-normal;
+	display: inline;
+}
+.address-edit-fields-addr2-optional-label {
+	@extend .input-optional;
+}
+
+.address-edit-fields-input-required{
+    @extend .input-required;
+}
+.address-edit-fields-input-help{
+    @extend .help-text;
+}
+
+.address-edit-fields-icon-question-sign{
+    @extend .sc-tooltip;
+}
+
+.address-edit-fields-group-form-controls{}
+.address-edit-fields-group-big{}

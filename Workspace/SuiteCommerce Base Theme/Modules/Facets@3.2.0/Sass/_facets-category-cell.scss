@@ -1,0 +1,40 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-category-cell
+{
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: $sc-margin-lv2;
+	padding-right: $sc-margin-lv2;
+	text-align: center;
+	margin-bottom: $sc-margin-lv6;
+	width: 50%;
+
+	@media (min-width: $screen-md-min)
+	{
+		width: 25%;
+	}
+
+}
+
+.facets-category-cell-thumbnail {}
+
+.facets-category-cell-image
+{
+	width: 100%;
+	height: auto;
+
+}
+
+.facets-category-cell-title
+{
+	padding: $sc-padding-lv2 $sc-padding-lv1 * 0
+}
+
+.facets-category-cell-anchor {}

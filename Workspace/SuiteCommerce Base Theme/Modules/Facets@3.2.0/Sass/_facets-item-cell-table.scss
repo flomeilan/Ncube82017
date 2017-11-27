@@ -1,0 +1,129 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-item-cell-table {
+	@extend .item-cell;
+
+	.global-views-star-rating {
+		float:none;
+	}
+
+	.product-details-option-color {
+		text-align:center;
+	}
+
+	.product-details-facets-option-color {
+		text-align:center;
+	}
+
+	.cart-quickaddtocart-price {
+		text-align:left;
+		margin-bottom:$sc-margin-lv2;
+	}
+
+	.cart-quickaddtocart {
+		text-align:center;
+	}
+
+	.cart-add-to-cart-button-container {
+		width:100%;
+		padding:0px;
+	}
+
+	.product-views-option-facets-color {
+		text-align:center;
+	}
+}
+
+.facets-item-cell-table-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-table-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-table-image-wrapper {
+	position:relative;
+	text-align:center;
+
+	@media (min-width: $screen-xs-min)
+	{
+		width: 50%;
+		float: left;
+		padding: 0 $sc-margin-lv3;
+	}
+}
+
+.facets-item-cell-table-content-wrapper {
+	@media (min-width: $screen-xs-min)
+	{
+		width: 50%;
+		float: left;
+		display: block;
+		padding-left: $sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-table-link-image {}
+
+.facets-item-cell-table-quick-view-icon {}
+
+.facets-item-cell-table-add-to-cart-itemid {}
+
+.facets-item-cell-table-stock {
+	text-align:left;
+}
+
+.facets-item-cell-table-details {
+	text-align:left;
+}
+
+.facets-item-cell-table-image {
+	width:100%;
+	height:auto;
+}
+
+.facets-item-cell-table-title {
+	@extend .item-cell-title;
+}
+
+.facets-item-cell-table-price {
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv2;
+
+	.product-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-table-rating {
+	text-align:left;
+}
+
+.facets-item-cell-table {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+	.global-views-star-rating-container {
+		width:auto;
+		display:table;
+	}
+}
+
+.facets-item-cell-table-add-to-cart-quantity {
+	@extend .input-medium;
+}
+
+.facets-item-cell-table-add-to-cart-button {
+	@extend .button-primary;
+	@extend .button-medium;
+}
+
+.facets-item-cell-table-stock-message {
+	text-align:left;
+}

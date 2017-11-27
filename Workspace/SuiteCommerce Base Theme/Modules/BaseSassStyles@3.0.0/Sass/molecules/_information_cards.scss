@@ -1,0 +1,53 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Information cards
+//
+// Information cards are blocks of content that group related pieces of information.
+// Cards have meaning by themselves, independently to where they are being displayed.
+// For example, an address is composed of related pieces of information that grouped together have meaning regardless of where it is being displayed.
+//
+// Markup:
+// <div class="info-card-button-container">
+//   <button class="button-info-cards-new"> Add new Address</button>
+// </div>
+// <section class="info-card">
+//   <h4>John Smith</h4>
+//   <p class="info-card-content">2955 Campus Drive</p>
+//   <p class="info-card-content">Suite 100</p>
+//   <p class="info-card-content">San Mateo, CA 94403</p>
+//   <p class="info-card-content">United States</p>
+//   <p class="info-card-content">305 424 1363</p>
+//   <button class="button-edit">Edit</button>
+// </section>
+//
+// Styleguide 3.4
+
+.info-card {
+	background: $sc-neutral-shade-0;
+	border: 1px solid $sc-color-theme-border-light;
+	padding: $sc-padding-lv3;
+}
+
+.info-card-content {
+	margin: $sc-margin-lv1 0;
+}
+
+.button-edit {
+	@extend .button-small;
+	@extend .button-tertiary;
+}
+
+.button-info-cards-new {
+	@extend .button-small;
+	@extend .button-secondary;
+}
+
+.info-card-button-container {
+	@extend .row;
+	padding: $sc-padding-lv3;
+}

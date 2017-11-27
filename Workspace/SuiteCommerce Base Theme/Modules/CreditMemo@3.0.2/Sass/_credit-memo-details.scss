@@ -1,0 +1,308 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.credit-memo-details-back {
+    @extend .button-back;
+}
+
+.credit-memo-details-header {}
+
+.credit-memo-details-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.credit-memo-details-information {
+	@extend .row;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.credit-memo-details-header-payment-amount {
+	float: right;
+}
+
+.credit-memo-details-information-date {}
+
+.credit-memo-details-information-col-date,
+.credit-memo-details-information-col-status {
+	@extend .col-sm-6;
+}
+
+.credit-memo-details-information-col-date-text,
+.credit-memo-details-information-col-status-text {
+	@extend .info;
+}
+
+.credit-memo-details-date-label,
+.credit-memo-details-status-label {
+	@extend .sc-label;
+}
+
+.credit-memo-details-information-status {
+	@extend .sc-value;
+	color:$sc-color-primary;
+}
+
+.credit-memo-details-information-col-status {
+	@media (min-width: $screen-sm-min) {
+		text-align: right;
+	}
+}
+
+.credit-memo-details-row {
+	@extend .row;
+}
+
+.credit-memo-details-content-col {
+	@extend .col-sm-8;
+}
+
+.credit-memo-details-summary-col {
+	@extend .col-sm-4;
+}
+
+.credit-memo-details-summary-container {
+	@extend .summary-container;
+}
+
+.credit-memo-details-summary-grid-float {
+	@extend .summary-grid-float;
+}
+
+.credit-memo-details-summary-title {
+	@extend .summary-title;
+}
+
+.credit-memo-details-summary-items-number {
+	@extend .summary-grid-right;
+}
+
+.credit-memo-details-summary-subtotal,
+.credit-memo-details-summary-discount,
+.credit-memo-details-summary-tax,
+.credit-memo-details-summary-shipping-cost,
+.credit-memo-details-summary-total {
+	@extend .credit-memo-details-summary-items-number;
+}
+
+.credit-memo-details-accordion-divider {
+	margin-bottom:$sc-margin-lv4;
+}
+
+.credit-memo-details-accordion-head {
+	@extend .accordion-head;
+}
+
+.credit-memo-details-invoice-amount {
+	float:right;
+}
+
+.credit-memo-details-accordion-head-toggle {
+	@extend .accordion-head-toggle;
+}
+
+.credit-memo-details-accordion-toggle-icon {
+	@extend .acordion-head-toggle-icon;
+}
+
+.credit-memo-details-accordion-head-toggle-secondary {
+	@extend .accordion-head-toggle-secondary;
+}
+
+.credit-memo-details-accordion-toggle-icon-secondary {
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.credit-memo-details-accordion-body {
+	@extend .accordion-body;
+}
+
+.credit-memo-details-table-product {
+	@extend .table-flex-item-navigable;
+}
+
+.credit-memo-details-accordion-body-container-payment-total-label {
+	@extend .sc-label;
+}
+
+.credit-memo-details-accordion-body-container-payment-total-valuel {
+	@extend .sc-value;
+}
+
+.credit-memo-details-table-invoices-header-amount-record {
+	text-align:right;
+}
+
+.credit-memo-details-table-invoices-header-date-record {
+	text-align:right;
+}
+
+.credit-memo-details-table-invoices-header {
+	display:none;
+
+	@media(min-width: $screen-md-min) {
+		display:table-row-group;
+		border-bottom:1px solid $sc-color-theme-border-light;
+		width:100%;
+		color:$sc-color-copy-light;
+
+		th {
+			font-weight:$sc-font-weight-normal;
+			font-size:$sc-font-size-m;
+		}
+	}
+}
+
+.credit-memo-details-table-products-header {
+	display:none;
+
+	@media(min-width: $screen-md-min) {
+		display:table-row-group;
+		border-bottom:1px solid $sc-color-theme-border-light;
+		width:100%;
+		color:$sc-color-copy-light;
+
+		th {
+			font-weight:$sc-font-weight-normal;
+			padding:$sc-padding-lv2;
+			font-size:$sc-font-size-m;
+		}
+	}
+}
+
+.credit-memo-details-table-products-header-amount {
+	width:15%;
+	text-align:right;
+}
+
+.credit-memo-details-table-products-header-unit-price {
+	width:15%;
+	text-align:right;
+}
+
+.credit-memo-details-table-products-header-qty {
+	width:15%;
+	text-align:right;
+}
+
+.credit-memo-details-table-products-header-image {
+	width:130px;
+}
+
+.credit-memo-details-accordion-body-container-payment-total {
+	text-align: right;
+	padding: 0 $sc-padding-lv4 $sc-padding-lv2;
+}
+
+.credit-memo-details-table-products-header-title-record {
+	@extend .recordviews-title;
+	width: 196px;
+}
+
+.credit-memo-details-table-products-header-date-record {
+	@extend .recordviews-date;
+	width: 197px;
+}
+
+.credit-memo-details-table-products-header-amount-record {
+	@extend .recordviews-currency;
+	width: 160px;
+}
+
+.credit-memo-details {
+
+	.item-view-cell-navigable-amount {
+		text-align:left;
+		width:100%;
+
+		@media(min-width: $screen-md-min) {
+			width:15%;
+			text-align:right;
+		}
+	}
+
+	.item-view-cell-navigable-item-unit-price {
+		text-align:left;
+		width:100%;
+
+		@media(min-width: $screen-md-min) {
+			width:15%;
+			text-align:right;
+		}
+	}
+
+	.item-view-cell-navigable-item-quantity {
+		text-align:left;
+		width:100%;
+
+		@media(min-width: $screen-md-min) {
+			width:15%;
+			text-align:right;
+		}
+	}
+
+	.item-view-cell-navigable-item-quantity-label {
+		display:inline-block;
+
+		@media(min-width: $screen-md-min) {
+			display:none;
+		}
+	}
+
+	.item-view-cell-navigable-item-unit-price-label {
+		display:inline-block;
+
+		@media(min-width: $screen-md-min) {
+			display:none;
+		}
+	}
+
+	.item-view-cell-navigable-item-amount-label {
+		display:inline-block;
+
+		@media(min-width: $screen-md-min) {
+			display:none;
+		}
+	}
+}
+
+.credit-memo-details-button-download-as-pdf {
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.credit-memo-details-accordion-body-container-message {
+	padding: $sc-padding-lv4;
+}
+
+.credit-memo-details-table-flex-item-navigable {
+	@extend .table-flex-item-navigable;
+}
+
+.credit-memo-details-memo {}
+
+.credit-memo-details-table-products-header-product {}
+
+.credit-memo-details-buttons-container {}
+
+.credit-memo-details-table-invoices-header-title-record {}
+
+.credit-memo-details-row-fluid {
+}
+
+.credit-memo-details-summary-items {
+	font-weight:$sc-font-weight-bold;
+}
+
+.credit-memo-details-summary-total-container {
+	font-weight:$sc-font-weight-bold;
+	text-transform:uppercase;
+	p {
+		font-size:$sc-font-size-m;
+	}
+}

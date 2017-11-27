@@ -1,0 +1,100 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+/*.order-wizard-msr-package-details-cell{
+	padding:0 $sc-padding-lv3;
+}*/
+.order-wizard-msr-package-details-address-card{
+	@extend .col-sm-6;
+}
+
+.order-wizard-msr-package-details-accordion-divider{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-wizard-msr-package-details-accordion-head{
+	@extend .accordion-head;
+}
+
+.order-wizard-msr-package-details-accordion-head-toggle-secondary{
+	@extend .accordion-head-toggle-secondary;
+	height: auto;
+}
+
+.order-wizard-msr-package-details-accordion-toggle-icon-secondary{
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.order-wizard-msr-package-details-accordion-head-count {
+	@extend .sc-label;
+	float: right;
+	margin-right: $sc-margin-lv2;
+}
+
+.order-wizard-msr-package-details-accordion-head-address {
+	margin-bottom: $sc-margin-lv2;
+    color:$sc-color-theme-900;
+    font-size: $sc-font-size-s;
+}
+
+.order-wizard-msr-package-details-accordion-head-address-name {
+	font-size:$sc-font-size-s;
+    font-weight:$sc-font-weight-bold;
+    color:$sc-color-theme-900;
+}
+
+.order-wizard-msr-package-details-accordion-body{
+	@extend .accordion-body;
+}
+
+.order-wizard-msr-package-details-address-container{
+	padding:$sc-padding-lv4;
+}
+
+.order-wizard-msr-package-details-address-container-addresses {
+	@extend .clearfix;
+	@extend .row;
+}
+
+// selected options fix :/
+.order-wizard-msr-package-details {
+	.items-views-selected-option-label {
+		@extend .sc-label;
+	}
+}
+
+.order-wizard-msr-package-details {
+	.items-views-selected-option-value {
+		@extend .sc-value;
+	}
+}
+
+.order-wizard-msr-package-details-actionable-table {
+	@extend .transaction-line-views-cell-actionable-table;
+  	border-collapse: collapse;
+
+	@media (max-width: $screen-sm-max){
+	  	.transaction-line-views-cell-actionable-table-middle {
+	  		padding-bottom: $sc-padding-lv1;
+	  	}
+	}
+
+	.transaction-line-views-cell-actionable-table-first,
+	.transaction-line-views-cell-actionable-table-last {
+    	padding-bottom: 0;
+	}
+
+	td {
+		padding-bottom: 80px;
+	}
+}
+
+.order-wizard-msr-package-details-accordion-head-title-container{}
+.order-wizard-msr-package-details-accordion-container{}
+.order-wizard-msr-package-details-row-fluid{}
+.order-wizard-msr-package-details-multishipto-package{}
+.order-wizard-msr-package-details-address-items-container{}

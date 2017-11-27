@@ -1,0 +1,61 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Font size variables
+//
+// A scale of sizes has been defined for its use along the different elements of the theme.
+// As it happens with many other sizing scales variables go from XS to XXXL
+// Every size is relative to a base font size that may be modified. In that case all the other sizes will change in relationship to this new base size.
+// With the exception of this base font size expressed in pixels, font sizes are expressed in rem units.
+//
+// $sc-font-size-xxs - Double extra small font size
+// $sc-font-size-xs - Extra small font size
+// $sc-font-size-s - Small font size
+// $sc-font-size-m - Medium font size
+// $sc-font-size-l - Large font size
+// $sc-font-size-xl - Extra large font size
+// $sc-font-size-xxl - Double extra large font size
+// $sc-font-size-xxxl - Triple extra large font size
+// $sc-font-weight-light - Light font weight
+// $sc-font-weight-normal - Normal font weight
+// $sc-font-weight-semibold - Semibold font weight
+// $sc-font-weight-bold - Bold font weight
+//
+// Markup:
+// <p style="font-size: $sc-font-size-xxs">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxs</strong>.</p>
+// <p style="font-size: $sc-font-size-xs">Good design is obvious. Great design is transparent <strong>$sc-font-size-xs</strong>.</p>
+// <p style="font-size: $sc-font-size-s">Good design is obvious. Great design is transparent <strong>$sc-font-size-s</strong>.</p>
+// <p style="font-size: $sc-font-size-m">Good design is obvious. Great design is transparent <strong>$sc-font-size-m</strong>.</p>
+// <p style="font-size: $sc-font-size-l">Good design is obvious. Great design is transparent <strong>$sc-font-size-l</strong>.</p>
+// <p style="font-size: $sc-font-size-xl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xl</strong>.</p>
+// <p style="font-size: $sc-font-size-xxl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxl</strong>.</p>
+// <p style="font-size: $sc-font-size-xxxl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxxl</strong>.</p>
+// <p style="font-weight: $sc-font-weight-light;">Freedom lies in being bold. - font weight $sc-font-weight-light.</p>
+// <p style="font-weight: $sc-font-weight-normal;">Freedom lies in being bold. - font weight $sc-font-weight-normal.</p>
+// <p style="font-weight: $sc-font-weight-semibold;">Freedom lies in being bold. - font weight $sc-font-weight-semibold.</p>
+// <p style="font-weight: $sc-font-weight-bold;">Freedom lies in being bold. - font weight $sc-font-weight-bold.</p>
+//
+// Styleguide 1.2
+
+$sc-font-size-base: 15px;
+
+$sc-font-size-xxs: 0.75rem;
+$sc-font-size-xs: 0.87rem;
+$sc-font-size-s: 0.93rem;
+$sc-font-size-m: 1rem;
+$sc-font-size-l: 1.067rem;
+$sc-font-size-xl: 1.2rem;
+$sc-font-size-xxl: 1.47rem;
+$sc-font-size-xxxl: 1.73rem;
+
+$sc-font-weight-light: 300;
+$sc-font-weight-normal: 400;
+$sc-font-weight-semibold: 600;
+$sc-font-weight-bold: 700;
+
+$sc-navigation-icon-size: 25px;
+

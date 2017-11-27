@@ -1,0 +1,34 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// color picker
+$picker-large: 40px;
+$picker-medium: 25px;
+$picker-small: 20px;
+$picker-xsmall: 10px;
+
+//New color picker
+$picker-color-large: 40px;
+$picker-color-medium: 25px;
+$picker-color-small: 15px;
+$picker-color-xsmall: $picker-color-small;
+
+// images
+$img-large: 150px;
+$img-medium: 100px;
+$img-small: 60px;
+
+//target size
+$sc-target-size:44px;
+$sc-target-size-mobile:40px;
+
+$sc-flyout-arrow-height: 7px;
+$sc-flyout-arrow-shadow-height: $sc-flyout-arrow-height - 1;
+
+$sc-border-radius: 6px;
+
+$sc-animation-base-duration: 300ms;

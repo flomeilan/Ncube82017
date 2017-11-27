@@ -1,0 +1,34 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.checkout-layout {
+	@extend %sc-layout;
+}
+
+.checkout-layout-header {
+	@include box-shadow(3px 0px 6px $sc-color-secondary);
+	margin-bottom: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: $sc-margin-lv8;
+	}
+}
+
+.checkout-layout-content{
+	@extend .container;
+}
+
+.checkout-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.checkout-layout-breadcrumb{}
+
+.checkout-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}

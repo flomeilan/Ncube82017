@@ -1,0 +1,17 @@
+{
+    "name": "SCA Extensions Mechanism DevTools",
+    "version": "2.0",
+    "buildToolsVersion": "framework-extension-mechanism-aconcagua",
+    "folders": {
+        "modules": "Modules",
+        "suitecommerceModules": "Modules/suitecommerce",
+        "distribution": "LocalDistribution",
+        "deploy": "DeployDistribution"
+    },
+    "modules": {},
+    "tasksConfig": {},
+    "license": {
+        "text": ""
+    },
+    "unbuild": {}
+}

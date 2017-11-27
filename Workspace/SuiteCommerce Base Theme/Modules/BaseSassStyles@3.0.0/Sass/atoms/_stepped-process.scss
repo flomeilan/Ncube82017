@@ -1,0 +1,157 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Stepped process
+//
+// Steps are needed when users need to go through a process of multiple sub-tasks to achieve one main goal.
+// Steps help indicate to users how long the process will take, which steps are already completed and, how many steps are left in order to complete the task.
+//
+// Markup:
+// <div class="stepped-process">
+//   <a data-action="previous-step" class="stepped-process-button-back">
+//     <i></i>
+//     Previous
+//   </a>
+//   <ol class="stepped-process-menu">
+//     <li class="stepped-process-step">
+//       <a class="stepped-process-step-anchor" href="#">
+//         1 <span class="wizard-step-navigation-step-anchor-label">Shipping Address</span>
+//       </a>
+//     </li>
+//     <li class="stepped-process-divider">/</li>
+//     <li class="stepped-process-step">
+//       <a class="stepped-process-step-anchor stepped-process-step-active" href="#">
+//         2 <span class="wizard-step-navigation-step-anchor-label">Payment</span>
+//       </a>
+//     </li>
+//     <li class="stepped-process-divider">/</li>
+//     <li class="stepped-process-step">
+//       <a class="stepped-process-step-anchor stepped-process-step-disabled" href="#">
+//         3 <span class="wizard-step-navigation-step-anchor-label">Review</span>
+//       </a>
+//     </li>
+//   </ol>
+// </div>
+//
+// Styleguide 2.7.2
+
+.stepped-process {
+	@include clearfix();
+}
+
+.stepped-process-button-back {
+	@extend .button-back;
+	float: left;
+	margin-bottom: 0;
+	cursor: pointer;
+
+	> i {
+		@extend .button-back-icon;
+	}
+}
+
+.stepped-process-menu {
+	float: right;
+	position: relative;
+
+	&:before{
+		content: ' ';
+		background-color: $sc-color-theme-border-light;
+		height: 3px;
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -1px;
+		z-index: -1;
+		width: 95%;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		float: none;
+
+		&:before {
+			display: none;
+			content: none;
+			height: 0;
+		}
+	}
+}
+
+.stepped-process-step {
+	display: inline-block;
+}
+
+.stepped-process-step-anchor {
+	@extend .small-title-viewonly;
+	@include border-radius(100%);
+
+	display: block;
+	width: 30px; //different than $sc-target-size by design
+	height: 30px;
+	border: 3px solid transparent;
+	line-height: 24px;
+	margin-right: 3px;
+	text-align: center;
+	background-color: $sc-color-theme-background;
+
+	@media (min-width: $screen-sm-min){
+		width: auto;
+		height: auto;
+		background-color: $sc-neutral-shade-0;
+	}
+}
+
+.stepped-process-step-active {
+	background-color: $sc-color-theme-900;
+	color: $sc-neutral-shade-0;
+	cursor: default;
+
+	&:hover {
+		color: $sc-neutral-shade-0;
+	}
+
+	&:visited, &:focus {
+		color: $sc-color-copy;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		color: $sc-color-copy;
+		background-color: transparent;
+
+		&:hover, &:focus {
+			color: $sc-color-copy;
+		}
+	}
+}
+
+.stepped-process-step-disabled {
+	border-color: $sc-color-theme-border-light;
+	background-color: $sc-neutral-shade-0;
+	color: $sc-color-theme-400;
+	cursor: default;
+
+	&:hover, &:visited, &:focus{
+		color: $sc-color-theme-400;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		border-color: transparent;
+	}
+}
+
+.stepped-process-divider,
+.stepped-process-step-anchor-label {
+	display: none;
+
+	@media (min-width: $screen-sm-min) {
+		display: inline-block;
+	}
+}
+
+.stepped-process-divider {
+	color: $sc-color-theme-400;
+}

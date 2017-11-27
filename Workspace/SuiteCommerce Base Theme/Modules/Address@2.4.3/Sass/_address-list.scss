@@ -1,0 +1,32 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.address-list {
+    @extend .address-edit;
+}
+.address-list-default-addresses,
+.address-list-other-addresses {
+	.backbone-collection-view-cell-span6 {
+		margin-bottom: $sc-margin-lv6;
+
+        .address-details {
+            border: none;
+        }
+	}
+}
+.address-list-button-container {
+    margin: 0 0 $sc-margin-lv6 0;
+}
+.address-list-button-info-cards-new {
+    @extend .button-info-cards-new
+}
+.address-list-button-back {
+    @extend .button-back;
+}
+.address-list-button-back-icon {
+    @extend .button-back-icon;
+}

@@ -1,0 +1,107 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Pagination
+//
+// Pagination is used to navigate between lists of products or records.
+// Pagination is generally accompanied by a results counter.
+//
+// Markup:
+// <nav>
+//   <p class="pagination-count">1-12 of 37 results</p>
+//   <ul class="pagination-links">
+//     <li class="pagination-prev">
+//       <a href="#">
+//         <i class="icon-chevron-left"></i>
+//       </a>
+//     </li>
+//     <li><a href="#">1</a></li>
+//     <li><a class="pagination-active" href="#">2</a></li>
+//     <li><a href="#">3</a></li>
+//     <li><a href="#">...</a></li>
+//     <li><a href="#">9</a></li>
+//     <li><a href="#">10</a></li>
+//     <li class="pagination-next">
+//       <a href="#">
+//         <i class="icon-chevron-right"></i>
+//       </a>
+//     </li>
+//   </ul>
+// </nav>
+//
+// Styleguide 3.6
+
+.pagination-links {
+	@extend .clearfix;
+	float: left;
+
+	li {
+		float: left;
+		height: $sc-target-size;
+		width: $sc-target-size;
+		text-align: center;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		padding-left: $sc-padding-lv3;
+		padding-right: $sc-padding-lv3;
+		height: $sc-target-size;
+		line-height: $sc-target-size;
+	}
+}
+
+.pagination-count {
+	padding: $sc-padding-lv2 $sc-padding-lv4;
+	float: left;
+}
+
+.pagination-links-number {
+	display: none;
+	background-color: $sc-color-theme-background;
+
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.pagination-prev,
+.pagination-next {
+	background-color: $sc-color-theme-background;
+
+	a:hover{
+		background-color: $sc-color-theme-background;
+	}
+}
+
+.pagination-prev,
+.pagination-prev-disabled {}
+
+.pagination-next,
+.pagination-next-disabled {
+	margin-left: $sc-margin-lv1;
+
+	@media (min-width: $screen-md-min) {
+		margin-left: 0;
+	}
+}
+
+.pagination-disabled,
+.pagination-prev-disabled,
+.pagination-next-disabled {
+	display:none;
+}
+
+.pagination-active {
+	color: $sc-color-primary;
+	cursor: default;
+
+	&:hover{
+		color: $sc-color-primary;
+	}
+}

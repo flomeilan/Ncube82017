@@ -1,0 +1,52 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.wizard-step-header{
+	margin-bottom: $sc-margin-lv4;
+}
+
+.wizard-step-message{
+	display: block;
+	margin-bottom: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min){
+		text-align: right;
+	}
+}
+
+.wizard-step-button-container{
+	@include clearfix();
+	margin-bottom: $sc-margin-lv6;
+}
+
+.wizard-step-button-continue {
+
+	@extend .button-large;
+	@extend .button-primary;
+	min-width: 190px;
+
+	@media (min-width: $screen-sm-min){
+		margin-left: $sc-margin-lv2;
+		float:right;
+	}
+}
+
+.wizard-step-button-back{
+
+	@extend .button-large;
+	@extend .button-secondary;
+	margin-top: $sc-margin-lv2;
+
+	@media (min-width: $screen-sm-min){
+		margin-top: 0;
+		float:right;
+	}
+}
+
+.wizard-step-title{}
+.wizard-step-content-main{}
+.wizard-step-actions{}

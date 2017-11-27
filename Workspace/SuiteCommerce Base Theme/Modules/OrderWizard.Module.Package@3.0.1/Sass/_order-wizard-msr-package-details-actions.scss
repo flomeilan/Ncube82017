@@ -1,0 +1,21 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-msr-package-details-actions-remove-button,
+.order-wizard-msr-package-details-actions-move-button{
+	@extend .button-tertiary;
+	@extend .button-small;
+}
+
+.order-wizard-msr-package-details-actions-remove-button {
+	margin-bottom: $sc-margin-lv2;
+	margin-right: $sc-margin-lv2;
+
+	@media (min-width: $screen-sm-min){
+		margin-right: 0;
+	}
+}

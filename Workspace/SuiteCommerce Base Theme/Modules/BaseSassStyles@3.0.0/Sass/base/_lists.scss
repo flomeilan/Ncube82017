@@ -1,0 +1,250 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+/////////////////////////////////////////////////////////////
+//List framework
+$row-space: $sc-padding-lv3;
+
+@mixin table-flex-fold-all() {
+	td {
+		display: block;
+
+		//ie <= 9 does not play well with display block for td (\9)
+		//workaround see: http://browserhacks.com/#hack-ab1bcc7b3a6544c99260f7608f8e845e
+		float: left \9;
+		width: 100% \9;
+	}
+}
+
+@mixin table-flex-unfold-all() {
+	td {
+		display: table-cell;
+		padding-top: $row-space;
+		padding-bottom: $row-space;
+
+		//ie fix
+		float:none \9;
+		width:auto \9;
+	}
+}
+
+@mixin table-flex-unfold($column) {
+	.table-flex-td#{$column} {
+		display: table-cell;
+		padding-top: $row-space;
+		padding-bottom: $row-space;
+
+		//ie fix
+		float:none \9;
+		width:auto \9;
+	}
+}
+
+@mixin table-flex-space($column, $position) {
+	.table-flex-#{$column} {
+		@if ($position == 'top') {
+			padding-top: $row-space;
+		}
+		@else if ($position == 'bottom') {
+
+			@media (min-width: $screen-md-min) {
+			 	padding-bottom: $row-space;
+			}
+		}
+		@else if ($position == 'top-bottom') {
+			padding-top: $row-space;
+		 	padding-bottom: $row-space;
+		}
+		@else if ($position == 'neither') {
+			padding-top: 0;
+		 	padding-bottom: 0;
+		}
+	}
+}
+
+.table-flex {
+	width:100%;
+	@include table-flex-fold-all;
+
+	//p elements inside lists are defined with custom attributes
+	p {
+		font-size: 14px;
+		line-height: 1.8;
+	}
+}
+
+.table-flex-head {
+	display: none;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+	}
+}
+
+.table-flex-header-space {
+	padding-top: $row-space;
+	padding-bottom: $row-space;
+}
+
+.table-row-with-border tr {
+	border-bottom: 1px solid $sc-color-theme-border-light;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+/////////////////////////////////////////////////////////////
+//Base for: Item Lists
+
+.table-flex-item-viewonly,
+.table-flex-item-navigable {
+	@extend .table-flex;
+	@include table-flex-unfold("first");
+	@include table-flex-space("middle-first", "top");
+	@include table-flex-space("middle-last", "bottom");
+
+	th {
+		@extend .table-flex-header-space;
+		display: none;
+		font-weight: $sc-font-weight-normal;
+	}
+
+	@media (min-width: $screen-md-min) {
+		@include table-flex-unfold-all();
+
+		th {
+			display: table-cell;
+		}
+	}
+
+	//exceptions
+	&.lg2sm-first {
+		@media (min-width: $screen-md-min) {
+			@include table-flex-fold-all();
+			@include table-flex-unfold("first");
+			@include table-flex-space("middle-data", "neither");
+			@include table-flex-space("middle-first", "top");
+			@include table-flex-space("middle-last", "bottom");
+		}
+	}
+}
+
+.table-flex-item-actionable,
+.table-flex-item-selectable,
+.table-flex-item-actionable-navigable,
+.table-flex-item-actionable-navigable-selectable {
+	@extend .table-flex;
+
+	@include table-flex-unfold("first");
+
+	@include table-flex-space("middle", "top-bottom");
+	@include table-flex-space("middle-first", "top");
+	@include table-flex-space("middle-last", "bottom");
+
+	@include table-flex-space("first-alter", "top");
+	@include table-flex-space("last-alter", "bottom");
+	@include table-flex-space("tdlast", "bottom");
+
+	th {
+		@extend .table-flex-header-space;
+		display: none;
+		font-weight: $sc-font-weight-normal;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		@include table-flex-unfold("last");
+	}
+
+	@media (min-width: $screen-md-min) {
+		@include table-flex-unfold-all();
+
+		th {
+			display: table-cell;
+		}
+	}
+
+	//exceptions
+	&.md2sm {
+		@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+			@include table-flex-fold-all();
+			@include table-flex-unfold("first");
+			@include table-flex-unfold("last");
+			@include table-flex-space("middle-data", "neither");
+			@include table-flex-space("middle-last", "bottom");
+		}
+		@media (max-width: $screen-lg-min) {
+			[class*="-middle"]{
+				padding-bottom: 0;
+			}
+
+			[class*="-middle"] + [class*="-middle"] {
+				padding-top: 0;
+				padding-bottom: $sc-padding-lv3;
+			}
+	}
+	}
+
+	&.lg2sm {
+		@media (min-width: $screen-md-min) {
+			@include table-flex-fold-all();
+			@include table-flex-unfold("first");
+			@include table-flex-unfold("last");
+		}
+	}
+}
+/////////////////////////////////////////////////////////////
+//Base for: Records
+
+.table-flex-record-navigable {
+	@extend .table-flex;
+	@include table-flex-space("td-first", "top");
+	@include table-flex-space("td-last", "bottom");
+
+	th {
+		@extend .table-flex-header-space;
+		font-weight: $sc-font-weight-normal;
+	}
+
+	@media (min-width: $screen-md-min) {
+		@include table-flex-unfold-all();
+	}
+}
+
+.table-flex-record-selectable-navigable,
+.table-flex-record-actionable-navigable {
+	@extend .table-flex;
+	@include table-flex-unfold("first");
+	@include table-flex-space("td-first", "top");
+	@include table-flex-space("td-last", "bottom");
+	@include table-flex-space("tdlast", "bottom");
+
+	th {
+		@extend .table-flex-header-space;
+		font-weight: $sc-font-weight-normal;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		@include table-flex-unfold("last");
+
+	}
+
+	@media (min-width: $screen-md-min) {
+		@include table-flex-unfold-all();
+	}
+}
+.list-empty {
+	margin-top: $sc-margin-lv3;
+}
+.table-flex-head-row-column-quantity,
+.table-flex-head-row-column-price,
+.table-flex-head-row-column-amount,
+.table-flex-record-selectable-navigable-row-column-date,
+.table-flex-record-selectable-navigable-row-column-amount {
+	@extend .column-type-amount;
+}

@@ -1,0 +1,19 @@
+{
+	"type": "object"
+
+,	"group": {
+		"id": "<%= module_conf_name %>_group",
+        "title": "<%= conf_title %>",
+        "description": "Generic group for extension <%= conf_title %>"
+    }
+
+,    "properties": {
+		"<%= module_conf_name %>_property1": {
+			"group": "<%= module_conf_name %>_group"
+		,	"type": "string"
+		,	"title": "Generic property"
+		,	"description": "Generic configuration property for extension <%= conf_title %>"
+		,	"default": "value"
+		}
+	}
+}

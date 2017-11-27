@@ -1,0 +1,265 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+$sc-color-icon: $sc-neutral-shade-0;
+
+$sc-color-star-filled: #f9b710;
+$sc-color-star-empty: $sc-color-theme-border-light;
+$sc-color-star-error: $sc-color-error;
+
+// Base icons
+//
+// Icons are a visual representation of an object, action, or idea that communicate meaning in a graphical way.
+//
+// Markup:
+// <i class="icon-home"></i>
+// <i class="icon-star"></i>
+// <i class="icon-like"></i>
+//
+// Styleguide 2.4.1
+
+.icon-container {
+	@include border-radius(50%);
+	background-color: $sc-color-theme-400;
+	display: inline-block;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	line-height: 18px;
+}
+
+.icon {
+	@extend .fa;
+	color: $sc-color-icon;
+	font-size: 13px;
+	vertical-align: middle;
+	display: inline;
+	font-style: normal;
+}
+
+.icon-base {
+	@extend .fa;
+	font-size:20px;
+	display:inline;
+}
+
+.icon-display-list {
+	@extend .fa;
+	@extend %fa-navicon;
+}
+
+.icon-display-table {
+	@extend .fa;
+	@extend %fa-th-large;
+}
+
+.icon-display-grid {
+	@extend .fa;
+	@extend %fa-th;
+}
+
+.icon-close {
+	@extend .icon;
+	@extend %fa-close;
+}
+
+.icon-remove {
+	@extend .icon;
+	@extend %fa-close;
+}
+
+.icon-container-info {
+	@extend .icon-container;
+	background-color: $sc-color-info;
+}
+
+.icon-info {
+	@extend .icon;
+	@extend %fa-info-circle;
+}
+.icon-question {
+	@extend .icon;
+	@extend %fa-question;
+}
+.icon-question-circle {
+	@extend .icon;
+	@extend %fa-question-circle;
+}
+.icon-container-success {
+	@extend .icon-container;
+	background-color: $sc-color-success;
+}
+
+.icon-success {
+	@extend .icon;
+	@extend %fa-check;
+	color: $sc-color-success-background;
+}
+
+.icon-container-warning {
+	@extend .icon-container;
+	background-color: $sc-color-warning;
+}
+
+.icon-warning {
+	@extend .icon;
+	@extend %fa-exclamation;
+}
+
+.icon-container-error {
+	@extend .icon-container;
+	background-color: $sc-color-error;
+}
+
+.icon-error {
+	@extend .icon;
+	@extend %fa-exclamation;
+}
+
+.icon-chevron {
+	@extend .icon-base;
+	color: $sc-color-theme-900;
+}
+
+.icon-chevron-up {
+	@extend .icon-chevron;
+	@extend %fa-chevron-up;
+}
+
+.icon-chevron-down {
+	@extend .icon-chevron;
+	@extend %fa-chevron-down;
+}
+
+.icon-chevron-right {
+	@extend .icon-chevron;
+	@extend %fa-chevron-right;
+}
+
+.icon-chevron-left {
+	@extend .icon-chevron;
+	@extend %fa-chevron-left;
+}
+
+.icon-angle-up {
+	@extend .icon-chevron;
+	@extend %fa-angle-up;
+}
+
+.icon-angle-down {
+	@extend .icon-chevron;
+	@extend %fa-angle-down;
+}
+
+.icon-angle-right {
+	@extend .icon-chevron;
+	@extend %fa-angle-right;
+}
+
+.icon-angle-left {
+	@extend .icon-chevron;
+	@extend %fa-angle-left;
+}
+
+.icon-caret {
+	@extend .icon;
+	color: $sc-color-theme-900;
+}
+
+.icon-caret-left {
+	@extend .icon-caret;
+	@extend %fa-caret-left;
+}
+
+.icon-caret-right {
+	@extend .icon-caret;
+	@extend %fa-caret-right;
+}
+
+.icon-caret-up {
+	@extend .icon-caret;
+	@extend %fa-caret-up;
+}
+
+.icon-caret-down {
+	@extend .icon-caret;
+	@extend %fa-caret-down;
+}
+
+.icon-star {
+	@extend .icon;
+	@extend %fa-star;
+	color: $sc-color-star-empty;
+}
+
+.icon-star-filled {
+	@extend .icon;
+	@extend %fa-star;
+	color: $sc-color-star-filled;
+}
+
+.icon-star-error {
+	@extend .icon;
+	@extend %fa-star;
+	color: $sc-color-star-error;
+}
+
+.credit-card-content-icon {
+	@extend .fa;
+	@extend %fa-cc-visa;
+}
+
+.icon-ok-sign {
+	@extend .fa;
+	@extend %fa-check-circle;
+	color: $sc-color-theme-400;
+}
+
+.icon-locked {
+	@extend .fa;
+	@extend %fa-lock;
+}
+
+.icon-flag {
+	@extend .fa;
+	@extend %fa-flag;
+}
+
+.icon-globe {
+	@extend .fa;
+	@extend %fa-globe;
+}
+
+.icon-message-atention {
+	@extend .fa;
+	@extend %fa-exclamation-circle;
+}
+
+.icon-map-marker {
+	@extend .fa;
+	@extend %fa-map-marker;
+}
+
+.icon-home {
+	@extend .fa;
+	@extend %fa-home;
+}
+
+.icon-truck {
+	@extend .fa;
+	@extend %fa-truck;
+}
+
+.icon-like {
+	@extend .fa;
+	@extend %fa-thumbs-up;
+}
+
+.icon-unlike {
+	@extend .fa;
+	@extend %fa-thumbs-down;
+}

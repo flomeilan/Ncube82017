@@ -1,0 +1,65 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-category-browse {}
+
+.facets-category-browse-facets {}
+
+.facets-category-browse-navigation {}
+
+.facets-category-browse-header {}
+
+.facets-category-browse-banner-left-top {}
+
+.facets-category-browse-title {}
+
+.facets-category-browse-facets-list-wrapper {}
+
+.facets-category-browse-banner-left-bottom {}
+
+.facets-category-browse-body {}
+
+.facets-category-browse-banner-top {}
+
+.facets-category-browse-banner-bottom {}
+
+.category-main-image {
+	// float: left;
+	//width: 30%;
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		display: inherit;
+	}
+
+}
+
+.category-main-description {
+	// float: left;
+	width: auto;
+	margin: $sc-margin-lv2;
+
+	@media (min-width: $screen-md-min) {
+		//width: 60%;
+		margin-left: $sc-margin-lv4;
+	}
+}
+
+.category-main-description h3 {
+	text-transform: none;
+	font-weight: normal;
+}
+
+.category-list-header {
+	display: table;
+	padding-bottom: $sc-padding-lv3;
+	/*margin-bottom: $sc-margin-lv4;
+	@media (min-width: $screen-md-min) {
+		width: 75%;
+		float: right;
+	}*/
+}

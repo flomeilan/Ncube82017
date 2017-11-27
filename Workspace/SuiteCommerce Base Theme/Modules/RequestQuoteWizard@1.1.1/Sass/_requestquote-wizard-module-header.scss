@@ -1,0 +1,45 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.requestquote-wizard-module-header{
+	position: relative;
+}
+
+.requestquote-wizard-module-header-title{
+	@extend .cart-title;
+
+	@media (min-width: $screen-sm-min) {
+		line-height: 42px;
+	}
+}
+
+.requestquote-wizard-module-header-title-count{
+	@extend .cart-title-details-count;
+	@extend .middle-price;
+}
+
+.requestquote-wizard-module-header-title-count-disabled {
+	@extend .middle-price;
+	@extend .cart-title-details-count;
+	color: $sc-color-copy-light;
+}
+
+.requestquote-wizard-module-header-title-button {
+	@extend .button-medium;
+	@extend .button-primary;
+
+	@media (min-width: $screen-sm-min){
+		top: 0;
+		width:auto;
+		position:absolute;
+		right: 0px;
+	}
+}
+
+.requestquote-wizard-module-header-title-button[disabled]{
+	@extend .button-primary-disabled;
+}

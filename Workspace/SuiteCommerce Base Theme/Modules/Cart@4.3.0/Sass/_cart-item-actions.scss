@@ -1,0 +1,33 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-item-actions-links {
+	margin-top: $sc-margin-lv4;
+	display: table;
+	width: auto;
+
+	a {
+		display: table-cell;
+		height: $sc-target-size;
+		vertical-align: middle;
+		padding-right: $sc-margin-lv4;
+	}
+
+	@media (max-width: $screen-md-max) {
+		margin-top: 0;
+	}
+}
+
+.cart-item-actions-item-list-actionable-edit-button-edit {
+	margin-right: $sc-margin-lv2;
+}
+
+.cart-item-actions-item-list-actionable-edit-content-saveforlater {
+	margin-right: $sc-margin-lv2;
+}
+
+.cart-item-actions-item-list-actionable-edit-content-remove {}

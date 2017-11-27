@@ -1,0 +1,23 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.error-management-expired-link-header {}
+
+.error-management-expired-link-header-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.error-management-expired-link-main-banner {}
+
+.error-management-expired-link-content {}
+
+.error-management-expired-link-login-button,
+.error-management-expired-link-register-button {
+	@extend .button-primary;
+	@extend .button-large;
+}
+

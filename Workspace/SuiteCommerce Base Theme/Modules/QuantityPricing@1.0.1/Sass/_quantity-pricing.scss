@@ -1,0 +1,74 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quantity-pricing {
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv2;
+	@extend .clearfix;
+}
+.quantity-pricing-hidden {
+	@extend .hidden
+}
+.quantity-pricing-container {
+	float: left;
+	position: relative;
+}
+.quantity-pricing-expander-head {
+}
+.quantity-pricing-expander-head-toggle  {
+}
+.quantity-pricing-flyout-head-toggle {
+}
+.quantity-pricing-expander-toggle-icon {
+	@extend .fa;
+	@extend %fa-angle-up;
+	font-size:$sc-font-size-xl;
+	@include transition (transform $sc-animation-base-duration ease);
+	vertical-align: middle;
+}
+.quantity-pricing-flyout-toggle-icon {
+	@extend .fa;
+	@extend %fa-angle-down;
+	font-size:$sc-font-size-xl;
+	@include transition (transform $sc-animation-base-duration ease);
+	vertical-align: middle;
+}
+.open .quantity-pricing-flyout-toggle-icon,
+.collapsed .quantity-pricing-expander-toggle-icon{
+	@include rotate(180deg);
+}
+.quantity-pricing-expander-body {
+	border:1px solid $sc-color-theme-border-light;
+	box-shadow:0px 3px 0px $sc-color-theme-background;
+	-moz-box-shadow:0px 3px 0px $sc-color-theme-background;
+	-webkit-box-shadow:0px 3px 0px $sc-color-theme-background;
+	margin-top: $sc-margin-lv1;
+	background: $sc-neutral-shade-0;
+}
+.quantity-pricing-expander-body-container {
+	padding: $sc-padding-lv1;
+
+	table {
+		width: 100%;
+	}
+}
+.quantity-pricing-table-header-quantity,
+.quantity-pricing-table-header-price,
+.quantity-pricing-table-body-quantity,
+.quantity-pricing-table-body-price {
+	padding: $sc-padding-lv1;
+}
+.quantity-pricing-table-header-price,
+.quantity-pricing-table-body-price  {
+	text-align: right
+}
+.quantity-pricing-flyout-content {
+	@extend .sc-flyout-content;
+	left: auto;
+	right: 0;
+	width: 100%;
+}

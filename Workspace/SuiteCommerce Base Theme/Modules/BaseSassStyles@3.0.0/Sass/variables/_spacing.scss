@@ -1,0 +1,82 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Spacing variables
+//
+// Styleguide 1.3
+
+// Padding variables
+//
+// For ease of use, calculations have been set at variable definition level.
+// Level then equals to multiplying factor. If you have a base of 5px and you need a 15px padding you´ll choose the $sc-padding-lv3 variable.
+//
+// $sc-padding-base - Usually set to 5px but may be specified differently.
+// $sc-padding-lv1 - Level 1 equals to base padding.
+// $sc-padding-lv2 - Level 2 equals to base padding by 2.
+// $sc-padding-lv3 - Level 3 equals to base padding by 3.
+// $sc-padding-lv4 - Level 4 equals to base padding by 4.
+// $sc-padding-lv5 - Level 5 equals to base padding by 5.
+// $sc-padding-lv6 - Level 6 equals to base padding by 6.
+// $sc-padding-lv7 - Level 7 equals to base padding by 7.
+// $sc-padding-lv8 - Level 8 equals to base padding by 8.
+//
+// Markup:
+// <div class="styleguide-padding-lv1"><span>sc-padding-lv1</span></div>
+// <div class="styleguide-padding-lv2"><span>sc-padding-lv2</span></div>
+// <div class="styleguide-padding-lv3"><span>sc-padding-lv3</span></div>
+// <div class="styleguide-padding-lv4"><span>sc-padding-lv4</span></div>
+// <div class="styleguide-padding-lv5"><span>sc-padding-lv5</span></div>
+// <div class="styleguide-padding-lv6"><span>sc-padding-lv6</span></div>
+// <div class="styleguide-padding-lv7"><span>sc-padding-lv7</span></div>
+// <div class="styleguide-padding-lv8"><span>sc-padding-lv8</span></div>
+//
+// Styleguide 1.3.1
+$sc-padding-base: 5px;
+$sc-padding-lv1: $sc-padding-base;
+$sc-padding-lv2: $sc-padding-base * 2;
+$sc-padding-lv3: $sc-padding-base * 3;
+$sc-padding-lv4: $sc-padding-base * 4;
+$sc-padding-lv5: $sc-padding-base * 5;
+$sc-padding-lv6: $sc-padding-base * 6;
+$sc-padding-lv7: $sc-padding-base * 7;
+$sc-padding-lv8: $sc-padding-base * 8;
+
+// Margin variables
+//
+// For ease of use, calculations have been set at variable definition level.
+// Level then equals to multiplying factor. If you have a base of 5px and you need a 15px margin you´ll choose the $sc-margin-lv3 variable.
+//
+// $sc-margin-base - Usually set to 5px but may be specified differently.
+// $sc-margin-lv1 - Level 1 equals to base margin.
+// $sc-margin-lv2 - Level 2 equals to base margin by 2.
+// $sc-margin-lv3 - Level 3 equals to base margin by 3.
+// $sc-margin-lv4 - Level 4 equals to base margin by 4.
+// $sc-margin-lv5 - Level 5 equals to base margin by 5.
+// $sc-margin-lv6 - Level 6 equals to base margin by 6.
+// $sc-margin-lv7 - Level 7 equals to base margin by 7.
+// $sc-margin-lv8 - Level 8 equals to base margin by 8.
+//
+// Markup:
+// <div class="styleguide-margin-lv1"><span>sc-margin-lv1</span></div>
+// <div class="styleguide-margin-lv2"><span>sc-margin-lv2</span></div>
+// <div class="styleguide-margin-lv3"><span>sc-margin-lv3</span></div>
+// <div class="styleguide-margin-lv4"><span>sc-margin-lv4</span></div>
+// <div class="styleguide-margin-lv5"><span>sc-margin-lv5</span></div>
+// <div class="styleguide-margin-lv6"><span>sc-margin-lv6</span></div>
+// <div class="styleguide-margin-lv7"><span>sc-margin-lv7</span></div>
+// <div class="styleguide-margin-lv8"><span>sc-margin-lv8</span></div>
+//
+// Styleguide 1.3.2
+$sc-margin-base: 5px;
+$sc-margin-lv1: $sc-margin-base;
+$sc-margin-lv2: $sc-margin-base * 2;
+$sc-margin-lv3: $sc-margin-base * 3;
+$sc-margin-lv4: $sc-margin-base * 4;
+$sc-margin-lv5: $sc-margin-base * 5;
+$sc-margin-lv6: $sc-margin-base * 6;
+$sc-margin-lv7: $sc-margin-base * 7;
+$sc-margin-lv8: $sc-margin-base * 8;

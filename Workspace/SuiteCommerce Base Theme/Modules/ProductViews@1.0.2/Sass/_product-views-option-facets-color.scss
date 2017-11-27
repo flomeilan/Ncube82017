@@ -1,0 +1,81 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-option-facets-color{
+	margin-bottom:$sc-margin-lv2;
+
+	[data-validation-error="block"]{
+  		display:table;
+  		margin-top:$sc-margin-lv1;
+  	}
+}
+
+.product-views-option-facets-color-label{
+	font-weight:$sc-font-weight-bold;
+}
+
+.product-views-option-facets-color-container{
+	@extend .color-picker-lg;
+	clear:both;
+}
+
+.product-views-option-facets-color-container-small {
+	@extend .color-picker-sm;
+	display:inline-block;
+	clear:both;
+}
+
+.product-views-option-facets-color-picker-small {
+	@extend .picker-color;
+	@extend .picker-color-sm;
+	display: inline-block;
+}
+.product-views-option-facets-color-picker-label {
+	@extend .picker-color-label;
+}
+.product-views-option-facets-color-picker-input {
+	@extend .picker-color-input;
+}
+.product-views-option-facets-color-picker-box {
+	@extend .picker-color-box;
+}
+.product-views-option-facets-color-picker-box.active {
+	@extend .picker-color-box-active;
+}
+.product-views-option-facets-color-picker-box.muted {
+	@extend .picker-color-box-disabled;
+}
+.product-views-option-facets-color-picker-box-white-border {
+	@extend .picker-color-box-white-border;
+}
+.product-views-option-facets-color-picker-box-img {
+	@extend .picker-color-box-img;
+}
+.product-views-option-facets-color-picker-box-img.muted {
+	@extend .picker-color-box-img-disabled;
+}
+.product-views-option-facets-color-picker-box-img.active {
+	@extend .picker-color-box-img-active;
+}
+
+.product-views-option-facets-color-label-required{
+	@extend .input-required;
+}
+.product-views-option-facets-color-picker-anchor {
+	border:0px;
+}
+
+.product-views-option-facets-color-value {
+	@extend .sc-value;
+	padding-right:$sc-padding-lv1;
+}
+
+.product-views-option-facets-color-label-header {
+	display:block;
+	margin-bottom:$sc-margin-lv2;
+	text-transform:uppercase;
+}

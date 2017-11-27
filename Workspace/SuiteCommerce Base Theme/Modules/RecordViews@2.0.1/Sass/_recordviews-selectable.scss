@@ -1,0 +1,89 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.recordviews-selectable-row {
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	cursor: pointer;
+}
+
+.recordviews-selectable-row:hover{
+	background-color: $sc-color-theme-background;
+}
+
+.recordviews-selectable-row.recordviews-selectable-active{
+	background-color: $sc-color-theme-background;
+}
+
+.recordviews-selectable-td-selectable{
+	@extend .table-flex-tdfirst;
+	@extend .column-type-select;
+
+	padding-top: $sc-padding-lv3;
+	padding-bottom: $sc-padding-lv3;
+
+	@media (min-width: $screen-md-min){
+		padding-top: 0;
+		padding-bottom:0;
+	}
+}
+
+.recordviews-selectable-td-title{
+	padding-top: $sc-padding-lv3;
+
+	@media (min-width: $screen-md-min){
+		padding-top: 0;
+	}
+}
+
+.recordviews-selectable-td-last{
+	padding-bottom: $sc-padding-lv3;
+
+	@media (min-width: $screen-md-min){
+		padding-bottom: 0;
+	}
+}
+
+
+.recordviews-selectable-label{
+	@extend .sc-label;
+}
+
+.recordviews-selectable-value{
+	@extend .sc-value;
+}
+
+.recordviews-selectable-anchor{
+	@extend .small-title-navigable;
+	color: $sc-color-link;
+}
+
+.recordviews-selectable-title{
+	@extend .sc-value;
+}
+
+.recordviews-selectable-actionable-td-amount{
+	.recordviews-selectable-actionable-value{
+		color: $sc-color-primary;
+	}
+}
+
+.recordviews-selectable-label{
+
+	@media (min-width:$screen-md-min){
+		display: none;
+	}
+}
+
+.recordviews-selectable-td
+{
+	@media (min-width: $screen-md-min){
+		text-align: right;
+	}
+}
+
+.recordviews-selectable-disabled{}
+.recordviews-selectable-checkbox{}

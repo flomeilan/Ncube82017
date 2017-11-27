@@ -1,0 +1,55 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.store-locator-main {
+	@extend .container;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.store-locator-main-layout {
+	width:100%;
+	min-height:100%;
+	height:auto;
+	display: table;
+}
+
+.store-locator-main-title {
+	margin-bottom:$sc-margin-lv4;
+}
+
+.store-locator-main-layout-left {
+	@extend .col-xs-12;
+	@extend .col-sm-4;
+	position: static;
+  	background:$sc-neutral-shade-0;
+  	padding:0px;
+}
+
+.store-locator-main-layout-right {
+	@extend .col-sm-8;
+	background:$sc-neutral-shade-0;
+	padding:0px;
+	position: static;
+	@media (min-width: $screen-sm-min){
+		padding-left: $sc-padding-lv3;
+	}
+}
+
+.store-locator-main-search, .store-locator-main-results {
+	padding:0px;
+}
+
+.store-locator-main-see-all-stores {
+	margin-bottom:$sc-margin-lv4;
+}
+
+.store-locator-main-map {
+
+}
+
+

@@ -1,0 +1,58 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.store-locator-tooltip {}
+
+.store-locator-tooltip-box {
+	width:300px;
+	font-size:$sc-font-size-m;
+	padding-left:$sc-padding-lv2;
+}
+
+.store-locator-tooltip-box-info {
+	@extend .store-locator-list-box-info;
+	position:static;
+	margin-left:35px;
+}
+
+.store-locator-tooltip-box-address {
+	@extend .store-locator-list-box-address;
+}
+
+.store-locator-tooltip-box-distance {
+	@extend .store-locator-list-box-distance;
+}
+
+.store-locator-tooltip-box-address-box-details {
+	@extend .store-locator-list-box-details;
+}
+
+.store-locator-tooltip-box-arrow-container {
+	@extend .store-locator-list-box-arrow-container;
+	padding:$sc-padding-lv3 0px;
+}
+
+.store-locator-tooltip-box-arrow-icon {
+	@extend .store-locator-list-box-arrow-icon;
+}
+
+.store-locator-tooltip-box-count {
+	@extend .store-locator-list-box-count;
+}
+
+.store-locator-tooltip-box-icon {
+	@extend .store-locator-list-box-icon;
+}
+
+.store-locator-tooltip-box-details {
+	display:inline-flex;
+	color:$sc-color-copy-light;
+}
+
+.store-locator-tooltip-store-name {
+	color: $sc-color-copy-dark;
+}

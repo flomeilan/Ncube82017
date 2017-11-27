@@ -1,0 +1,171 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quick-add-box {
+	@extend .box-column;
+	@extend .clearfix;
+	padding: $sc-margin-lv4;
+
+	.tt-dropdown-menu {
+
+	    @media (min-width: $screen-md-min){
+	        margin-top: 0;
+	    }
+	}
+}
+
+.quick-add-box-left {
+	position: relative;
+	width: 100%;
+	margin-bottom: $sc-margin-lv2;
+	margin-right: 0;
+
+	.twitter-typeahead {
+		width: 100%;
+	}
+
+	.itemssearcher-input {
+		margin-bottom: 0;
+		height: 42px;
+		box-sizing: border-box;
+		padding: $sc-padding-lv2;
+		width: 100%;
+
+		&:focus {
+			outline-offset: -2px;
+		}
+	}
+
+	[data-validation-error="block"]{
+		margin-bottom: 0;
+		margin-top: $sc-margin-lv2;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		float: left;
+		width: 50%;
+		padding: 0;
+		margin: 0;
+	}
+}
+.quick-add-box-right {
+	width: 100%;
+	margin-bottom: $sc-margin-lv2;
+	margin-right: 0;
+
+	[data-validation-error="block"]{
+		margin-bottom: 0;
+		margin-top: $sc-margin-lv2;
+
+		@media (min-width: $screen-sm-min) {
+			clear: both;
+			display: block;
+			float: left;
+		}
+	}
+
+	@media (min-width: $screen-lg-min) {
+		float: left;
+		width: 50%;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.quick-add-box label {
+	display: block;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.quick-add-box label.quick-add-input-quantity {
+	@media (min-width: $screen-lg-min) {
+		margin-left: $sc-padding-lv3;
+	}
+}
+
+.quick-add-box-input {
+	position: relative;
+}
+.quick-add-box-input-search {
+}
+.quick-add-box-input-search-reset {
+	background-color: $sc-neutral-shade-0;
+	display: none;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: $sc-font-size-m;
+    padding: $sc-padding-lv2;
+}
+.quick-add-box-input-search-reset-icon {
+    @extend .fa;
+    @extend %fa-times-circle;
+    color: $sc-neutral-shade-300;
+    font-size: $sc-font-size-l;
+}
+.quick-add-box-right-main {
+	@media (min-width: $screen-lg-min) {
+		margin-left: $sc-padding-lv3;
+	}
+}
+.quick-add-box-right-input {
+	float: left;
+	margin-bottom: $sc-margin-lv2;
+
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 0;
+	}
+}
+.quick-add-box-right-actionable-input-qty {
+	margin-right: $sc-margin-lv3;
+	@extend .clearfix;
+}
+
+.quick-add-box-right-quantity-add {
+	@extend .quantity-input-button-add;
+}
+
+.quick-add-box-right-quantity-remove {
+	@extend .quantity-input-button-remove;
+}
+
+.quick-add-box-right-quantity-value{
+	@extend .quantity-input;
+	background-color: white;
+
+	@media (min-width: $screen-md-min) {
+		height: 42px;
+	}
+}
+.quick-add-box-minimum-top {
+    display: block;
+    float: left;
+    width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+.quick-add-box-minimum-bottom {
+	clear: both;
+    display: none;
+    width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+.quick-add-box-button {
+	@extend .button-medium;
+	@extend .button-secondary;
+	float: left;
+	width: auto;
+	height: 42px;
+}

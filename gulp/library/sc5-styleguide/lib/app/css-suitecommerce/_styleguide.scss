@@ -1,0 +1,256 @@
+.styleguide-color {
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    margin-bottom: .5em;
+    padding: 0;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    text-shadow: #000 0 0 2px;
+}
+
+.styleguide-spacing-box {
+	background-color: $sc-color-theme-background;
+	margin-bottom: 10px;
+
+	span {
+		display: block;
+		background-color: darken($sc-color-theme-400, 10%);
+		font-size: 14px;
+	    line-height: 1.45;
+	    color: white;
+	    font-weight: 300;
+	    text-shadow: #000 0 0 2px;
+	    text-align: center;
+	    padding: 10px;
+	}
+}
+
+
+// Color variables
+
+.styleguide-color-primary {
+	@extend .styleguide-color;
+	background-color: $sc-color-primary;
+}
+
+.styleguide-color-secondary {
+	@extend .styleguide-color;
+	background-color: $sc-color-secondary;
+}
+
+.styleguide-color-neutral-shade-900 {
+	@extend .styleguide-color;
+	background-color: $sc-neutral-shade-900;
+}
+
+.styleguide-color-neutral-shade-600 {
+	@extend .styleguide-color;
+	background-color: $sc-neutral-shade-600;
+}
+
+.styleguide-color-neutral-shade-300 {
+	@extend .styleguide-color;
+	background-color: $sc-neutral-shade-300;
+}
+
+.styleguide-color-neutral-shade-0 {
+	@extend .styleguide-color;
+	background-color: $sc-neutral-shade-0;
+}
+
+.styleguide-color-theme-900 {
+	@extend .styleguide-color;
+	background-color: $sc-color-theme-900;
+}
+
+.styleguide-color-theme-400 {
+	@extend .styleguide-color;
+	background-color: $sc-color-theme-400;
+}
+
+.styleguide-color-theme-300 {
+	@extend .styleguide-color;
+	background-color: $sc-color-theme-300;
+}
+
+.styleguide-color-theme-200 {
+	@extend .styleguide-color;
+	background-color: $sc-color-theme-200;
+}
+
+.styleguide-color-success {
+	@extend .styleguide-color;
+	background-color: $sc-color-success;
+}
+
+.styleguide-color-success-border {
+	@extend .styleguide-color;
+	background-color: $sc-color-success-border;
+}
+
+.styleguide-color-success-background {
+	@extend .styleguide-color;
+	background-color: $sc-color-success-background;
+}
+
+.styleguide-color-warning {
+	@extend .styleguide-color;
+	background-color: $sc-color-warning;
+}
+
+.styleguide-color-warning-border {
+	@extend .styleguide-color;
+	background-color: $sc-color-warning-border;
+}
+
+.styleguide-color-warning-background {
+	@extend .styleguide-color;
+	background-color: $sc-color-warning-background;
+}
+
+.styleguide-color-error {
+	@extend .styleguide-color;
+	background-color: $sc-color-error;
+}
+
+.styleguide-color-error-border {
+	@extend .styleguide-color;
+	background-color: $sc-color-error-border;
+}
+
+.styleguide-color-error-background {
+	@extend .styleguide-color;
+	background-color: $sc-color-error-background;
+}
+
+.styleguide-color-info {
+	@extend .styleguide-color;
+	background-color: $sc-color-info;
+}
+
+.styleguide-color-info-border {
+	@extend .styleguide-color;
+	background-color: $sc-color-info-border;
+}
+
+.styleguide-color-info-background {
+	@extend .styleguide-color;
+	background-color: $sc-color-info-background;
+}
+
+.styleguide-color-link {
+	@extend .styleguide-color;
+	background-color: $sc-color-link;
+}
+
+.styleguide-color-link-hover {
+	@extend .styleguide-color;
+	background-color: $sc-color-link-hover;
+}
+
+.styleguide-color-copy-dark {
+	@extend .styleguide-color;
+	background-color: $sc-color-copy-dark;
+}
+
+.styleguide-color-copy {
+	@extend .styleguide-color;
+	background-color: $sc-color-copy;
+}
+
+.styleguide-color-copy-light {
+	@extend .styleguide-color;
+	background-color: $sc-color-copy-light;
+}
+
+
+// Padding variables
+
+.styleguide-padding-lv1 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv1;
+}
+
+.styleguide-padding-lv2 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv2;
+}
+
+.styleguide-padding-lv3 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv3;
+}
+
+.styleguide-padding-lv4 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv4;
+}
+
+.styleguide-padding-lv5 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv5;
+}
+
+.styleguide-padding-lv6 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv6;
+}
+
+.styleguide-padding-lv7 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv7;
+}
+
+.styleguide-padding-lv8 {
+	@extend .styleguide-spacing-box;
+	padding: $sc-padding-lv8;
+}
+
+
+// Margin variables
+
+.styleguide-margin-lv1 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv1;
+}
+
+.styleguide-margin-lv2 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv2;
+}
+
+.styleguide-margin-lv3 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv3;
+}
+
+.styleguide-margin-lv4 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv4;
+}
+
+.styleguide-margin-lv5 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv5;
+}
+
+.styleguide-margin-lv6 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv6;
+}
+
+.styleguide-margin-lv7 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv7;
+}
+
+.styleguide-margin-lv8 {
+	@extend .styleguide-spacing-box;
+	margin: $sc-margin-lv8;
+}

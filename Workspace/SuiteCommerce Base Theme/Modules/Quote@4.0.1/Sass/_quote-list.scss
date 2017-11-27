@@ -1,0 +1,99 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quote-list-button-back {
+  @extend .button-back;
+}
+
+.quote-list-button-back-icon {
+  @extend .button-back-icon;
+}
+
+.quote-list-header {
+  border-top: 1px solid $sc-color-theme-border-light;
+  padding: $sc-padding-lv3 0;
+}
+
+.quote-list-content-table {
+  @extend .recordviews-row-header;
+}
+
+.quote-list-content-table-header-row {
+  @extend .recordviews-table;
+}
+
+.quote-list-content-table-header-row-title {
+  @extend .recordviews-header !optional;
+  width: 20%;
+}
+
+.quote-list-content-table-header-row-request-date {
+  @extend .recordviews-date-header;
+  width: 20%;
+}
+
+.quote-list-content-table-header-row-expiration-date {
+  @extend .recordviews-date-header;
+  width: 15%;
+}
+
+.quote-list-content-table-header-row-currency {
+  @extend .recordviews-currency-header;
+  width: 25%;
+}
+
+.quote-list-content-table-header-row-track {
+  @extend .recordviews-status-header;
+  width: 20%;
+}
+
+.quote-list-results-container {
+   .recordviews-status {
+      padding-bottom:$sc-padding-lv3;
+    }
+  @media (min-width: $screen-md-min) {
+    .recordviews-title {
+      width: 20%;
+    }
+
+    .recordviews-exp-date {
+      width: 20%;
+      text-align: right;
+    }
+
+    .recordviews-date {
+      width: 15%;
+    }
+
+    .recordviews-currency {
+      width: 25%;
+    }
+
+    .recordviews-status {
+      width: 20%;
+      padding-bottom:0;
+      .recordviews-value {
+        color: $sc-color-primary;
+      }
+    }
+  }
+}
+
+.quote-list-empty {
+  @extend .list-empty;
+}
+
+.quote-list-empty-section {
+  padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+  text-align:center;
+}
+
+.quote-list-quotes-table {
+  @extend .table-flex-record-navigable;
+}
+
+.quote-list-content-table-header-row-status {}

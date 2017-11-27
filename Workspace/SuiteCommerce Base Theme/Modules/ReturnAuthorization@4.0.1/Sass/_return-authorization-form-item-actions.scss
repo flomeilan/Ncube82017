@@ -1,0 +1,33 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.return-authorization-form-item-actions-label {
+	@extend .sc-label;
+}
+
+.return-authorization-form-item-actions-options {
+	margin-bottom: $sc-margin-lv2;
+	line-height: normal;
+	@extend .input-large;
+}
+
+.return-authorization-form-item-actions-required{
+	@extend .input-required;
+}
+
+.return-authorization-form-item-actions-other-reason-input{
+	@extend .input-medium;
+}
+
+.return-authorization-form-item-actions-apply-reason-button{
+	@extend .button-tertiary;
+	@extend .button-small;
+}
+
+.return-authorization-form-item-actions-other-reason-text{
+	@extend .input-medium;
+}

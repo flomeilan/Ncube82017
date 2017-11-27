@@ -1,0 +1,91 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-reviews-preview-review {
+    padding: 0;
+
+    h4 {
+        margin-bottom: $sc-margin-lv4;
+        word-wrap: break-word;
+    }
+
+    .global-views-star-rating{
+        .global-views-star-rating-content-label{
+            visibility: hidden;
+        }
+    }
+
+    .product-reviews-preview-review-rating {
+        .product-reviews-preview-review-rating-attribute {
+            .global-views-star-rating-content-label {
+                visibility: visible;
+            }
+        }
+    }
+
+}
+.product-reviews-preview-review-title {
+    @extend .product-reviews-form-content-title;
+}
+.product-reviews-preview-review-rating {
+    padding: $sc-padding-lv6 $sc-padding-lv3 0;
+
+    .product-reviews-preview-review-rating {
+        .global-views-star-rating-area {
+            margin-bottom: $sc-margin-lv4;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        .global-views-star-rating-label-visible {
+            font-weight: $sc-font-weight-semibold;
+            margin-top: $sc-margin-lv1;
+            width: 90px;
+            float: left;
+            font-size: 14px;
+        }
+    }
+    .global-views-star-rating {
+        display: inline-flex;
+        margin-bottom: $sc-margin-lv4;
+    }
+    .global-views-star-rating-empty-pegs {
+      display: inline-block;
+      background: $sc-neutral-shade-300;
+      border: 2px solid $sc-color-theme-border-light;
+
+      @extend .global-views-star-rating-pegs-small;
+    }
+    .global-views-star-rating-filled-pegs {
+      @extend .global-views-star-rating-empty-pegs;
+      background: $sc-color-secondary;
+      border: 2px solid $sc-color-secondary;
+    }
+}
+.product-reviews-preview-review-content {
+    padding: 0 $sc-padding-lv3 $sc-padding-lv6;
+    clear: both;
+}
+.product-reviews-preview-review-content-username {
+    font-weight: 600;
+    margin-bottom: $sc-margin-lv4;
+    word-wrap: break-word;
+
+    span {
+        font-weight: 400;
+        color: $sc-color-primary;
+    }
+
+}
+.product-reviews-preview-review-icon-ok-sign{
+    @extend .icon-ok-sign;
+}
+
+.product-reviews-preview-review-content-description{
+    p {
+        word-wrap: break-word;
+    }
+}

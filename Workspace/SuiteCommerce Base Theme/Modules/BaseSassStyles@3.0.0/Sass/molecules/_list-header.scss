@@ -1,0 +1,209 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// List header
+//
+// List header is a component that contains controls used to refine (filter and/or sort) content within a list.
+// In small devices, the controls are shown inside an expander (closed by default); in large devices controls are shown directly on top of the list.
+//
+// Markup:
+// <nav class="list-header">
+//   <div class="list-header-actions">
+//     <button class="list-header-viewoption active"> <i class="list-header-viewoption-list"></i></button>
+//     <button class="list-header-viewoption"> <i class="list-header-viewoption-box"></i></button>
+//     <button class="list-header-viewoption"> <i class="list-header-viewoption-grid"></i></button>
+//   </div>
+//   <div class="list-header-expander">
+//     <button class="list-header-expander-button" data-toggle="collapse" data-target="#list-header-filters" aria-expanded="true" aria-controls="list-header-filters">
+//       Filter
+//       <i class="list-header-expander-icon"></i>
+//     </button>
+//   </div>
+//   <div class="list-header-filters collapse" id="list-header-filters">
+//     <div class="list-header-filters-wrapper">
+//       <div class="list-header-filters-row">
+//         <div class="list-header-filter-column">
+//           <select class="list-header-filter-input">
+//             <option>Show 12</option>
+//             <option>Show 24</option>
+//             <option>Show 48</option>
+//           </select>
+//         </div>
+//         <div class="list-header-filter-column">
+//           <select class="list-header-filter-input">
+//             <option>Low price</option>
+//             <option>High price</option>
+//           </select>
+//         </div>
+//         <div class="list-header-filter-column">
+//           <button class="list-header-filter-facets">
+//             Filter by
+//             <i class="list-header-filter-facets-icon"></i>
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </nav>
+//
+// Styleguide 3.5
+
+.list-header {
+	background: transparent;
+
+	@media (min-width: $screen-lg-min){
+	  float: right;
+	}
+}
+
+.list-header-actions {
+	float: right;
+}
+
+.list-header-expander {
+	display:inline-block;
+
+	@media (min-width: $screen-sm-min) {
+		float: right;
+		margin-right: $sc-margin-lv2;
+	}
+
+	@media (min-width: $screen-md-min ) {
+		display: none;
+	}
+}
+
+.list-header-expander-button {
+	@extend .button-tertiary;
+	@extend .button-list-header;
+
+	&:hover .list-header-expander-icon {
+		color: white;
+	}
+}
+
+.list-header-expander-icon {
+	@extend .accordion-toggle-icon;
+
+	display: inline-block;
+	font-size: $sc-navigation-icon-size;
+	margin-left: $sc-margin-lv1;
+	position: relative;
+}
+
+.list-header-filters {
+	clear:both;
+	margin-left: -$grid-gutter-width / 2;
+	margin-right: -$grid-gutter-width / 2;
+
+	@media (min-width: $screen-md-min) {
+		float: right;
+		clear: none;
+		border: 0;
+		margin: 0;
+		visibility: visible;
+		display: block; //override for bootrap collapse
+	}
+}
+
+// wrapper to apply padding for the collapse element to animate correctly see
+// https://github.com/twbs/bootstrap/issues/12093
+.list-header-filters-wrapper {
+	padding: $sc-padding-lv4 $sc-padding-lv2;
+	background-color: $sc-color-theme-background;
+	border: 1px solid $sc-color-theme-border-light;
+	margin-top: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min) {
+		margin:0;
+	}
+
+	@media (min-width: $screen-md-min) {
+		padding: 0;
+		background-color: $sc-neutral-shade-0;
+		border:0;
+	}
+}
+
+.list-header-filters-row {
+	@extend .clearfix;
+
+	@media (min-width: $screen-md-min ) {
+		display:inline-block;
+	}
+}
+
+.list-header-filter-column {
+	float: left;
+	padding: 0;
+	width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		width: auto;
+		margin-left: $sc-margin-lv1;
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		width: 33.33333%;
+		padding-right: $sc-margin-lv1;
+	}
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+.list-header-filter-input {
+	@extend .input-small;
+	height: $sc-target-size;
+	width: 100%;
+
+	@media (min-width: $screen-sm-min) {
+		margin-bottom:0;
+	}
+
+	@media (min-width: $screen-md-min) {
+		width:auto;
+	}
+}
+
+.list-header-filter-facets {
+	@extend .button-secondary;
+	@extend .button-small;
+	height: $sc-target-size;
+	line-height: $sc-navigation-icon-size;
+	text-align: left;
+	width:100%;
+	border: 1px solid $sc-color-theme-border;
+	border-radius: 0;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.list-header-filter-facets-icon {
+	@extend .icon-angle-right;
+	color: $sc-neutral-shade-0;
+	float: right;
+	font-size: $sc-navigation-icon-size;
+}
+
+.list-header-title {
+    @media (min-width: $screen-sm-min) {
+        line-height: 45px;
+        height: 45px;
+        float: left;
+    }
+}
+
+.list-header-button {
+    @extend .button-medium;
+    @extend .button-secondary;
+    width: auto;
+    float: right;
+}

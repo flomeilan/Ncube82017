@@ -1,0 +1,34 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-format-payment-method {
+	font-size:$sc-font-size-m;
+}
+
+.global-views-format-payment-method-header-icon {
+	@extend .creditcard-header-icon;
+}
+
+.global-views-format-payment-method-street-value{
+	@extend .sc-value;
+}
+
+.global-views-format-payment-method-zip-value{
+	@extend .sc-value;
+}
+
+.global-views-format-payment-method-zip{}
+.global-views-format-payment-method-number {
+	@extend .creditcard-number;
+}
+.global-views-format-payment-method-name{}
+.global-views-format-payment-method-expdate{}
+.global-views-format-payment-method-gift-certificate{}
+.global-views-format-payment-method-invoice{}
+.global-views-format-payment-method-purchase{}
+.global-views-format-payment-method-paypal{}
+.global-views-format-payment-method-street{}

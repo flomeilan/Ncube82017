@@ -1,0 +1,869 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+$sc-picker-border: $sc-color-theme-200;
+
+// Generic Filter
+//
+// Filters allow the user to narrow a list of products according to its characteristics or features.
+// Different filter options are grouped under a common characteristic, resulting in a list of clickable filters displayed in groups.
+// For example, filtering by length could result contain three options in its list: Long, Regular and Short.
+//
+// Markup:
+// <a class="filter-generic option-active" href="#">
+//   <span>Blue</span> <i class="filter-generic-icon-close"></i>
+// </a>
+//
+// Styleguide 2.6.1
+
+.filter-generic {
+	@extend small;
+	color: $sc-color-copy;
+	padding: $sc-padding-lv1 0;
+	display: inline-block;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.option-active {
+		color: $sc-color-theme-900;
+		font-weight: bold;
+	}
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.filter-generic-icon-close {
+	@extend .icon-base;
+	@extend %fa-times-circle;
+	color: $sc-color-theme-900;
+	margin-left: $sc-margin-lv1;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+// Single filter
+//
+// Some groups allow users to filter by a single option at a time.
+// When the user selects one option all of the other are omitted and cannot be included in the filtering.
+//
+// Markup:
+// <ul class="single-select">
+//   <li>
+//     <a class="single-select-option" href="#">
+//       <span>Filter 1</span>
+//     </a>
+//   </li>
+//   <li>
+//     <a class="single-select-option option-active" href="#">
+//       <span>Filter 2</span> <i class="single-select-icon-close"></i>
+//     </a>
+//   </li>
+//   <li>
+//     <a class="single-select-option" href="#">
+//       <span>Filter 3</span>
+//     </a>
+//   </li>
+// </ul>
+//
+// Styleguide 2.6.2
+
+.single-select {
+	&-option {
+		@extend .filter-generic;
+		display: block;
+	}
+
+	&-icon-close {
+		@extend .filter-generic-icon-close;
+	}
+}
+
+// Price Range
+//
+// A range slider is used to enable users to interactively filter out products using a lower price limit and an upper price limit.
+//
+// Markup:
+// <div class="price-range">
+//   <span class="price-range-start" data-range-indicator="end">$50.00</span>
+//   <span class="price-range-end" data-range-indicator="start">$10,000.00</span>
+//   <div class="price-range-slider slider" data-facet-id="onlinecustomerprice" data-toggle="slider" data-min="50" data-max="10000" data-low="50" data-high="10000">
+//     <div class="price-range-slider-bar" style="left: 0%; width: 100%;"></div>
+//     <button class="price-range-slider-bar-right" data-control="low" style="left: 0%;"></button>
+//     <button class="price-range-slider-bar-left" data-control="high" style="left: 100%;"></button>
+//   </div>
+// </div>
+//
+// Styleguide 2.6.4
+
+.price-range {
+	min-height: 50px;
+}
+
+.price-range-end {
+	@extend .pull-right;
+}
+
+.price-range-slider-bar-left ,
+.price-range-slider-bar-right {
+	background:none;
+	border: 0px;
+	font-size: 35px;
+	color: $sc-color-theme-900;
+	top: -25px;
+	position: absolute;
+	padding: $sc-padding-lv2 $sc-padding-lv3;
+	margin-left: - $sc-padding-lv3;
+}
+
+.price-range-slider-bar-left {
+	@extend .icon-caret-left;
+}
+
+.price-range-slider-bar-right {
+	@extend .icon-caret-right;
+}
+
+.price-range-slider-bar {
+	background: $sc-color-primary;
+	position:absolute;
+}
+
+.price-range-slider {
+	@extend .progress; // bs
+	border: none;
+	overflow: visible;
+	margin: $sc-margin-lv3 $sc-margin-lv2 $sc-margin-lv2 0;
+	position: relative;
+	height: 3px;
+}
+
+@media (min-width: $screen-sm-min) {
+	.price-range-slider-bar-left ,
+	.price-range-slider-bar-right {
+		font-size: 30px;
+		top:-23px;
+	}
+
+	.price-range-slider {
+		height: 3px;
+	}
+}
+
+// General Picker
+//
+// For other item options that are not colors, a generic picker is available.
+// When purchasing an item with multiple options, generic picker enables the user to select the option for the item they intend to buy.
+//
+// Markup:
+// <ul class="picker">
+//   <li>
+//     <a class="picker-link">
+//       <span class="picker-link-value">Option 1</span>
+//     </a>
+//   </li>
+//   <li>
+//     <a class="picker-link active">
+//       <span class="picker-link-value">Option 2</span>
+//     </a>
+//   </li>
+//   <li>
+//     <a class="picker-link disabled">
+//       <span class="picker-link-value">Option 3</span>
+//     </a>
+//   </li>
+// </ul>
+//
+// Styleguide 2.6.5
+
+%picker-link {
+	display:block;
+	cursor:pointer;
+	cursor:hand;
+	box-sizing: border-box;
+}
+
+.picker {
+	li{
+		display:inline-block;
+		margin-right: $sc-margin-lv2;
+	}
+
+	a {
+		text-decoration:none;
+		display:block;
+		position:relative;
+		margin-bottom: $sc-margin-lv1;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&.active {
+			span {
+				border: 2px solid $sc-color-copy-dark;
+				color: $sc-color-copy-dark;
+			}
+		}
+
+		&.disabled {
+			opacity: 0.4;
+
+			span:hover {
+				cursor: default;
+				border:2px solid $sc-color-theme-border-light;
+				color: $sc-color-theme-400;
+			}
+		}
+
+	}
+
+	span {
+
+		@extend %picker-link;
+		padding: 0 $sc-padding-lv2;
+		border: 2px solid $sc-color-theme-border-light;
+		color: $sc-color-theme-400;
+		text-align: center;
+		line-height: 33px;
+		font-size: $sc-font-size-m;
+		font-weight: $sc-font-weight-semibold;
+
+		min-width: $picker-large;
+
+		&:hover {
+			border:2px solid $sc-color-copy-dark;
+			color: $sc-color-copy-dark;
+		}
+	}
+}
+
+.picker-lg {
+	@extend .picker;
+}
+
+.picker-md {
+	@extend .picker;
+
+	li {
+		margin-right: $sc-margin-lv1;
+	}
+
+	span {
+		line-height: 22px;
+		padding: 0 $sc-padding-lv1;
+		min-width: $picker-medium;
+	}
+}
+
+.picker-sm {
+	@extend .picker;
+
+	li {
+		margin-right: $sc-margin-lv1;
+	}
+
+	span {
+		line-height: 20px;
+		padding: 0 $sc-padding-lv1;
+		min-width: $picker-small;
+	}
+}
+
+// General Picker
+//
+// Markup:
+// <label class="picker-label">
+//   <input type="radio" class="picker-input"/> Option
+// </label>
+//
+// Styleguide 2.6.6
+
+.picker-input {
+  opacity: 0;
+  outline: 0;
+  position: absolute;
+}
+
+.picker-label {
+	padding: 0 $sc-padding-lv2;
+	border:2px solid $sc-neutral-shade-300;
+	color: $sc-neutral-shade-300;
+	text-align: center;
+	line-height:36px;
+	font-weight: $sc-font-weight-semibold;
+
+    display: inline-block;
+	margin-right: $sc-margin-lv2;
+	min-width: $picker-large;
+	text-transform: capitalize;
+
+	&:hover {
+		border:2px solid $sc-neutral-shade-900;
+		color: $sc-neutral-shade-900;
+	}
+}
+
+.picker-label.picker-checked {
+	border:2px solid $sc-neutral-shade-900;
+	color: $sc-neutral-shade-900;
+}
+
+// New Color Picker
+//
+// Markup:
+// <div class="picker-color">
+// 	<label class="picker-color-label">
+// 		<input type="radio" class="picker-color-input">
+//		<span class="picker-color-box" style="background: red"></span>
+// 	</label>
+// 	<label class="picker-color-label">
+// 		<input type="radio" class="picker-color-input">
+//		<span class="picker-color-box" style="background: blue"></span>
+// 	</label>
+// 	<label class="picker-color-label">
+// 		<input type="radio" class="picker-color-input">
+//		<span class="picker-color-box" style="background: white"></span>
+// 	</label>
+// </div>
+//
+// Styleguide 2.6.7
+
+%picker-color-active-hover {
+	content: ' ';
+	display: block;
+	position: absolute;
+	border: solid 2px #ffffff;
+	z-index: 10;
+}
+
+%picker-color-disabled {
+	content: '\2715';
+	border: 0;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	color: #ffffff;
+	top: 0;
+	left: 0;
+	text-align: center;
+	&.white-border{
+		color: $sc-color-theme-400;
+		border: 0;
+		top: 0;
+		left: 0;
+	}
+}
+
+.picker-color {
+	display:inline-block;
+	margin-right: $sc-margin-lv1;
+}
+
+.picker-color-label {
+	cursor: pointer;
+	display: block;
+}
+
+.picker-color-input {
+	opacity: 0;
+	outline: 0;
+	position: absolute;
+}
+
+.picker-color-box {
+	display: block;
+	position: relative;
+	line-height: 40px;
+
+	&:hover:before,
+	&.picker-color-box-active:before {
+		@extend %picker-color-active-hover;
+		top: 3px;
+		left: 3px;
+	}
+
+	&.picker-color-box-disabled {
+		opacity: 0.4;
+
+		&:hover:before,
+		&:before {
+			@extend %picker-color-disabled;
+			font-size: 30px;
+		}
+	}
+
+	&.picker-color-box-white-border {
+		border: 1px solid #c7dde9;
+
+		&:hover:before {
+			border: solid 2px #c7dde9;
+			top: 2px;
+			left: 2px;
+		}
+
+		&:hover:before,
+		&.picker-color-box-active:before {
+			border:2px solid $sc-color-theme-border-light;
+			top: 2px;
+			left: 2px;
+		}
+
+		&.picker-color-box-disabled:hover:before,
+		&.picker-color-box-disabled:before {
+			color: $sc-color-theme-400;
+			border: none;
+		}
+	}
+}
+
+.picker-color-lg {
+	.picker-color-box {
+		height: $picker-color-large;
+		width: $picker-color-large;
+
+		&:hover:before,
+		&.picker-color-box-active:before {
+			height: 30px;
+			width: 30px;
+		}
+		&.picker-color-box-disabled {
+			&:hover:before,
+			&:before {
+				@extend %picker-color-disabled;
+				width: $picker-color-large;
+				height: $picker-color-large;
+				line-height: $picker-color-large;
+			}
+		}
+	}
+}
+
+.picker-color-md {
+	.picker-color-box {
+		height: $picker-color-medium;
+		width: $picker-color-medium;
+	    line-height: $picker-color-medium;
+
+		&:hover:before,
+		&.picker-color-box-active:before {
+			height: 20px;
+			width: 20px;
+		}
+		&.picker-color-box-disabled {
+			&:hover:before,
+			&:before {
+				@extend %picker-color-disabled;
+				width: $picker-color-medium;
+				height: $picker-color-medium;
+				font-size: 25px;
+				line-height: $picker-color-medium;
+			}
+		}
+	}
+}
+
+.picker-color-sm {
+	.picker-color-box {
+		height: $picker-color-small;
+		width: $picker-color-small;
+
+		&:hover:before,
+		&:before {
+			border: none;
+		}
+	}
+}
+
+.picker-color-xs {
+	.picker-color-box {
+		height: $picker-color-xsmall;
+		width: $picker-color-xsmall;
+
+		&:before {
+			border: none;
+		}
+	}
+}
+
+.picker-color-box-img {
+	&:hover {
+		outline: 2px solid #000;
+		outline-offset: -2px;
+	}
+}
+
+.picker-color-box-img-active {
+	border: 2px solid #000;
+}
+
+.picker-color-box-img-disabled {
+	opacity: 0.4;
+}
+
+%color-picker-link-hover {
+	content: ' ';
+	display: block;
+	position: absolute;
+	border: solid 2px $sc-neutral-shade-0;
+	z-index: 10;
+}
+
+%color-picker-link-disabled {
+	content: '\2715';
+	border: 0;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	color: $sc-neutral-shade-0;
+	top: 0;
+	left: 0;
+	text-align: center;
+	&.white-border{
+		color: $sc-color-theme-400;
+		border: 0;
+		top: 0;
+		left: 0;
+	}
+}
+
+.color-picker {
+	li{
+		display:inline-block;
+		margin-right: $sc-margin-lv1;
+	}
+
+	a {
+		text-decoration:none;
+		display:block;
+		position:relative;
+
+		&:hover:before,
+		&.active:before {
+			@extend %color-picker-link-hover;
+			top: 3px;
+			left: 3px;
+		}
+
+		&.disabled {
+			opacity: 0.4;
+
+			&:hover:before,
+			&:before {
+				@extend %color-picker-link-disabled;
+			}
+		}
+
+		&[data-color="white"]:hover:before,
+		&[data-color="white"].active:before {
+			border:2px solid $sc-color-theme-border-light;
+		}
+
+		&[data-color="white"].disabled:hover:before,
+		&[data-color="white"].disabled:before {
+			color: $sc-color-theme-400;
+			border: none;
+		}
+	}
+
+	span {
+		@extend %picker-link;
+		border:1px solid $sc-color-theme-border-light;
+		line-height:24px;
+	}
+}
+
+.facets-faceted-navigation-item-color-picker {
+	img{
+		width: $picker-large;
+		height: $picker-large;
+		display:block;
+		@media (min-width: $screen-sm-min) {
+			width: $picker-medium;
+			height: $picker-medium;
+		}
+	}
+}
+
+.color-picker-lg {
+	@extend .color-picker;
+
+	a {
+		&:hover:before,
+		&.active:before {
+			height: 30px;
+			width: 30px;
+		}
+
+		&.disabled {
+
+			&:hover:before,
+			&:before {
+				width: $picker-large;
+				height: $picker-large;
+				font-size: 30px;
+			}
+		}
+	}
+
+	span {
+		height: $picker-large;
+		width: $picker-large;
+		border: none;
+	}
+}
+
+.color-picker-md {
+	@extend .color-picker;
+
+	a {
+		// @media (min-width: $screen-sm-min) {
+		// 		height: 15px;
+		// 		width: 15px;;
+		// }
+		&:hover:before,
+		&.active:before {
+			height: 30px;
+			width: 30px;
+
+			@media (min-width: $screen-sm-min) {
+				height: 15px;
+				width: 15px;
+			}
+		}
+
+		&.disabled {
+
+			&:hover:before,
+			&:before {
+				width: $picker-large;
+				height: $picker-large;
+				font-size: 30px;
+
+				@media (min-width: $screen-sm-min) {
+					height: $picker-medium;
+					width: $picker-medium;
+					font-size: 19px;
+				}
+			}
+		}
+	}
+
+	span {
+		height: $picker-large;
+		width: $picker-large;
+		border: none;
+
+		@media (min-width: $screen-sm-min) {
+			height: $picker-medium;
+			width: $picker-medium;
+		}
+	}
+}
+
+.color-picker-sm {
+	@extend .color-picker;
+
+	a {
+		&:hover:before,
+		&.active:before {
+			height: 10px;
+			width: 10px;
+		}
+
+		&.disabled {
+
+			&:hover:before,
+			&:before {
+				width: $picker-small;
+				height: $picker-small;
+				font-size: 14px;
+			}
+		}
+	}
+
+	span {
+		height: $picker-small;
+		width: $picker-small;
+		border: none;
+
+	}
+}
+
+.color-picker-xs {
+	@extend .color-picker;
+	a {
+		&:hover:before,
+		&.active:before {
+			height: 5px;
+			width: 5px;
+			border:none;
+		}
+
+		&.disabled {
+
+			&:hover:before,
+			&:before {
+				width: $picker-xsmall;
+				height: $picker-xsmall;
+				font-size: 14px;
+			}
+		}
+	}
+
+	span {
+		height: $picker-xsmall;
+		width: $picker-xsmall;
+		border: none;
+	}
+	.white-border {
+		border: 1px solid $sc-picker-border;
+	}
+}
+
+.item-details-options,
+.facets-faceted-navigation-item-color-picker {
+	.white-border {
+		span{
+			border: 1px solid $sc-picker-border;
+		}
+
+		&:hover:before {
+			border: solid 2px $sc-picker-border;
+		}
+	}
+	.white-border.active {
+
+		&:before {
+			border: solid 2px $sc-picker-border;
+		}
+	}
+}
+
+.facets-facet-browse-items {
+	.item-views-option-color-tiles-container {
+		.white-border {
+			span{
+				border: 1px solid $sc-picker-border;
+			}
+
+			&:hover:before {
+				border: solid 2px $sc-picker-border;
+			}
+		}
+		.white-border.active {
+
+			&:before {
+				border: solid 2px $sc-picker-border;
+			}
+		}
+	}
+
+}
+
+.item-views-option-color-tile {
+	img{
+		width: $picker-large;
+		height: $picker-large;
+	}
+}
+
+
+.quick-view-confirmation-modal-options {
+	.white-border {
+		span{
+			border: 1px solid $sc-picker-border;
+		}
+
+		&:hover:before {
+			border: solid 2px $sc-picker-border;
+		}
+	}
+	.white-border.active {
+
+		&:before {
+			border: solid 2px $sc-picker-border;
+		}
+	}
+
+}
+
+// Stock Info Labels
+//
+// Markup:
+// <p class="stock-info-in">
+//   <span class="stock-info-in-icon">
+//     <i></i>
+//   </span>
+//   In Stock
+// </p>
+// <p class="stock-info-low">
+//   <span class="stock-info-low-icon">
+//     <i></i>
+//   </span>
+//   Low Stock Level
+// </p>
+// <p class="stock-info-out">
+//   <span class="stock-info-out-icon">
+//     <i></i>
+//   </span>
+//   Out of Stock
+// </p>
+//
+// Styleguide 2.6.8
+
+.stock-info-in {
+	@extend .message-success;
+}
+
+.stock-info-in-icon {
+	@extend .icon-container-success;
+
+	i {
+		@extend .icon-success;
+	}
+}
+
+.stock-info-low {
+	@extend .message-warning;
+}
+
+.stock-info-low-icon {
+	@extend .icon-container-warning;
+
+	i {
+		@extend .icon-warning;
+	}
+}
+
+.stock-info-out {
+	@extend .message-error;
+}
+
+.stock-info-out-icon {
+	@extend .icon-container-error;
+
+	i {
+		@extend .icon-error;
+	}
+}
+
+.stock-info-description {
+	@extend .message-info;
+}
+
+.item-view-stock-icon-description {
+	@extend .fa;
+	@extend %fa-info-circle;
+	color: $sc-color-info;
+	font-size: $sc-font-size-s;
+}

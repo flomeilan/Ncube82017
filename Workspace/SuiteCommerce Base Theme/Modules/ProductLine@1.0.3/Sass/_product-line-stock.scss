@@ -1,0 +1,63 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-line-stock-msg {
+	margin-top: $sc-margin-lv2;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.product-line-stock-msg-in {
+	@extend .stock-info-in;
+	@extend .product-line-stock-msg;
+}
+
+.product-line-stock-msg-low {
+	@extend .stock-info-low;
+	@extend .product-line-stock-msg;
+}
+
+.product-line-stock-msg-out {
+	@extend .stock-info-out;
+	@extend .product-line-stock-msg;
+}
+
+.product-line-stock-msg-description {
+	@extend .stock-info-description;
+	@extend .product-line-stock-msg;
+}
+
+.product-line-stock-icon {
+	margin-right:$sc-margin-lv1;
+}
+
+.product-line-stock-icon-in {
+	@extend .product-line-stock-icon;
+	@extend .stock-info-in-icon;
+}
+
+.product-line-stock-icon-low {
+	@extend .product-line-stock-icon;
+	@extend .stock-info-low-icon;
+}
+
+.product-line-stock-icon-out {
+	margin-right:$sc-margin-lv1;
+
+	i {
+		@extend .icon-message-atention;
+	}
+}
+.product-line-stock-icon-description {
+	@extend .product-line-stock-icon;
+	@extend .icon-info;
+	color: $sc-color-theme-900;
+}
+.product-line-stock-msg-not-available {
+	@extend .global-views-message;
+	@extend .global-views-message-warning;
+}
+.product-line-stock-msg-out-text{}

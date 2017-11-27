@@ -1,0 +1,95 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-showshipments-module-container{
+	@extend .box-column;
+}
+
+.order-wizard-showshipments-module-shipping-address{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.order-wizard-showshipments-module-shipping-method{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+.order-wizard-showshipments-module-shipping-details{
+	@extend .box-column;
+}
+
+.order-wizard-showshipments-module-shipping-details-body {
+	@extend .row;
+}
+.order-wizard-showshipments-module-shipping-details-address{
+	@extend .col-md-4;
+}
+.order-wizard-showshipments-module-shipping-details-items {
+	@extend .col-md-8;
+}
+.order-wizard-showshipments-module-shipping-details-address {
+	margin-bottom: $sc-margin-lv4;
+
+	.address-details {
+		padding: $sc-padding-lv3;
+		border: 1px solid $sc-color-theme-border-light;
+	}
+	.address-details-info {
+		margin-bottom: 0;
+	}
+}
+.order-wizard-showshipments-module-shipping-details-method {
+	.order-wizard-showshipments-module-shipping-details-method-info-card {
+		min-height: inherit;
+	}
+
+	.order-wizard-showshipments-module-shipping-title {
+		margin-left: 0;
+	}
+}
+.order-wizard-showshipments-module-shipping-details-address-link {
+	margin-bottom: $sc-margin-lv3;
+	display: inline-block;
+}
+.order-wizard-showshipments-module-shipping-title
+ {
+	margin-bottom: $sc-margin-lv4;
+	margin-left: $sc-margin-lv3;
+}
+
+.order-wizard-showshipments-module-edit-cart-link{
+
+	display: block;
+	padding: $sc-padding-lv3 $sc-padding-lv4;
+	margin: - $sc-margin-lv4;
+	margin-bottom:$sc-margin-lv3;
+	border-bottom:1px solid $sc-color-theme-border-light;
+}
+
+.order-wizard-showshipments-module-shipping-options{
+	width: 100%;
+}
+
+.order-wizard-showshipments-module-shipping-details-method-info-card {
+	@extend .info-card;
+}
+
+.order-wizard-showshipments-module-shipping-details-address-view {
+	margin-bottom: $sc-margin-lv4;
+
+	.address-details-info * {
+	    font-size: $sc-font-size-s;
+	    line-height: 1.6;
+	}
+
+	.address-details-edit-address {
+		margin: 0;
+	}
+}
+
+.order-wizard-showshipments-module-shipmethod-rate{}
+.order-wizard-showshipments-module-shipmethod-name{}

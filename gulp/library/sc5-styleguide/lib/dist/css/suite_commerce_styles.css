@@ -1,0 +1,72 @@
+.sg.sg-header { background: none; }
+
+.sg.sg-section.main .sg-section-header h1 { font-size: 1.777em; }
+
+.sg.sg-section-header { background: none; }
+.sg.sg-section { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #CCC; }
+
+.sg.sg-section-header h1,
+.sg.sg-section-header .sg-section-source-ref,
+.sg.sg-section-header h1 .sg-section-source,
+.sg.sg-section-header i.fa,
+.sg.sg-section-header h1 .sg-reference-number,
+.sg.sg-header .sg-title h1,
+.sg.sg-section.main .sg-section-header h1 .sg-section-source { color: #222426; }
+
+.sg.sg-section-header h1 { padding-left: 0; padding-right: 0; }
+
+.sg.sg-top-nav,
+.sg.sg-top-nav-menu li { background-color: #222426; }
+
+.sg.sg-top-nav-menu > li > a { color: white; }
+
+.sg.sg-top-nav-menu li ul li a,
+.sg.sg-top-nav-menu li:hover ul li a { color: #222426; }
+
+.sg.sg-top-nav-menu > li > a.active,
+.sg.sg-top-nav-menu > li > a:hover,
+.sg.sg-top-nav-menu li ul li a.active,
+.sg.sg-top-nav-menu li ul li a:hover,
+.sg.sg-top-nav-menu li:hover ul li a:hover { background-color: #91979d; color: white; }
+
+a.sg { color: #91979d; }
+a.sg:hover,
+a.sg:active { color: #222426; }
+
+.sg.sg-top-nav-menu > li > a.sub-active { border-color: #91979d; }
+
+.sg.sg-header .sg.sg-search-container .sg.sg-search-field { border-color: #91979d; }
+
+.sg.sg-section .sg.sg-section-partial { border: none; padding-left: 0; padding-right: 0; }
+.sg.sg-section .sg.sg-section-partial-description { padding: 0; border: none; }
+.sg.sg-section .sg.modifier-list { padding: 0; }
+.sg.sg-label { border: none; }
+.sg.sg-section .sg.sg-section-partial:last-child { border: none; }
+.sg.sg-section-partial .message-info,
+.sg.sg-section-partial .message-success,
+.sg.sg-section-partial .message-warning,
+.sg.sg-section-partial .message-error { display: table; clear: both; margin-bottom: 10px; }
+
+.sg.sg-section .sg.sg-code-listing pre pre { padding: 0; }
+
+.hljs.html { font-size: 14px; }
+
+.sg.sg-footer { border-top: none; padding-top: 0; }
+
+.section-markup-wrapper .push-button-primary,
+.section-markup-wrapper .push-button-secondary,
+.section-markup-wrapper .push-button-description { display: block; max-width: 320px; }
+
+.section-markup-wrapper .icon-home,
+.section-markup-wrapper .icon-star,
+.section-markup-wrapper .icon-like { font-size: 16px; color: #222426; }
+
+.section-markup-wrapper input,
+.section-markup-wrapper select,
+.section-markup-wrapper textarea {
+	width: 300px !important;
+}
+
+.section-markup-wrapper input.quantity-input {
+	width: 60px !important;
+}

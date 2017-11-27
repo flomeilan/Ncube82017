@@ -1,0 +1,42 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-facets-display-narrowedby-title{
+	text-transform: capitalize;
+}
+
+.facets-facets-display-filter {
+	@extend small;
+	color: $sc-color-secondary;
+	margin-left: $sc-margin-lv2;
+	display: inline-block;
+}
+
+.facets-facets-display-filter-delete-icon {
+	@extend .icon-base;
+	@extend %fa-times-circle;
+
+	position: relative;
+	top: 2px;
+	color: $sc-color-secondary;
+	margin-left: $sc-margin-lv1;
+}
+
+.facets-facets-display-clear-wrapper{
+	margin-top: $sc-margin-lv1;
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.facets-facets-display-clear {
+	@extend .filter-generic;
+}
+
+.facets-facets-display-clear-icon {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}

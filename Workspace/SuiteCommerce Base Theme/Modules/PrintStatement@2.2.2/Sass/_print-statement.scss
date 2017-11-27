@@ -1,0 +1,80 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.print-statement-button-back{
+	@extend .button-back;
+}
+
+.print-statement-back-icon{
+	@extend .button-back-icon;
+}
+
+.print-statement{
+	@extend .box-column-bordered
+}
+
+.print-statement-form{
+	margin-top: $sc-margin-lv4;
+}
+
+.print-statement-form-group-label {}
+
+.print-statement-form-group-input{
+	@extend .input-large
+}
+
+.print-statement-form-label-required{
+	@extend .input-required;
+}
+
+.print-statement-form-group,
+.print-statement-form-actions{
+	margin-top: $sc-margin-lv4;
+}
+
+.print-statement-form-checkbox-label{
+	margin-bottom: $sc-margin-lv2;
+	display: block;
+}
+
+.print-statement-form-actions-print{
+	@extend .button-primary;
+	@extend .button-medium;
+}
+
+.print-statement-form-actions-email{
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-positioning-stack2next;
+}
+
+.print-statement-form-input-icon {
+	@extend .fa;
+	@extend %fa-calendar;
+
+	display: none;
+	cursor: pointer;
+	color: $sc-color-secondary;
+
+  	@media (min-width: $screen-md-min) {
+  		display: inline-block;
+		position: absolute;
+		right: 25px;
+		left: 315px;
+		margin-top: -40px;
+	  	width: 20px;
+	}
+}
+
+.print-statement-form-group-label-optional {
+	@extend .input-optional;
+	display: inline;
+}
+
+.print-statement-title{}
+.print-statement-alert-placeholder{}
+.print-statement-form-controls{}

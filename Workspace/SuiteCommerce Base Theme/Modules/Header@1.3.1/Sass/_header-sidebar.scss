@@ -1,0 +1,248 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+///////////////////////////////////////////////////////////////
+//header sidebar overlay and wrapper
+
+.header-sidebar-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	z-index: 1001;
+	background-color: $sc-neutral-shade-600;
+	opacity: 0;
+	@include transition(opacity 600ms ease);
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.header-sidebar-wrapper {
+	height: 100%;
+	@extend %scroll-y;
+}
+
+///////////////////////////////////////////////////////////////
+//header sidebar animation
+
+#main {
+	@include transition-transform(400ms ease);
+}
+
+.header-sidebar-opened {
+
+	@include translate($sc-sidebar-size, 0);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+
+	@media (min-width: $screen-md-min) {
+		@include translate(0, 0);
+		height: auto;
+		position: static;
+	}
+
+	.header-sidebar-overlay {
+		width: 100%;
+		height: 100%;
+		opacity: 0.3;
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+//header sidebar menu layout and animation
+
+.header-sidebar-menu-wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.header-sidebar-menu-wrapper a {
+	display: block;
+}
+
+.header-sidebar-menu {
+	margin: 0;
+	overflow: hidden;
+}
+
+.header-sidebar-menu-transition{
+	@include transition(height 200ms);
+}
+
+//hide all the li's and a's
+.header-sidebar-menu li,
+.header-sidebar-menu-path > a {
+	display: none;
+}
+
+// selective display required li's
+// First rule is for the li marked as path
+// second rule is for the first childreen inside the opened li
+
+.header-sidebar-menu .header-sidebar-menu-path,
+.header-sidebar-menu-opened > ul > li {
+	display: block;
+}
+
+
+.header-sidebar-menu-flyer {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+//Hide and show required li's
+.header-sidebar-menu-flyer li {
+	display: none;
+}
+
+.header-sidebar-menu-flyer > li {
+	display: block;
+}
+
+.header-sidebar-menu-flyer.header-sidebar-menu-flyer-in {
+	@include animation(headerSidebarMenuFlyerIn 300ms ease-in-out);
+}
+
+.header-sidebar-menu-flyer.header-sidebar-menu-flyer-out {
+	@include animation(headerSidebarMenuFlyerOut 300ms ease-in-out);
+}
+
+@-webkit-keyframes headerSidebarMenuFlyerIn {
+	0% {
+		@include translate($sc-sidebar-size,0 );
+	}
+
+	100% {
+		@include translate(0,0);
+	}
+}
+
+@keyframes headerSidebarMenuFlyerIn {
+	0% {
+		@include translate($sc-sidebar-size, 0);
+	}
+
+	100% {
+		@include translate(0,0);
+	}
+}
+
+@-webkit-keyframes headerSidebarMenuFlyerOut {
+	0% {
+		@include translate(0,0);
+	}
+
+	100% {
+		@include translate($sc-sidebar-size, 0);
+	}
+}
+
+@keyframes headerSidebarMenuFlyerOut {
+	0% {
+		@include translate(0, 0);
+	}
+
+	100% {
+		@include translate($sc-sidebar-size, 0);
+	}
+}
+
+///////////////////////////////////////////////////////////////
+//header sidebar menu look and feel
+
+.header-sidebar-menu-wrapper {
+	border-top: 1px solid $sc-color-theme-border-light;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+
+.header-sidebar-menu-wrapper li {
+	background-color: $sc-color-theme-background;
+}
+
+.header-sidebar-menu-wrapper a {
+	padding: $sc-padding-lv3;
+	color: $sc-color-secondary;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	@extend .small-title-navigable;
+	font-weight: $sc-font-weight-normal;
+}
+
+.header-sidebar-menu-wrapper li:last-child > a {
+	border-bottom: 0;
+}
+
+.header-sidebar-menu-wrapper .header-sidebar-menu-back {
+	padding: $sc-padding-lv3;
+	margin:0;
+	background: $sc-color-theme-background;
+	color: $sc-color-link;
+	text-transform: capitalize;
+}
+
+.header-sidebar-menu-push-icon {
+	@extend .icon-angle-right;
+	font-size: $sc-navigation-icon-size;
+	float: right;
+}
+
+.header-sidebar-menu-pop-icon {
+	@extend .icon-angle-left;
+	font-size: $sc-font-size-l;
+	margin-right: $sc-margin-lv2;
+	color: $sc-color-link;
+}
+
+.header-sidebar-wrapper .header-profile-menu-login,
+.header-sidebar-user-logout {
+	height: $sc-main-nav-height;
+	line-height: $sc-main-nav-height;
+	padding: 0 $sc-padding-lv3;
+	display: block;
+	@media (min-width:$screen-md-min) {
+		line-height: $sc-target-size;
+	}
+}
+
+.header-sidebar-user-logout-icon{
+	@extend .fa;
+	@extend %fa-sign-out;
+}
+
+.header-sidebar-wrapper .header-profile-welcome-link{
+	line-height: 1.1em;
+	height: initial;
+	text-align: left;
+	padding: $sc-padding-lv3;
+	cursor:default;
+	color: $sc-color-secondary;
+}
+
+.header-sidebar-menu-lastoption > a{
+	border-bottom: none;
+}
+
+.header-sidebar-wrapper .header-sidebar-menu-separator{
+	background-color: $sc-color-theme-background;
+	height: $sc-margin-lv2;
+	border-top: 1px solid $sc-color-theme-border-light;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+.header-sidebar-menu-link.active {
+	color: $sc-color-copy;
+}
+
+.header-sidebar-menu-myaccount{}
+.header-sidebar-quote-basket{}

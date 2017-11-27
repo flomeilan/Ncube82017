@@ -1,0 +1,109 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-edit-item-modal-body{
+	@extend .row;
+}
+
+.product-list-edit-item-image{
+	@extend .col-xs-12;
+	@extend .col-sm-4;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.product-list-edit-item-details {
+	@extend .col-xs-12;
+	@extend .col-sm-8;
+}
+
+.product-list-edit-item-modal-footer{
+	margin-top: $sc-margin-lv4;
+}
+
+.product-list-edit-item-anchor-name {
+	@extend .small-title-navigable;
+}
+
+.product-list-edit-item-label {
+	margin-top: $sc-margin-lv2;
+	display:block;
+}
+
+.product-list-edit-item-price {
+	margin-top: $sc-margin-lv1;
+	clear: both;
+}
+
+.product-list-edit-item-input-quantity {
+	@extend .quantity-input;
+}
+
+.product-list-edit-item-button-quantity-add {
+	@extend .quantity-input-button-add;
+}
+
+.product-list-edit-item-button-quantity-minus {
+	@extend .quantity-input-button-remove;
+}
+
+.product-list-edit-item-quantity {
+	@include clearfix;
+	clear:both;
+	display:block;
+}
+
+.product-list-edit-item-quantity-help{
+	clear: both;
+	display: block;
+	font-weight:$sc-font-weight-light;
+	margin-top: $sc-margin-lv2;
+}
+
+.product-list-edit-item-priority {
+	margin-top: $sc-margin-lv2;
+	display:block;
+}
+
+.product-list-edit-item-select-priority {
+	@extend .input-medium;
+}
+
+.product-list-edit-item-textarea {
+
+}
+
+.product-list-edit-item-button-edit {
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.product-list-edit-item-button-cancel {
+	@extend .button-medium;
+	@extend .button-secondary;
+	@extend .button-positioning-stack2next;
+}
+.global-views-modal.global-views-modal-large {
+	.product-list-edit-item-textarea {
+		width: 100%;
+	}
+}
+
+.product-list-edit-item-label-optional {
+	@extend .input-optional;
+	display: inline;
+}
+
+.product-list-edit-item-priority-input{
+	@extend .input-medium;
+}
+
+.product-list-edit-item-notes{}
+.product-list-edit-item-basic{}
+.product-list-edit-item-name{}
+.product-list-edit-item-added{}
+.product-list-edit-item-rating{}
+.product-list-edit-item-options{}

@@ -1,0 +1,27 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-breadcrumb-item-active {
+	@extend .breadcrumb-item-active;
+}
+
+.global-views-breadcrumb-item {
+	@extend .breadcrumb-item;
+}
+
+.global-views-breadcrumb-divider {
+	@extend .breadcrumb-divider;	
+}
+
+.global-views-breadcrumb {
+	@extend .breadcrumb;	
+	font-size:14px;
+}
+
+.global-views-breadcrumb-divider-icon {
+	@extend .breadcrumb-divider-icon;
+}

@@ -1,0 +1,44 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-bulk-actions-button-group {
+	float: right;
+	position:relative;
+
+	@media (min-width: $screen-sm-min){
+		margin-left: $sc-margin-lv2;
+		margin-bottom: $sc-margin-lv3;
+	}
+}
+
+.product-list-bulk-actions-button-addtocart {
+	@extend .button-list-header;
+	@extend .button-list-header-shrink;
+	@extend .button-primary;
+	width: auto;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.product-list-bulk-actions-button-expander {
+	@extend .button-list-header;
+	@extend .button-primary;
+	padding: 0;
+	border-left: 1px solid lighten($sc-color-primary, 10%);
+	width: auto;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+
+	i{
+		@extend .fa;
+		@extend %fa-angle-down;
+	}
+}
+
+.product-list-bulk-actions-dropdown {
+	@extend .split-button-dropdown;
+}

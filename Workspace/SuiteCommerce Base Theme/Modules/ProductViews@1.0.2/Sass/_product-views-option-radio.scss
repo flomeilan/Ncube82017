@@ -1,0 +1,49 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-option-radio {
+	margin-bottom:$sc-margin-lv4;
+	[data-validation-error="block"]{
+  		display:table;
+  		margin-top:$sc-margin-lv1;
+  	}
+}
+
+.product-views-option-radio-title {
+	text-transform:uppercase;
+	font-weight:$sc-font-weight-bold;
+	margin-bottom:$sc-margin-lv2;
+	display: block;
+
+	span {
+		font-weight:$sc-font-weight-normal;
+	}
+}
+.product-views-option-radio-input-required{
+	@extend .input-required;
+}
+
+.product-views-option-radio-label {
+	text-transform:uppercase;
+	color:$sc-color-copy-dark;
+	font-weight:$sc-font-weight-bold;
+	font-size:$sc-font-size-m;
+}
+
+.product-views-option-radio-value {
+	@extend .sc-value;
+	padding-right:$sc-padding-lv1;
+}
+
+.product-views-option-radio-label-header {
+	text-transform:uppercase;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.product-views-option-radio-input {
+	margin-right:$sc-margin-lv1;
+}

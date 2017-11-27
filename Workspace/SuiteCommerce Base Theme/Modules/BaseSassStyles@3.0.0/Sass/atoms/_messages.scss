@@ -1,0 +1,125 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Basic messages
+//
+// When users are interacting with an application they often expect feedback. This feedback can have different tones or communicate different types of information.
+// For example, the application may display confirmation messages if a form is submitted successfully or error message if there were problems.
+//
+// .message-info	- Info Messages provide the user relevant information about an action they are about to perform or something they are reviewing.
+// .message-success	- Success Messages inform the user that their action was successful.
+// .message-warning	- Warning Messages alert the user of a condition that might cause a problem in the future.
+// .message-error	- Error Messages notify the user that a problem occurred. Use error messages when problems occur within an application.
+// .message-large	-
+//
+// Markup:
+// <p class="message-info"> This is a <strong>information</strong> message</p>
+// <p class="message-success"> This is a <strong>success</strong> message</p>
+// <p class="message-warning"> This is a <strong>warning</strong> message</p>
+// <p class="message-error"> This is a <strong>error</strong> message</p>
+// <p class="message-error message-large"> This is a <strong>large</strong> message</p>
+//
+// Styleguide 2.5.1
+
+.message {
+	padding: $sc-padding-lv2;
+	font-size: $sc-font-size-s;
+	display:inline-block;
+	position: relative;
+	border-radius: $sc-border-radius;
+	line-height: 1.2;
+
+	div {
+	  padding-right: $sc-padding-lv6;
+	  display: inline-block;
+	}
+}
+
+.message-large {
+	width: 100%;
+	display: block;
+}
+
+.message-info {
+	@extend .message;
+	color: $sc-color-info;
+	background-color: $sc-color-info-background;
+	border: 1px solid $sc-color-info-border;
+}
+
+.message-success {
+	@extend .message;
+	color: $sc-color-success;
+	background-color: $sc-color-success-background;
+	border: 1px solid $sc-color-success-border;
+}
+
+.message-warning {
+	@extend .message;
+	color: $sc-color-warning;
+	background-color: $sc-color-warning-background;
+	border: 1px solid $sc-color-warning-border;
+}
+
+.message-error {
+	@extend .message;
+	color: $sc-color-error;
+	background-color: $sc-color-error-background;
+	border: 1px solid $sc-color-error-border;
+}
+
+.message-button {
+  margin-left: $sc-margin-lv2;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  -webkit-appearance: none;
+  background: 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  background: $sc-neutral-shade-0;
+}
+
+// Reinforcing Messages
+//
+// You can visually reinforce a message with icons. The icon is placed at the left top corner.
+//
+// Markup:
+// <p class="message-warning">
+//   <i class="message-icon fa-info-circle"></i>
+//   this is a information message with icon (the specific class should extend the icon)
+// </p>
+//
+// Styleguide 2.5.2
+
+.message-icon {
+	@extend .fa;
+	margin-right: $sc-margin-lv1;
+}
+
+// Messages with buttons
+//
+// When a message can be dismissed by the user, a close icon is included on the top right corner of the message.
+//
+// Markup:
+// <p class="message-warning">
+//   this is a information message with close button
+//   <button class="message-icon-close"></button>
+// </p>
+//
+// Styleguide 2.5.3
+
+.message-icon-close {
+	@extend .fa;
+	@extend %fa-close;
+	background: $sc-neutral-shade-0;
+	border-radius: 100%;
+	padding: $sc-padding-lv1;
+	margin-left: $sc-margin-lv1;
+}

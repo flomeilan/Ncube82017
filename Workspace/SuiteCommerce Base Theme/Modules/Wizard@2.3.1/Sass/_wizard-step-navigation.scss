@@ -1,0 +1,45 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.wizard-step-navigation {
+	@extend .stepped-process;
+}
+
+.wizard-step-navigation-back {
+	@extend .stepped-process-button-back;
+}
+
+.wizard-step-navigation-menu {
+	@extend .stepped-process-menu;
+}
+
+.wizard-step-navigation-step-anchor {
+	@extend .stepped-process-step-anchor;
+}
+
+.wizard-step-navigation-disabled {
+	@extend .stepped-process-step-disabled;
+}
+
+.wizard-step-navigation-active {
+	@extend .stepped-process-step-active;
+}
+
+.wizard-step-navigation-step {
+	@extend .stepped-process-step;
+}
+
+.wizard-step-navigation-divider,
+.wizard-step-navigation-step-anchor-label {
+	@extend .stepped-process-step-anchor-label;
+}
+
+.wizard-step-navigation-divider {
+	@extend .stepped-process-divider;
+}
+
+.wizard-step-navigation-back-icon {}

@@ -1,0 +1,30 @@
+{
+	"name": "<%= name %>",
+	"version": "<%= version %>",
+	"vendor": "<%= vendor %>",
+	"type": "extension",
+	"cct":{
+		"icon": "img/<%= cct_name %>_icon.svg"
+	,	"settings_record": "customrecord_<%= cct_name %>"
+	,	"registercct_id": "<%= cct_name %>"
+	}
+,	"target": "<%= target %>"
+,	"description": "<%= description %>"
+,	"assets": {
+		"img": {
+			"files": [
+				"img/<%= cct_name %>_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": [
+			
+			]
+		},
+		"services": {
+			"files": [
+				
+			]
+		}
+	}
+}

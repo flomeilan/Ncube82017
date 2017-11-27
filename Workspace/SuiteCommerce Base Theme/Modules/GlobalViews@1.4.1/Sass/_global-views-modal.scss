@@ -1,0 +1,38 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-modal-large {
+	@extend .modal-lg;
+}
+.global-views-modal-content {
+	@extend .modal-content;
+	padding: $sc-margin-lv4 + $sc-margin-lv1;
+	border-radius: 10px;
+	display: block;
+	-webkit-box-shadow: 0 2px 5px transparentize($sc-neutral-shade-600, 1-0.2);
+	box-shadow: 0 2px 5px transparentize($sc-neutral-shade-600, 1-0.2);
+}
+.global-views-modal-content-header {
+	margin-bottom:$sc-margin-lv4;
+	display: inline-block;
+	width: 100%;
+}
+.global-views-modal-content-header-close {
+  margin-top: -2px;
+	float:right;
+	font-size:35px;
+	font-weight:$sc-font-weight-normal;
+	line-height:20px;
+	color: $sc-color-theme-400;
+	cursor: pointer;
+	background: none;
+}
+.global-views-modal-content-header-title {
+	@extend .modal-title;
+}
+
+.global-views-modal-content-body{}

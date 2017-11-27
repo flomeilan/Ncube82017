@@ -1,0 +1,96 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+$sc-color-social-sharing-flyout-content-social-facebook-icon: #3b5998;
+$sc-color-social-sharing-flyout-content-social-twitter-icon: #00b6f1;
+$sc-color-social-sharing-flyout-content-social-google-icon: #dd4b38;
+$sc-color-social-sharing-flyout-content-social-pinterest-icon: #bd071d;
+
+.social-sharing-flyout-content {
+	position: relative;
+	float: right;
+}
+.social-sharing-flyout-content-button {
+	@extend .sc-flyout-control;
+	font-size: 15px;
+	min-width: 85px;
+}
+.social-sharing-flyout-content-button-icon{
+	@extend .fa;
+	@extend %fa-share-alt-square;
+	font-size: 20px;
+}
+.social-sharing-flyout-content-social {
+	@extend .sc-flyout-content;
+	width: 165px;
+	left: auto;
+	right: 0;
+}
+.social-sharing-flyout-content-social-facebook,
+.social-sharing-flyout-content-social-twitter,
+.social-sharing-flyout-content-social-google,
+.social-sharing-flyout-content-social-pinterest  {
+	text-align: left;
+	padding: $sc-margin-lv2;
+	padding-left: 0;
+	color: $sc-color-theme-900;
+	display: block;
+	font-size: 15px;
+	margin-right: $sc-margin-lv2;
+	display: inline-block;
+
+	span {
+		display: none;
+		@media (min-width: $screen-md-min) {
+			display: inline;
+		}
+	}
+}
+.social-sharing-flyout-content-social-pinterest {
+	margin-bottom: 0;
+}
+.social-sharing-flyout-content-social-facebook-icon {
+	font-size: 20px;
+	color: $sc-color-social-sharing-flyout-content-social-facebook-icon;
+	@extend .fa;
+	@extend %fa-facebook-square;
+}
+.social-sharing-flyout-content-social-twitter-icon {
+	color: $sc-color-social-sharing-flyout-content-social-twitter-icon;
+	font-size: 20px;
+	@extend .fa;
+	@extend %fa-twitter-square;
+}
+.social-sharing-flyout-content-social-google-icon {
+	color: $sc-color-social-sharing-flyout-content-social-google-icon;
+	font-size: 20px;
+	@extend .fa;
+	@extend %fa-google-plus-square;
+}
+.social-sharing-flyout-content-social-pinterest-icon {
+	color: $sc-color-social-sharing-flyout-content-social-pinterest-icon;
+	font-size: 20px;
+	@extend .fa;
+	@extend %fa-pinterest-square;
+}
+
+.facebook-like-btn
+{
+	margin: $sc-margin-lv2 $sc-margin-lv2 0 0;
+}
+
+.social-sharing-flyout-icons {
+	margin-top: $sc-margin-lv3;
+}
+
+.social-sharing-flyout-icons:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}

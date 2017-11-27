@@ -1,0 +1,50 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-option-date {
+	width: 100%;
+	margin-bottom:$sc-margin-lv4;
+
+	[data-validation-error="block"]{
+  		display:table;
+  		margin-top:$sc-margin-lv1;
+  	}
+}
+
+.product-views-option-date-label {}
+.product-views-option-date-label-required {
+	@extend .input-required;
+}
+.product-views-option-date-input {
+	@extend .input-medium;
+	display: inline-block;
+}
+
+[data-action="sc-pushing"] .product-views-option-date-input {
+    width: 100%;
+}
+
+.product-views-option-date-required-reference-container {
+	padding:$sc-padding-lv3 0;
+}
+.product-views-option-date-input-icon {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	bottom: 10px;
+	right: 0;
+	cursor: pointer;
+	@extend .fa;
+	@extend %fa-calendar;
+	@media (min-width: $screen-md-min) {
+		right: 0;
+		top: 0;
+	}
+}
+.product-views-option-date-input-container {
+	position: relative;
+}

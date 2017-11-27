@@ -1,0 +1,65 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.menu-tree-node-item-submenu{
+	display:none;
+}
+
+.menu-tree-node-item-anchor{
+	@extend .medium-title-navigable;
+	display:block;
+	line-height:1em;
+	padding: $sc-padding-lv4;
+	background-color: $sc-color-theme-background;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.menu-tree-node-item-anchor.active{
+	color: $sc-color-copy-dark;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.menu-tree-node-item-icon{
+	@extend .icon-base;
+	@extend %fa-angle-down;
+	@include transition-transform(300ms ease);
+	float: right;
+	margin-top: -1px;
+}
+
+.open{
+	> .menu-tree-node-item-anchor{
+		color: $sc-color-copy-dark;
+		background-color: $sc-color-theme-background;
+	}
+
+	.menu-tree-node-item-icon{
+		@include rotate(180deg);
+	}
+}
+
+.menu-tree-node-submenu-wrapper{
+	border-bottom: 1px solid  $sc-color-theme-border-light;
+	padding-top: $sc-padding-lv2;
+	padding-bottom: $sc-padding-lv2;
+
+	.menu-tree-node-item-anchor{
+		background-color: $sc-neutral-shade-0;
+		padding: $sc-padding-lv2;
+		font-size: $sc-font-size-m;
+		text-transform: none;
+		padding: $sc-padding-lv2 $sc-padding-lv4;
+		border-bottom:none;
+
+		.active {
+			font-weight: bold;
+		}
+	}
+}

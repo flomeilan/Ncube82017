@@ -1,0 +1,85 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-details-later-macro-selectable-actionable {
+}
+
+/* Save for Later */
+
+.product-list-details-later-macro-thumbnail {
+	@extend .col-xs-3;
+	@extend .col-sm-12;
+}
+
+.product-list-details-later-macro-details {
+	@extend .col-xs-9;
+	@extend .col-sm-12;
+}
+
+.product-list-details-later-macro-name-link{
+	@extend .transaction-line-views-cell-actionable-name-link;
+}
+
+.product-list-details-later-macro-price {
+	@extend .transaction-line-views-cell-actionable-price;
+}
+
+.product-list-details-later-macro-qty {
+	@extend .transaction-line-views-cell-actionable-qty;
+}
+
+.product-list-details-later-macro-qty-form {
+}
+
+.product-list-details-later-macro-input-qty {
+	@extend .transaction-line-views-cell-actionable-input-qty;
+}
+
+.product-list-details-later-macro-button-quantity-add {
+	@extend .saveforlater-quantity-add;
+}
+
+
+.product-list-details-later-macro-button-quantity-minus {
+	@extend .saveforlater-quantity-minus;
+}
+
+.product-list-details-later-macro-item-stock {
+}
+
+.product-list-details-later-macro-actions {
+	@extend .saveforlater-actions;
+}
+
+.product-list-details-later-macro-button-addtocart{
+	@extend .button-saveforlater-addtocart;
+}
+
+.product-list-details-later-macro-button-remove{
+	@extend .button-saveforlater-remove;
+}
+
+.product-list-details-later-macro-label-qty{
+	@extend .transaction-line-views-cell-actionable-label-qty;
+}
+
+.product-list-details-later-macro-qty-input{
+}
+
+.product-list-details-later-macro-qty input[type=number]{
+	width:60px;
+	@media (min-width: $screen-xs-min){
+		width:45px;
+	}
+	@media (min-width: $screen-md-min){
+		width:60px;
+	}
+}
+
+.product-list-details-later-macro-amount{}
+.product-list-details-later-macro-info{}
+.product-list-details-later-macro-name{}

@@ -1,0 +1,148 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-list-details-wrapper{
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+
+.product-list-list-details-wrapper:hover{
+	background-color: $sc-color-theme-background;
+}
+
+.product-list-list-details{
+	min-height: 80px;
+	@extend .table-flex-record-actionable-navigable;
+}
+
+.product-list-list-details-anchor{
+	@extend .small-title-navigable;
+}
+
+.product-list-list-details-not-purchasable-message{
+	@extend .message-warning;
+	margin: $sc-margin-lv1 0;
+}
+
+.product-list-list-details-not-purchasable-message-icon{
+	@extend .message-icon;
+	@extend %fa-info-circle;
+}
+
+.product-list-list-details-main{
+	@media (min-width: $screen-md-min){
+		width: 45%;
+	}
+}
+
+.product-list-list-details-button-edit{
+	@extend .button-tertiary;
+	@extend .button-small;
+	border-right:none;
+	min-width: 84px;
+	border-radius: $sc-border-radius 0 0 $sc-border-radius;
+	height: 36px;
+}
+
+.product-list-list-details-button-expander{
+	@extend .button-tertiary;
+	@extend .button-small;
+	border-radius: 0 $sc-border-radius $sc-border-radius 0;
+
+	i {
+		@extend .fa;
+		@extend %fa-angle-down;
+	}
+
+	height: 36px;
+}
+
+.product-list-list-details-button-group{
+	@extend .button-positioning-next2stack;
+	position:relative;
+	margin-left: 0;
+
+	@media (min-width: $screen-sm-min){
+		margin-left: $sc-margin-lv1;
+	}
+}
+
+.product-list-list-details-dropdown{
+	@extend .split-button-dropdown;
+}
+
+.product-list-list-details-add-to-cart{
+	@extend .button-small;
+	@extend .button-primary;
+	border: 1px solid $sc-color-primary;
+	margin-bottom: $sc-margin-lv1;
+	display: inline-block;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 0;
+	}
+}
+
+.product-list-list-details-main {
+	@extend .table-flex-td-first;
+}
+
+.product-list-list-details-info {
+	@extend .table-flex-td-last;
+
+	@media (min-width: $screen-sm-min){
+		padding-bottom: $sc-margin-lv2;
+	}
+}
+
+.product-list-list-details-actions{
+	@extend .table-flex-tdlast;
+
+	min-width: 140px;
+	margin-top: $sc-margin-lv2;
+	padding-bottom: $sc-margin-lv2;
+
+	@media (min-width: $screen-sm-min){
+		margin-top: 0;
+		text-align: right;
+		width: 30%;
+	}
+
+	@media (min-width: $screen-lg-min){
+		width: 25%;
+	}
+}
+
+.product-list-lists-back{
+	@extend .button-back;
+}
+
+.product-list-lists-back-icon{
+	@extend .button-back-icon;
+}
+
+.product-list-list-details-last-update-label{
+	@extend .sc-label;
+}
+
+.product-list-list-details-last-update-value{
+	@extend .sc-value;
+}
+
+.product-list-list-details-description-label{
+	@extend .sc-label;
+}
+
+.product-list-list-details-description-value{
+	@extend .sc-value;
+}
+
+.product-list-list-details-text{}
+.product-list-list-details-item-count{}
+.product-list-list-details-last-item{}
+.product-list-list-details-stock{}
+.product-list-list-details-minquantity{}
+.product-list-list-details-share{}

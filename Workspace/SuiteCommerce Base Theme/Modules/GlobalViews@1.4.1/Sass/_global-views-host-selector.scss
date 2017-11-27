@@ -1,0 +1,24 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-host-selector{
+	margin-bottom:$sc-margin-lv2;
+	overflow:hidden;
+	@extend .selector;
+}
+
+.global-views-host-selector-addon{
+	@extend .selector-icon;
+}
+
+.global-views-host-selector-select{
+	@extend .selector-select;
+}
+
+.global-views-host-selector-globe-icon{
+	@extend .icon-globe;
+}

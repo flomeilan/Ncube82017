@@ -1,0 +1,29 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-quickaddtocart {}
+
+.cart-quickaddtocart-quantity {
+	height: $sc-target-size-mobile;
+ 	padding:$sc-margin-lv2 $sc-padding-lv3 $sc-margin-lv2 $sc-padding-lv3;
+ 	width: 90px;
+ 	text-align: right;
+	background-color: #ebf1f4;
+	border: 0;
+	-webkit-border-radius: 0 0 0 0;
+	border-radius: 0 0 0 0;
+	font-weight:$sc-font-weight-normal;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-quickaddtocart-button {
+	@extend .button-primary;
+	@extend .button-medium;
+}
+
+.cart-quickaddtocart-itemid {}
+.cart-quickaddtocart-price {}

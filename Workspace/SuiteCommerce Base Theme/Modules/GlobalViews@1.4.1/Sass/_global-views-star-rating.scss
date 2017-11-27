@@ -1,0 +1,145 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-star-rating {
+  position: relative;
+  clear: both;
+  float: left;
+  min-width: 90px;
+}
+.global-views-star-rating-area {
+  position: relative;
+  float: left;
+}
+.global-views-star-rating-area-writable {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  button {
+    width: 17px;
+    height: 15px;
+    float: left;
+    background: transparentize($sc-neutral-shade-0, 1);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+.global-views-star-rating-area-writable-pegs {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  button {
+    width: 17px;
+    height: 15px;
+    float: left;
+    margin-right: $sc-margin-lv1;
+    background: transparentize($sc-neutral-shade-0, 1);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+.global-views-star-rating-review-total {
+  color: $sc-color-secondary;
+  line-height: 25px;
+  padding-left:$sc-padding-lv1;
+}
+.global-views-star-rating-value {
+  font-weight: $sc-font-weight-bold;
+  font-size: $sc-font-size-m;
+  margin-left: $sc-margin-lv2;
+  vertical-align: middle;
+}
+.global-views-star-rating-empty,
+.global-views-star-rating-filled,
+.global-views-star-rating-error {
+  font-size: $sc-font-size-m;
+}
+.global-views-star-rating-empty {
+  @extend .icon-star;
+}
+.global-views-star-rating-filled {
+  @extend .icon-star-filled;
+}
+.global-views-star-rating-error {
+  @extend .icon-star-error;
+}
+
+.global-views-star-rating-label {
+  font-size: 14px;
+  font-weight: $sc-font-weight-semibold;
+  float: left;
+  width: 90px;
+}
+.global-views-star-rating-pegs-small {
+  width: 20px;
+  height: 12px;
+}
+.global-views-star-rating-pegs-medium {
+  width: 40px;
+  height: 20px;
+}
+.global-views-star-rating-empty-pegs {
+  display: inline-block;
+  background: $sc-neutral-shade-0;
+  border: 2px solid $sc-color-theme-border-light;
+  float: left;
+  margin-right: $sc-margin-lv1;
+
+  @extend .global-views-star-rating-pegs-small;
+}
+.global-views-star-rating-empty-pegs-error {
+  display: inline-block;
+  background: $sc-neutral-shade-0;
+  border: 2px solid $sc-color-error;
+
+  @extend .global-views-star-rating-pegs-small;
+}
+.global-views-star-rating-filled-pegs {
+  @extend .global-views-star-rating-empty-pegs;
+  background: $sc-color-secondary;
+  border: 2px solid $sc-color-secondary;
+}
+.global-views-star-rating-area-fill {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+}
+.global-views-star-rating-area-filled {
+  width:257px;
+  text-align: left;
+}
+.global-views-star-rating-review-total-empty-number {
+  @media (min-width: $screen-sm-min) {
+      display: none;
+  }
+}
+[data-type="sc-pusher"] {
+  .global-views-star-rating-review-total {
+      margin-left: $sc-margin-lv1;
+  }
+  .global-views-star-rating-review-total-no-review, .global-views-star-rating-review-total-review {
+      display: none;
+  }
+}
+
+.global-views-star-rating-content-customlabel{
+    display:none;
+}
+
+.global-views-star-rating-content-rating{
+    display:block;
+    clear:both;
+    font-weight:$sc-font-weight-bold;
+}
+.global-views-star-rating-content{}
+.global-views-star-rating-content-label{}
+.global-views-star-rating-label-visible{}
+.global-views-star-rating-area-empty{}
+.global-views-star-rating-area-empty-content{}
+.global-views-star-rating-review-total-number{}
+
+.global-views-star-rating-container {}

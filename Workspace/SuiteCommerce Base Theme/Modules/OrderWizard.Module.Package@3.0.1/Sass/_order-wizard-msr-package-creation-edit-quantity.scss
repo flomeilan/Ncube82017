@@ -1,0 +1,99 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-msr-package-creation-edit-quantity-editable {
+	@extend .quantity-input-container;
+	min-height: 40px;
+	white-space: nowrap;
+	margin: $sc-margin-lv1 0;
+
+	@media (min-width: $screen-lg-min) {
+		margin: 0;
+	}
+
+	@media (min-width: $screen-md-min) {
+		min-height: auto;
+	}
+}
+
+.order-wizard-msr-package-creation-products-table .order-wizard-msr-package-creation-edit-quantity-label {
+	@extend .sc-label;
+	display: inline-block;
+
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+}
+
+.order-wizard-msr-package-creation-edit-quantity-input-label {
+	@extend .input-small;
+	@extend .sc-label;
+	position: relative;
+	padding-left: $sc-padding-lv6;
+	background-color: $sc-color-theme-background;
+	width: 90px;
+	color: $sc-color-copy-light;
+	display: inline-block;
+	height: $sc-target-size-mobile;
+}
+
+.order-wizard-msr-package-creation-edit-quantity-value {
+	@extend .sc-value;
+}
+
+.order-wizard-msr-package-creation-edit-quantity-item-editable-quantity{
+	@extend .input-small;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	text-align: left;
+	border: none;
+	width: 90px;
+	display: inline;
+	padding-left: $sc-padding-lv3;
+}
+
+input.order-wizard-msr-package-creation-edit-quantity-item-editable-quantity-normal {
+	@extend .quantity-input;
+	background-color: $sc-neutral-shade-0 !important;
+
+	@media (min-width: $screen-lg-min) {
+		float: right !important;
+	}
+}
+
+.order-wizard-msr-package-creation-edit-quantity-input-remove {
+	@extend .quantity-input-button-remove;
+}
+
+.order-wizard-msr-package-creation-edit-quantity-input-add {
+	@extend .quantity-input-button-add;
+}
+
+.order-wizard-msr-package-creation-edit-quantity-quantity-help{
+	margin-top: $sc-margin-lv1;
+	display: block;
+	font-weight:$sc-font-weight-light;
+}
+
+.order-wizard-msr-package-creation-edit-quantity-column{
+	width:100%;
+	text-align:left;
+	font-size:$sc-font-size-m;
+
+	@media(min-width: $screen-lg-min){
+		text-align:right;
+	}
+}
+
+.order-wizard-msr-package-creation-edit-quantity-error-message{
+	@extend .message-error;
+	display:none;
+	margin-top: $sc-margin-lv2;
+	text-align: left;
+}

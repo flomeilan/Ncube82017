@@ -1,0 +1,80 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-item-cell-grid {
+	@extend .item-cell;
+	.cart-add-to-cart-button-container {
+		width:100%;
+	}
+	.cart-add-to-cart-button-button {
+		padding:20px 20px;
+	}
+
+	.cart-quickaddtocart-price {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-grid-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-grid-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-grid-link-image {}
+
+.facets-item-cell-grid-quick-view-icon {}
+
+.facets-item-cell-grid-stock {}
+
+
+.facets-item-cell-grid-details {
+	text-align:left;
+	.product-line-stock {
+		text-align:left;
+	}
+	.cart-add-to-cart-button-container {
+		padding: 0 0 $sc-padding-lv3 0;
+	}
+}
+
+.facets-item-cell-grid-image {
+	@extend .item-cell-image;
+	width:auto;
+	height:auto;
+}
+
+.facets-item-cell-grid-title {
+	@extend .item-cell-title;
+}
+
+.facets-item-cell-grid-price {
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-grid-rating {
+	text-align:left;
+	display: inline-block;
+}
+
+.facets-item-cell-grid {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-grid-stock-message {
+	text-align:left;
+}

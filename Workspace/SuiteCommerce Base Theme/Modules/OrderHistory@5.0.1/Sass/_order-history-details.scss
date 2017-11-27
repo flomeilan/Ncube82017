@@ -1,0 +1,435 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-list-back,
+.order-history-details-back-btn{
+    @extend .button-back;
+}
+.order-history-details-header-status-info{
+	text-align:left;
+	@media(min-width: $screen-sm-min){
+		text-align:right;
+	}
+}
+
+.order-history-details-info-card-title{
+	margin:$sc-margin-lv2 0;
+}
+
+.order-history-details-header-status{
+	color:$sc-color-primary;
+}
+
+.order-history-details-message-warning{
+	@extend .message-warning;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-details-total-formatted{
+	@extend .pull-right;
+}
+
+.order-history-details-accordion-container{
+	@extend .accordion-container;
+	.transaction-line-views-cell-actionable-table-first {
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+}
+
+.order-history-details-accordion-head{
+	@extend .accordion-head;
+}
+
+.order-history-details-accordion-head-toggle-secondary{
+	@extend .accordion-head-toggle-secondary;
+}
+
+.order-history-details-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.order-history-details-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.order-history-details-accordion-toggle-icon-secondary{
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.order-history-details-accordion-body{
+	@extend .accordion-body;
+}
+
+.order-history-details-summary-title{
+	@extend .summary-title;
+}
+
+.order-history-details-summary-container{
+	@extend .summary-container;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-details-summary-total{
+	p{
+		@extend .summary-total;
+	}
+}
+
+.order-history-details-summary-subtotal{
+	@extend .summary-subtotal;
+}
+
+.order-history-details-summary-grid-float{
+	@extend .summary-grid-float;
+}
+
+.order-history-details-summary-amount-subtotal{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-amount-discount{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-amount-shipping{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-amount-handling{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-amount-certificate{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-amount-promocode{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-amount-tax{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-amount-total{
+	@extend .summary-grid-right;
+}
+
+.order-history-details-summary-grid-left{
+}
+
+.order-history-details-summary-grid-right{
+}
+
+.order-history-details-summary-col{
+	@extend .col-md-4;
+}
+
+.order-history-details-content-col{
+	@extend .col-md-8;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-history-details-row-fluid{
+}
+
+.order-history-details-order-title{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-details-picked-instore-title{
+	padding: 0 $sc-padding-lv4 $sc-padding-lv4 0;
+}
+.order-history-details-picked-instore-items{
+	margin-bottom: $sc-margin-lv1;
+	border-top:1px solid $sc-color-theme-border-light;
+}
+
+.order-history-details-picked-instore-items-table tr{
+	border:0;
+}
+
+.order-history-details-picked-instore-items-no-border{
+	border-top:none;
+}
+
+.order-history-details-shipping-title{
+	margin-bottom:$sc-margin-lv3;
+}
+
+.order-history-details-header-row{
+	@extend .row;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-details-row{
+	@extend .row;
+}
+
+.order-history-details-header-col-left{
+	@extend .col-sm-6;
+}
+
+.order-history-details-header-col-right{
+	@extend .col-sm-6;
+	text-align:right;
+}
+
+.order-history-details-header-amount {
+	@extend .col-xs-12;
+}
+
+/* Buttons */
+
+.order-history-details-button-reorder {
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-details-button-download-pdf {
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-details-button-request-return {
+	@extend .button-tertiary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.order-history-details-button-view-invoice {
+	@extend .button-tertiary;
+	@extend .button-medium;
+	@extend .button-generic;
+}
+
+.order-history-details-shipping-information {
+	background: $sc-color-theme-background;
+	margin-bottom:$sc-margin-lv4;
+	padding:$sc-padding-lv4;
+	margin-left:-$sc-margin-lv4;
+	margin-right:-$sc-margin-lv4;
+
+	@media(min-width: $screen-xs-min) {
+		margin-left:0;
+		margin-right:0;
+	}
+
+}
+
+.order-history-details-info-card-container{
+	@extend .row;
+	overflow:hidden;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-history-details-info-card {
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.order-history-details-info-card-info{
+	@extend .info-card;
+	width:100%;
+	font-size:$sc-font-size-m;
+	.address-details-address-title{
+		display:block;
+		font-style:normal;
+		font-weight:$sc-font-weight-bold;
+		@extend .info-card-content;
+	}
+
+	p{
+		font-style:normal;
+		display:block;
+	}
+
+	.address-details-container-multiselect-address-title{
+		font-style:normal;
+		text-transform:capitalize;
+	}
+
+	.address-details-container-multiselect-address-city{
+		display:inline;
+	}
+
+	.address-details-container-multiselect-address-state{
+		display:inline;
+	}
+
+	.address-details-container-multiselect-address-zip{
+		display:inline;
+	}
+
+}
+
+.order-history-details-info-card-info-content{
+	@extend .info-card-content;
+}
+
+.order-history-details-accordion-divider{
+	@extend .accordion-divider;
+}
+
+.item-view-actionable-selected-option-cell{
+	padding-left:$sc-padding-lv3;
+}
+
+.order-history-details-payment-transactions{
+	display:block;
+	clear:both;
+	padding-bottom:$sc-margin-lv3;
+	margin-left:$sc-margin-lv3;
+	margin-right:$sc-margin-lv3;
+}
+
+.order-history-details-payment-others{
+	display:block;
+	clear:both;
+	padding-bottom:$sc-margin-lv3;
+}
+
+.order-history-details-payment-info-cards{
+	@extend .row;
+	padding-bottom:$sc-margin-lv3;
+	overflow:hidden;
+
+
+}
+
+.order-history-details-header-amount-info{
+	@media(min-width: $screen-sm-min){
+		display:none;
+	}
+}
+
+.order-history-details-total-formatted{
+	display:none;
+	@media(min-width: $screen-sm-min){
+		display:inline-block
+	}
+}
+
+.order-history-details-payment-transactions-table{
+	@extend .table-flex-item-navigable;
+
+	thead{
+		display: none;
+		width: 100%;
+		border-bottom:1px solid $sc-color-theme-border-light;
+
+		@media (min-width: $screen-md-min) {
+			display: table-row-group;
+		}
+	}
+	th {
+	  font-weight: 400;
+	}
+}
+
+.order-history-details-payment-transactions-table-body-payment-transaction {
+	@extend .sc-value;
+}
+
+.order-history-details-payment-transactions-table-header-amount {
+	text-align: right;
+}
+
+.order-history-details-accordion-container{
+	overflow:hidden;
+}
+
+.order-history-details-unfulfilled-items-table{
+	@extend .transaction-line-views-cell-actionable-table;
+}
+
+.order-history-details-non-shippable-table{
+	@extend .transaction-line-views-cell-actionable-table;
+	@extend .table-row-with-border;
+}
+
+.order-history-details-order-number{}
+.order-history-details-header-information{}
+.order-history-details-header-date-info{}
+.order-history-details-header-date{}
+.order-history-details-header-purchase-order-number-info{}
+.order-history-details-header-purchase-order-number{}
+.order-history-details-header-amount-number{}
+.order-history-details-info-card-info-shipping{}
+.order-history-details-info-card-delivery-method{}
+.order-history-details-info-card-info-billing{}
+.order-history-details-payment-transactions-table-header-payment-transaction{}
+.order-history-details-payment-transactions-table-body-payment-transaction-label{
+	@extend .sc-label;
+}
+.order-history-details-payment-transactions-table-header-date{}
+.order-history-details-shipping-groups {}
+
+
+.order-history-details-payment{
+	@extend .order-history-details-payment-transactions;
+}
+
+.order-history-details-payment-table{
+	@extend .order-history-details-payment-transactions-table;
+}
+
+.order-history-details-payment-table-header {
+}
+
+.order-history-details-payment-table-header-payment-transaction {
+	@extend .order-history-details-payment-transactions-table-header-payment-transaction !optional;
+}
+
+.order-history-details-payment-table-header-date {
+	@extend .order-history-details-payment-transactions-table-header-date !optional;
+}
+
+.order-history-details-payment-table-header-amount{
+}
+
+.order-history-details-payment-table-body-payment-transaction {
+	@extend .order-history-details-payment-transactions-table-body-payment-transaction;
+}
+
+.order-history-details-payment-table-body-payment-transaction{
+	@extend .order-history-details-payment-transactions-table-body-payment-transaction;
+}
+
+.order-history-details-payment-method-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.order-history-details-payment-row {
+	@extend .row;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.order-history-details-header-date-info-date-label {
+	@extend .sc-label;
+}
+
+.order-history-details-header-purchase-order-info-purchase-order-number-label {
+	@extend .sc-label;
+}
+
+.order-history-details-header-amount-info-amount-label {
+	@extend .sc-label;
+}
+
+.order-history-details-header-quote-info{}
+.order-history-details-header-quote{}
+.order-history-details-header-quote-info-quote-label {
+	@extend .sc-label;
+}
+.order-history-details-instore-groups{}

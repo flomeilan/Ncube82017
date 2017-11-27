@@ -1,0 +1,93 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.store-locator-details {
+	@extend .store-locator-main;
+
+	@media (max-width: $screen-sm-min) {
+		padding: 0px;
+	}
+}
+
+.store-locator-details-title {
+	@extend .store-locator-main-title;
+
+	@media (max-width: $screen-sm-min) {
+		display: none;
+	}
+}
+
+.store-locator-details-layout-left {
+	@extend .store-locator-main-layout-left;
+}
+
+.store-locator-details-layout-right {
+	@extend .store-locator-main-layout-right;
+}
+
+.store-locator-details-store-info {
+	background:$sc-neutral-shade-0;
+	position:absolute;
+	top:270px;
+
+	@media (min-width: $screen-sm-min){
+		position:static;
+	}
+}
+
+.store-locator-details-main-nav-back {
+	background: $sc-color-theme-background;
+	padding: $sc-padding-lv3;
+	text-align:left;
+	margin-left: $sc-margin-lv4 *  -1;
+	margin-right: $sc-margin-lv4 * -1;
+	margin-bottom: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min){
+		margin-left: 0px;
+	    margin-right: 0px;
+    }
+}
+
+.store-locator-details-main-nav-back:after {
+	font-family: FontAwesome;
+    content: "\f053";
+    float: left;
+    margin-right: $sc-margin-lv2;
+    color: $sc-color-link;
+}
+
+.store-locator-details-get-directions-link {
+	display:none;
+	@media (min-width: $screen-sm-min) {
+		display:block;
+		margin-top:$sc-margin-lv2;
+	}
+}
+
+.store-locator-details-get-directions-button {
+	@extend .button-primary;
+	@extend .button-medium;
+	@extend .button-generic;
+}
+
+.store-locator-details-get-directions-button-container {
+	display:block;
+	position:relative;
+	bottom: 75px;
+	padding: $sc-padding-lv3;
+	z-index:99999;
+	@media (min-width: $screen-sm-min) {
+		display:none;
+	}
+}
+
+.store-locator-details-main-pusher {  }
+
+.store-locator-details-main-details-info {  }
+
+.store-locator-details-map {  }

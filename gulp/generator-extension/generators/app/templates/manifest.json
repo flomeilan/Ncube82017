@@ -1,0 +1,25 @@
+{
+	"name": "<%= name %>",
+	"version": "<%= version %>",
+	"vendor": "<%= vendor %>",
+	"type": "extension",
+	"target": "<%= target %>",
+	"description": "<%= description %>",
+	"assets": {
+		"img": {
+			"files": [
+
+			]
+		},
+		"fonts": {
+			"files": [
+			
+			]
+		},
+		"services": {
+			"files": [
+				
+			]
+		}
+	}
+}

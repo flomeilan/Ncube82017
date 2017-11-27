@@ -1,0 +1,125 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.address-details {
+    @extend .info-card;
+}
+
+.address-list {
+   h2{
+        margin-bottom:$sc-margin-lv4;
+   }
+}
+
+.address-details-info{
+    margin-bottom:$sc-margin-lv2;
+}
+
+.address-details-container p {
+    font-style: normal;
+}
+.address-details-container-multiselect-address-line {
+    p {
+        display: inline-block;
+    }
+}
+.address-details-select-address {
+    @extend .button-primary;
+    @extend .button-medium;
+    width: 100%;
+}
+.address-details-default-shipping-icon {
+    @extend .icon-info;
+    color: $sc-color-secondary;
+    vertical-align: top;
+}
+.address-details-address-name{
+    font-style:normal;
+    font-weight: $sc-font-weight-normal;
+    font-size:$sc-font-size-m;
+    word-wrap: break-word;
+}
+
+.address-details-actions{
+    margin-top:$sc-margin-lv3;
+}
+
+.address-details-edit-address,
+.address-details-remove-address {
+    @extend .button-edit;
+    margin-right: $sc-margin-lv2;
+    cursor: pointer;
+}
+.address-details-edit-address {
+    margin-bottom: $sc-margin-lv2;
+}
+.address-details-remove-address {
+    margin-right: 0;
+}
+.address-details-change-address{
+    @extend .button-tertiary;
+    @extend .button-small;
+    margin-top: $sc-margin-lv3;
+    display:inline-block;
+    @media (min-width: $screen-sm-min) {
+        margin-top: 0;
+    }
+}
+
+.address-details-remove-address {
+    margin-bottom: 0;
+}
+.address-details-default-shipping,
+.address-details-default-billing {
+    font-size: $sc-font-size-s;
+    margin-bottom: 0;
+}
+
+.address-details-container-multiselect-address-title{
+    font-style:normal;
+    text-transform:capitalize;
+}
+
+.address-details-container-multiselect-address-city{
+    display:inline;
+}
+
+.address-details-container-multiselect-address-state{
+    display:inline;
+}
+
+.address-details-container-multiselect-address-zip{
+    display:inline;
+}
+
+.address-details-container-multiselect-address-selector-checkbox {}
+.address-details-container-multiselect-address-company{}
+.address-details-container-multiselect-address-name{}
+.address-details-container-multiselect-address-details-addr1{}
+.address-details-container-multiselect-address-details-addr2{}
+.address-details-container-multiselect-address-details-city{}
+.address-details-container-multiselect-address-details-state{}
+.address-details-country{}
+.address-details-phone{}
+.address-details-error-message{}
+
+
+//Modal AddressDetailsView
+.global-views-modal-content .global-views-modal-content-body {
+    .address-edit-fields {
+        margin-top: 0;
+    }
+    .address-edit {
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.address-details-invalid-remove-msg {
+    @extend .message-info;
+}

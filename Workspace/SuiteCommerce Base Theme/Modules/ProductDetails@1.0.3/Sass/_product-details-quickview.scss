@@ -1,0 +1,80 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-details-quickview {
+	@extend .row;
+
+	.product-details-image-gallery-container {
+		height:380px;
+	}
+
+	.product-details-image-gallery-detailed-image {
+		height:380px;
+	}
+}
+.product-details-quickview-img {
+	@extend .col-sm-5;
+	margin-bottom: $sc-margin-lv3;
+
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: 0;
+	}
+
+	.product-details-image-gallery-container {
+		display: inline-block;
+		height: 340px;
+	}
+}
+.product-details-quickview-details {
+	@extend .col-sm-7;
+
+	.item-view-stock-msg {
+		display: table;
+	}
+}
+.product-details-quickview-full-details {
+	margin: $sc-margin-lv1 0 $sc-margin-lv3;
+	display: block;
+}
+
+.product-details-quickview-actions {
+	margin: 0;
+}
+
+.product-details-quickview-actions-container-add-to-cart {
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.product-details-quickview-actions-container-add-to-wishlist,
+.product-details-quickview-actions-container-add-to-quote {
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.product-details-quickview-actions-container {
+	@extend .row;
+}
+
+.product-details-quickview-main {
+	.product-views-price-lead {
+		@extend .large-price;
+		color: $sc-color-primary;
+	}
+	.product-views-price-old {
+		font-size:$sc-font-size-m;
+	}
+}
+
+
+.product-details-quickview-item-name{}
+.product-details-quickview-options{}
+.product-details-quickview-main{}
+.product-details-quickview-info{}
+.product-details-quickview-banner-summary-bottom{}
+.product-details-quickview-main-bottom-banner{}
+.product-details-quickview-banner-details-bottom{}

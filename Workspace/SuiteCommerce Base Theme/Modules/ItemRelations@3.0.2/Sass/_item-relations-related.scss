@@ -1,0 +1,55 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.item-relations-related {
+	position: relative;
+}
+
+.item-relations-related .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+.item-relations-related h3 {
+    margin-bottom: $sc-margin-lv8;
+}
+
+.item-relations-related .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.item-relations-related-row{
+}
+
+
+.item-relations-related-carousel-next{
+	@extend .button-tertiary;
+	@extend .button-small;
+	margin-left:$sc-margin-lv2;
+	cursor:pointer;
+	cursor:hand;
+	position:absolute;
+	right:0px;
+	top:50%;
+}
+
+.item-relations-related-carousel-prev{
+	@extend .button-tertiary;
+	@extend .button-small;
+	cursor:pointer;
+	cursor:hand;
+	position:absolute;
+	left:0px;
+	top:50%;
+}
+.item-relations-related-carousel-next.disabled,
+.item-relations-related-carousel-prev.disabled {
+	display: none;
+}
+.control-text{
+	display:none;
+}

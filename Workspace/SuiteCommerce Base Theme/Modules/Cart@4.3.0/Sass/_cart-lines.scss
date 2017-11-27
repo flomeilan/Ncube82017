@@ -1,0 +1,109 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-lines-name{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-name-link{
+	@extend .medium-title-navigable;
+}
+
+.cart-lines-name-viewonly{
+	@extend .medium-title-viewonly;
+}
+
+.cart-lines-thumbnail{
+	img{
+		width:$img-large;
+	}
+}
+
+.cart-lines-price{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-price .transaction-line-views-price-lead{
+	@extend .middle-price;
+}
+
+.cart-lines-options{
+	.cart-option{
+		font-size:$sc-font-size-m;
+	}
+}
+
+.cart-lines-row {
+	@media (max-width: $screen-md-max) {
+		display: table-cell;
+		width: 100%;
+		float: left;
+		clear: both;
+
+		td {
+			display: block;
+			float: left;
+		}
+
+		td.cart-lines-table-first {
+			padding-left: 0;
+			width: 30%;
+			max-width: 150px;
+		}
+
+		td.cart-lines-table-middle {
+			padding-left: 0;
+			padding-right: 0;
+			width: 70%;
+		}
+
+		td.cart-lines-table-last {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.cart-lines-table-first {
+	@extend .table-flex-tdfirst;
+	width: 20%;
+}
+
+.cart-lines-table-middle {
+	@extend .table-flex-middle;
+	padding-left: 0;
+}
+
+.cart-lines-table-last {
+	 @extend .table-flex-tdlast;
+	 vertical-align:top;
+	 padding-left: 0;
+}
+
+.cart-lines-alert-placeholder {
+	margin:$sc-margin-lv2 0;
+}
+
+.cart-lines-shipping-method {
+	margin-top: $sc-margin-lv3;
+}
+
+.cart-lines-item-actions-desktop {
+	@media (max-width: $screen-md-max) {
+		display: none;
+	}
+}
+
+.cart-lines-item-actions-mobile {
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+}
+
+.cart-lines-stock{}
+.cart-lines-summary{}

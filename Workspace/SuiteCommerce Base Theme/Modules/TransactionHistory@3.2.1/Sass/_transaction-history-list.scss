@@ -1,0 +1,108 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.transaction-history-list-button-back {
+	@extend .button-back;
+}
+
+.transaction-history-list-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.transaction-history-list-header {
+	border-top: 1px solid $sc-color-theme-border-light;
+	padding: $sc-padding-lv3 0;
+}
+
+.transaction-history-list-headers {
+	@extend .recordviews-table;
+	@extend .recordviews-row;
+	display: none;
+
+	&:hover {
+		background-color: transparent;
+	}
+
+	th {
+		height: 44px;
+		vertical-align: middle;
+	}
+
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+	}
+}
+
+.transaction-history-list-headers-number {
+	@extend .recordviews-header !optional;
+	width: 25%;
+}
+
+.transaction-history-list-headers-date {
+	@extend .recordviews-date-header;
+	width: 25%;
+}
+
+.transaction-history-list-headers-amount {
+	@extend .recordviews-currency-header;
+	width: 25%;
+}
+
+.transaction-history-list-headers-status {
+	@extend .recordviews-header !optional;
+	width: 25%;
+	text-align: right;
+}
+
+.transaction-history-list-results-container {
+
+	.recordviews-status {
+		padding-bottom:$sc-padding-lv3;
+	}
+
+	@media (min-width: $screen-md-min) {
+		.recordviews-title {
+			width: 25%;
+		}
+
+		.recordviews-currency {
+			width: 25%;
+		}
+
+		.recordviews-status {
+			width: 25%;
+			text-align: right;
+			padding-bottom:0;
+		}
+
+		.recordviews-date {
+			width: 25%;
+		}
+	}
+}
+
+.transaction-history-list-paginator {
+	margin-top: $sc-margin-lv3;
+}
+.transaction-history-list-empty {
+	@extend .list-empty;
+}
+
+.transaction-history-list-results-table{
+	@extend .table-flex-record-navigable;
+
+	.recordviews-status {
+		.recordviews-value {
+			color:$sc-color-primary;
+		}
+	}
+}
+
+.transaction-history-list-empty-section {
+	padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+ 	text-align:center;
+ }

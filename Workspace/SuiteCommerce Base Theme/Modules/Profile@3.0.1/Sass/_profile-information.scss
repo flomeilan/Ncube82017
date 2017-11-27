@@ -1,0 +1,74 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.profile-information{
+	@extend .box-column-bordered;
+}
+
+.profile-information-button-update{
+	@extend .button-primary;
+	@extend .button-medium;
+	margin-right:$sc-margin-lv2;
+	margin-bottom:$sc-margin-lv2;
+
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: 0;
+	}
+}
+.profile-information-form-label {
+	display: inline-block;
+}
+
+.profile-information-form-group-label-required {
+	@extend .input-required;
+}
+.profile-information-button-cancel{
+	@extend .button-secondary;
+	@extend .button-medium;
+}
+
+.profile-information-label{}
+
+.profile-information-input-large{
+	@extend .input-large;
+}
+
+.profile-information-row,
+.profile-information-form-actions{
+	margin-top: $sc-margin-lv4;
+}
+
+.profile-information-input-required{
+	@extend .input-required;
+}
+
+.profile-information-input-optional{
+	@extend .input-optional;
+}
+
+.profile-information-input-required-reference{
+	@extend .input-required;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.profile-information-button-back {
+	@extend .button-back;
+}
+
+.profile-information-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.profile-information-header{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.profile-information-row-fluid{}
+.profile-information-col{}
+.profile-information-group-form-controls{}
+.profile-information-input-email{}
+.profile-information-change-email-address{}

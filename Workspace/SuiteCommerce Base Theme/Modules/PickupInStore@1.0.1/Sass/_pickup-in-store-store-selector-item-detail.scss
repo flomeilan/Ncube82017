@@ -1,0 +1,38 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.pickup-in-store-store-selector-item-detail {}
+
+.pickup-in-store-store-selector-item-detail-item-image {
+    display: inline-block;
+    vertical-align: top;
+	max-width: 70px;
+    margin-right: $sc-margin-lv4;
+}
+
+.pickup-in-store-store-selector-item-detail-details {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pickup-in-store-store-selector-item-detail-product-title {
+	@extend .medium-title;
+}
+
+.pickup-in-store-store-selector-item-detail-list-divider {
+    margin: $sc-margin-lv4 0;
+    height: 2px;
+    background-color: $sc-color-theme-background;
+    clear:both;
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+        display: block;
+    }
+}
+
+.pickup-in-store-store-selector-item-detail-product-name {}

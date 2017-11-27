@@ -1,0 +1,63 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.requestquote-wizard-module-items {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.requestquote-wizard-module-items-table{
+	@extend .table-flex-item-navigable;
+	table-layout: fixed;
+
+	.item-views-cell-actionable-table-last {
+		@media (min-width: $screen-md-min) {
+			text-align: right
+		}
+	}
+
+	tr {
+		@extend .recordviews-actionable-row;
+	}
+
+	.item-views-cell-actionable-table-middle {
+		padding-top: $sc-padding-lv3;
+	}
+
+	.item-views-cell-actionable-table-middle + .item-views-cell-actionable-table-middle {
+		padding-top: 0;
+
+		@media (min-width: $screen-md-min){
+			padding-top: $sc-padding-lv3;
+		}
+	}
+}
+
+.requestquote-wizard-module-items-header {
+	@extend .recordviews-actionable-row;
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+		width: 100%;
+	}
+}
+.requestquote-wizard-module-items-header-image {
+	@extend .item-view-cell-navigable-item-image;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+.requestquote-wizard-module-items-header-details {
+	color: $sc-color-theme-400;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+.requestquote-wizard-module-items-header-quantity,
+.requestquote-wizard-module-items-header-totalprice,
+.requestquote-wizard-module-items-header-amount {}
+.requestquote-wizard-module-items-header-title {}
+.requestquote-wizard-module-items-title {}
+.requestquote-wizard-module-items-header-actions {}

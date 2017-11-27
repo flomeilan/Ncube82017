@@ -1,0 +1,39 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-promocodeform{
+	clear:both;
+	display:block;
+	overflow:hidden;
+	margin-bottom:$sc-margin-lv2;
+
+	@media(min-width: $screen-sm-min){
+		margin-bottom:$sc-margin-lv4;
+	}
+}
+
+.order-wizard-promocodeform-expander-head{
+}
+
+.order-wizard-promocodeform-expander-head-toggle{
+	@extend .accordion-head-toggle-secondary;
+}
+
+.order-wizard-promocodeform-expander-toggle-icon{
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.order-wizard-promocodeform-expander-body{
+	@extend .accordion-body-alt;
+}
+.order-wizard-promocodeform-tooltip{
+	@extend .order-wizard-promocode-tooltip;
+}
+.order-wizard-promocodeform-expander-container{}
+.order-wizard-promocodeform-unsupported-summary-warning{
+	padding:$sc-padding-lv3;
+}

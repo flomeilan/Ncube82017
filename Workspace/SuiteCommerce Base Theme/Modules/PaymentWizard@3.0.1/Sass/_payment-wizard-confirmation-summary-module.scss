@@ -1,0 +1,67 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.payment-wizard-confirmation {
+	@extend .payment-wizard-summary-module;
+}
+
+.payment-wizard-confirmation-summary-module-container {
+	@extend .payment-wizard-summary-module-container;
+}
+
+.payment-wizard-confirmation-summary-module-header {
+	@extend .payment-wizard-summary-module-header !optional;
+}
+
+.payment-wizard-confirmation-summary-module-title {
+	@extend .payment-wizard-summary-module-title;
+}
+
+.payment-wizard-confirmation-summary-module-body {
+	@extend .payment-wizard-summary-module-body !optional;
+}
+
+.payment-wizard-confirmation-summary-module-invoices {
+}
+
+.payment-wizard-confirmation-summary-module-grid-float {
+	@extend .payment-wizard-summary-module-grid-float;
+}
+
+.payment-wizard-confirmation-summary-module-invoices-value {
+	@extend .payment-wizard-summary-module-invoices-value;
+}
+
+.payment-wizard-confirmation-summary-module-deposits-subtotal {
+
+}
+
+.payment-wizard-confirmation-summary-module-deposits-subtotal-value {
+	@extend .payment-wizard-summary-module-deposits-subtotal-value;
+}
+
+.payment-wizard-confirmation-summary-module-credits-subtotal {
+
+}
+
+.payment-wizard-confirmation-summary-module-credits-subtotal-value {
+	@extend .payment-wizard-summary-module-credits-subtotal-value;
+}
+
+.payment-wizard-confirmation-summary-module-estimated {
+}
+
+.payment-wizard-confirmation-summary-module-total-value {
+	float: right;
+  	padding-right: $sc-padding-lv3;
+}
+
+.payment-wizard-confirmation-summary-module-total-label {
+}
+
+.payment-wizard-confirmation-summary-module-invoices-number{}
+

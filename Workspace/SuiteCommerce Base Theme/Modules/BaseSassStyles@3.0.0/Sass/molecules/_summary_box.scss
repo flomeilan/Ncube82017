@@ -1,0 +1,94 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Summary box
+//
+// The Summary Box is currently used across the platform in several contexts to display key information
+// in a succinct manner facilitating the decision making process before performing an action.
+//
+// Markup:
+// <div class="summary-container" style="width: 260px;">
+//   <h3 class="summary-title">Order summary</h3>
+//   <div class="summary-subtotal">
+//     <p class="summary-grid-float">
+//       <span>
+//         Subtotal <span>1 item</span>
+//       </span>
+//       <span class="summary-grid-right">$100.00</span>
+//     </p>
+//   </div>
+//   <div>
+//     <p class="summary-grid-float">
+//       Shipping <span class="summary-grid-right">$10.00</span>
+//     </p>
+//     <p class="summary-grid-float">
+//       Tax <span class="summary-grid-right">$15.00</span>
+//     </p>
+//   </div>
+//   <div class="summary-total">
+//     <p class="summary-grid-float">
+//       Estimated total <span class="summary-grid-right">$125.00</span>
+//     </p>
+//   </div>
+// </div>
+//
+// Styleguide 3.7
+
+.summary-title {
+	background: $sc-color-theme-background;
+	text-align: center;
+	padding: $sc-padding-lv4 0 $sc-padding-lv4 0;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.summary-container {
+	margin-bottom: $sc-margin-lv4;
+	border: 1px solid $sc-color-theme-border-light;
+	box-shadow: 0 3px 0 $sc-color-theme-background;
+	-moz-box-shadow: 0 3px 0 $sc-color-theme-background;
+	-webkit-box-shadow: 0 3px 0 $sc-color-theme-background;
+}
+
+.summary-subtotal {
+	font-weight: $sc-font-weight-bold;
+	text-transform: uppercase;
+}
+
+.summary-total {
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-bold;
+	text-transform: uppercase;
+}
+
+.summary-grid-right {
+	float: right;
+	padding-right: $sc-padding-lv3;
+}
+
+.summary-grid-float {
+	@extend .row;
+	clear: both;
+	margin: 0;
+	margin-bottom: $sc-margin-lv2;
+	padding-left: $sc-padding-lv3;
+}
+
+.summary-button-container {
+	text-align: center;
+	background: $sc-color-theme-background;
+	padding: $sc-padding-lv4 0;
+}
+
+.button-proceed-to-checkout {
+	@extend .button-primary;
+	@extend .button-large;
+}
+
+.button-apply {
+	@extend .button-secondary;
+	@extend .button-small;
+}

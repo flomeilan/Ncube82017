@@ -1,0 +1,38 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-paymentmethod-purchasenumber-module {
+	@extend .box-column;
+	overflow:hidden;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-value {
+	@extend .input-large;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-label {
+	@extend .sc-value;
+	display: block;
+	margin-bottom: $sc-margin-lv1;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-row {
+	@extend .clearfix;
+	width: 100%;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-optional {
+	@extend .input-optional;
+	font-weight: $sc-font-weight-normal;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-title {
+	margin-bottom: $sc-margin-lv2;
+}

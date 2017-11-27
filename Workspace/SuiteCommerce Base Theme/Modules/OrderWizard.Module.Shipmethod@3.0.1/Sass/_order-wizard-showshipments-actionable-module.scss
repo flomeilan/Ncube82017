@@ -1,0 +1,79 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-showshipments-actionable-module-container{
+	@extend .box-column;
+}
+
+.order-wizard-showshipments-actionable-module-shipping-address{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.order-wizard-showshipments-actionable-module-shipping-method{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+.order-wizard-showshipments-actionable-module-shipping-details{
+	@extend .box-column;
+	margin-bottom: $sc-margin-lv4;
+}
+.order-wizard-showshipments-actionable-module-cart-details{
+	margin: 0 0 $sc-margin-lv4;
+}
+.order-wizard-showshipments-actionable-module-shipping-details-body {
+	@extend .row;
+}
+.order-wizard-showshipments-actionable-module-shipping-details-address,
+.order-wizard-showshipments-actionable-module-shipping-details-method {
+	@extend .col-sm-6;
+}
+.order-wizard-showshipments-actionable-module-shipping-details-address {
+	margin-bottom: $sc-margin-lv3;
+
+  @media (min-width: $screen-sm-min){
+  	margin-bottom: 0
+  }
+	.address-details-info {
+		margin-bottom: 0;
+	}
+}
+.order-wizard-showshipments-actionable-module-shipping-details-address-link {
+	margin-top: $sc-margin-lv3;
+	display: inline-block;
+}
+.order-wizard-showshipments-actionable-module-shipping-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.order-wizard-showshipments-actionable-module-shipping-options{
+
+}
+.order-wizard-showshipments-actionable-module-shipping-details-method-info-card {
+	@extend .info-card;
+}
+.order-wizard-showshipments-actionable-module-cart-details-accordion-head{
+	@extend .accordion-head;
+}
+.order-wizard-showshipments-actionable-module-cart-details-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+.order-wizard-showshipments-actionable-module-cart-details-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+.order-wizard-showshipments-actionable-module-cart-details-accordion-body{
+	@extend .accordion-body;
+}
+.order-wizard-showshipments-actionable-module-accordion-container{
+	padding: $sc-padding-lv4;
+	.transaction-line-views-cell-actionable-options {
+		padding-left: 0;
+	}
+}
+.order-wizard-showshipments-actionable-module-accordion-container .transaction-line-views-cell-actionable-table-last {}
+.order-wizard-showshipments-actionable-module-shipmethod-name{}
+.order-wizard-showshipments-actionable-module-shipmethod-rate{}

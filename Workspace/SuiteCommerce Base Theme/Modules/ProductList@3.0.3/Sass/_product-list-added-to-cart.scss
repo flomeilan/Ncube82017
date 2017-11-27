@@ -1,0 +1,46 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.product-list-added-to-cart-list{
+	margin-bottom:$sc-margin-lv4;
+	.product-list-display-full-extras{
+		font-size:$sc-font-size-m;
+	}
+}
+
+.product-list-added-to-cart-message{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.product-list-added-to-cart-button-viewcart{
+	@extend .button-primary;
+	@extend .button-medium;
+	margin-right:$sc-margin-lv3;
+	margin-bottom:$sc-margin-lv2;
+	@media (min-width: $screen-sm-min){
+		margin-bottom:0px;
+	}
+}
+
+.product-list-added-to-cart-button-back{
+	@extend .button-secondary;
+	@extend .button-medium;
+}
+
+.product-list-added-to-cart-list-from{
+	@extend .sc-label;
+}
+
+.product-list-added-to-cart-table{
+	@extend .table-flex-item-navigable;
+}
+
+.product-list-added-to-cart-modal-body{}
+.product-list-added-to-cart-warning-message{}
+.product-list-added-to-cart-list-name{}
+.product-list-added-to-cart-modal-footer{}

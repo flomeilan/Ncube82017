@@ -1,0 +1,34 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.locator-venue-details-title {
+    color: $sc-neutral-shade-600;
+}
+
+.locator-venue-details-container {}
+.locator-venue-details-container-services-hours {
+	margin-top: $sc-margin-lv2;
+}
+
+.locator-venue-details-container-address {}
+
+.locator-venue-details-container-services-hours-next-pickup-day-information {
+	color: $sc-color-success;
+	margin-top: $sc-margin-lv2;
+}
+
+.locator-venue-details-address {}
+.locator-venue-details-city {}
+.locator-venue-details-state {}
+.locator-venue-details-zipcode {}
+.locator-venue-details-phone {}
+
+.locator-venue-details-container-service-hours-title, .locator-venue-details-phone-label {
+	@extend .sc-label;
+}
+.locator-venue-details-container-service-hours-row {}

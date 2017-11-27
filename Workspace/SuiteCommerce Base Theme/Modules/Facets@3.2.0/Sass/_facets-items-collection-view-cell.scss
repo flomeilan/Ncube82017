@@ -1,0 +1,65 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-items-collection-view-cell-span2 {
+    @extend .col-sm-2;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span3 {
+	@extend .col-sm-3;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span4 {
+    @extend .col-sm-4;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span4 {
+    @extend .col-sm-4;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span5 {
+    @extend .col-sm-5;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span6 {
+	@extend .col-sm-6;
+    @extend .col-xs-6;
+}
+
+.facets-items-collection-view-cell-span7 {
+    @extend .col-sm-7;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span8 {
+    @extend .col-sm-8;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span9 {
+    @extend .col-sm-9;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span10 {
+    @extend .col-sm-10;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span11 {
+    @extend .col-sm-11;
+    @extend .col-xs-12;
+}
+
+.facets-items-collection-view-cell-span12 {
+	@extend .col-xs-12;
+}

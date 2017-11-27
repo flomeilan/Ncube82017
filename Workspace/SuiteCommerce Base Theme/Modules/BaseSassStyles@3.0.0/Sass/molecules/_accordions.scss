@@ -1,0 +1,107 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Accordion
+//
+// Expanders are used to show users a snippet of a larger body of text in order to keep the user interface lightweight and easy to scan.
+// Content is revealed when requested by the user.
+//
+// Markup:
+// <div class="accordion-head">
+//   <a class="accordion-head-toggle" data-toggle="collapse" data-target="#accordion-id" aria-expanded="false" aria-controls="accordion-id">
+//     this is the primary accordion
+//     <i class="acordion-head-toggle-icon"></i>
+//   </a>
+// </div>
+// <div class="accordion-body in" id="accordion-id">
+//   <div class="accordion-container">
+//     <p>some content</p>
+//     <p>more content</p>
+//   </div>
+// </div>
+//
+// Styleguide 3.1
+
+.accordion-head {
+	@extend .small-title;
+	text-transform: inherit;
+}
+
+.accordion-head-toggle,
+.accordion-head-toggle-secondary {
+	display: block;
+	cursor: pointer;
+	height: 100%;
+	line-height: $sc-target-size;
+	padding: 0 $sc-padding-lv4;
+	font-size: $sc-font-size-m;
+	border: 1px solid $sc-color-theme-border;
+}
+
+.accordion-head-toggle {
+	color: $sc-color-secondary;
+	font-weight: $sc-font-weight-bold;
+}
+
+.accordion-head-toggle-secondary {
+	color: $sc-color-copy;
+}
+
+.accordion-head-toggle:hover,
+.accordion-head-toggle-secondary:hover {
+	text-decoration: none;
+	color: $sc-color-copy-dark;
+}
+
+.acordion-head-toggle-icon,
+.accordion-toggle-icon,
+.accordion-toggle-icon-secondary {
+	@extend .fa;
+	@extend %fa-angle-up;
+	float: right;
+	height: $sc-target-size;
+	line-height: $sc-target-size;
+	font-size: $sc-font-size-xl;
+	color: $sc-color-secondary;
+	@include transition (transform $sc-animation-base-duration ease)
+}
+
+.accordion-toggle-icon-secondary {
+	color: $sc-color-copy;
+}
+
+.collapsed .acordion-head-toggle-icon,
+.collapsed .accordion-toggle-icon,
+.collapsed .accordion-toggle-icon-secondary {
+	@include rotate(180deg);
+}
+
+.accordion-body,
+.accordion-body-secondary,
+.accordion-body-alt {
+	overflow: hidden;
+	background-color: $sc-neutral-shade-0;
+	border: 1px solid $sc-color-theme-border;
+	border-top: 0;
+	width: 100%;
+}
+
+.accordion-body-alt {
+	background-color: $sc-color-theme-background;
+}
+
+.accordion-container {
+	margin: $sc-margin-lv4;
+}
+
+.accordion-container-table {
+	margin: 0;
+}
+
+.accordion-divider {
+	margin-bottom: $sc-margin-lv4;
+}

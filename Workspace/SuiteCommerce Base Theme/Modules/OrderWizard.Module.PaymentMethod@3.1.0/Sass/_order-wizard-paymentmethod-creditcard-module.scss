@@ -1,0 +1,86 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-paymentmethod-creditcard-module {
+	.creditcard-edit {
+		padding-top: 0;
+		padding-bottom: 0;
+
+		border-top: none;
+
+		.creditcard-edit-form {
+		  clear: both;
+		}
+		@media (min-width: $screen-sm-min) {
+			padding-left: 0;
+		}
+	}
+}
+
+.order-wizard-paymentmethod-creditcard-module-learn-more {
+	margin: $sc-margin-lv3 0 0;
+	color: $sc-color-theme-900;
+	font-size: $sc-font-size-s;
+	width: 100%;
+	display: inline-block;
+}
+
+.order-wizard-paymentmethod-creditcard-module-learn-more-icon {
+	@extend .icon-locked;
+}
+
+.order-wizard-paymentmethod-creditcard-module-learn-more-link {
+	cursor: pointer;
+}
+.order-wizard-paymentmethod-creditcard-module-selected-card {
+	@extend .col-md-6;
+	@extend .info-card;
+	margin-bottom: 0;
+	.creditcard {
+		margin-bottom: 15px;
+		width: 100%;
+		padding: 0;
+	}
+	.creditcard-content {
+		border: 0;
+		padding: 0;
+	  height: auto;
+	  min-height: inherit;
+	}
+}
+.order-wizard-paymentmethod-creditcard-module-actions {
+	clear:both;
+}
+.order-wizard-paymentmethod-creditcard-module-add-new-credit-card-button {
+	margin: $sc-margin-lv3 0;
+	@extend .button-secondary;
+	@extend .button-medium;
+}
+
+.order-wizard-paymentmethod-creditcard-module-title{
+	margin-bottom: $sc-margin-lv2;
+}
+
+.order-wizard-paymentmethod-creditcard-module-edit-card{
+	@extend .button-tertiary;
+	@extend .button-small;
+	margin-right:$sc-margin-lv4;
+}
+
+.order-wizard-paymentmethod-creditcard-module-change-card{
+	@extend .button-tertiary;
+	@extend .button-small;
+	margin-top:$sc-margin-lv3;
+	@media (min-width: $screen-md-min) {
+		margin-top: 0;
+	}
+}
+
+.order-wizard-paymentmethod-creditcard-module-list-placeholder{
+	@extend .creditcard-module-list-placeholder;
+}
+.order-wizard-paymentmethod-creditcard-module-form{}

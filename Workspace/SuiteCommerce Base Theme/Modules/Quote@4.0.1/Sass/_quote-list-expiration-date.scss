@@ -1,0 +1,32 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quote-list-expiration-date-icon-flag {
+  @extend .icon-flag;
+}
+
+.quote-list-expiration-date-overdue {
+  @extend .invoice-date-overdue !optional;
+}
+
+.quote-list-expiration-date-icon-overdue,
+.quote-list-expiration-date-icon-closeoverdue {
+  @extend .icon-flag;
+  margin-left: $sc-margin-lv1;
+}
+
+.quote-list-expiration-date-icon-overdue {
+  color: $sc-color-error;
+}
+
+.quote-list-expiration-date-icon-closeoverdue {
+  color: $sc-color-warning;
+}
+
+.quote-list-expiration-date-closeoverdue {
+  @extend .sc-value;
+}

@@ -1,0 +1,66 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-promocode-list-item {
+	clear:both;
+}
+
+.cart-promocode-list-item-container {
+	padding-left:$sc-padding-lv3;
+}
+
+.cart-promocode-list-item-code {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cart-promocode-list-item-code-label{}
+
+.cart-promocode-list-item-code-value{
+	color: $sc-color-theme-900;
+}
+
+.cart-promocode-list-item-remove-action {
+	margin-left: $sc-margin-lv1;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+
+	i {
+		@extend .icon-base;
+		@extend %fa-times-circle;
+		color: $sc-color-secondary;
+		line-height: $sc-target-size;
+	}
+}
+
+.cart-promocode-list-item-discount {
+	@extend .summary-grid-right;
+}
+
+.cart-promocode-list-item-warning {
+	margin-left: $sc-margin-lv1;
+	display: inline-block;
+	vertical-align: middle;
+
+	i {
+		@extend .icon-base;
+		@extend .icon-message-atention;
+		color: $sc-color-warning;
+		line-height: $sc-target-size;
+	}
+
+	.tooltip .tooltip-inner {
+		@extend .message-warning;
+		border: none;
+		text-align: left;
+	}
+
+	.tooltip .tooltip-arrow {
+		display: none;
+	}
+}

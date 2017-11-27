@@ -1,0 +1,192 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+	@extend .container;
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+	float: right;
+}
+
+.header-menu-search-link {
+	font-size: $sc-font-size-xl;
+	background: none;
+	padding: $sc-padding-lv2;
+	color: $sc-color-secondary;
+	cursor: pointer;
+	position: relative;
+	line-height: 34px;
+}
+.header-menu-search-link:hover {
+	color: $sc-color-theme-400;
+}
+.header-menu-search-link.active {
+	color: $sc-color-copy;
+}
+
+.header-menu-search-icon {
+	@extend .fa;
+	@extend %fa-search;
+	font-size: $sc-font-size-xxl;
+}
+
+.header-menu-searchmobile-link {
+	margin-right: 0px;
+	cursor: pointer;
+	background-color:$sc-neutral-shade-0;
+	@media (min-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.header-menu-searchmobile-link:hover {
+	background-color:$sc-neutral-shade-0;
+}
+
+.header-menu-searchmobile-link.active {
+	background: $sc-color-theme-background;
+}
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+	margin-left: - $sc-padding-lv2;
+}
+
+.header-menu-level1 > li {
+	float: left;
+}
+
+.header-menu-level1-anchor {
+	display: block;
+	position: relative;
+	height: $sc-secondary-menu-height;
+	line-height: $sc-secondary-menu-height;
+	padding: 0 $sc-padding-lv2;
+	margin-right: $sc-margin-lv1;
+	color:$sc-color-secondary;
+    font-weight:$sc-font-weight-semibold;
+    text-transform: capitalize;
+}
+
+.header-menu-level1-anchor:hover{
+	color: $sc-color-link-hover;
+}
+
+.open .header-menu-level1-anchor{
+	color: $sc-color-copy-dark;
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor{
+	@extend .header-menu-level1-anchor;
+	color:$sc-color-secondary;
+}
+
+//maxi menu level 2
+.header-menu-back {
+	display: none;
+}
+
+.header-menu-level2 > li {
+	float: left;
+	width: 20%;
+	padding-right: $sc-padding-lv6;
+}
+
+.header-menu-level2-anchor {
+	text-transform: uppercase;
+	font-weight: $sc-font-weight-semibold;
+	color: $sc-color-copy;
+	padding-bottom: $sc-padding-lv1;
+	margin-bottom: $sc-margin-lv2;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	display: block;
+
+	//@media (min-width: $screen-md-min) {
+	//	pointer-events: none;
+	//}
+}
+.header-menu-level2-anchor:hover {
+	color: $sc-color-copy;
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+	display: block;
+	padding: $sc-padding-lv1 0;
+	color:$sc-color-secondary;
+}
+
+.header-menu-myaccount-anchor-level3:hover {
+	color: $sc-color-link-hover;
+}
+
+.header-menu-myaccount-anchor-level3.active {
+	color: $sc-color-copy;
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon, .header-menu-pop-icon {
+	display: none;
+}
+
+.header-menu-level-container {
+	background-color: $sc-neutral-shade-0;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	min-height: 150px;
+	z-index: 1003;
+	padding: $sc-padding-lv5 0;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	border-top: 1px solid $sc-color-theme-border-light;
+	@include box-shadow(0 6px 12px transparentize($sc-neutral-shade-600, 1-0.175));
+
+	> li {
+		@extend .container;
+	}
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+	display: block;
+}
+
+.open .header-menu-level1-anchor:before{
+	position: absolute;
+	top: 47px;
+	left: 50%;
+	margin-left: -7.5px;
+	display: inline-block;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid $sc-neutral-shade-0;
+	border-left: 7px solid transparent;
+	border-bottom-color: transparentize($sc-neutral-shade-600, 1-0.2);
+	content: '';
+}
+
+.open .header-menu-level1-anchor:after{
+	position: absolute;
+	top: 48px;
+	left: 50%;
+	margin-left: -6.5px;
+	display: inline-block;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid $sc-neutral-shade-0;
+	border-left: 6px solid transparent;
+	content: '';
+	z-index: 9999;
+}

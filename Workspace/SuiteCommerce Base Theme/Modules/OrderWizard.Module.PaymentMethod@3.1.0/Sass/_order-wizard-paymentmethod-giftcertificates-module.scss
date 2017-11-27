@@ -1,0 +1,91 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-paymentmethod-giftcertificates-module {
+	margin-bottom: $sc-margin-lv3;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-expander-head {
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-expander-head-toggle {
+	@extend .accordion-head-toggle-secondary;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-info-icon {
+	@extend .sc-tooltip;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-expander-icon {
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-form {
+	@extend .accordion-body-alt;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-form-expander-container {
+	@extend .accordion-container;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-form-input-container {
+	@extend .col-xs-6;
+	float: left;
+	padding: 0;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-form-input {
+
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-form-submit-container {
+	@extend .col-xs-6;
+	float: right;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-form-submit {
+	@extend .button-secondary;
+	@extend .button-medium;
+	margin-left: $sc-margin-lv3;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-table {
+	@extend .table-flex-record-actionable-navigable;
+	margin-top: $sc-margin-lv2;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-table-header {
+	@extend .table-flex-head;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-table-body {
+	@extend .table-row-with-border;
+}
+
+.giftcertificate-number {
+	@extend .table-flex-td-first;
+}
+
+.giftcertificate-action {
+	@extend .table-flex-td-last;
+}
+
+.giftcertificate-action-remove {
+	@extend .button-tertiary;
+	@extend .button-small;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-section-header{
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-step-header{
+	@extend .order-wizard-step-header !optional;
+}
+.order-wizard-paymentmethod-giftcertificates-module-row-number{}
+.order-wizard-paymentmethod-giftcertificates-module-row-amount{}
+.order-wizard-paymentmethod-giftcertificates-module-row-remaining{}
+.order-wizard-paymentmethod-giftcertificates-module-row-actions{}

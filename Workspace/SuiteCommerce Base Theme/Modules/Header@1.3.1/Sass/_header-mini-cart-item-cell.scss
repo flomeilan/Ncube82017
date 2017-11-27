@@ -1,0 +1,69 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.header-mini-cart-item-cell {
+	margin-bottom: $sc-margin-lv4;
+	clear: both;
+	overflow: hidden;
+}
+
+.header-mini-cart-item-cell-image img {
+	width: $img-small;
+	vertical-align:middle;
+}
+
+.header-mini-cart-item-cell-image {
+	@extend .col-xs-3;
+	height: $img-small;
+	line-height: $img-small;
+	padding: 0px;
+}
+
+.header-mini-cart-item-cell-details {
+	@extend .col-xs-9;
+}
+
+.header-mini-cart-item-cell-product-title {
+	margin-bottom: $sc-margin-lv2;
+}
+
+.header-mini-cart-item-cell-product-price {
+	@extend .middle-price;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.header-mini-cart-item-cell-product-sku {
+	margin-bottom: $sc-margin-lv2;
+}
+
+.header-mini-cart-item-cell-product-color {
+	line-height: 1.2;
+	text-transform: capitalize;
+	font-size: $sc-font-size-m;
+}
+
+.header-mini-cart-item-cell-product-size {
+	line-height: 1.2;
+	text-transform: capitalize;
+	font-size: $sc-font-size-m;
+}
+
+.header-mini-cart-item-cell-product-qty {
+	line-height: 1.2;
+	text-transform: capitalize;
+	font-size: $sc-font-size-m;
+}
+.header-mini-cart-item-cell-quantity-label{
+	@extend .sc-label;
+}
+.header-mini-cart-item-cell-quantity-value{
+	@extend .sc-value;
+}
+
+.header-mini-cart-item-cell-title-navigable {
+	@extend .medium-title-navigable;
+}

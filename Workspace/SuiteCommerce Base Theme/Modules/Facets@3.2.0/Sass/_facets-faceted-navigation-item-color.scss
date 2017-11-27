@@ -1,0 +1,73 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-faceted-navigation-item-color-facet-group {
+	@extend .facets-faceted-navigation-facet-group;
+}
+
+.facets-faceted-navigation-item-color-facet-group-expander {
+	@extend .facets-faceted-navigation-facet-group-expander;
+}
+
+.facets-faceted-navigation-item-color-facet-group-expander-icon {
+	@extend .facets-faceted-navigation-facet-group-expander-icon;
+}
+
+.facets-faceted-navigation-item-color-facet-group-wrapper {}
+
+.facets-faceted-navigation-item-color-facet-group-content {}
+
+.facets-faceted-navigation-item-color-facet-group-title {
+	@extend .facets-faceted-navigation-facet-group-title;
+}
+
+.facets-faceted-navigation-item-color-filter-delete {}
+
+.facets-faceted-navigation-item-color-filter-delete-icon {}
+
+.facets-faceted-navigation-item-color-facet-option {
+	@extend .facets-faceted-navigation-facet-option;
+}
+
+.facets-faceted-navigation-item-color-facet-option-circle {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+
+.facets-faceted-navigation-item-color-picker {
+	@extend .color-picker-md;
+	@extend .clearfix;
+
+	li {
+		float:left;
+		min-width: 25px;
+		min-height: 25px;
+		margin-bottom: $sc-margin-lv2;
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.facets-faceted-navigation-item-color-picker-extra {
+
+	@extend .facets-faceted-navigation-item-color-picker;
+}
+
+.facets-faceted-navigation-item-color-option {}
+
+.facets-faceted-navigation-item-color-extra-option {}
+
+.facets-faceted-navigation-item-color-optionlist-extra-wrapper {}
+
+.facets-faceted-navigation-item-color-optionlist-extra-button {
+	@extend .button-small;
+	display: inline-block;
+	margin: $sc-margin-lv2 0;
+	padding: 0;
+}
+
+.facets-faceted-navigation-item-color-alt-caption {
+	display:none;
+}

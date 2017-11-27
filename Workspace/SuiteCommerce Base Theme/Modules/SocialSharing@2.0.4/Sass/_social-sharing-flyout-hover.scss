@@ -1,0 +1,23 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.social-sharing-flyout-hover-icons {
+	position: absolute;
+	top: 10px;
+	left: 25px;
+	z-index: 1000;
+	display: none;
+}
+
+.product-details-image-gallery:hover {
+	.social-sharing-flyout-hover-icons {
+		display: none;
+		@media (min-width: $screen-sm-min){
+			display: block;
+		}
+	}
+}

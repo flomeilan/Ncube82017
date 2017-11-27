@@ -1,0 +1,45 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-paymentmethod-giftcertificates-module-record-row{
+	@extend .recordviews-row;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-record-gift-certificates{
+	@extend .giftcertificate-number;
+	@extend .recordviews-generic;
+	vertical-align:middle;
+	.order-wizard-paymentmethod-giftcertificates-module-record-value {
+		display: inline-block;
+	}
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-record-amount-applied{
+	@extend .recordviews-generic;
+	vertical-align:middle;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-record-remaining-balance{
+	@extend .recordviews-generic;
+	vertical-align:middle;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-record-actions{
+	@extend .giftcertificate-action;
+	padding-bottom: $sc-padding-lv3;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-record-actions-button{
+	@extend .giftcertificate-action-remove;
+}
+
+.order-wizard-paymentmethod-giftcertificates-module-record-label{
+	@extend .recordviews-label;
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}

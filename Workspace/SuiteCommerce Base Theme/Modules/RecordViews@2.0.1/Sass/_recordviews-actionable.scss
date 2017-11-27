@@ -1,0 +1,144 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.recordviews-actionable-row {
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	font-size: $sc-font-size-m;
+	line-height: 1.8;
+	@media (min-width: $screen-md-min) {
+		line-height: normal;
+	}
+}
+
+.recordviews-actionable {
+	@extend .recordviews-actionable-row;
+}
+
+.recordviews-actionable:hover {
+	background-color: $sc-color-theme-background;
+}
+
+.recordviews-actionable-table {
+	@extend .table-flex-record-actionable-navigable;
+	min-height: $sc-target-size;
+
+	td {
+		vertical-align: middle;
+	}
+}
+
+.recordviews-actionable-header {
+	@extend .recordviews-actionable-row;
+	font-weight: $sc-font-weight-semibold;
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+	}
+}
+
+.recordviews-actionable-header th {
+	padding: $sc-padding-lv3;
+}
+
+// .recordviews-actionable-title-header,
+// .recordviews-actionable-date-header,
+// .recordviews-actionable-currency-header,
+// .recordviews-actionable-status-header,
+// .recordviews-actionable-actions-header {
+// 	color: $sc-color-copy-dark;
+// }
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+	.recordviews-actionable-title {
+		width: 100%;
+	}
+
+	.recordviews-actionable-actions {
+		width: 50%;
+		text-align: right;
+		padding-right: $sc-padding-lv3;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.recordviews-actionable-title-header,
+	.recordviews-actionable-title {
+		width: 20%;
+	}
+	.recordviews-actionable-origin-header,
+	.recordviews-actionable-origin {
+		width: 25%;
+		text-align: left;
+	}
+	.recordviews-actionable-date-header,
+	.recordviews-actionable-date {
+		width: 15%;
+		text-align: right;
+	}
+	.recordviews-actionable-currency-header,
+	.recordviews-actionable-currency {
+		width: 20%;
+		text-align: right;
+	}
+	.recordviews-actionable-status-header,
+	.recordviews-actionable-status {
+		width: 25%;
+		text-align: left;
+	}
+	.recordviews-actionable-actions-header,
+	.recordviews-actionable-actions {
+		width: 20%;
+		text-align: right;
+	}
+}
+
+.recordviews-actionable-title {
+	@extend .small-title-navigable;
+	@extend .table-flex-td-first;
+}
+
+.recordviews-actionable-date {
+	@extend .sc-value;
+}
+
+.recordviews-actionable-currency {
+	@extend .sc-value;
+}
+
+.recordviews-actionable-status {
+	@extend .table-flex-td-last;
+	@extend .sc-value;
+	color: $sc-color-primary;
+	@media (min-width: $screen-sm-min) {
+		padding-bottom: $sc-padding-lv3;
+	}
+}
+
+.recordviews-actionable-actions {
+	@extend .table-flex-tdlast;
+	padding-bottom: $sc-padding-lv3;
+
+	@media (min-width: $screen-sm-min) {
+		.recordviews-actionable-label {
+			display: none;
+		}
+	}
+}
+
+.recordviews-actionable-label {
+	@extend .sc-label;
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.recordviews-actionable-value {
+	font-size:14px;
+}
+.recordviews-actionable-composite{}

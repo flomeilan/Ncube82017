@@ -1,0 +1,77 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.transaction-line-views-cell-selectable-actionable{
+	&:hover{
+		background:none;
+	}
+}
+
+.transaction-line-views-cell-selectable-actionable-image{
+	@extend .col-sm-3;
+}
+
+.transaction-line-views-cell-selectable-actionable-details{
+	@extend .col-sm-6;
+}
+
+.transaction-line-views-cell-selectable-actionable-actions{
+	@extend .col-sm-3;
+}
+
+.transaction-line-views-cell-selectable-actionable-name-link{
+	@extend .medium-title-navigable;
+}
+
+.transaction-line-views-cell-selectable-actionable-thumbnail-img{
+	width:$img-large;
+}
+
+.transaction-line-views-cell-selectable-actionable-price .item-view-lead-price{
+	@extend .middle-price;
+}
+
+.transaction-line-views-cell-selectable-actionable-sku{
+	font-size:$sc-font-size-s;
+}
+
+.transaction-line-views-cell-selectable-actionable-qty{
+	clear:both;
+	display:block;
+	width:100%;
+}
+
+.transaction-line-views-cell-selectable-actionable-qty input[type=number]{
+    float: left;
+    width: 60px;
+    height: 40px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: right;
+    color: $sc-color-copy;
+    background: $sc-color-theme-background;
+    outline: none;
+    border: 0px;
+}
+
+.transaction-line-views-cell-selectable-actionable-label-qty{
+	float: left;
+	margin-right: 15px;
+	line-height: 40px;
+}
+
+.transaction-line-views-cell-selectable-actionable-amount{
+	clear:both;
+	display:block;
+}
+
+.transaction-line-views-cell-selectable-actionable-sku-text{}
+.transaction-line-views-cell-selectable-actionable-input-checkbox{}
+.transaction-line-views-cell-selectable-actionable-options{}
+.transaction-line-views-cell-selectable-actionable-summary{}
+.transaction-line-views-cell-selectable-actionable-item{}
+.transaction-line-views-cell-selectable-actionable-alert-placeholder{}

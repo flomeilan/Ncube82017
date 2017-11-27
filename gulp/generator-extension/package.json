@@ -1,0 +1,17 @@
+{
+  "name": "generator-extension",
+  "version": "0.1.0",
+  "description": "Generate a new SuiteCommerce Extension or Module",
+  "main": "generators/app/index.js",
+  "files": [
+    "generators"
+  ],
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "2.0.1"
+  , "path": "0.12.7"
+  , "gulp-util": "3.0.0"
+  , "shelljs": "0.7.8"
+  , "underscore": "1.8.3"
+  }
+}

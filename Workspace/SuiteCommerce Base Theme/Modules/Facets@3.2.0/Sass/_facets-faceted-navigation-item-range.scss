@@ -1,0 +1,68 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-faceted-navigation-item-range-facet-group {
+	@extend .facets-faceted-navigation-facet-group;
+}
+
+.facets-faceted-navigation-item-range-facet-group-expander {
+	@extend .facets-faceted-navigation-facet-group-expander;
+}
+
+.facets-faceted-navigation-item-range-filter-delete {}
+
+.facets-faceted-navigation-item-range-filter-delete-icon {}
+
+.facets-faceted-navigation-item-range-facet-group-wrapper {
+	padding-top: $sc-padding-lv2;
+}
+
+.facets-faceted-navigation-item-range-facet-group-expander-icon {
+	@extend .facets-faceted-navigation-facet-group-expander-icon;
+}
+
+.facets-faceted-navigation-item-range-facet-group-title {
+	@extend .facets-faceted-navigation-facet-group-title;
+}
+
+.facets-faceted-navigation-item-range-facet-option {
+	@extend .facets-faceted-navigation-facet-option;
+}
+
+.facets-faceted-navigation-item-range-facet-option-circle {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+
+.facets-faceted-navigation-item-range-start {
+	color:$sc-color-secondary;
+}
+
+.facets-faceted-navigation-item-range-end {
+	color:$sc-color-secondary;
+	float:right;
+}
+
+.facets-faceted-navigation-item-range-slider {
+	@extend .price-range-slider;
+}
+
+.facets-faceted-navigation-item-range-slider-bar {
+	@extend .price-range-slider-bar;
+}
+
+.facets-faceted-navigation-item-range-slider-bar-right {
+	@extend .price-range-slider-bar-right;
+}
+
+.facets-faceted-navigation-item-range-slider-bar-left {
+	@extend .price-range-slider-bar-left;
+}
+
+.price-range-slider-bar {
+	background-color: $sc-color-primary;
+	height: 3px;
+}

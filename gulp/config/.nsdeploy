@@ -1,0 +1,13 @@
+{
+    "credentials": {
+        "email": "fmeilan@netsuite.com",
+        "account": "TSTDRV1843409",
+        "role": 3,
+        "hostname": "rest.na2.netsuite.com",
+        "website": "4",
+        "domain": "netscape.commerceapplication.com",
+        "webapp_id": "9001",
+        "target_folder": "9001",
+        "roleId": 3
+    }
+}

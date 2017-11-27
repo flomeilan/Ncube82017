@@ -1,0 +1,41 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.facets-browse-category-heading-list-header
+{
+	display: table;
+	padding-bottom: $sc-padding-lv3;
+}
+
+.facets-browse-category-heading-main-description
+{
+	width: auto;
+	margin: $sc-margin-lv2;
+
+	@media (min-width: $screen-md-min)
+	{
+		margin-left: $sc-margin-lv4;
+	}
+
+}
+
+.facets-browse-category-heading-main-description h3
+{
+	text-transform: none;
+	font-weight: normal;
+}
+
+.facets-browse-category-heading-main-image
+{
+	display: none;
+
+	@media (min-width: $screen-md-min)
+	{
+		display: inherit;
+	}
+}

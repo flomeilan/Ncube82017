@@ -1,0 +1,18 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-countriesDropdown-group-label {}
+
+.global-views-countriesDropdown-select {
+    @extend .input-large
+}
+
+.global-views-countriesDropdown-input-required{
+	@extend .input-required;
+}
+
+.global-views-countriesDropdown-form-controls{}

@@ -1,0 +1,24 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.home-cms {
+	@extend .container;
+}
+.home-cms-page-banner-top {
+}
+.home-cms-page-banner-bottom-content {
+    @extend .clearfix;
+}
+.home-cms-page-banner-bottom {
+    @extend .col-sm-4;
+}
+.home-cms-page-banner-bottom-main {
+    @extend .col-sm-12;
+}
+
+.home-cms-page-main{}
+.home-cms-page-merchandising{}

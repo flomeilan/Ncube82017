@@ -1,0 +1,251 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.deposit-details-row{
+	@extend .row;
+}
+
+.deposit-details-button-download-as-pdf{
+	@extend .button-secondary;
+	@extend .button-medium;
+	float:right;
+}
+
+.deposit-details-header-col-right{
+	@extend .col-sm-6;
+	text-align:right;
+}
+
+.deposit-details-header-col-left{
+	@extend .col-sm-6;
+	text-align:left;
+}
+
+.deposit-details-deposit-payment{
+	float:right;
+}
+
+.deposit-details-back-btn{
+	@extend .button-back;
+}
+
+.deposit-details-accordion-divider{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.deposit-details-accordion-head{
+	@extend .accordion-head;
+}
+
+.deposit-details-accordion-head-toggle-secondary{
+	@extend .accordion-head-toggle-secondary;
+}
+
+.deposit-details-accordion-toggle-icon-secondary{
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.deposit-details-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.deposit-details-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.deposit-details-accordion-body{
+	@extend .accordion-body;
+	@media(min-width: $screen-sm-min){
+		/*@extend .in;*/
+	}
+}
+
+.deposit-details-accordion-container{
+	@extend .accordion-container;
+}
+
+.deposit-details-accordion-container-table{
+	@extend .accordion-container-table;
+	.deposit-details-invoice-table-heading-number{
+		padding-left:$sc-padding-lv4;
+	}
+	.deposit-details-invoice-table-heading-amount{
+		padding-right:$sc-padding-lv4;
+	}
+
+	.recordviews-title{
+		padding-left:$sc-padding-lv2;
+	}
+
+	.recordviews-currency{
+		padding-right:$sc-padding-lv4;
+	}
+
+	.deposit-details-remaining-amount{
+		padding-right:$sc-padding-lv4;
+	}
+}
+
+.deposit-details-info-card-grid{
+	@extend .col-sm-6;
+}
+
+.deposit-details-info-card{
+	@extend .info-card;
+ 	font-size:$sc-font-size-m;
+ 	color:$sc-color-copy;
+}
+
+.deposit-details-status-value{
+	@extend .sc-value;
+	color:$sc-color-primary;
+}
+
+.deposit-details-status-label{
+	@extend .sc-label;
+}
+
+.deposit-details-date-label{
+	@extend .sc-label;
+}
+
+.deposit-details-date-value{
+	@extend .sc-value;
+}
+
+.deposit-details-header-title{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.deposit-details-header-information{
+	margin-bottom:$sc-margin-lv4;
+	display:block;
+	clear:both;
+}
+
+.deposit-details-button-container{
+	@extend .col-xs-12;
+}
+
+
+.deposit-details-invoice-table{
+	@extend .table-flex-item-navigable;
+
+	.recordviews-title {
+		padding-top:$sc-padding-lv3;
+		padding-left:$sc-padding-lv3;
+	}
+
+	.recordviews-currency {
+		padding-bottom:$sc-padding-lv3;
+	}
+
+	@media(min-width: $screen-md-min){
+		.recordviews-title {
+			padding-left:$sc-padding-lv4;
+		}
+	}
+}
+
+
+.deposit-details-invoice-table-heading{
+	border-bottom:1px solid $sc-color-theme-border-light;
+	display:none;
+	@media(min-width: $screen-md-min){
+		width:100%;
+		display:table-row-group;
+		color:$sc-color-copy-light;
+		font-size:$sc-font-size-m;
+		th{
+			font-weight:$sc-font-weight-normal;
+			padding:$sc-padding-lv2;
+			display:table-cell;
+		}
+	}
+}
+
+.deposit-details-invoice-table-heading-date{
+	text-align:right;
+	width:25%;
+}
+
+.deposit-details-invoice-table-heading-number{
+	text-align:left;
+	width:25%;
+}
+
+.deposit-details-invoice-table-heading-date-applied{
+	text-align:right;
+	width:25%;
+}
+
+.deposit-details-invoice-table-heading-amount{
+	text-align:right;
+	width:25%;
+}
+
+.deposit-details{
+	.recordviews-table td{
+		width:100%;
+		@media(min-width: $screen-md-min){
+		width:25%;
+		}
+	}
+}
+
+
+.deposit-details-applied-amount{
+	padding:$sc-padding-lv3 $sc-padding-lv4;
+	border-bottom:1px solid $sc-color-theme-border-light;
+	text-align:right;
+	font-size:$sc-font-size-m;
+	font-weight:$sc-font-weight-bold;
+}
+
+.deposit-details-remaining-amount{
+	padding:$sc-padding-lv3 $sc-padding-lv2;
+	text-align:right;
+	font-weight:$sc-font-weight-bold;
+}
+
+.deposit-details-remaining-amount-label{
+	@extend .sc-label;
+	font-size:$sc-font-size-l;
+}
+
+.deposit-details-remaining-amount-value{
+	@extend .sc-value;
+	font-size:$sc-font-size-l;
+}
+
+.deposit-details-applied-amount-value{
+	@extend .sc-value;
+}
+
+.deposit-details-applied-amount-label{
+	@extend .sc-label;
+}
+
+.deposit-details-deposit-message{
+	@extend .col-xs-12;
+	font-size:$sc-font-size-m;
+	padding:$sc-padding-lv4 $sc-padding-lv7;
+}
+
+.deposit-details-memo-title{
+	font-weight:$sc-font-weight-bold;
+}
+
+.deposit-details-method{
+}
+
+.deposit-details-number{}
+.deposit-details-date-info{}
+.deposit-details-status-info {
+	margin-bottom:$sc-margin-lv4;
+}
+.deposit-details-memo-value{}

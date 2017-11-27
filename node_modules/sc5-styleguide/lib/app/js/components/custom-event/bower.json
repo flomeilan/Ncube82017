@@ -1,0 +1,24 @@
+{
+  "name": "custom-event",
+  "description": "Polyfill the native CustomEvent constructor.",
+  "version": "0.1.0",
+  "authors": [
+    "Ryan Frederick <ryan@ryanfrederick.com>"
+  ],
+  "keywords": [
+    "custom",
+    "event"
+  ],
+  "main": "index.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "Makefile",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/varya/custom-event"
+}

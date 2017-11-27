@@ -1,0 +1,64 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.login-register-checkout-as-guest-header{
+	margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-checkout-as-guest-body {
+	margin-bottom: $sc-margin-lv6;
+}
+
+.login-register-checkout-as-guest-description{
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-checkout-as-guest-control-group{
+	margin-top: $sc-margin-lv4;
+}
+
+.login-register-checkout-as-guest-control-label {}
+
+.login-register-checkout-as-guest-required{
+	@extend .input-required;
+}
+
+.login-register-checkout-as-guest-input{
+	@extend .input-large;
+}
+
+.login-register-checkout-as-guest-submit,
+.login-register-checkout-as-guest-button-show
+{
+	@extend .button-large;
+	@extend .button-secondary;
+}
+
+.login-register-checkout-as-guest-form-messages{
+	margin-top: $sc-margin-lv4;
+
+	.global-views-message-error {
+		@extend .message-error;
+		margin-bottom: 0;
+	}
+
+	.global-views-message-button {
+		display: none;
+	}
+}
+
+.login-register-checkout-as-guest-form-controls-group{
+	@extend .login-register-register-form-controls-group;
+}
+
+.login-register-checkout-as-guest-register-form-controls{
+}
+
+.login-register-checkout-as-guest-controls{}
+.login-register-checkout-as-guest-help-block{}
+.login-register-checkout-as-guest-register-header{}

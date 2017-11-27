@@ -1,0 +1,128 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-msr-shipmethod-package{
+	@extend .box-column;
+}
+
+.order-wizard-msr-shipmethod-package-row{
+	@extend .row;
+}
+
+.order-wizard-msr-shipmethod-package-address,
+.order-wizard-msr-shipmethod-package-delivery-method{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.order-wizard-msr-shipmethod-package-delivery-method{
+	margin-top: $sc-margin-lv4;
+	@media (min-width: $screen-sm-min){
+		margin-top: 0;
+	}
+
+	.order-wizard-msr-shipmethod-package-delivery-option {
+		min-height: inherit;
+	}
+}
+
+.order-wizard-msr-shipmethod-package-title{
+	margin-bottom: $sc-margin-lv2;
+}
+
+.order-wizard-msr-shipmethod-package-option-select{
+
+}
+
+.order-wizard-msr-shipmethod-package-address-detail,
+.order-wizard-msr-shipmethod-package-delivery-option{
+	@extend .info-card;
+}
+
+.order-wizard-msr-shipmethod-package-shipmethod-rate{
+	float: right;
+	margin-left: $sc-margin-lv2;
+}
+
+.order-wizard-msr-shipmethod-package-message{
+	@extend .message-warning;
+}
+
+.order-wizard-msr-shipmethod-package-message-icon{
+	@extend .icon-base;
+	@extend %fa-exclamation-triangle;
+}
+
+.order-wizard-msr-shipmethod-package-items{
+	margin-top: $sc-margin-lv4;
+}
+
+.order-wizard-msr-shipmethod-package-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+	@extend .small-title;
+	text-transform: none;
+}
+
+.shopping-cart-summary-expander-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.order-wizard-msr-shipmethod-package-accordion-body{
+	@extend .accordion-body;
+
+	td{
+		text-align: left;
+	}
+
+	.item-view-cell-navigable-item-image{
+		padding-left:0;
+	}
+}
+
+.order-wizard-msr-shipmethod-package-edit-shipment{
+	display:block;
+	margin: 0 0 $sc-margin-lv3;
+	padding: $sc-padding-lv3 $sc-padding-lv4;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+
+.order-wizard-msr-shipmethod-package-address-link {
+	margin-top: $sc-margin-lv3;
+	margin-bottom: $sc-margin-lv3;
+	display: inline-block;
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 0;
+	}
+}
+
+.order-wizard-msr-shipmethod-package-accordion-body-wrapper{
+	@extend .accordion-container;
+	margin-top: 0;
+}
+
+.order-wizard-msr-shipmethod-package-item-count-label {
+	@extend .info-card;
+}
+.order-wizard-msr-shipmethod-package-accordion-container-table {
+	@extend .table-flex-item-navigable;
+}
+
+.order-wizard-msr-shipmethod-package-accordion-header-icon{
+	@extend .shopping-cart-summary-expander-toggle-icon;
+}
+.order-wizard-msr-shipmethod-package-accordion-container-table-header-quantity{
+	text-align: right;
+}
+
+.order-wizard-msr-shipmethod-package-shipmethod-name{}
+.order-wizard-msr-shipmethod-package-item-accordion{}
+.order-wizard-msr-shipmethod-package-accordion-container-table-header{}
+.order-wizard-msr-shipmethod-package-accordion-container-table-header-image{}
+.order-wizard-msr-shipmethod-package-accordion-container-table-header-details{}
+.order-wizard-msr-shipmethod-package-accordion-container-table-header-totalprice{}
+.order-wizard-msr-shipmethod-package-accordion-container-table-header-amount{}
+.order-wizard-msr-shipmethod-package-items-count{}

@@ -1,0 +1,140 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.transaction-line-views-cell-navigable{
+	@extend .table-flex-item-navigable;
+	margin:$sc-margin-lv2 0;
+}
+
+.transaction-line-views-cell-navigable-item-image{
+	@extend .table-flex-tdfirst;
+	@extend .column-type-image;
+	img{
+		width:100%;
+	}
+}
+
+.transaction-line-views-cell-navigable-details {
+	@extend .table-flex-middle-first;
+	@extend .table-flex-middle-data;
+}
+
+.transaction-line-views-cell-navigable-amount {
+	@extend .table-flex-middle-last;
+	@extend .table-flex-middle-data;
+
+	@media (min-width: $screen-md-min){
+		text-align: right;
+}
+}
+
+.transaction-line-views-cell-navigable-value{
+	@extend .sc-value;
+}
+
+.transaction-line-views-cell-navigable-sku-label {
+	@extend .sc-sku-label;
+}
+.transaction-line-views-cell-navigable-sku-value{
+	@extend .sc-sku-value;
+}
+.transaction-line-views-cell-navigable-product-price-label {
+	@extend .sc-label;
+}
+.transaction-line-views-cell-navigable-product-price-value {
+	@extend .sc-value;
+}
+.transaction-line-views-cell-navigable-item-unit-price {
+	@extend .table-flex-middle-data;
+	@extend .column-type-amount;
+
+	@media (min-width: $screen-md-min){
+		text-align: right;
+	}
+}
+
+.transaction-line-views-cell-navigable-item-unit-price-value {
+	@extend .sc-value;
+}
+
+.transaction-line-views-cell-navigable-item-unit-price-label {
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-reason-label {
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-quantity-label {
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-quantity{
+	@extend .sc-value;
+	@extend .table-flex-middle-data;
+
+	@media (min-width: $screen-md-min){
+		text-align: right;
+	}
+}
+
+.transaction-line-views-cell-navigable-item-totalprice-label{
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-amount-label{
+	@extend .sc-label;
+}
+
+.transaction-line-views-cell-navigable-item-amount-value{
+	@extend .middle-price;
+}
+
+.transaction-line-views-cell-navigable-item-old-price{
+	@extend .old-price;
+}
+
+.transaction-line-views-cell-navigable-product-title{
+	@extend .medium-title;
+}
+
+.transaction-line-views-cell-navigable-product-title-anchor{
+	@extend .medium-title-navigable;
+}
+
+.transaction-line-views-cell-navigable-amount{
+	@extend .column-type-amount;
+	@extend .table-flex-middle-data;
+	@extend .table-flex-middle-last;
+	padding-bottom: $sc-padding-lv3;
+}
+
+.transaction-line-views-cell-navigable-item-quantity-label,
+.transaction-line-views-cell-navigable-item-unit-price-label,
+.transaction-line-views-cell-navigable-item-amount-label{
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.transaction-line-views-cell-navigable-header-col-amount {
+	@extend .column-type-amount;
+	display:block;
+}
+
+.transaction-line-views-cell-navigable-product-name{}
+.transaction-line-views-cell-navigable-product-price{}
+.transaction-line-views-cell-navigable-item-quantity-value{
+	@extend .column-type-quantity;
+
+	@media (min-width: $screen-md-min){
+		display:block;
+	}
+}
+.transaction-line-views-cell-navigable-item-reason-value{}
+.transaction-line-views-cell-navigable-stock{}

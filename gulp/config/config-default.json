@@ -1,0 +1,47 @@
+{
+    "dbConfig": {
+        "keepalive": false
+    ,   "livereload": true
+    ,   "port": 7777
+    }
+
+,   "styleguideConfig": {
+        "port": 3000
+    ,   "output": "output"
+    }
+
+,   "folders": {
+        "source": {
+            "source_path": "Workspace"
+        ,   "extras_path": "Workspace/Extras/Extensions"
+        }
+
+    ,   "application_manifest": "Workspace/Extras"
+    ,   "extensions": "Extras/Extensions"
+    ,   "overrides": "Overrides"
+    ,   "output": "LocalDistribution/tmp"
+    ,   "local": "LocalDistribution"
+    ,   "deploy": "DeployDistribution"
+    ,   "extensions_dest_name": "Deploy_Extensions"
+    ,   "extmech_parent": "-15"
+    }
+
+,   "application": {}
+
+,   "script": {
+        "file_service": "customscript_ext_mech_file_service"
+    ,   "web_service": "customscript_ext_mech_web_service_rest"
+    ,   "extension_service": "customscript_ext_mech_extension_service"
+    ,   "extension_management_wizard": "customscript_ns_sc_ext_mech_server_main"
+    }
+
+,   "deploy": {
+        "web_service": "customdeploy_ext_mech_web_service_rest"
+    ,   "extension_service": "customdeploy_ext_mech_extension_service"
+    ,   "extension_management_wizard": "customdeploy_ns_sc_ext_mech_server_main"
+    }
+
+,   "deploy_config": {
+        "update": true
+    }
+}

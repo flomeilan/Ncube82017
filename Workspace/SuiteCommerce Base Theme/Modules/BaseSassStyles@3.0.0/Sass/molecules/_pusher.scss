@@ -1,0 +1,163 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Push pane
+//
+// A push pane is used for presenting complementary information within the context of a page.
+// Push panes are used specifically in small screen devices. This type of pane is always triggered by the user when a push button is tapped.
+// Push panes slide from right to left using a push animation.
+//
+// It's not required HTML markup to build a Push Pane, this component has to be invoked from a Backbone.View.
+// To do that, it's necesary execute "this.application.getLayout().showInPush(view)", where "view" parameter
+// is the content which you want to show.
+//
+// Styleguide 3.10
+
+$sc-pusher-width-xs: 100%;
+$sc-pusher-width-md: 472px;
+
+.sc-pushing {
+    position:fixed;
+}
+
+// mobile only
+[data-pusher="sc-pushable-xs"]{
+    width: $sc-pusher-width-xs;
+    right: -$sc-pusher-width-xs;
+    background: $sc-neutral-shade-0;
+
+    @include transition-transform(400ms ease);
+
+    &.sc-pushing-reopened {
+        transition: none;
+    }
+
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    padding-left: $sc-padding-lv4;
+    padding-right: $sc-padding-lv4;
+    padding-bottom: $sc-padding-lv8;
+
+    .sc-pusher-header {
+        margin-left: -$sc-margin-lv4;
+        margin-right: -$sc-margin-lv4;
+        @media (min-width: $screen-sm-min) {
+            display: none;
+        }
+    }
+    @extend %scroll-y;
+    @media (min-width: $screen-sm-min) {
+        width: auto;
+        height: auto;
+        position: static;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// both tablet and mobile
+[data-pusher="sc-pushable-md"]{
+    width: $sc-pusher-width-xs;
+    right: -$sc-pusher-width-xs;
+    background: $sc-neutral-shade-0;
+
+    @include transition-transform(400ms ease);
+
+    &.sc-pushing-reopened {
+        transition: none;
+    }
+
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    padding-left: $sc-padding-lv4;
+
+    .sc-pusher-header {
+        margin-left: -$sc-margin-lv4;
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        width: $sc-pusher-width-md;
+        right: -$sc-pusher-width-md;
+    }
+    @extend %scroll-y;
+    @media (min-width: $screen-md-min) {
+        width: auto;
+        height: auto;
+        position: static;
+        padding-left: 0;
+    }
+}
+
+[data-pusher="sc-pushable-xs"][data-action="sc-pushing"]{
+    @include translate3d(-$sc-pusher-width-xs, 0, 0);
+    @media (min-width: $screen-sm-min){
+        transform: none;
+    }
+}
+
+[data-pusher="sc-pushable-md"][data-action="sc-pushing"]{
+    @media (min-width: $screen-sm-min){
+        @include translate3d(-$sc-pusher-width-md, 0, 0);
+    }
+    @include translate3d(-$sc-pusher-width-xs, 0, 0);
+    @media (min-width: $screen-md-min){
+        transform: none;
+    }
+}
+
+$sc-push-header-height: 69px;
+
+.sc-pusher-header {
+    background: $sc-color-theme-background;
+    border-bottom: 1px solid $sc-color-theme-border-light;;
+    margin-bottom: $sc-margin-lv4;
+    height: $sc-push-header-height;
+}
+
+.sc-pusher-header-back {
+    color: $sc-color-link;
+    text-transform: capitalize;
+    display: inline-block;
+    width:50%;
+    line-height: $sc-push-header-height;
+    padding-left: $sc-padding-lv2;
+}
+.sc-pusher-header-back:after {
+    font-family: FontAwesome;
+    content: "\f053";
+    float: left;
+    margin-right: $sc-margin-lv2;
+}
+
+.sc-pushing-partial {
+    overflow-y: hidden;
+}
+
+.main-push-overlay {
+
+    display: none;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+
+        &.active {
+            display: block;
+        }
+    }
+}

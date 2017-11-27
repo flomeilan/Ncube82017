@@ -1,0 +1,36 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.merchandising-zone-container .bx-wrapper {
+	position: relative;
+}
+
+.merchandising-zone-container .bx-controls-direction {
+    text-align: right;
+}
+
+.merchandising-zone {
+    padding-top: $sc-padding-lv3;
+}
+.merchandising-zone-container {
+    min-height: 200px;
+}
+
+.merchandising-zone h3 {
+    margin-bottom: $sc-margin-lv2;
+}
+
+.merchandising-zone .merchandising-zone-cell-template {
+    text-align: center;
+}
+
+.merchandising-zone .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.merchandising-zone-description{}

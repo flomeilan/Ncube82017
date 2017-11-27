@@ -1,0 +1,28 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Molecules
+//
+// Molecules are the smallest fundamental units of compound made up of two or more atoms held together to form a simple piece of functionality.
+// They are simple combinations built to reuse, but not necessarily have meaning on their own without further context.
+// Molecules often serve as the backbone for a more complex system.
+//
+// Styleguide 3.
+
+@import "molecules/accordions.scss";
+@import "molecules/flyout.scss";
+@import "molecules/image-gallery.scss";
+@import "molecules/information_cards.scss";
+@import "molecules/information-box.scss";
+@import "molecules/item-cells.scss";
+@import "molecules/list-header.scss";
+@import "molecules/pagination.scss";
+@import "molecules/pusher.scss";
+@import "molecules/search.scss";
+@import "molecules/summary_box.scss";
+@import "molecules/tabs.scss";
+@import "molecules/_quantity-input.scss";

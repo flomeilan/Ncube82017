@@ -1,0 +1,79 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-option-color{
+	margin-bottom:$sc-margin-lv2;
+
+	[data-validation-error="block"]{
+  		display:table;
+  		margin-top:$sc-margin-lv1;
+  	}
+}
+
+.product-views-option-color-label{
+	font-weight:$sc-font-weight-bold;
+}
+
+.product-views-option-color-container{
+	@extend .color-picker-lg;
+	clear:both;
+}
+
+.product-views-option-color-container-small{
+	@extend .color-picker-sm;
+	clear:both;
+}
+
+.product-views-option-color-picker {
+	@extend .picker-color;
+	@extend .picker-color-lg;
+}
+.product-views-option-color-picker-label {
+	@extend .picker-color-label;
+}
+.product-views-option-color-picker-input {
+	@extend .picker-color-input;
+}
+.product-views-option-color-picker-box {
+	@extend .picker-color-box;
+}
+.product-views-option-color-picker-box.active {
+	@extend .picker-color-box-active;
+}
+.product-views-option-color-picker-box.muted {
+	@extend .picker-color-box-disabled;
+}
+.product-views-option-color-picker-box-white-border {
+	@extend .picker-color-box-white-border;
+}
+.product-views-option-color-picker-box-img {
+	@extend .picker-color-box-img;
+}
+.product-views-option-color-picker-box-img.muted {
+	@extend .picker-color-box-img-disabled;
+}
+.product-views-option-color-picker-box-img.active {
+	@extend .picker-color-box-img-active;
+}
+
+.product-views-option-color-label-required{
+	@extend .input-required;
+}
+.product-views-option-color-picker-anchor {
+	border:0px;
+}
+
+.product-views-option-color-value {
+	@extend .sc-value;
+	padding-right:$sc-padding-lv1;
+}
+
+.product-views-option-color-label-header {
+	display:block;
+	margin-bottom:$sc-margin-lv2;
+	text-transform:uppercase;
+}

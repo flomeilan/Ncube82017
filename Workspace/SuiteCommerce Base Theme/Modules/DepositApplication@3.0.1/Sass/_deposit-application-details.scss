@@ -1,0 +1,206 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.deposit-application-details-row {
+	@extend .row;
+}
+
+.deposit-application-details-title {
+	margin-bottom:$sc-margin-lv4;
+}
+
+.deposit-application-details-table {
+	@extend .recordviews-table;
+
+	tfoot {
+		display:table-row-group;
+		text-align:right;
+	}
+}
+
+.deposit-application-details-table td:last-child {
+	@extend .table-flex-td-last;
+}
+
+.deposit-application-details-back-btn {
+	@extend .button-back;
+}
+
+.deposit-application-details-deposit-amount {
+	@extend .pull-right;
+}
+
+.deposit-application-details-accordion-divider {
+	@extend .accordion-divider;
+}
+
+.deposit-application-details-accordion-head {
+	@extend .accordion-head;
+}
+
+.deposit-application-details-accordion-head-toggle {
+	@extend .accordion-head-toggle;
+}
+
+.deposit-application-details-accordion-head-toggle-secondary {
+	@extend .accordion-head-toggle-secondary;
+}
+
+.deposit-application-details-accordion-toggle-icon-secondary {
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.deposit-application-details-accordion-toggle-icon {
+	@extend .accordion-toggle-icon;
+}
+
+.deposit-application-details-accordion-body {
+	@extend .accordion-body;
+}
+
+.deposit-application-details-accordion-container-table {
+	@extend .accordion-container-table;
+}
+
+.deposit-application-details-header-information {
+	margin-bottom:$sc-margin-lv4;
+}
+
+.deposit-application-details-header-information-container {
+	padding:0 $sc-padding-lv3;
+}
+
+.deposit-application-details-transaction-date-info {}
+
+.deposit-application-details-transaction-date-label {
+	@extend .sc-label;
+}
+
+.deposit-application-details-transaction-date-value {
+	@extend .sc-value;
+}
+
+.deposit-application-details-deposit-date-info {}
+
+.deposit-application-details-deposit-date-label {
+	@extend .sc-label;
+}
+
+.deposit-application-details-deposit-date-value {
+	@extend .sc-value;
+}
+
+.deposit-application-details-from-info {}
+
+.deposit-application-details-from-label {
+	@extend .sc-label;
+}
+
+.deposit-application-details-from-link {
+	font-size:$sc-font-size-m;
+}
+
+.deposit-application-details-applied-amount {
+	font-weight:$sc-font-weight-bold;
+	padding:$sc-padding-lv3 $sc-padding-lv4;
+	text-align:right;
+}
+
+.deposit-application-details-applied-amount-label {
+	@extend .sc-label;
+	font-weight:$sc-font-weight-normal;
+}
+
+.deposit-application-details-applied-amount-value {
+	@extend .sc-value;
+	font-weight:$sc-font-weight-normal;
+}
+
+.deposit-application-details-table-header {
+	border-bottom:1px solid $sc-color-theme-border-light;
+	display:none;
+
+	@media(min-width: $screen-md-min) {
+		width:100%;
+		display:table-row-group;
+		color:$sc-color-copy-light;
+		font-size:$sc-font-size-m;
+
+		th {
+			font-weight:$sc-font-weight-normal;
+			padding:$sc-padding-lv2;
+			display:table-cell;
+		}
+	}
+}
+
+.deposit-application-details-table-header-amount {
+	text-align:right;
+	width:25%;
+}
+
+.deposit-application-details-table-header-transaction-date {
+	text-align:right;
+	width:25%;
+}
+
+.deposit-application-details-table-header-number {
+	width:50%;
+}
+
+.deposit-application-details-accordion-container-table {
+
+	.deposit-application-details-table-header-number {
+		padding-left:$sc-padding-lv4;
+	}
+
+	.deposit-application-details-table-header-amount {
+		padding-right:$sc-padding-lv4;
+	}
+
+	.deposit-details-applied-amount {
+		padding-right:$sc-padding-lv4;
+	}
+
+	.recordviews-title {
+		width:100%;
+
+		@media(min-width: $screen-md-min) {
+			width:50%;
+			padding-left:$sc-padding-lv4;
+		}
+	}
+
+	.recordviews-date {
+		text-align:left;
+		width:100%;
+
+		@media(min-width: $screen-md-min) {
+			text-align:right;
+			width:25%;
+		}
+	}
+
+	.recordviews-currency {
+		text-align:left;
+		width:100%;
+
+		@media(min-width: $screen-md-min) {
+			text-align:right;
+			width:25%;
+			padding-right:$sc-padding-lv4;
+		}
+	}
+}
+
+.deposit-application-details-info-card {
+	@extend .info-card;
+}
+
+.deposit-application-details-deposit-number{}
+.deposit-application-details-deposit-memo{}
+.deposit-application-details-deposit-link{}

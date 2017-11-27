@@ -1,0 +1,56 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.creditcard-edit-button-back {
+    @extend .button-back;
+}
+
+.creditcard-edit-button-back-icon {
+    @extend .button-back-icon;
+}
+
+.creditcard-edit {
+    @extend .address-edit;
+}
+
+.creditcard-edit-form-button-submit {
+    @extend .address-edit-form-button-submit;
+    margin: $sc-margin-lv3 0 0;
+}
+
+.creditcard-edit-form-button-cancel {
+    @extend .address-edit-form-button-cancel;
+}
+
+.creditcard-edit-form-button-reset {
+    @extend .address-edit-form-button-reset;
+}
+
+//Modal CreditCardDetailsView
+.global-views-modal-content .global-views-modal-content-body {
+
+    .creditcard-edit {
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.creditcard-edit-body {}
+
+.creditcard-edit-footer {
+}
+
+.creditcard-edit-footer-modal {}
+
+.creditcard-edit-card-selected {
+    opacity:1;
+}
+
+.creditcard-edit-card-no-selected {
+    opacity:0.1;
+}

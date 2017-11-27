@@ -1,0 +1,63 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.payment-wizard-edit-amount-layout {
+	hr {
+		margin: $sc-margin-lv4 0;
+	}
+}
+.payment-wizard-edit-amount-layout-form-row {
+	@extend .row;
+	margin-bottom: $sc-margin-lv2;
+}
+.payment-wizard-edit-amount-layout-form-row-left {
+	@extend .col-sm-4;
+	@extend .sc-label;
+}
+.payment-wizard-edit-amount-layout-form-row-right {
+	@extend .col-sm-8;
+	text-align: right;
+	@extend .sc-value;
+}
+.payment-wizard-edit-amount-layout-form-row-left-amount {
+	@extend .col-sm-4;
+	padding-top: $sc-padding-lv2;
+	padding-bottom: $sc-padding-lv2;
+	display: inline-block;
+}
+.payment-wizard-edit-amount-layout-form-row-currency {
+	float: right;
+	margin-right: 15px
+}
+.payment-wizard-edit-amount-layout-form-row-currency-selector-addon {
+	@extend .global-views-currency-selector-addon;
+	float: right;
+}
+input.payment-wizard-edit-amount-layout-form-row-currency-selector-select {
+	@extend .global-views-currency-selector-select;
+	float: right;
+	text-align: right;
+	width: 175px;
+	margin-bottom: $sc-margin-lv4;
+}
+.payment-wizard-edit-amount-layout-form-action{
+	text-align: right;
+}
+.payment-wizard-edit-amount-layout-form--action-button {
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.payment-wizard-edit-amount-layout-text-right{
+
+}
+
+.payment-wizard-edit-amount-layout-discount-warning{
+	@extend .payment-wizard-edit-amount-layout-text-right !optional;
+}
+
+.payment-wizard-edit-amount-layout-discount-section{}

@@ -1,0 +1,439 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.quote-to-salesorder-wizard-detail-items {
+	margin-bottom: $sc-margin-lv4;
+}
+.quote-to-salesorder-wizard-detail-accordion-head{
+	@extend .accordion-head;
+}
+.quote-to-salesorder-wizard-detail-accordion-head-toggle {
+	@extend .accordion-head-toggle;
+}
+.quote-to-salesorder-wizard-detail-accordion-head-toggle-icon {
+	@extend .acordion-head-toggle-icon;
+}
+.quote-to-salesorder-wizard-detail-accordion-body {
+	@extend .accordion-body;
+}
+.quote-to-salesorder-wizard-detail-accordion-container {
+	@extend .accordion-container;
+}
+.quote-to-salesorder-wizard-detail-table {
+	@extend .table-flex-item-navigable;
+}
+.quote-to-salesorder-wizard-detail-module-shipping-details {
+	@extend .box-column;
+}
+.quote-to-salesorder-wizard-detail-module-shipping-details-body {
+	@extend .row;
+}
+.quote-to-salesorder-wizard-detail-module-shipping-details-address,
+.quote-to-salesorder-wizard-detail-module-shipping-details-method {
+	@extend .col-sm-6;
+}
+.quote-to-salesorder-wizard-detail-module-shipping-details-method {
+	margin-top: $sc-margin-lv4;
+
+	@media(min-width: $screen-sm-min){
+		margin-top: 0;
+	}
+}
+.quote-to-salesorder-wizard-detail-module-shipping-title {
+	margin-bottom: $sc-margin-lv4;
+}
+.quote-to-salesorder-wizard-detail-module-delivery-method-summary {
+	@extend .info-card;
+	min-height: inherit;
+}
+.quote-to-salesorder-wizard-detail-paymentmethod-selector-module {
+	@extend .box-column;
+
+	.creditcard-edit-form {
+	  clear: both;
+	}
+	.creditcard-edit-form-securitycode {
+		padding: 0;
+	}
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-selector-module-header {
+	margin-bottom: $sc-margin-lv3;
+	color: $sc-color-theme-900;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-selector-module-options {
+	@extend .input-large;
+	margin-bottom: $sc-margin-lv2;
+	padding: $sc-padding-lv2;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-row {
+	@extend .clearfix;
+	width: 100%;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-terms {
+	float: left;
+	width: 50%;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-terms-label {
+	@extend .sc-value;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-terms-value {
+	@extend .sc-label;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-balance {
+	float: right;
+	width: 50%;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-balance-label {
+	@extend .sc-value;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-balance-value {
+	@extend .sc-label;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-purchase-order-label {
+	@extend .sc-value;
+	display: block;
+	margin-bottom: $sc-margin-lv1;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-purchase-order-optional {
+	@extend .input-optional;
+	font-weight: $sc-font-weight-normal;
+}
+
+.quote-to-salesorder-wizard-detail-paymentmethod-invoice-module-purchase-order-value {
+	@extend .input-large;
+	margin-bottom: 0;
+}
+
+.quote-to-salesorder-wizard-detail-showpayments-module-details{
+	@extend .box-column;
+}
+.quote-to-salesorder-wizard-detail-showpayments-module-details-body {
+	@extend .row;
+	h3 {
+		margin-bottom: $sc-margin-lv3;
+	}
+}
+.quote-to-salesorder-wizard-detail-showpayments-module-billing-address{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+	margin-bottom: $sc-margin-lv3;
+
+  @media (min-width: $screen-sm-min){
+  	margin-bottom: 0
+  }
+}
+
+.quote-to-salesorder-wizard-detail-showpayments-module-section-header{
+
+}
+
+.quote-to-salesorder-wizard-detail-showpayments-module-payment-methods-summary{
+	@extend .payment-methods-summary;
+}
+
+.quote-to-salesorder-wizard-detail-termsandconditions-module-default {
+	display: none;
+	@media(min-width: $screen-sm-min){
+		display: block;
+		float:right;
+		margin-bottom: $sc-margin-lv4;
+	}
+}
+.quote-to-salesorder-wizard-detail-termsandconditions-module-top{
+	@media(min-width: $screen-sm-min){
+		display: none;
+	}
+}
+.quote-to-salesorder-wizard-detail-termsandconditions-module-bottom{
+	margin-top: $sc-margin-lv4;
+}
+.quote-to-salesorder-wizard-detail-submitbutton-module-top{
+	margin-top: $sc-margin-lv2;
+	margin-bottom: $sc-margin-lv4;
+	@media (min-width: $screen-sm-min){
+		display: none;
+	}
+}
+.quote-to-salesorder-wizard-detail-submitbutton-module-button{
+	@extend .wizard-step-button-continue;
+}
+.quote-to-salesorder-wizard-detail-termsandconditions-module-text{}
+.quote-to-salesorder-wizard-detail-paymentmethod-selector-module-payment-method-selector-content{}
+
+.quote-to-salesorder-wizard-detail-accordion-container-table-header {
+	display: none;
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+		width: 100%;
+	}
+}
+.quote-to-salesorder-wizard-detail-accordion-container-table-header-image {
+	@extend .item-view-cell-navigable-item-image;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+.quote-to-salesorder-wizard-detail-accordion-container-table-header-details {
+	color: $sc-color-theme-400;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+.quote-to-salesorder-wizard-detail-accordion-container-table-header-quantity {
+	color: $sc-color-theme-400;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+	text-align: right;
+}
+.quote-to-salesorder-wizard-detail-accordion-container-table-header-totalprice,
+.quote-to-salesorder-wizard-detail-accordion-container-table-header-amount {
+	color: $sc-color-theme-400;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+	text-align: right;
+}
+
+.quote-to-salesorder-wizard-detail-address-details {
+    @extend .info-card;
+}
+
+.address-list {
+   h2{
+        margin-bottom:$sc-margin-lv4;
+   }
+}
+
+.quote-to-salesorder-wizard-detail-address-details-info{
+    margin-bottom:$sc-margin-lv2;
+}
+.quote-to-salesorder-wizard-detail-address-details-container p {
+    font-style: normal;
+}
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-address-line {
+    p {
+        display: inline-block;
+    }
+}
+.quote-to-salesorder-wizard-detail-address-details-select-address {
+    @extend .button-primary;
+    @extend .button-medium;
+    width: 100%;
+}
+.quote-to-salesorder-wizard-detail-address-details-default-shipping-icon {
+    @extend .icon-info;
+    color: $sc-color-secondary;
+}
+.quote-to-salesorder-wizard-detail-address-details-address-name{
+    font-style:normal;
+    font-weight: $sc-font-weight-normal;
+    font-size:$sc-font-size-m
+}
+
+.quote-to-salesorder-wizard-detail-address-details-actions{
+    margin-top:$sc-margin-lv3;
+}
+
+.quote-to-salesorder-wizard-detail-address-details-edit-address,
+.quote-to-salesorder-wizard-detail-address-details-remove-address {
+    @extend .button-edit;
+    margin-right: $sc-margin-lv2;
+    cursor: pointer;
+}
+.quote-to-salesorder-wizard-detail-address-details-edit-address {
+    margin-bottom: $sc-margin-lv2;
+}
+.quote-to-salesorder-wizard-detail-address-details-remove-address {
+    margin-right: 0;
+}
+.quote-to-salesorder-wizard-detail-address-details-change-address{
+    @extend .button-tertiary;
+    @extend .button-small;
+    margin-top: $sc-margin-lv3;
+    display:inline-block;
+    @media (min-width: $screen-sm-min) {
+        margin-top: 0;
+    }
+}
+
+.quote-to-salesorder-wizard-detail-address-details-remove-address {
+    margin-bottom: 0;
+}
+.quote-to-salesorder-wizard-detail-address-details-default-shipping,
+.quote-to-salesorder-wizard-detail-address-details-default-billing {
+    font-size: $sc-font-size-s;
+    margin-bottom: 0;
+}
+
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-address-title{
+    font-style:normal;
+    text-transform:capitalize;
+}
+
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-address-city{
+    display:inline;
+}
+
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-address-state{
+    display:inline;
+}
+
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-address-zip{
+    display:inline;
+}
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-quote-to-salesorder-wizard-detail-address-details-addr1{}
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-quote-to-salesorder-wizard-detail-address-details-city{}
+.quote-to-salesorder-wizard-detail-address-details-container-multiselect-quote-to-salesorder-wizard-detail-address-details-state{}
+.quote-to-salesorder-wizard-detail-address-details-country{}
+.quote-to-salesorder-wizard-detail-address-details-phone{}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable{
+	@extend .table-flex-item-navigable;
+	margin:$sc-margin-lv2 0;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-image{
+	@extend .table-flex-tdfirst;
+	@extend .column-type-image;
+	img{
+		width:100%;
+	}
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-details {
+	@extend .table-flex-middle-first;
+	@extend .table-flex-middle-data;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-amount {
+	@extend .table-flex-middle-last;
+	@extend .table-flex-middle-data;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-value{
+	@extend .sc-value;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-sku-label {
+	@extend .sc-sku-label;
+}
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-sku-value {
+	@extend .sc-sku-value;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-product-price-label {
+	@extend .sc-label;
+}
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-product-price-value {
+	@extend .sc-value;
+}
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-unit-price {
+	@extend .table-flex-middle-data;
+	@extend .column-type-amount;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-unit-price-value{
+	@extend .sc-value;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-unit-price-label{
+	@extend .sc-label;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-quantity-label{
+	@extend .sc-label;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-quantity{
+	@extend .sc-value;
+	@extend .table-flex-middle-data;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-totalprice-label{
+	@extend .sc-label;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-amount-label{
+	@extend .sc-label;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-amount-value{
+	@extend .middle-price;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-old-price{
+	@extend .old-price;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-product-title{
+	@extend .medium-title;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-product-title-anchor{
+	@extend .medium-title-navigable;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-amount{
+	@extend .column-type-amount;
+	@extend .table-flex-middle-data;
+	@extend .table-flex-middle-last;
+	padding-bottom: $sc-padding-lv3;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-quantity-label,
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-unit-price-label,
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-amount-label{
+	@extend .sc-label;
+
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-header-col-amount {
+	@extend .column-type-amount;
+	display:block;
+}
+
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-product-name{}
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-product-price{}
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-quantity-value{
+	@extend .column-type-quantity;
+
+	@media (min-width: $screen-md-min){
+		display:block;
+	}
+}
+.quote-to-salesorder-wizard-detail-accordion-item-views-cell-navigable-item-reason-value{}
+
+.quote-to-salesorder-wizard-detail-item-views-selected-option{}
+.quote-to-salesorder-wizard-detail-item-views-cell-actionable-selected-options-cell {}
+.quote-to-salesorder-wizard-detail-item-views-selected-option{}
+.quote-to-salesorder-wizard-detail-item-views-cell-navigable-details .quote-to-salesorder-wizard-detail-item-views-cell-actionable-selected-options-cell {
+  padding-left: 0;
+}
+.quote-to-salesorder-wizard-detail-item-views-selected-option-label{
+	@extend .sc-label;
+}
+.quote-to-salesorder-wizard-detail-item-views-selected-option-value{}
+.quote-to-salesorder-wizard-detailitem-views-cell-actionable-selected-options-cell{}

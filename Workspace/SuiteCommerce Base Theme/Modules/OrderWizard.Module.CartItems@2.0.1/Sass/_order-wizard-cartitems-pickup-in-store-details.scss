@@ -1,0 +1,39 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-cartitems-pickup-in-store-details-container{
+	@extend .box-column;
+}
+.order-wizard-cartitems-pickup-in-store-details-address{
+	@extend .col-xs-12;
+	@extend .col-md-4;
+}
+.order-wizard-cartitems-pickup-in-store-details-item-list{
+	@extend .col-xs-12;
+	@extend .col-md-8;
+
+	@media (max-width: $screen-sm-max) {
+      margin-top: $sc-margin-lv4;
+    }
+}
+.order-wizard-cartitems-pickup-in-store-details-body {
+	@extend .row;
+}
+.order-wizard-cartitems-pickup-in-store-details-address-container {
+	@extend .info-card;
+	border: 1px solid $sc-color-theme-border-light;
+	padding: $sc-padding-lv2;
+
+	.locator-venue-details-container *{
+	    font-size: $sc-font-size-s;
+	    line-height: 1.6;
+	}
+}
+.order-wizard-cartitems-pickup-in-store-details-title{
+	margin-bottom: $sc-margin-lv4;
+	padding-left: $sc-padding-lv3;
+}

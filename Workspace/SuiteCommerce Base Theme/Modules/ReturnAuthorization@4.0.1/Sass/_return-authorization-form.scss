@@ -1,0 +1,180 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.return-atuthorization-form-title {
+	margin-bottom:$sc-margin-lv4;
+}
+.return-authorization-form-items-fieldset {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.return-authorization-form-comment-fieldset {
+	margin-bottom: $sc-margin-lv2;
+}
+
+.return-authorization-form-comment-label {
+	display: block;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.return-authorization-form-submit-button {
+	@extend .button-primary;
+	@extend .button-medium;
+	margin-bottom: $sc-margin-lv4;
+	@media(min-width: $screen-sm-min){
+		margin-bottom: 0;
+	}
+}
+
+.return-authorization-form-comment {
+
+	width: 100%;
+}
+
+.return-authorization-form-button-back {
+	@extend .button-back;
+}
+
+.return-authorization-form-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.return-authorization-form-accordion-divider{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.return-authorization-form-accordion-head{
+	@extend .accordion-head;
+}
+
+.return-authorization-form-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.return-authorization-form-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.return-authorization-form-accordion-body{
+	@extend .accordion-body;
+}
+
+.return-authorization-form-table-products-header{
+	display:none;
+	@media(min-width: $screen-md-min){
+		display:table-row-group;
+		border-bottom:1px solid $sc-color-theme-border-light;
+		width:100%;
+		color:$sc-color-copy-light;
+		th{
+			font-weight:$sc-font-weight-normal;
+		}
+		td{
+			padding:$sc-padding-lv2;
+			font-size:$sc-font-size-m;
+		}
+	}
+}
+
+.return-authorization-form-table-products-header-amount{
+		width:15%;
+		text-align:right;
+}
+
+.return-authorization-form-table-products-header-unit-price{
+		width:15%;
+		text-align:right;
+}
+
+.return-authorization-form-table-products-header-qty{
+		width:15%;
+		text-align:right;
+}
+
+.return-authorization-form-table-products-header-image{
+		width:130px;
+}
+
+.return-atuthorization-form{
+	.item-view-cell-navigable-amount{
+		text-align:left;
+		width:100%;
+		@media(min-width: $screen-md-min){
+			width:15%;
+			text-align:right;
+		}
+	}
+	.item-view-cell-navigable-item-unit-price{
+		text-align:left;
+		width:100%;
+		@media(min-width: $screen-md-min){
+			width:15%;
+			text-align:right;
+		}
+	}
+	.item-view-cell-navigable-item-quantity{
+		text-align:left;
+		width:100%;
+		@media(min-width: $screen-md-min){
+			width:15%;
+			text-align:right;
+		}
+	}
+	.item-view-cell-navigable-item-quantity-label{
+		display:inline-block;
+		@media(min-width: $screen-md-min){
+			display:none;
+		}
+	}
+	.item-view-cell-navigable-item-unit-price-label{
+		display:inline-block;
+		@media(min-width: $screen-md-min){
+			display:none;
+		}
+	}
+
+	.item-view-cell-navigable-item-amount-label{
+		display:inline-block;
+		@media(min-width: $screen-md-min){
+			display:none;
+		}
+	}
+}
+
+.return-authorization-form-items-fieldset-from-label{
+	@extend .sc-label;
+}
+
+.return-authorization-form-comment-label-optional{
+	@extend .input-optional;
+}
+
+.return-authorization-form-items-info{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.return-authorization-form-counter-legend {
+}
+
+.return-authorization-form-products-list{
+	@extend .table-flex-item-navigable;
+}
+
+.return-authorization-form-returnable-products-table{
+	margin-bottom:$sc-margin-lv4;
+
+	.item-views-cell-selectable-actionable-navigable-thumbnail-image {
+		width:100%;
+		max-width:$img-small;
+	}
+}
+
+.return-authorization-form-title{}
+.return-authorization-form-form{}
+.return-authorization-form-products-title{}
+.return-authorization-form-list{}
+.return-authorization-form-table-products-header-product{}

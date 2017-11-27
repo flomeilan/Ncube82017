@@ -1,0 +1,64 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quote-to-salesorder-wizard-layout-content {}
+.quote-to-salesorder-wizard-step-header-title{
+	@extend .wizard-header-title;
+}
+.quote-to-salesorder-wizard-step-title{}
+.quote-to-salesorder-wizard-step-content-main{}
+.quote-to-salesorder-wizard-step-content-secondary{}
+.quote-to-salesorder-wizard-step-button-container{}
+.quote-to-salesorder-wizard-step-button-continue{}
+.quote-to-salesorder-wizard-step-button-back{}
+
+.quote-to-salesorder-wizard-step-header-number {
+	margin-bottom: $sc-margin-lv4;
+}
+.quote-to-salesorder-wizard-step-header-number-label {
+	@extend .sc-label;
+}
+.quote-to-salesorder-wizard-step-header-number-value {
+	@extend .sc-value;
+}
+.quote-to-salesorder-wizard-step-content-wrapper{
+	@extend .row;
+}
+
+.quote-to-salesorder-wizard-step-content-main {
+	@extend .col-xs-12;
+	@extend .col-sm-8;
+}
+.quote-to-salesorder-wizard-step-content-right{
+	@extend .col-xs-12;
+	@extend .col-sm-4;
+	float: right;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.quote-to-salesorder-wizard-step-actions{
+	@extend .col-xs-12;
+	@extend .col-sm-8;
+}
+.quote-to-salesorder-wizard-step-button-container{
+	@extend .wizard-step-button-container;
+}
+
+.quote-to-salesorder-wizard-step-button-back{
+	@extend .wizard-step-button-back;
+}
+
+.quote-to-salesorder-wizard-step-button-continue{
+	@extend .wizard-step-button-continue
+}
+.quote-to-salesorder-wizard-step-disclaimer-bottom-content{
+	@extend .col-sm-8;
+	margin-bottom: $sc-margin-lv4;
+	margin-top:$sc-margin-lv2;
+	display: inline-block;
+}
+.quote-to-salesorder-wizard-step-disclaimer-message {}

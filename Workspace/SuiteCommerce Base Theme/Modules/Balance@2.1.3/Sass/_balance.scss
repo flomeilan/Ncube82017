@@ -1,0 +1,231 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.balance-button-back {
+	@extend .button-back;
+}
+
+.balance-button-back-icon {
+	@extend .button-back-icon;
+}
+
+$color-balance-progress-bar: #2d9e6f;
+
+.balance-content {
+	@extend .box-column;
+}
+
+.balance-billing-header {
+	margin-bottom: $sc-margin-lv2;
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: $sc-margin-lv6;
+	}
+}
+
+.balance-billing-account-balance {}
+
+.balance-indicator {
+	@extend .information-box;
+	margin-bottom: $sc-margin-lv5;
+}
+
+.balance-indicator-body {
+	@extend .information-box-body;
+}
+
+.balance-indicator-summary {
+	@extend .information-box-summary;
+}
+
+.balance-indicator-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.balance-indicator-title-value {
+	@extend .sc-value;
+	font-weight: $sc-font-weight-bold;
+}
+
+.balance-indicator-bar {
+	width: 100%;
+	background-color: $sc-color-theme-background;
+	height: 35px;
+	margin-bottom: $sc-margin-lv6;
+}
+.balance-indicator-bar-progress {
+	height: 100%;
+	width: 0;
+	background-color: $color-balance-progress-bar;
+}
+
+.balance-indicator-details {
+	@extend .row;
+}
+
+.balance-indicator-details-outstanding-balance {
+	@extend .col-sm-6;
+	margin-bottom: $sc-margin-lv3;
+}
+
+%balance-reference-color {
+	width: 15px;
+	height: 15px;
+	display: block;
+	float: left;
+	margin-right: $sc-margin-lv3;
+	margin-top: $sc-margin-lv1;
+}
+
+.balance-indicator-details-outstanding-reference {
+	@extend %balance-reference-color;
+	background-color: $color-balance-progress-bar;
+}
+
+.balance-indicator-details-outstanding-label {
+	@extend .sc-label;
+}
+.balance-indicator-details-outstanding-value {
+	@extend .sc-value;
+}
+
+.balance-indicator-details-available-credit {
+	@extend .col-sm-6;
+}
+
+.balance-indicator-details-available-credit-reference {
+	@extend %balance-reference-color;
+	background-color: $sc-color-theme-background;
+}
+
+.balance-indicator-details-available-credit-label {
+	@extend .sc-label;
+}
+
+.balance-indicator-details-available-credit-value {
+	@extend .sc-value;
+}
+
+
+.balance-indicator-summary-credit-limit {}
+.balance-indicator-summary-credit-limit-value {}
+
+.balance-credit-and-account {
+	@extend .row;
+}
+
+.balance-summary-credits {
+	@extend .col-sm-6;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.balance-summary-credits-card {
+	@extend .information-box;
+}
+
+.balance-summary-credits-body {
+	@extend .information-box-body;
+}
+
+.balance-summary-credits-title {
+	font-weight: $sc-font-weight-bold;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.balance-summary-credits-deposits {
+	margin-bottom: $sc-margin-lv3;
+}
+
+.balance-summary-credits-deposits-label {
+	@extend .sc-label;
+}
+
+.balance-summary-credits-deposits-value {
+	@extend .sc-value;
+	float: right;
+}
+
+.balance-summary-credits-credit-memos {}
+
+.balance-summary-credits-credit-memos-label {
+	@extend .sc-label;
+}
+
+.balance-summary-credits-credit-memos-value {
+	@extend .sc-value;
+	float: right;
+}
+
+.balance-summary-account-details {
+	@extend .col-sm-6;
+}
+
+.balance-summary-account-details-card {
+	@extend .information-box;
+}
+
+.balance-summary-account-details-body {
+	@extend .information-box-body;
+}
+
+.balance-summary-account-details-title {
+	margin-bottom: $sc-margin-lv3;
+	font-weight: $sc-font-weight-bold;
+}
+.balance-summary-account-terms {
+	margin-bottom: $sc-margin-lv3;
+}
+.balance-summary-account-terms-label {
+	@extend .sc-label;
+}
+.balance-summary-account-terms-value {
+	@extend .sc-value;
+	float: right;
+}
+.balance-summary-account-currency {}
+.balance-summary-account-currency-label {
+	@extend .sc-label;
+}
+.balance-summary-account-currency-value {
+	@extend .sc-value;
+	float: right;
+}
+.balance-actions {
+	@extend .row;
+	@media (min-width: $screen-sm-min) {
+		float: left;
+		width:100%;
+	}
+}
+
+.balance-actions-proceed {
+	margin-bottom: $sc-margin-lv2;
+	display:block;
+	padding:0 $sc-padding-lv1  * 3;
+	@media (min-width: $screen-sm-min) {
+		padding:0 $sc-padding-lv1 0 $sc-padding-lv1  * 3;
+		display:inline;
+	}
+}
+
+.balance-actions-print {
+	display:block;
+	padding:0 $sc-padding-lv1  * 3;
+	@media (min-width: $screen-sm-min) {
+		display:inline;
+		padding:0 $sc-padding-lv1  * 3 0 $sc-padding-lv1;
+	}
+}
+
+.balance-continue-button {
+	@extend .button-primary;
+	@extend .button-medium;
+}
+
+.balance-print-button {
+	@extend .button-secondary;
+	@extend .button-medium;
+}

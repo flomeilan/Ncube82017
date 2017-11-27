@@ -1,0 +1,17 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.order-history-item-actions-reorder{
+	cursor:pointer;
+	cursor:hand;
+	@extend .button-secondary;
+	@extend .button-small;
+	@extend .button-generic;
+	display: inline-block;
+	width: auto;
+}

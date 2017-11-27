@@ -1,0 +1,65 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-other-payments-table {
+	@extend .order-history-details-payment-table;
+	th:last-child{
+		text-align:right;
+	}
+}
+
+.order-history-other-payments-table-body {
+	@extend .sc-value;
+	width:100%;
+	@media(min-width: $screen-md-min){
+		width:50%;
+	}
+
+}
+
+.order-history-other-payments-table-body-date {
+	width:100%;
+	@media(min-width: $screen-md-min){
+		width:25%;
+	}
+}
+
+.order-history-other-payments-table-body-date-label,
+.order-history-other-payments-table-body-amount-label {
+	@extend .sc-label;
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.order-history-other-payments-table-body-date-value {
+	@extend .sc-value;
+}
+
+.order-history-other-payments-table-body-amount {
+	text-align: left;
+	margin-bottom:$sc-margin-lv4;
+	width:100%;
+	@media(min-width: $screen-md-min){
+		text-align: right;
+		margin-bottom:0;
+		width:25%;
+	}
+}
+
+.order-history-other-payments-table-body-amount-label {
+	@extend .sc-label;
+}
+
+.order-history-other-payments-table-body-label {
+	@extend .sc-label;
+}
+
+.order-history-other-payments-table-body-amount-value {
+	@extend .sc-value;
+	@extend .middle-price;
+}

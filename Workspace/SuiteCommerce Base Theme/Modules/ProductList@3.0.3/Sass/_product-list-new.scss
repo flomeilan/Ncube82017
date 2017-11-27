@@ -1,0 +1,52 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-new-wrapper{
+	padding-top: 0;
+}
+
+.product-list-new-form-controls-group{
+	margin-top: $sc-margin-lv4;
+}
+
+.product-list-new-form-label {}
+
+.product-list-new-form-input{
+	@extend .input-large;
+}
+
+.product-list-new-form-textarea{
+
+}
+
+.product-list-new-form-submit{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.product-list-new-form-cancel{
+	@extend .button-medium;
+	@extend .button-secondary;
+	@extend .button-positioning-stack2next;
+}
+
+.product-list-new-form-required {
+	@extend .input-required;
+}
+
+.product-list-new-required {
+	display:block;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.product-list-new-form-label-optional {
+	@extend .input-optional;
+	display: inline;
+}
+
+.product-list-new-modal-body{}
+.product-list-new-modal-footer{}

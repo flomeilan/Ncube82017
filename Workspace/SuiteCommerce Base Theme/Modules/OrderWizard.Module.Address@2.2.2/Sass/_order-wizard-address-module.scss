@@ -1,0 +1,93 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-address-module-change-button{
+	@extend .button-tertiary;
+	@extend .button-small;
+}
+
+.order-wizard-address-module-edit-button{
+	@extend .button-tertiary;
+	@extend .button-small;
+}
+
+.order-wizard-address-module-new-button{
+	@extend .button-secondary;
+	@extend .button-medium;
+	margin-bottom: $sc-margin-lv6;
+}
+
+.order-wizard-msr-addresses-module-new-button{
+	@extend .order-wizard-address-module-new-button;
+}
+
+.order-wizard-address-module-form-placeholder{
+	.address-edit {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.order-wizard-address-module-save-button{
+	@extend .button-primary;
+	@extend .button-small;
+}
+
+.order-wizard-address-module-title{
+	margin-bottom: $sc-margin-lv2;
+}
+
+.order-wizard-address-module-address-container{
+	background: $sc-color-theme-background;
+	clear:both;
+	display:block;
+	overflow:hidden;
+	.order-wizard-address-row:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.order-wizard-address-module-show-addresses-container{
+	@extend .box-column;
+	overflow:hidden;
+	h5 {
+		text-transform:uppercase;
+		margin-bottom: $sc-margin-lv2;
+	}
+}
+
+.order-wizard-msr-addresses-module-address-container{
+	background: $sc-color-theme-background;
+	padding: $sc-padding-lv8;
+	clear:both;
+	display:block;
+	overflow:hidden;
+}
+
+.order-wizard-address-module-checkbox{
+	margin-bottom: $sc-margin-lv4;
+	display:block;
+
+}
+
+.order-wizard-address-module-single {
+	.address-details {
+		@extend .col-sm-12;
+		@extend .col-md-6;
+	}
+}
+
+.order-wizard-address-cell12 {
+	.address-details {
+		margin-bottom: $sc-margin-lv4;
+	}
+}
+
+.order-wizard-address-module-list-placeholder{
+}
+
+.order-wizard-address-module-form-actions{}

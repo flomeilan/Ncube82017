@@ -1,0 +1,61 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.case-new{
+	@extend .box-column-bordered
+}
+
+.case-new-button-back{
+    @extend .button-back;
+}
+
+.case-new-button-back-icon{
+	@extend .button-back-icon;
+}
+
+.case-new-required {
+	display:block;
+	margin-top: $sc-margin-lv4;
+}
+
+.case-new-form-controls-group{
+	margin-top: $sc-margin-lv4;
+}
+
+.case-new-form-label {}
+
+.case-new-form-required{
+	@extend .input-required;
+}
+
+.case-new-form-input, .case-new-form-case-category{
+	@extend .input-large;
+}
+
+.case-new-form-textarea{
+	display: block;
+	margin-bottom: $sc-margin-lv2;
+	width: 100%;
+}
+
+.case-new-button-submit{
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.case-new-button-back {
+	@extend .button-back;
+}
+
+.case-new-button-back-icon {
+	@extend .button-back;
+}
+
+.case-new-header{}
+.case-new-title{}
+.case-new-alert-placeholder{}
+.case-new-form-include-email{}

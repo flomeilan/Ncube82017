@@ -1,0 +1,70 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-address-cell{
+    margin-bottom:$sc-margin-lv4;
+}
+.order-wizard-address-cell1,
+.order-wizard-address-cell2,
+.order-wizard-address-cell3,
+.order-wizard-address-cell4,
+.order-wizard-address-cell5,
+.order-wizard-address-cell6,
+.order-wizard-address-cell7,
+.order-wizard-address-cell8,
+.order-wizard-address-cell9,
+.order-wizard-address-cell10{
+    @extend .order-wizard-address-cell;
+}
+
+.order-wizard-address-cell2{
+    @extend .col-sm-2;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell3{
+    @extend .col-sm-3;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell4{
+    @extend .col-sm-4;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell4{
+    @extend .col-sm-4;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell5{
+    @extend .col-sm-5;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell6{
+    @extend .col-sm-6;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell7{
+    @extend .col-sm-7;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell8{
+    @extend .col-sm-8;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell9{
+    @extend .col-sm-9;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell10{
+    @extend .col-sm-10;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell11{
+    @extend .col-sm-11;
+    @extend .col-xs-12;
+}
+.order-wizard-address-cell12{
+    @extend .col-xs-12;
+}

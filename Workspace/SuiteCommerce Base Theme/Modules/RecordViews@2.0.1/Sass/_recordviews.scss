@@ -1,0 +1,143 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+//----------------------
+//	ENTIRE ROW STYLE
+//----------------------
+
+.recordviews-row {
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	font-size: $sc-font-size-m;
+	line-height: 1.8;
+	@media (min-width: $screen-md-min) {
+		line-height: normal;
+		padding: 0;
+	}
+}
+
+.recordviews-row:hover {
+	background-color: $sc-color-theme-background;
+}
+
+
+//----------------------
+//	HEADER
+//----------------------
+
+.recordviews-row-header {
+	@extend .recordviews-actionable-row;
+	display: none;
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+	}
+}
+
+.recordviews-table {
+	//@extend .table-flex-record-actionable-navigable;
+	@extend .table-flex-record-navigable;
+	min-height: $sc-target-size;
+
+	td {
+		vertical-align: middle;
+	}
+}
+
+//----------------------
+//	TITLES
+//----------------------
+
+.recordviews-header {
+	// padding-right: $table-condensed-cell-padding;
+	// padding-left: $table-condensed-cell-padding;
+}
+
+.recordviews-date-header,
+.recordviews-items-header,
+.recordviews-status-header,
+.recordviews-currency-header
+{
+	@extend .recordviews-header !optional;
+}
+
+//----------------------
+//	VALUES
+//----------------------
+
+.recordviews-generic {
+	@extend .sc-value;
+}
+.recordviews-title {
+	@extend .small-title-navigable;
+	@extend .table-flex-td-first;
+	color: $sc-color-theme-900;
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		width: 100%;
+	}
+}
+
+.recordviews-date {
+	@extend .sc-value;
+}
+.recordviews-currency {
+	@extend .sc-value;
+	@extend .middle-price;
+}
+.recordviews-status {
+	@extend .sc-value;
+	@extend .table-flex-td-last;
+	color: $sc-color-primary;
+}
+.recordviews-label {
+	@extend .sc-label;
+	font-weight:$sc-font-weight-normal;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+
+//----------------------
+//	VALUES ON MOBILE
+//----------------------
+
+
+
+//----------------------
+//	VALUES & TITLES ON DESKTOP
+//----------------------
+
+@media (min-width: $screen-md-min) {
+
+	.recordviews-date-header,
+	.recordviews-date {
+		text-align: right;
+	}
+	.recordviews-items-header,
+	.recordviews-items {
+		text-align: right;
+	}
+	.recordviews-currency-header,
+	.recordviews-currency {
+		text-align: right;
+	}
+
+	.recordviews-status {
+		text-align: left;
+	}
+}
+
+
+.recordviews-title{}
+.recordviews-title-anchor{}
+.recordviews-title-label{}
+.recordviews-title-value{}
+.recordviews-title-label-anchor{}
+.recordviews-value {
+	font-weight:$sc-font-weight-normal;
+}
+

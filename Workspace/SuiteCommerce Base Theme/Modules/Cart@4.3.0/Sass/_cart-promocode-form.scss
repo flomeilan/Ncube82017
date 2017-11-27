@@ -1,0 +1,51 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-promocode-form {
+	font-size:$sc-font-size-m;
+	overflow:hidden;
+	padding: $sc-padding-lv3;
+
+	.global-views-message {
+		margin-top: $sc-margin-lv3;
+		margin-bottom: 0;
+	}
+}
+
+.cart-promocode-form-summary-button-apply-promocode{
+	@extend .button-secondary;
+	@extend .button-medium;
+	height: 42px;
+	line-height: 0;
+}
+
+.cart-promocode-form-summary-container-input{
+	@extend .col-sm-6;
+	@extend .col-md-7;
+	@extend .col-xs-6;
+	float: left;
+	padding: 0px;
+}
+
+.cart-promocode-form-summary-promocode-container-button{
+	@extend .col-xs-6;
+	@extend .col-sm-6;
+	@extend .col-md-5;
+	float: right;
+}
+
+.cart-promocode-form-summary-input{
+	margin-bottom: 0;
+}
+
+.order-wizard-cart-summary-promocode-unsupported-summary-warning{
+	padding:$sc-padding-lv3;
+}
+
+.cart-promocode-form-summary-grid{
+	@extend .cart-summary-grid
+}

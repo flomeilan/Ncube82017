@@ -1,0 +1,56 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-back {
+	@extend .button-back
+}
+
+.product-list-back-icon {
+	@extend .button-back-icon;
+}
+.product-list-details {
+	.product-list-display-full-rating {
+		@extend .clearfix;
+	}
+}
+.product-list-details-header {
+	@include clearfix();
+	border-top: 1px solid $sc-color-theme-border-light;
+}
+
+.product-list-details-title {
+	padding-top: $sc-padding-lv3;
+	padding-bottom: $sc-padding-lv3;
+	@media (min-width: $screen-sm-min){
+		float: left;
+	}
+}
+
+.product-list-details .list-header-view-filter-button {
+	@extend .button-list-header-shrink;
+}
+
+.product-list-details-no-items {
+	padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+ 	text-align:center;
+}
+
+.product-list-details-button-back {
+	@extend .button-back;
+}
+
+.product-list-details-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.product-list-details-list-items {
+	@extend .product-list-display-full;
+	@extend .table-row-with-border;
+}
+
+.product-list-details-count{}
+.product-list-details-confirm-message{}

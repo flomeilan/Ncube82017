@@ -1,0 +1,73 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Quantity input
+//
+// Some of the molecules listed on this styleguide are responsive and change their behaviour according to the device or browser width.
+// This is one of those, so, you might change the width of your browser window and see the molecule change its behaviour.
+//
+// Markup:
+// <div class="quantity-input-container">
+//   <button class="quantity-input-button-remove">-</button>
+//   <input type="number" name="quantity" class="quantity-input" value="1" min="1" />
+//   <button class="quantity-input-button-add">+</button>
+// </div>
+//
+// Styleguide 3.11
+
+.quantity-input-container {
+	display: block;
+}
+
+input[type="number"].quantity-input {
+ 	width: 60px;
+ 	height: 40px;
+ 	text-align: right;
+ 	padding: $sc-margin-lv2;
+	background-color: $sc-color-theme-background;
+	border: 0;
+	float: left;
+	margin-bottom: 0;
+
+	@media (min-width: $screen-md-min) {
+		display: block;
+		background: white;
+		float: none;
+		border: 1px solid $sc-color-theme-border;
+	}
+}
+
+.quantity-input-button {
+	background-color: $sc-color-theme-400;
+	color: $sc-neutral-shade-0;
+	border: none;
+	width: 40px;
+	height: 40px;
+	float: left;
+
+	&:hover, &:active  {
+		background-color: $sc-color-theme-900;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.quantity-input-button-add {
+	@extend .quantity-input-button;
+	border-radius: 0 $sc-border-radius $sc-border-radius 0;
+}
+
+.quantity-input-button-remove {
+	@extend .quantity-input-button;
+	border-radius: $sc-border-radius 0 0 $sc-border-radius;
+}

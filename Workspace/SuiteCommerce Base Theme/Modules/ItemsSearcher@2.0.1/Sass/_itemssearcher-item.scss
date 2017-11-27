@@ -1,0 +1,34 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.itemssearcher-item-results {
+	@extend .item-results;
+}
+
+.itemssearcher-item-results-image {
+	@extend .item-results-image;
+}
+
+.itemssearcher-item-results-content {
+	@extend .item-results-content;
+}
+
+.itemssearcher-item-results-title {
+	@extend .item-results-title;
+}
+.itemssearcher-item-all-results {
+	@extend .all-results
+}
+.itemssearcher-item-no-results {
+	@extend .no-results
+}
+.itemssearcher-item-searching {
+	@extend .searching
+}
+.itemssearcher-item-shadow {
+	@extend .tt-dropdown-menu-shadow-fix
+}

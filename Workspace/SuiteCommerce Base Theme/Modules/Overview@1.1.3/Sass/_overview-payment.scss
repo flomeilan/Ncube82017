@@ -1,0 +1,31 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.overview-payment-header {
+    @extend .overview-shipping-header;
+}
+.overview-payment-header h4 {
+    margin: $sc-margin-lv2 0;
+}
+.overview-payment-card {
+   	@extend .overview-shipping-card;
+}
+.overview-payment-card .creditcard {
+	margin: 0;
+	@extend .overview-shipping-card-content;
+
+	.creditcard-content {
+		padding: 0;
+		border: 0;
+	}
+}
+.overview-payment-card-content {
+	@extend .overview-shipping-card-content;
+}
+.overview-payment-card-button-edit {
+    @extend .overview-shipping-card-button-edit;
+}

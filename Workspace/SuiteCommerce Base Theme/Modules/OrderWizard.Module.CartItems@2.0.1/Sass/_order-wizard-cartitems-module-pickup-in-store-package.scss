@@ -1,0 +1,203 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-cartitems-module-pickup-in-store-package{
+	margin: 0 0 $sc-margin-lv2;
+
+	@media (min-width: $screen-sm-min){
+		margin: 0 0 $sc-margin-lv4;
+	}
+
+}
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-head{
+	@extend .accordion-head;
+}
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-head-toggle{
+	@extend .accordion-head-toggle-secondary;
+	font-weight: normal;
+	position: relative;
+    padding-right: $sc-margin-lv7;
+
+    &.order-wizard-cartitems-module-pickup-in-store-package-accordion-primary {
+    	color: $sc-color-theme-900;
+    }
+}
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+	    position: absolute;
+		right: $sc-margin-lv4;
+		top: 0;
+}
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-body{
+	@extend .accordion-body;
+
+	.item-view-cell-navigable-item-image{
+		padding-left: 0;
+		width: 25%;
+	}
+	.transaction-line-views-cell-navigable-item-quantity-label,
+	.transaction-line-views-cell-navigable-item-unit-price-label,
+	.transaction-line-views-cell-navigable-item-amount-label,
+	.transaction-line-views-cell-navigable-item-quantity-label {
+		display: inline-block;
+		@media (min-width: $screen-md-min){
+			display: none;
+		}
+	}
+	.transaction-line-views-cell-navigable-item-image {
+		width: $img-small;
+	    min-width: $img-small;
+		padding-right: 0;
+	}
+}
+
+.lg2sm-first.order-wizard-cartitems-module-pickup-in-store-package-table {
+	table-layout: fixed;
+
+	.transaction-line-views-cell-navigable-item-quantity-label,
+	.transaction-line-views-cell-navigable-item-unit-price-label,
+	.transaction-line-views-cell-navigable-item-amount-label,
+	.transaction-line-views-cell-navigable-item-quantity-label {
+		display: inline;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity .transaction-line-views-cell-navigable-item-quantity-value {
+		display: inline-block;
+		text-align: left;
+	}
+
+	.transaction-line-views-cell-navigable-item-quantity .transaction-line-views-cell-navigable-item-quantity-value {
+		display: inline-block;
+		text-align: left;
+	}
+
+	.transaction-line-views-cell-navigable-product-title {
+		font-size: $sc-font-size-m;
+	}
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-container-table-header {
+	display: none;
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+		width: 100%;
+	}
+}
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-container-table-header-image {
+	@extend .item-view-cell-navigable-item-image;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-container-table-header-details {
+	color: $sc-color-theme-400;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-container-table-header-quantity,
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-container-table-header-totalprice,
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-container-table-header-amount {
+	text-align: right;
+}
+
+
+.order-wizard-cartitems-module-pickup-in-store-package-shipment-table{
+	@extend .table-flex-item-navigable;
+}
+.lg2sm-first.order-wizard-cartitems-module-pickup-in-store-package-table{
+	.transaction-line-views-cell-navigable-item-unit-price,
+	.transaction-line-views-cell-navigable-item-quantity,
+	.transaction-line-views-cell-navigable-amount {
+		text-align: left;
+	}
+}
+.order-wizard-cartitems-module-pickup-in-store-package-edit-cart-label{
+	margin:$sc-margin-lv4;
+}
+.order-wizard-cartitems-module-pickup-in-store-package-edit-cart-link{
+	@extend .button-tertiary;
+    @extend .button-small;
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-products-scroll{
+	@media (min-width: $screen-sm-min){
+		max-height:570px;
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+	.item-view-cell-navigable-item-quantity-label {
+		display: inline-block;
+	}
+}
+.order-wizard-cartitems-module-pickup-in-store-package-table{
+	@extend .table-flex-item-navigable;
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-view-location-data-link {
+    color: $sc-color-link;
+    cursor: pointer;
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-view-location-data-link, .pickup-in-store-option .dropdown {
+  display: inline-block;
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-dropdown {
+    @extend .dropdown;
+    font-size: $sc-font-size-s;
+    padding: $sc-padding-lv3 $sc-padding-lv4;
+    line-height: 1.2em;
+    background-color: $sc-color-theme-background;
+
+	&.open .order-wizard-cartitems-module-pickup-in-store-package-view-location-data-link{
+		color: $sc-color-link;
+	}
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-dropdown-menu {
+    @extend .dropdown-menu;
+    top: auto;
+    margin: 0 $sc-margin-lv4;
+    border-radius: 0;
+	border-color: $sc-color-link;
+	@include box-shadow(1px 1px 1px rgba(0, 0, 0, 0.176));
+	padding: $sc-padding-lv2;
+
+	.locator-venue-details-container *{
+	    font-size: $sc-font-size-s;
+	    line-height: 1.6;
+	}
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-icon-angle-down {
+    @extend .icon-angle-down;
+    vertical-align: text-bottom;
+    line-height: $sc-font-size-m;
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-location-label{
+	color: $sc-color-copy-light;
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-view-location-data-link {
+	&:hover, &:focus{
+		color: $sc-color-link-hover;
+	}
+}
+
+.order-wizard-cartitems-module-pickup-in-store-package-accordion-head-toggle-location-name {
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 50%;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: $sc-font-weight-bold;
+    vertical-align: bottom;
+
+	@media (min-width: $screen-md-min) {
+		max-width: 45%;
+	}
+}

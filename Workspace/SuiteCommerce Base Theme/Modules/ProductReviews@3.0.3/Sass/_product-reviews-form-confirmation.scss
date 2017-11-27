@@ -1,0 +1,115 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-reviews-form-confirmation {
+    @extend .product-reviews-form-preview;
+    .facets-item-cell-list-price {
+        display: none;
+    }
+    .global-views-star-rating {
+        display: none;
+    }
+    .item-view-stock {
+        display: none;
+    }
+
+    .global-views-star-rating{
+        .global-views-star-rating-content-label{
+            visibility: hidden;
+        }
+    }
+
+    .product-reviews-preview-review-rating {
+        .product-reviews-form-confirmation-rating-attribute {
+            .global-views-star-rating-content-label {
+                visibility: visible;
+            }
+        }
+    }
+
+    margin-bottom: $sc-margin-lv4;
+}
+.product-reviews-form-confirmation-message {
+    @extend .global-views-message;
+    @extend .global-views-message-success;
+    display: block;
+    margin-top: 0;
+    margin-left: -$sc-margin-lv3;
+    margin-right: -$sc-margin-lv3;
+
+    background: $sc-color-success-background;
+    margin-bottom: $sc-margin-lv6;
+
+    @media (min-width: $screen-sm-min){
+        margin-left: 0;
+        margin-right: 0;
+    }
+    h2 {
+        color: $sc-color-success;
+        margin: 0 0 $sc-margin-lv2;
+    }
+    a {
+        display: inline-block;
+    }
+}
+.product-reviews-form-confirmation-item-cell {
+    @extend .product-reviews-form-item-cell;
+}
+.product-reviews-form-confirmation-content {
+    @extend .product-reviews-form-preview-content;
+    @extend .row;
+    margin-top: $sc-margin-lv4;
+    margin-bottom: $sc-margin-lv6;
+
+    .global-views-star-rating {
+        display: inline-block;
+    }
+}
+.product-reviews-form-confirmation-content-review {
+    @extend .product-reviews-preview-review-content;
+    padding: 0 $sc-padding-lv3 $sc-padding-lv6;
+}
+.product-reviews-form-confirmation-content-review h4 {
+    margin-bottom: $sc-margin-lv4;
+}
+
+.product-reviews-form-confirmation-icon-sign{
+    @extend .icon-ok-sign;
+}
+
+.product-reviews-form-confirmation-button-back{
+    @extend .button-back;
+    margin-bottom: 0;
+}
+
+.product-reviews-form-confirmation-button-back-icon{
+    @extend .button-back-icon;
+}
+
+.product-reviews-form-confirmation-review-rating{
+    @extend .product-reviews-preview-review-rating;
+}
+
+.product-reviews-form-confirmation-review-title{
+}
+
+.product-reviews-form-confirmation-content-username {
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    span {
+        font-weight: 400;
+        color: $sc-color-primary;
+    }
+}
+
+
+.product-reviews-form-confirmation-content-description{}
+
+.product-reviews-form-confirmation-divider-desktop {
+    margin-bottom: 20px;
+}

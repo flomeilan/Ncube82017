@@ -1,0 +1,178 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-facet-browse {
+	@extend .container;
+}
+
+.facets-facet-browse-breadcrum {
+	@extend .breadcrumb;
+}
+
+.facets-facet-browse-category {
+	@extend .clearfix;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+//Facet Browse - Header
+.facets-facet-browse-header {
+	@extend .clearfix;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	padding: $sc-margin-lv1 0 $sc-margin-lv2;
+}
+
+.facets-facet-browse-title {
+	@extend .list-header-title-ahead;
+
+	@media (min-width: $screen-md-min) {
+		margin-top: $sc-margin-lv1;
+	}
+}
+
+.facets-facet-browse-title-alt {}
+
+.facets-facet-browse-list-header {
+	@extend .list-header;
+}
+
+.facets-facet-browse-list-header-actions {
+	@extend .list-header-actions;
+}
+
+.facets-facet-browse-list-header-expander {
+	@extend .list-header-expander;
+}
+
+.facets-facet-browse-list-header-expander-button {
+	@extend .list-header-expander-button;
+	margin-right: 0;
+}
+
+.facets-facet-browse-list-header-expander-icon {
+	@extend .list-header-expander-icon;
+}
+
+.facets-facet-browse-list-header-filters {
+	@extend .list-header-filters;
+}
+
+.facets-facet-browse-list-header-filters-wrapper {
+	@extend .list-header-filters-wrapper;
+}
+
+.facets-facet-browse-list-header-filters-row {
+	@extend .list-header-filters-row;
+}
+
+.facets-facet-browse-list-header-filter-column {
+	@extend .list-header-filter-column;
+}
+
+.facets-facet-browse-list-header-filter-facets {
+	@extend .list-header-filter-facets;
+	border-radius: 0;
+	padding: $sc-padding-lv2;
+
+	.facets-facet-browse-list-header-filter-facets-icon {
+		@extend .list-header-filter-facets-icon;
+		font-size: 22px;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//Facet Browse - Header main content layout
+
+.facets-facet-browse-content,
+.facets-facet-browse-empty-items {
+	@extend .clearfix;
+}
+
+.facets-facet-browse-facets-sidebar
+{
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.facets-faceted-navigation-item-cateogry
+{
+	padding-right: $sc-padding-lv3;
+}
+
+.facets-faceted-navigation-item-cateogry .facets-faceted-navigation-item-facet-group-expander-icon
+{
+	line-height: 66px + $sc-padding-lv6;
+}
+
+.facets-facet-browse-facets {
+	@extend .col-md-3;
+	@include box-shadow(0 0 6px $sc-color-secondary);
+	padding: 0;
+	background-color: $sc-neutral-shade-0;
+	overflow-x:hidden;
+
+	@media (min-width: $screen-md-min) {
+		@include box-shadow(none);
+		overflow:hidden;
+		padding-right: $sc-padding-lv3;
+		width: 25%;
+		background-color:transparent;
+	}
+}
+
+.facets-facet-browse-facets[data-pusher="sc-pushable-md"] .sc-pusher-header {
+  margin-left: 0px;
+}
+
+.facets-facet-browse-results {
+	@extend .col-md-9;
+	padding: 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//Facet Browse - Items
+
+.facets-facet-browse-items .backbone-collection-view-row {
+	margin-bottom: $sc-margin-lv4;
+
+	//the margin is only for the first backbone-collection-view-row
+	.backbone-collection-view-row {
+		margin-bottom: 0;
+	}
+}
+
+.facets-facet-browse-items .item-view-stock-msg-description {
+	margin-top:0;
+}
+
+.facets-facet-browse-narrowedby {
+	padding-top: $sc-padding-lv3;
+	padding-bottom: $sc-padding-lv3;
+	text-transform: capitalize;
+	line-height: 35px;
+	}
+
+.facets-facet-browse-items {
+
+	.item-cell-price {
+		margin-bottom: $sc-margin-lv2;
+	}
+
+	.item-cell-image {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//Facet Browse - Pagination
+
+.facets-facet-browse-pagination {
+	float: right;
+	margin-bottom: $sc-margin-lv8;
+}

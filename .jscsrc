@@ -1,0 +1,124 @@
+{
+	"additionalRules": [
+		"./gulp/jscs-rules/requireDefinesInLongSyntax.js",
+		"./gulp/jscs-rules/requireShortJSDoc.js"
+	],
+	"requireShortJSDoc": true,
+	"requireDefinesInLongSyntax": {
+		"requireExplicitModuleName": true
+	},
+
+	"requireCurlyBraces": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"try",
+		"catch"
+	],
+	"requireSpaceBeforeKeywords": [
+		"catch",
+		"while"
+	],
+	"requireSpaceAfterKeywords": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"switch",
+		"case",
+		"return",
+		"try",
+		"catch",
+		"function",
+		"typeof"
+	],
+	"requireParenthesesAroundIIFE": true,
+	"requireSpacesInConditionalExpression": true,
+	"requireSpacesInFunctionExpression": {
+		"beforeOpeningRoundBrace": true,
+		"beforeOpeningCurlyBrace": true
+	},
+	"requireSpacesInNamedFunctionExpression": {
+		"beforeOpeningRoundBrace": true,
+		"beforeOpeningCurlyBrace": true
+	},
+	"requireSpacesInFunctionDeclaration": {
+		"beforeOpeningRoundBrace": true,
+		"beforeOpeningCurlyBrace": true
+	},
+	"requireSpacesInFunction": {
+		"beforeOpeningRoundBrace": true,
+		"beforeOpeningCurlyBrace": true
+	},
+	"disallowSpacesInCallExpression": true,
+	"requireMultipleVarDecl": true,
+	"requireBlocksOnNewline": true,
+	"requirePaddingNewLinesInObjects": true,
+	"disallowEmptyBlocks": true,
+	"disallowCommaBeforeLineBreak": true,
+	"disallowSpaceAfterPrefixUnaryOperators": true,
+	"disallowSpaceBeforePostfixUnaryOperators": true,
+	"requireSpaceBeforeBinaryOperators": true,
+	"requireSpaceAfterBinaryOperators": true,
+	"disallowMixedSpacesAndTabs": true,
+	"disallowTrailingWhitespace": true,
+	"disallowTrailingComma": true,
+	"requireKeywordsOnNewLine": [
+		"else"
+	],
+	"requireNewlineBeforeBlockStatements": true,
+	// "validateIndentation": "\t",
+	"validateParameterSeparator": ", ",
+	"requireSpaceBetweenArguments": true,
+	"safeContextKeyword": ["self"],
+	"requireCapitalizedConstructors": true
+
+	//NOT SURE
+	/*"requireSpaceBeforeBlockStatements": true,
+	"requirePaddingNewlinesBeforeKeywords": [
+		"do",
+		"for",
+		"if",
+		"else",
+		"switch",
+		"case",
+		"try",
+		"catch",
+		"void",
+		"while",
+		"with",
+		"return",
+		"typeof",
+		"function"
+	],
+	"requireSpacesInsideParentheses": "allButNested",
+	"disallowSpaceAfterObjectKeys": true,
+	"requireSpaceBeforeObjectValues": true,
+	"requireOperatorBeforeLineBreak": [
+		"?",
+		"=",
+		"+",
+		"-",
+		"/",
+		"*",
+		"==",
+		"===",
+		"!=",
+		"!==",
+		">",
+		">=",
+		"<",
+		"<="
+	],
+	"disallowMultipleLineBreaks": true,
+	"requireYodaConditions": true,
+	"requireSpaceAfterLineComment": {
+		"allExcept": ["#", "=", "/"]
+	},
+	"validateLineBreaks": "LF",
+	"requireCapitalizedComments": true
+	*/
+}

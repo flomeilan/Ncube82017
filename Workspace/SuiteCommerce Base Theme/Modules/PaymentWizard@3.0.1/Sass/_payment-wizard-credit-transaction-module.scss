@@ -1,0 +1,90 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.payment-wizard-credit-transaction-module{
+	margin-bottom: $sc-margin-lv6;
+}
+
+.payment-wizard-credit-transaction-module-records-head-row{
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+
+.payment-wizard-credit-transaction-module-expander-head{
+	@extend .accordion-head;
+}
+
+.payment-wizard-credit-transaction-module-expander-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.payment-wizard-credit-transaction-module-expander-head-toggle-icon{
+	@extend .acordion-head-toggle-icon;
+}
+
+.payment-wizard-credit-transaction-module-expander-body{
+	@extend .accordion-body;
+}
+
+.payment-wizard-credit-transaction-module-expander-body-wrapper{
+	padding: $sc-padding-lv4;
+}
+
+.payment-wizard-credit-transaction-module-records{
+	@extend .table-flex-record-actionable-navigable;
+}
+
+.payment-wizard-credit-transaction-module-records-head tr{
+	display: none;
+	@media (min-width: $screen-md-min){
+		display: table-row;
+	}
+}
+
+.payment-wizard-credit-transaction-module-records-head th{
+	text-align: right;
+	padding-top: $sc-padding-lv3;
+	padding-bottom: $sc-padding-lv2;
+	font-weight: normal;
+}
+
+.payment-wizard-credit-transaction-module-records-body td{
+	vertical-align: middle;
+
+
+	@media (min-width: $screen-md-min){
+		height: 60px;
+	}
+}
+
+.payment-wizard-credit-transaction-module-records-foot .payment-wizard-credit-transaction-module-subtotal{
+	@extend .sc-value;
+	display: table-cell;
+	vertical-align: middle;
+	height: 60px;
+	text-align:right;
+}
+
+.payment-wizard-credit-transaction-module-records-action-col{
+	width:15%;
+}
+
+.payment-wizard-credit-transaction-edit-action-anchor{
+	@extend .button-tertiary;
+	@extend .button-small;
+}
+
+.payment-wizard-credit-transaction-module-subtotal-label {
+	@extend .sc-label;
+}
+
+.payment-wizard-credit-transaction-module-subtotal-value {
+	@extend .sc-value;
+	font-weight: $sc-font-weight-bold;
+}
+
+.payment-wizard-credit-transaction-module-credits-count{}
+.payment-wizard-credit-transaction-module-deposits-count{}

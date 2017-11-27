@@ -1,0 +1,62 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-views-option-facets-tile-container{}
+
+.product-views-option-facets-tile {
+	@extend .clearfix;
+	width: 100%;
+    margin-top: $sc-margin-lv4;
+    margin-bottom:$sc-margin-lv4;
+
+    [data-validation-error="block"] {
+  		display:table;
+  		margin-top:$sc-margin-lv1;
+  	}
+}
+
+.product-views-option-facets-tile-label {
+	text-transform:uppercase;
+	font-weight:$sc-font-weight-bold;
+	margin-bottom:$sc-margin-lv2;
+	display: block;
+
+	span {
+		font-weight:$sc-font-weight-normal;
+	}
+}
+
+.product-views-option-facets-tile-picker {
+	@extend .picker-label;
+	margin-bottom:$sc-margin-lv1;
+}
+.product-views-option-facets-tile-input-picker {
+	@extend .picker-input;
+}
+
+.product-views-option-facets-tile-picker {
+	@extend .picker-lg;
+}
+
+.product-views-option-facets-tile-picker-small {
+	@extend .picker-sm;
+	@extend .product-views-option-facets-tile-picker;
+	margin-right: 0;
+}
+
+.product-views-option-facets-tile-picker.muted {
+	opacity:0.4;
+}
+
+.product-views-option-facets-tile-anchor{}
+
+.product-views-option-facets-tile-label-required {
+	@extend .input-required;
+}
+
+.product-views-option-facets-tile-picker-anchor {
+}

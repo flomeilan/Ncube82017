@@ -1,0 +1,297 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-packages-header-container-title{
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+
+	@media (max-width: $screen-xs-min) {
+		padding: 0 $sc-padding-lv2;
+		display: block;
+	}
+}
+.order-history-packages-header-container{
+	display: block;
+    width: 100%;
+    line-height: normal;
+    padding-bottom: $sc-padding-lv2;
+
+	@media (min-width: $screen-xs-min) {
+		display: table;
+		border-bottom:1px solid $sc-color-theme-border-light;
+	}
+
+	@media (max-width: $screen-xs-min) {
+		padding-left: $sc-padding-lv2;
+		padding-right: $sc-padding-lv2;
+	}
+
+}
+
+.order-history-packages-header-container .order-history-list-tracking-number-label,
+.order-history-packages-header-container .order-history-list-tracking-number-available-label,
+.order-history-packages-header-container .order-history-list-tracking-number-control-numbers-link {
+	font-size: $sc-font-size-s;
+	line-height: $sc-font-size-s*2;
+}
+
+.order-history-packages-header-container-left{
+
+
+	@media (min-width: $screen-xs-min) {
+		float: left;
+		max-width: 50%;
+	}
+}
+
+.order-history-packages-header-container-right{
+	@media (min-width: $screen-xs-min) {
+		float: right;
+		text-align: right;
+		max-width: 50%;
+	}
+}
+
+.order-history-packages-delivery-label{
+	@extend .sc-label;
+	font-size: $sc-font-size-s;
+	line-height: $sc-font-size-s*2;
+}
+
+.order-history-packages-delivery-value{
+	@extend .sc-value;
+	line-height: $sc-font-size-s*2;
+}
+
+.order-history-packages-shipped-date-label{
+	@extend .sc-label;
+	line-height: $sc-font-size-s*2;
+}
+.order-history-packages-shipped-date-value{
+	@extend .sc-value;
+	line-height: $sc-font-size-s*2;
+}
+
+.order-history-packages-shipped-status-value{
+	@extend .sc-value;
+	line-height: $sc-font-size-s*2;
+}
+.order-history-packages-shipped-status-label{
+	@extend .sc-label;
+	line-height: $sc-font-size-s*2;
+}
+
+.order-history-packages-accordion-container {
+	@extend .order-history-details-accordion-container;
+	.transaction-line-views-cell-actionable-line-tr{
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.order-history-packages-items-table{
+	@extend .transaction-line-views-cell-actionable-table;
+
+	.item-view-actionable-selected-option-cell {
+		padding-left: 0;
+	}
+}
+
+.order-history-packages-container {
+	border-bottom:1px solid $sc-color-theme-border-light;
+	margin-bottom:$sc-margin-lv3;
+}
+
+.order-history-packages-container:last-child {
+		border-bottom:0;
+}
+
+.order-history-packages-body{}
+
+.order-history-packages-accordion-head{
+	@extend .accordion-head;
+}
+
+.order-history-packages-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+	color: black;
+	font-weight: normal;
+	border-bottom: none;
+	position: relative;
+
+	&.collapsed{
+		border-bottom: 1px solid $sc-color-theme-border-light;
+
+		.order-history-packages-hide-from-head{
+			display: none;
+		}
+
+		.order-history-packages-header-container{
+			border-bottom: none;
+		}
+	}
+
+	@media (max-width: $screen-xs-min){
+    	padding: 0;
+    }
+
+	.order-history-packages-accordion-head-toggle-status {
+		line-height: inherit;
+		vertical-align: middle;
+		color: $sc-color-primary;
+	}
+
+	.order-history-packages-accordion-head-toggle-auxiliar-text {
+		line-height: inherit;
+		vertical-align: middle;
+	}
+}
+
+.order-history-packages-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+	position: absolute;
+	bottom: 0;
+	right: $sc-padding-lv2;
+
+	@media (min-width: $screen-xs-min){
+    	bottom: auto;
+		top: 0;
+		right: $sc-padding-lv4;
+    }
+}
+
+.order-history-packages-accordion-body{
+	@extend .accordion-body;
+}
+
+.order-history-packages-accordion-body-no-header{
+	@extend .accordion-body;
+	border-top: 1px solid $sc-color-theme-border-light;
+}
+
+.order-history-packages-acordion-divider{
+	@extend .accordion-divider;
+}
+
+.order-history-packages-accordion-container{
+	@extend .accordion-container;
+}
+
+.order-history-packages-dropdown {
+    @extend .dropdown;
+    font-size: $sc-font-size-s;
+    padding: $sc-padding-lv3 $sc-padding-lv4;
+    line-height: 1.2em;
+    background-color: $sc-color-theme-background;
+
+	&.open .order-history-packages-address-data-link{
+		color: $sc-color-link;
+	}
+}
+
+.order-history-packages-dropdown-menu {
+    @extend .dropdown-menu;
+    font-weight: normal;
+    line-height: normal;
+    top: auto;
+    left: auto;
+    border-radius: 0;
+	border-color: $sc-color-link;
+	@include box-shadow(1px 1px 1px rgba(0, 0, 0, 0.176));
+	padding: $sc-padding-lv2;
+
+	@media (min-width: $screen-sm-min){
+    	right: 0;
+    }
+
+    .locator-venue-details-container *{
+	    font-size: $sc-font-size-s;
+	    line-height: 1.6;
+	}
+}
+
+.order-history-packages-dropdown-menu  .address-details {
+	background: none;
+	border: none;
+	padding: 0;
+	min-height: 0;
+
+	p {
+		font-size: $sc-font-size-s;
+	}
+
+	.address-details-info {
+		margin-bottom: 0;
+	}
+}
+
+.order-history-packages-icon-angle-down {
+	@extend .icon-angle-down;
+	position: absolute;
+	right: 0;
+	line-height: inherit;
+	top: 0;
+}
+
+.order-history-packages-address-label{
+	color: $sc-color-copy-light;
+}
+
+.order-history-packages-address-data-link {
+	color: $sc-color-link;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-right: $sc-padding-lv3;
+
+	&:hover, &:focus{
+		color: $sc-color-link-hover;
+	}
+
+    @media (max-width: $screen-xs-min - 1){
+    	max-width: 40%;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+    	overflow: hidden;
+    }
+}
+
+.order-history-packages-items-table .transaction-line-views-cell-actionable-table-middle {
+	display: block;
+}
+
+.order-history-packages-items-table .transaction-line-views-cell-actionable-table-last {
+	display: block;
+	width: auto;
+	padding: 0 $sc-padding-lv3;
+}
+
+.order-history-packages-header-col, .order-history-packages-header-container-right .order-history-list-tracking-number-control-numbers-link{
+	max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.order-history-packages-items-quantity{
+	display: block;
+	background:$sc-color-theme-background;
+	padding: 0 $sc-padding-lv2;
+	color: $sc-color-secondary;
+
+	@media (min-width: $screen-xs-min){
+    	display: none;
+    }
+
+}
+
+.order-history-packages-get-directions-button {
+	@extend .button-tertiary;
+    @extend .button-small;
+    margin-top: $sc-margin-lv2;
+}

@@ -1,0 +1,409 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.invoice-details-summary-col{
+	@extend .col-md-4;
+}
+
+.invoice-details-content-col{
+	@extend .col-md-8;
+}
+
+.invoice-details-header-col-right{
+	@extend .col-sm-6;
+	text-align:left;
+	padding:0px;
+	@media(min-width: $screen-sm-min){
+		text-align:right;
+	}
+}
+
+.invoice-details-amount{
+	display:none;
+	@media(min-width: $screen-sm-min){
+		display:inline-block;
+	}
+}
+
+.invoice-details-header-col-left{
+	@extend .col-sm-6;
+	text-align:left;
+	padding:0px;
+}
+
+.invoice-details-header-amount{
+	@extend .col-sm-12;
+	display:block;
+	padding:0px;
+	@media(min-width: $screen-sm-min){
+		display:none;
+	}
+}
+
+.invoice-details-summary-title{
+	@extend .summary-title;
+}
+
+.invoice-details-invoice-title{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.invoice-details-summary-container{
+	@extend .summary-container;
+}
+
+.invoice-details-row{
+	@extend .row;
+}
+
+.invoice-details-header-row{
+	@extend .row;
+	margin:0px;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.invoice-details-back-btn{
+	@extend .button-back;
+}
+
+.invoice-details-accordion-divider{
+	@extend .accordion-divider;
+}
+
+.invoice-details-accordion-head{
+	@extend .accordion-head;
+}
+
+.invoice-details-invoice-amount{
+	float:right;
+}
+
+.invoice-details-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.invoice-details-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.invoice-details-accordion-head-toggle-secondary{
+	@extend .accordion-head-toggle-secondary;
+}
+
+.invoice-details-accordion-toggle-icon-secondary{
+	@extend .accordion-toggle-icon-secondary;
+}
+
+.invoice-details-accordion-body{
+	@extend .accordion-body;
+}
+
+.invoice-details-button-download-as-pdf{
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.invoice-details-button-close{
+	@extend .button-tertiary;
+	@extend .button-small;
+	float:left;
+	margin-right:$sc-margin-lv3;
+}
+
+.invoice-details-button-make-a-payment{
+	@extend .button-primary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.invoice-details-button-request{
+	@extend .button-tertiary;
+	@extend .button-medium;
+	@extend .button-generic;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.invoice-details-summary-grid-float{
+	@extend .summary-grid-float;
+}
+
+.invoice-details-summary-grid-right{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-items-number{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-shipping-cost{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-handling-value{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-gift-certificate{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-subtotal{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-payment{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-tax-total{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-credit-memo{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-deposit{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-amount-due{
+	@extend .summary-grid-right;
+}
+
+.invoice-details-summary-discount{
+	@extend .summary-grid-right;
+}
+
+
+
+
+.invoice-details-header-status-value{
+	@extend .sc-value;
+	color:$sc-color-primary;
+}
+
+.invoice-details-info-card-grid{
+	@extend .col-sm-6;
+
+	.address-details {
+		margin-bottom: $sc-margin-lv3;
+
+		@media(min-width: $screen-sm-min){
+			margin-bottom: 0;
+		}
+	}
+}
+
+.invoice-details-info-card{
+	@extend .info-card;
+ 	font-size:$sc-font-size-m;
+ 	color:$sc-color-copy;
+}
+
+.invoice-details-accordion-container{
+	@extend .accordion-container;
+}
+
+.invoice-details-info-card-terms-title{
+	font-weight:$sc-font-weight-bold;
+}
+
+.invoice-details-info-card-terms-container{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.invoice-details-info-card-memo-container{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.invoice-details-info-card-memo-title{
+	font-weight:$sc-font-weight-bold;
+}
+
+.invoice-details-info-card-tel-title{
+	font-weight:$sc-font-weight-bold;
+}
+
+.invoice-details-info-card-email-title{
+	font-weight:$sc-font-weight-bold;
+}
+
+.invoice-details-info-card-name-title{
+	font-weight:$sc-font-weight-bold;
+}
+
+.invoice-details-header-date-value{
+	@extend .sc-value;
+}
+
+.invoice-details-header-due-date-value{
+	@extend .sc-value;
+}
+
+.invoice-details-header-created-from-value{
+}
+
+.invoice-details-adjustments-title{
+	padding:$sc-padding-lv3;
+	border-top:1px solid $sc-color-theme-border-light;
+}
+
+.invoice-details-table-products-header{
+	display:none;
+}
+
+.invoice-details-table-products-header-amount{
+		width:15%;
+		text-align:right;
+}
+
+.invoice-details-table-products-header-unit-price{
+		width:15%;
+		text-align:right;
+}
+
+.invoice-details-table-products-header-qty{
+		width:15%;
+		text-align:right;
+}
+
+.invoice-details-table-products-header-image{
+		width:130px;
+}
+
+.invoice-details{
+	.item-view-cell-navigable-amount{
+		text-align:left;
+		width:100%;
+		padding-bottom: $sc-padding-lv3;
+		@media(min-width: $screen-md-min){
+			width:15%;
+			text-align:right;
+		}
+	}
+	.item-view-cell-navigable-item-unit-price{
+		text-align:left;
+		width:100%;
+		@media(min-width: $screen-md-min){
+			width:15%;
+			text-align:right;
+		}
+	}
+	.item-view-cell-navigable-item-quantity{
+		text-align:left;
+		width:100%;
+		@media(min-width: $screen-md-min){
+			width:15%;
+			text-align:right;
+		}
+	}
+	.item-view-cell-navigable-item-quantity-label{
+		display:inline-block;
+		@media(min-width: $screen-md-min){
+			display:none;
+		}
+	}
+	.item-view-cell-navigable-item-unit-price-label{
+		display:inline-block;
+		@media(min-width: $screen-md-min){
+			display:none;
+		}
+	}
+
+	.item-view-cell-navigable-item-amount-label{
+		display:inline-block;
+		@media(min-width: $screen-md-min){
+			display:none;
+		}
+	}
+}
+
+.invoice-details-header-date-label{
+	@extend .sc-label;
+}
+
+.invoice-details-header-created-from-label{
+	@extend .sc-label;
+}
+
+.invoice-details-header-due-date-label{
+	@extend .sc-label;
+}
+
+.invoice-details-header-status-label{
+	@extend .sc-label;
+}
+
+.invoice-details-header-amount-label{
+	@extend .sc-label;
+}
+
+.invoice-details-link-goto{
+	line-height:35px;
+}
+
+
+.invoice-details-row-fluid{
+
+}
+
+.invoice-details-view{}
+.invoice-details-invoice-number{}
+.invoice-details-header-information{}
+.invoice-details-header-date-info{}
+.invoice-details-header-due-date-info{}
+.invoice-details-header-status-info{}
+.invoice-details-header-amount-info{}
+.invoice-details-table-products-header-product{}
+.invoice-details-summary-col-modalinvoice-details-summary-col{}
+.invoice-details-buttons-container{}
+.invoice-details-button-make-a-payment-container{}
+.item-details-header{}
+.item-details-banner-top{}
+.item-details-banner-top-details{}
+
+.invoice-details-products-table {
+
+	@extend .table-flex-item-navigable;
+	table-layout: fixed;
+
+	@media (min-width: $screen-md-min){
+
+		.transaction-line-views-cell-navigable-item-quantity,
+		.transaction-line-views-cell-navigable-item-unit-price,
+		.transaction-line-views-cell-navigable-amount {
+			text-align: left;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.transaction-line-views-selected-option-color-tile {
+            display: inherit;
+        }
+
+		span {
+			display: inline;
+		}
+	}
+}
+
+.invoice-details-summary-subtotal-items {
+	font-weight:$sc-font-weight-bold;
+}
+
+.invoice-details-summary-total-container{
+	font-weight:$sc-font-weight-bold;
+	text-transform:uppercase;
+	p {
+		font-size:$sc-font-size-m;
+	}
+}

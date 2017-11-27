@@ -1,0 +1,147 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-detailed{
+	@extend .cart;
+
+	.transaction-line-views-selected-option-color-label-text,
+	.transaction-line-views-tax-label,
+	.cart-item-summary-item-list-actionable-amount-label,
+	.cart-item-summary-item-list-actionable-label-qty{
+		color: $sc-color-copy-dark;
+		font-weight: 600;
+	}
+
+	.transaction-line-views-selected-option {
+		.transaction-line-views-selected-option-label{
+			color: $sc-color-copy-dark;
+			font-weight: 600;
+		}
+	}
+}
+
+.cart-detailed-view-header{
+}
+
+.cart-detailed-title{
+	@extend .cart-title;
+}
+
+.cart-detailed-title-details-count{
+	@extend .cart-title-details-count;
+	@extend .middle-price;
+}
+
+.cart-detailed-confirm-message{
+}
+
+.cart-detailed-right{
+	@extend .cart-right;
+	margin-top: $sc-margin-lv4;
+	@media (min-width: $screen-sm-min) {
+		margin-top: 0;
+	}
+}
+
+.cart-detailed-body{
+	@extend .cart-body;
+}
+
+.cart-detailed-left{
+	@extend .cart-left;
+}
+
+.cart-detailed-empty{
+	@extend .cart-empty;
+}
+
+.cart-detailed-footer{
+}
+
+.cart-detailed-header{
+}
+
+.cart-detailed-savedforlater {
+	@extend .cart-savedforlater;
+
+	.product-list-details-later {
+		border-top:1px solid $sc-color-theme-border-light;
+		padding-top: $sc-padding-lv6;
+		border-bottom: 0;
+		margin: 0;
+	}
+	.product-list-details-later-button-saveforlater-pusher {
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+}
+
+.cart-detailed-proceed-to-checkout-container{
+	@extend .cart-proceed-to-checkout-container;
+}
+
+.cart-detailed-proceed-to-checkout{
+	@extend .cart-proceed-to-checkout;
+}
+
+.cart-detailed-body-empty{
+}
+
+.cart-detailed-body-empty-title{
+	@extend .cart-body-empty-title !optional;
+}
+
+	.product-list-details-later {
+		border-top:1px solid $sc-color-theme-border-light;
+		padding-top: $sc-padding-lv6;
+}
+
+.cart-detailed-row-fluid{
+}
+
+.cart-detailed-recently-viewed{
+	border-top:1px solid $sc-color-theme-border-light;
+	padding-top: $sc-padding-lv6;
+}
+
+.cart-detailed-related{
+}
+
+.cart-detailed-correlated{
+}
+
+.cart-detailed-body-info {
+
+}
+
+.cart-detailed-body-empty-info{
+	@extend .cart-body-empty-info;
+}
+
+.cart-detailed-item-view-cell-actionable-table{
+	@extend .transaction-line-views-cell-actionable-table;
+  	border-collapse: collapse;
+
+	.transaction-line-views-cell-actionable-table-middle, .transaction-line-views-cell-actionable-table-first,
+	.transaction-line-views-cell-actionable-table-last {
+    	padding-bottom: 0;
+
+		@media (min-width: $screen-md-min) {
+			padding-bottom: 80px;
+		}
+	}
+
+	td {
+		padding-bottom: 80px;
+	}
+	.quantity-pricing td {
+		padding-bottom: $sc-padding-lv1;
+	}
+}
+
+.cart-detailed-table-row-with-border{
+}

@@ -1,0 +1,83 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.return-authorization-confirmation-module {
+	display: block;
+	padding: 35px;
+	background: $sc-color-success-background;
+	margin-bottom: $sc-margin-lv6;
+}
+.return-authorization-confirmation-module-title {
+	color: $sc-color-success;
+	margin: 0 0 10px;
+}
+.return-authorization-confirmation-module-body {
+	color: $sc-color-success;
+}
+.return-authorization-confirmation-module-continue {
+	@extend .button-large;
+	@extend .button-secondary;
+	display:inline-block;
+	margin-top: $sc-margin-lv3;
+}
+.return-authorization-confirmation-amount {
+	float: right;
+}
+
+// Items View
+.return-authorization-confirmation-row {
+	@extend .row;
+}
+.return-authorization-confirmation-content-col {
+	margin: $sc-margin-lv4 $sc-margin-lv3;
+}
+.return-authorization-confirmation-accordion-divider {
+	margin-bottom:$sc-margin-lv4;
+}
+.return-authorization-confirmation-accordion-head {
+	@extend .accordion-head;
+}
+.return-authorization-confirmation-head-toggle {
+	@extend .accordion-head-toggle;
+}
+.return-authorization-confirmation-head-toggle-icon {
+	@extend .accordion-toggle-icon;
+}
+.return-authorization-confirmation-body {
+	@extend .accordion-body;
+}
+.return-authorization-confirmation-headers {
+
+}
+.return-authorization-confirmation-headers-reason {
+	text-align: right;
+}
+
+.return-authorization-confirmation-products-table{
+	@extend .table-flex-item-navigable;
+}
+
+.return-authorization-confirmation-row{
+	@extend .row;
+}
+.return-authorization-confirmation-module-body-return-id{
+	font-weight:$sc-font-weight-semibold;
+}
+
+.return-authorization-confirmation-headers-quantity {
+	text-align:right;
+}
+
+.return-authorization-confirmation-title {
+	margin-bottom:$sc-margin-lv2;
+}
+
+.return-authorization-confirmation-headers-image{}
+.return-authorization-confirmation-headers-product{}
+.return-authorization-confirmation-headers-amount{}
+.return-authorization-confirmation-comments-row {}
+.return-authorization-confirmation-comments{}

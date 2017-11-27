@@ -1,0 +1,44 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Thumbnails Image Sizes
+//
+// Thumbails are reduced-size versions of product images.
+// They are used in product lists and modals and enable users to easily recognize a product by viewing a smaller version of the original product picture.
+//
+// .thumbnail-small  	- Small image
+// .thumbnail-medium    - Medium image
+// .thumbnail-large   	- Large image
+//
+// Markup:
+// <img class="thumbnail-small" src="/assets/img/thumbnail.png" />
+// <img class="thumbnail-medium" src="/assets/img/thumbnail.png" />
+// <img class="thumbnail-large" src="/assets/img/thumbnail.png" />
+//
+// Styleguide 2.8
+
+$sc-image-large-size: 150px;
+$sc-image-medium-size: 100px;
+$sc-image-small-size: 60px;
+
+.thumbnail-large {
+	width: $sc-image-large-size;
+	height: $sc-image-large-size;
+	display: inline-block;
+}
+
+.thumbnail-medium {
+	width: $sc-image-medium-size;
+	height: $sc-image-medium-size;
+	display: inline-block;
+}
+
+.thumbnail-small {
+	width: $sc-image-small-size;
+	height: $sc-image-small-size;
+	display: inline-block;
+}

@@ -1,0 +1,82 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.payment-wizard-show-credit-transaction-module-accordion-divider{
+	margin:$sc-margin-lv4 0;
+}
+
+.payment-wizard-show-credit-transaction-module-accordion-head{
+	@extend .accordion-head;
+}
+
+.payment-wizard-show-credit-transaction-module-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.payment-wizard-show-credit-transaction-module-accordion-toggle-icon{
+	@extend .acordion-head-toggle-icon;
+}
+
+.payment-wizard-show-credit-transaction-module-accordion-body{
+	@extend .accordion-body;
+}
+
+.payment-wizard-show-credit-transaction-module-accordion-body-header{
+	padding: $sc-padding-lv3;
+	display: none;
+  border-bottom: 1px solid $sc-color-theme-border-light;
+
+	@media (min-width: $screen-sm-min) {
+		display: block;
+	}
+}
+.payment-wizard-show-credit-transaction-module-accordion-body-footer {
+	padding: $sc-padding-lv3;
+	.payment-wizard-show-credit-transaction-module-accordion-container-row {
+		text-align: right;
+		border-bottom: 0;
+	}
+}
+.payment-wizard-show-credit-transaction-module-accordion-body-header-label {
+	@extend .sc-label;
+	text-align: right;
+}
+.payment-wizard-show-credit-transaction-module-accordion-container{
+}
+.payment-wizard-show-credit-transaction-module-accordion-container-row {
+	@extend .row;
+	margin: 0;
+	padding: $sc-padding-lv3 0;
+  border-bottom: 1px solid $sc-color-theme-border-light;
+}
+.payment-wizard-show-credit-transaction-module-accordion-container-row-left{
+	@extend .col-sm-4;
+	color: $sc-color-link;
+}
+.payment-wizard-show-credit-transaction-module-accordion-container-row-right {
+	@extend .col-sm-8;
+	text-align: left;
+
+	@media (min-width: $screen-sm-min) {
+		text-align: right;
+	}
+
+}
+.payment-wizard-show-credit-transaction-module-accordion-container-label {
+	@extend .sc-label;
+	display: inline;
+
+	@media (min-width: $screen-sm-min) {
+		display: none;
+	}
+}
+
+.payment-wizard-show-credit-transaction-module-accordion-container-row-label {
+	@extend .sc-label;
+}
+
+.payment-wizard-show-credit-transaction-module-accordion-container-value{}

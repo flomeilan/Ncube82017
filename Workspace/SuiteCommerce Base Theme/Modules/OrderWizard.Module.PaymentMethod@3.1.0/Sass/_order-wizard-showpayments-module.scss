@@ -1,0 +1,56 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-showpayments-module-details{
+	@extend .box-column;
+}
+.order-wizard-showpayments-module-details-body {
+	@extend .row;
+	h3 {
+		margin-bottom: $sc-margin-lv3;
+	}
+}
+.order-wizard-showpayments-module-billing-address{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+	margin-bottom: $sc-margin-lv3;
+
+  @media (min-width: $screen-sm-min){
+  	margin-bottom: 0
+  }
+}
+
+.order-wizard-showpayments-module-payment-method{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+
+	.payment-methods-summary {
+		min-height: inherit;
+	}
+}
+.payment-methods-summary {
+	@extend .info-card;
+}
+.order-wizard-showpayments-module-payment-address-edit {
+	margin-top: $sc-margin-lv3;
+	display: inline-block;
+}
+.order-wizard-showpayments-module-billing-address-edit {
+  margin-bottom: $sc-margin-lv3;
+  margin-top: $sc-margin-lv3;
+	display: inline-block;
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 0;
+	}
+}
+
+.order-wizard-showpayments-module-section-header{
+}
+
+.order-wizard-showpayments-module-payment-methods-summary{
+	@extend .payment-methods-summary;
+}

@@ -1,0 +1,61 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.payment-wizard-summary-module{
+	margin-bottom: $sc-margin-lv4;
+}
+
+.payment-wizard-summary-module-container{
+	@extend .summary-container;
+}
+
+.payment-wizard-summary-module-title{
+	@extend .summary-title;
+}
+
+.payment-wizard-summary-module-button-continue{
+	@extend .button-primary;
+	@extend .button-large;
+	@extend .button-generic;
+
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.payment-wizard-summary-module-grid-float{
+	@extend .summary-grid-float;
+}
+
+.payment-wizard-summary-module-invoices-value{
+	@extend .summary-grid-right;
+}
+
+.payment-wizard-summary-module-estimated-total-value{
+	@extend .summary-grid-right;
+}
+
+.payment-wizard-summary-module-credits-subtotal-value{
+	@extend .summary-grid-right;
+}
+
+.payment-wizard-summary-module-deposits-subtotal-value{
+	@extend .summary-grid-right;
+}
+
+.payment-wizard-summary-module-alert-information{
+	@extend .message-success;
+	display:block;
+	margin: $sc-margin-lv3;
+}
+
+.payment-wizard-summary-module-header{}
+.payment-wizard-summary-module-body{}
+.payment-wizard-summary-module-buttons-container{}
+.payment-wizard-summary-module-invoices-number{}

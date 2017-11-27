@@ -1,0 +1,152 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-msr-package-creation-shipping-left{
+	@extend .col-sm-8;
+}
+
+.order-wizard-msr-package-creation-shipping-right{
+	@extend .col-sm-4;
+	text-align:right;
+}
+
+.order-wizard-msr-package-creation-button-create{
+	@extend .button-primary;
+	@extend .button-medium;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-wizard-msr-package-creation-multishipto-address-selector{
+
+}
+
+.order-wizard-msr-package-creation-header-row{
+	@extend .row;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-wizard-msr-package-creation-shipping-add-edit-link{
+	line-height:40px;
+	font-size:$sc-font-size-m;
+}
+
+.order-wizard-msr-package-creation-header-subtitle{
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-wizard-msr-package-creation-item-count{
+	padding:$sc-padding-lv3 0;
+}
+
+
+.order-wizard-msr-package-creation-multishipto-table-container{
+	border-bottom:1px solid $sc-color-theme-border-light;
+}
+
+.order-wizard-msr-package-creation-multishipto-table{
+	width:100%;
+	th{
+		font-weight:$sc-font-weight-normal;
+		padding-bottom:$sc-padding-lv3;
+	}
+
+}
+
+.order-wizard-msr-package-creation-multishipto-table-container{
+	border-bottom:1px solid $sc-color-theme-border-light;
+}
+
+.order-wizard-msr-package-creation-products-table{
+	@extend .transaction-line-views-cell-selectable;
+	border-bottom:1px solid $sc-color-theme-border-light;
+
+	tr:hover{
+		background:$sc-color-theme-background;
+	}
+
+	.transaction-line-views-cell-selectable-item-unit-price,
+	.transaction-line-views-cell-selectable-item-details {
+		@media (max-width: $screen-lg-min) {
+			padding-bottom: 0;
+		}
+	}
+
+
+	.transaction-line-views-cell-selectable-item-unit-price-label,
+	.transaction-line-views-cell-selectable-item-amount-label{
+		@media (max-width: $screen-lg-min) {
+			display: inline-block;
+		}
+	}
+
+	.item-views-item-options-container {
+		margin-bottom: 0;
+	}
+
+}
+
+.order-wizard-msr-package-creation-multishipto-line-selected{
+	background: $sc-color-theme-background;
+}
+
+.order-wizard-msr-package-creation-single-address{
+	.address-details{
+		@extend .col-sm-6;
+		margin-bottom:$sc-margin-lv4;
+	}
+}
+
+.order-wizard-msr-package-creation-ship-address{
+	clear:both;
+	display:block;
+	overflow:hidden;
+}
+
+.order-wizard-msr-package-creation-multishipto-table-col-select{
+	@extend .column-type-select;
+}
+
+
+.order-wizard-msr-package-creation-multishipto-table-header-qty{
+	@extend .column-type-number;
+	display:none;
+	@media(min-width: $screen-lg-min){
+		width:15%;
+		display:table-cell;
+	}
+}
+
+.order-wizard-msr-package-creation-multishipto-table-header-unit-price{
+	@extend .column-type-number;
+	width:15%;
+	display:none;
+	@media(min-width: $screen-lg-min){
+		width:15%;
+		display:table-cell;
+	}
+}
+
+.order-wizard-msr-package-creation-multishipto-table-header-amount{
+	@extend .column-type-number;
+	display:none;
+	width:15%;
+	@media(min-width: $screen-lg-min){
+		width:15%;
+		display:table-cell;
+	}
+}
+
+.order-wizard-msr-package-creation-item-count {
+	margin: $sc-margin-lv3 0;
+}
+
+.order-wizard-msr-package-creation-multishipto-address-selected{
+}
+
+.order-wizard-msr-package-creation-items-remaining-list{}
+.order-wizard-msr-package-creation-row{}
+.order-wizard-msr-package-creation-multishipto-table-header-select{}

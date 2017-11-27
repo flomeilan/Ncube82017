@@ -1,0 +1,96 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.header-menu-myaccount-back{
+	@extend .header-sidebar-menu-back;
+}
+
+.header-menu-myaccount-pop-icon {
+	@extend .header-sidebar-menu-pop-icon;
+}
+
+.header-menu-myaccount-menu-push-icon {
+	@extend .header-sidebar-menu-push-icon;
+}
+
+.header-sidebar-menu-wrapper .header-menu-myaccount-signout-link {
+	display: none;
+}
+
+.header-menu-myaccount a.active {
+	background-color: $sc-color-theme-background;
+}
+
+.header-menu-myaccount-level3{}
+
+//applies only to the myaccount menu on desktop header
+.header-menu-profile {
+
+	.header-menu-myaccount-anchor {
+		display: none;
+	}
+
+	.header-menu-myaccount-overview-anchor {
+		@media (min-width: $screen-sm-min) {
+			font-size: $sc-font-size-m;
+			float: left;
+			padding: $sc-padding-lv3 0;
+		}
+	}
+
+	.header-menu-myaccount-back {
+		display: none;
+	}
+
+	.header-menu-myaccount-menu-push-icon{
+		display:none;
+	}
+
+	.header-menu-myaccount-overview {
+		margin-bottom: $sc-margin-lv7;
+		border-bottom: 1px solid $sc-color-theme-border-light;
+		@extend .clearfix;
+	}
+
+	.header-menu-myaccount-item-level2 {
+		float: left;
+		width: 20%;
+		padding-right: $sc-padding-lv8;
+	}
+
+	.header-menu-myaccount-anchor-level2 {
+		@extend .header-menu-level2-anchor;
+	}
+
+
+	.header-menu-myaccount-anchor-level3 {
+		@extend .header-menu-level3-anchor;
+	}
+
+	.header-menu-myaccount-signout-link {
+		float: right;
+		display:block;
+		padding: $sc-padding-lv3 0;
+	}
+
+	.header-menu-myaccount-signout-icon{
+		@extend .fa;
+		@extend %fa-sign-out;
+		font-size: $sc-font-size-m;
+	}
+}
+
+.header-menu-myaccount-level4 {
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+.header-menu-myaccount-item-level3 {}
+.header-menu-myaccount-anchor-level4 {}
+.header-menu-myaccount-level2-orders {}
+.header-menu-myaccount-level3-orders {}

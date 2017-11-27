@@ -1,0 +1,296 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-summary-container{
+		margin-bottom:$sc-margin-lv4;
+		border:1px solid $sc-color-theme-border-light;
+		@media(min-width: $screen-sm-min){
+			margin-bottom:0px;
+		}
+}
+
+.cart-summary-title{
+	background:$sc-color-theme-background;
+	text-align:center;
+	padding:$sc-padding-lv4 0px $sc-padding-lv4 0px;
+	margin-bottom:$sc-margin-lv4;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+}
+
+.cart-summary-expander-container{
+	padding: $sc-padding-lv3;
+	clear:both;
+
+	.control-group {
+		margin-top: 0;
+	}
+}
+.cart-summary-expander-head{
+	@extend .accordion-head;
+}
+
+.cart-summary-expander-head-toggle{
+	@extend .accordion-head-toggle;
+
+	font-weight: normal;
+	padding-left: $sc-padding-lv2;
+	padding-right: $sc-padding-lv2;
+}
+
+.cart-summary-expander-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.cart-summary-expander-toggle-icon-promocode {
+	@extend .accordion-toggle-icon;
+}
+
+.cart-summary-expander-body{
+	@extend .accordion-body-alt;
+}
+
+.cart-summary-button-estimate{
+	@extend .button-secondary;
+	@extend .button-medium;
+	width: 100%;
+	margin-top:$sc-margin-lv4 / 2;
+}
+
+.cart-summary-estimate-input{
+	width: 100%;
+	margin-bottom: $sc-margin-lv2;
+}
+
+.cart-summary-button-container {
+	margin-top: $sc-margin-lv3;
+}
+
+.cart-summary-button-proceed-checkout {
+	display: none;
+	@extend .button-proceed-checkout;
+
+	&.cart-summary-button-proceed-checkout-sb {
+		display: block;
+	}
+
+	@media (min-width: $screen-sm-min), (orientation: landscape) {
+		display: block;
+	}
+}
+
+.cart-summary-total{
+	p{
+		@extend .summary-total;
+	}
+}
+
+.cart-summary-subtotal{
+	margin-bottom:$sc-margin-lv3;
+	font-weight:$sc-font-weight-bold;
+	text-transform:uppercase;
+	font-size:$sc-font-size-s;
+}
+
+.cart-summary-subtotal-legend{
+	font-size:$sc-font-size-s;
+	text-transform:capitalize;
+	font-weight:$sc-font-weight-normal;
+	margin:0px $sc-margin-lv3 $sc-margin-lv3 $sc-margin-lv3;
+}
+
+.cart-summary-grid{
+	clear:both;
+}
+
+.cart-summary-grid-float{
+	@extend .summary-grid-float;
+}
+
+.cart-summary-shipping-cost-applied{
+	margin-bottom:$sc-margin-lv4;
+	font-size:$sc-font-size-m;
+}
+
+.cart-summary-grid-left{
+	padding-left:$sc-padding-lv3;
+}
+
+.cart-summary-grid-right{
+	float:right;
+	padding-left: $sc-padding-lv1;
+	padding-right:$sc-padding-lv3;
+}
+
+.cart-summary-remove-action{
+	margin-left: $sc-margin-lv1;
+	cursor: pointer;
+	cursor: hand;
+
+	i {
+		@extend .icon-base;
+		@extend %fa-times-circle;
+		color: $sc-color-secondary;
+		position: relative;
+		top: 2px;
+	}
+}
+
+/* Summary extend labels */
+
+.cart-summary-label-shipto{
+	@extend .cart-summary-grid-left;
+}
+
+.cart-summary-label-shipto-success {
+}
+
+.cart-summary-label-shipping{
+	@extend .cart-summary-grid-left;
+}
+
+.cart-summary-amount-shipping{
+	@extend .cart-summary-grid-right;
+}
+
+.cart-summary-amount-handling{
+	@extend .cart-summary-grid-right;
+}
+
+.cart-summary-label-tax{
+	@extend .cart-summary-grid-left;
+}
+
+.cart-summary-amount-tax{
+	@extend .cart-summary-grid-right;
+}
+
+.cart-summary-label-total{
+	@extend .cart-summary-grid-left;
+}
+
+.cart-summary-amount-total{
+	@extend .cart-summary-grid-right;
+}
+
+.cart-summary-label-subtotal{
+	@extend .cart-summary-grid-left;
+}
+
+.cart-summary-amount-subtotal{
+	@extend .cart-summary-grid-right;
+}
+
+.cart-summary-label-discount-total{
+	@extend .cart-summary-grid-left;
+	font-size:$sc-font-size-m;
+}
+
+.cart-summary-amount-discount-total{
+	@extend .cart-summary-grid-right;
+	font-size:$sc-font-size-m;
+}
+
+.cart-summary-label{
+	display:block;
+}
+
+.cart-summary-input-country{
+
+	margin-bottom:$sc-margin-lv2;
+}
+
+/* GIFT CERTIFICATES */
+.cart-summary-giftcertificate-applied {
+	padding-bottom: $sc-padding-lv2;
+}
+
+.cart-summary-giftcertificate-applied-title {
+	@extend .cart-summary-grid-float;
+}
+
+.cart-summary-promocode{
+	font-size:$sc-font-size-m;
+	overflow:hidden;
+}
+
+.cart-summary-promocode-container {
+	margin-top: $sc-margin-lv3;
+}
+
+.cart-summary-discount-applied{}
+
+.cart-summary-expander-tooltip{
+	@extend .sc-tooltip;
+}
+
+/* FIX (rename/move)*/
+.cart-summary-item-quantity-subtotal{
+	font-weight: $sc-font-weight-normal;
+}
+
+.cart-summary-zip-code{
+	@extend .input-small;
+	width: 100%;
+}
+
+.cart-summary-button-proceed-checkout{
+	@extend .button-proceed-checkout;
+}
+
+.cart-summary-btn-paypal-express{
+	@extend .btn-paypal-express;
+
+	margin-left: -$sc-margin-lv3;
+  margin-right: -$sc-margin-lv3;
+  margin-bottom: $sc-margin-lv3;
+
+	@media (min-width: $screen-sm-min), (orientation: landscape) {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+}
+
+.cart-summary-btn-paypal-express-image {
+	width: 100%;
+
+	@media (max-width: $screen-xs-max) {
+		width: auto;
+	}
+}
+
+.cart-summary-continue-shopping {
+	@extend .small-title-navigable;
+	display: inline-block;
+	margin-top: $sc-margin-lv2;
+}
+
+.cart-summary-login-to-see-price {
+	font-weight: normal;
+}
+
+.cart-summary-message {
+	@extend .message;
+ }
+
+.cart-summary-msg-description {
+	@extend .message-info;
+	display: block;
+	text-align: left;
+	margin-left: $sc-margin-lv2;
+	margin-right: $sc-margin-lv2;
+}
+
+.cart-summary-pickup-container {
+	margin-bottom:$sc-margin-lv4;
+	font-size:$sc-font-size-m;
+}
+
+.cart-summary-pickup-label-free {
+	@extend .cart-summary-grid-right;
+	color: $sc-color-success;
+}

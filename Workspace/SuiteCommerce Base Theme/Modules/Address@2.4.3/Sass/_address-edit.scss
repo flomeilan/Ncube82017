@@ -1,0 +1,40 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.address-edit {
+    @extend .box-column;
+}
+.address-edit-form-button-submit {
+    @extend .button-primary;
+    @extend .button-medium;
+}
+.address-edit-form-button-cancel {
+    @extend .button-secondary;
+    @extend .button-medium;
+    margin-top: $sc-margin-lv2;
+
+    @media (min-width: $screen-sm-min) {
+        margin-left: $sc-margin-lv2;
+        margin-top: 0;
+    }
+}
+.address-edit-form-button-reset {
+    @extend .button-tertiary;
+    @extend .button-medium;
+    margin-top: $sc-margin-lv2;
+    margin-top: $sc-margin-lv2;
+
+    @media (min-width: $screen-sm-min) {
+        margin-left: $sc-margin-lv2;
+        margin-top: 0;
+    }
+}
+
+.address-edit-body{}
+.address-edit-footerform-actions{}
+.address-edit-fields-group-form-control{}
+.address-edit-fields-group-form-controls{}

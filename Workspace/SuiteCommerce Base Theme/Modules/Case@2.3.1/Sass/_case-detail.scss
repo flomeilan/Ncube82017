@@ -1,0 +1,217 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+/* Case Detail */
+$case-detail-field-message-date-color: #FFF;
+
+.case-detail-back-btn {
+    @extend .button-back;
+}
+
+.case-detail-header-row {
+    @extend .row;
+}
+
+.case-detail-header-title {
+    margin-bottom:$sc-margin-lv2;
+}
+
+.case-detail-header-col-left {
+    @extend .col-xs-12;
+    @extend .col-sm-6;
+
+    p {
+        @extend .info;
+    }
+}
+
+.case-detail-header-col-right {
+    @extend .col-xs-12;
+    @extend .col-sm-6;
+
+    @media (min-width: $screen-sm-min) {
+        text-align:right;
+    }
+}
+
+
+.case-detail-confirm-message {
+}
+
+.case-detail-reply-textarea {
+    display:block;
+    width:100%;
+    min-width: 210px;
+}
+
+.case-detail-header-information {
+    margin-bottom:$sc-margin-lv4;
+}
+
+.case-detail-accordion-container {
+    @extend .accordion-container;
+    margin:0px;
+    overflow:hidden;
+}
+
+.case-detail-accordion-head {
+    @extend .accordion-head;
+    background-color: white;
+}
+
+.case-detail-accordion-head-toggle {
+    @extend .accordion-head-toggle;
+}
+
+.case-detail-accordion-toggle-icon {
+    @extend .accordion-toggle-icon;
+}
+
+.case-detail-accordion-body {
+    @extend .accordion-body;
+}
+
+
+.case-detail-reply-button {
+    @extend .button-primary;
+    @extend .button-medium;
+    margin-bottom:$sc-margin-lv4;
+}
+
+.case-detail-close-case-button {
+    @extend .button-tertiary;
+    @extend .button-small;
+    margin-top: $sc-margin-lv1;
+}
+
+.case-detail-reply-label {}
+
+.case-detail-reply-container {
+    @extend .row;
+    margin:0 0 $sc-margin-lv4 0;
+}
+
+.case-detail-value-type {
+    @extend .sc-value;
+}
+
+.case-detail-value-creation-date {
+    @extend .sc-value;
+}
+
+.case-detail-value-last-message-date {
+    @extend .sc-value;
+}
+
+.case-detail-value-status {
+    @extend .sc-value;
+}
+
+.case-detail-label-type {
+    @extend .sc-label;
+}
+
+.case-detail-label-creation-date {
+    @extend .sc-label;
+}
+
+.case-detail-label-last-message-date {
+    @extend .sc-label;
+}
+
+.case-detail-label-status {
+    @extend .sc-label;
+}
+
+.case-detail-message-group-row {
+    @extend .row;
+    margin:0px;
+}
+
+.case-detail-message-group-row .highlighted {
+    background:$sc-color-theme-background;
+    padding:$sc-padding-lv3 0;
+
+    .case-detail-message {
+        padding:$sc-padding-lv1 $sc-padding-lv4;
+    }
+    .case-detail-field-message-text {
+        margin-left:$sc-margin-lv3;
+    }
+}
+
+.case-detail-message-row {
+    @extend .row;
+    margin:0px;
+    padding:$sc-padding-lv3;
+}
+
+.case-detail-message {
+    padding:$sc-padding-lv1;
+    font-size:$sc-font-size-m;
+}
+
+.case-detail-conversation-background {
+    background: $sc-color-theme-background;
+    padding:$sc-padding-lv8;
+}
+
+.case-detail-message-date-section {
+    position: relative;
+    margin-top: $sc-margin-lv4;
+    text-align:center;
+}
+
+.case-detail-message-date-section:before {
+    content: "";
+    display: block;
+    border-top: 1px solid $sc-color-theme-border-light;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.case-detail-field-message-date {
+    background: $case-detail-field-message-date-color;
+    padding: 0 $sc-padding-lv2;
+    position: relative;
+    z-index: 5;
+    color: $sc-color-theme-400;
+}
+
+.case-detail-field-message-field-message-time {
+    color: $sc-color-theme-400;
+}
+
+.case-detail-field-message-text {
+    padding-left:$sc-padding-lv1;
+    color:$sc-color-copy-light;
+}
+
+.case-detail-field-message-author {
+    font-weight:$sc-font-weight-bold;
+}
+
+.case-detail-message-date-section {
+    margin-left:$sc-padding-lv4;
+    margin-right:$sc-padding-lv4;
+}
+
+.case-detail-title {}
+.case-detail-field-number {}
+.case-detail-field-subject {}
+.case-detail-header-status-info {}
+
+.case-detail-reply-section {
+}
+.case-detail-messages-accordion {}
+.case-detail-field-message-original {}
+
+.case-detail-controls {
+}

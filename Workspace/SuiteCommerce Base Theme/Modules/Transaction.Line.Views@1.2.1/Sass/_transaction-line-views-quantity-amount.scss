@@ -1,0 +1,20 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.transaction-line-views-quantity-amount-label{
+	@extend .sc-label;
+}
+.transaction-line-views-quantity-amount-value{
+	@extend .sc-value;
+}
+
+.transaction-line-views-quantity-amount-non-discounted-amount{
+	@extend .old-price;
+}
+
+.transaction-line-views-quantity-amount-item-amount{
+}

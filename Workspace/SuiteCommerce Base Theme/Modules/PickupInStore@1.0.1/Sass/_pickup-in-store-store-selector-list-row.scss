@@ -1,0 +1,141 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.pickup-in-store-store-selector-list-row {
+    @extend .row;
+
+    padding-top: $sc-padding-lv3;
+    padding-bottom: $sc-padding-lv3;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 1px solid $sc-color-theme-border-light;
+}
+
+.pickup-in-store-store-selector-list-row:first-child {
+    @media (min-width: $screen-md-min) {
+        border: none;
+        padding-top: 0;
+    }
+}
+
+.pickup-in-store-store-selector-list-row-detail {
+    @extend .col-sm-5;
+    @extend .col-md-5;
+
+    padding-left: 0;
+
+    @media (max-width: $screen-sm-max) {
+        padding-right: 0;
+        margin-bottom: $sc-margin-lv2;
+    }
+}
+
+.pickup-in-store-store-selector-list-row-location-name {
+    color: $sc-neutral-shade-600;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pickup-in-store-store-selector-list-row-location-address {
+    color: $sc-color-copy-light;
+    font-size: $sc-font-size-s;
+}
+
+.pickup-in-store-store-selector-list-view-location-data {
+    @extend .pickup-in-store-view-location-data;
+}
+
+.pickup-in-store-store-selector-list-row-opening-hours:hover,
+.pickup-in-store-store-selector-list-row-opening-hours:focus {
+    color: $sc-color-link-hover;
+}
+
+.pickup-in-store-store-selector-list-row-opening-hours-flyout-content {
+    @extend .dropdown-menu;
+    border-radius: 0;
+    border-color: $sc-color-link;
+    padding: $sc-padding-lv2;
+
+    p {
+        font-size: $sc-font-size-s;
+    }
+
+    .locator-venue-details-container-services-hours {
+        margin: 0;
+    }
+}
+
+.pickup-in-store-store-selector-list-row-opening-hours-flyout-content-up{
+    bottom: $sc-margin-lv4;
+    top: auto;
+}
+
+.pickup-in-store-store-selector-list-row-icon-angle-down {
+    @extend .icon-angle-down;
+}
+
+.pickup-in-store-store-selector-list-row-stock {
+    @extend .col-sm-4;
+    @extend .col-md-4;
+
+    @media (max-width: $screen-sm-max) {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: $sc-margin-lv4;
+    }
+}
+
+.pickup-in-store-store-selector-list-row-stock-status-available {
+    color: $sc-color-success;
+}
+
+.pickup-in-store-store-selector-list-row-stock-status-out-of-stock {
+    color: $sc-color-error;
+}
+
+.pickup-in-store-store-selector-list-row-button-box {
+    @extend .col-sm-3;
+    @extend .col-md-3;
+
+    padding-right: 0;
+    text-align: right;
+
+    .pickup-in-store-store-selector-list-row-no-available {
+        color: $sc-color-error;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.pickup-in-store-store-selector-list-row-select-for-pickup {
+    @extend .button-primary;
+    @extend .button-small;
+
+    @media (max-width: $screen-sm-max) {
+        width: auto;
+        float: right;
+    }
+}
+.pickup-in-store-store-selector-list-row-store-selected {
+    color: $sc-color-success;
+    font-weight: $sc-font-weight-semibold;
+
+    i {
+        @extend .fa;
+        @extend %fa-check;
+    }
+}
+
+.pickup-in-store-store-selector-list-row-opening-hours-content {}
+.pickup-in-store-store-selector-list-row-dropdown {
+    position: relative;
+}
+.pickup-in-store-store-selector-list-row-location {}

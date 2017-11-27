@@ -1,0 +1,36 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-cancel-modal
+{
+	h4 {
+		margin-bottom: $sc-margin-lv3;
+	}
+}
+
+.order-history-cancel-modal-actions
+{
+	margin-top: $sc-margin-lv4;
+}
+
+.order-history-cancel-modal-cancel-button
+{
+	@extend .button-primary;
+	@extend .button-medium;
+	margin-bottom: $sc-margin-lv3;
+
+	@media (min-width: $screen-sm-min) {
+		margin-bottom: 0;
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.order-history-cancel-modal-close-button
+{
+	@extend .button-tertiary;
+	@extend .button-medium;
+}

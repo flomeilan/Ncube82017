@@ -1,0 +1,41 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.pickup-in-store-fulfillment-options {
+    font-size: $sc-font-size-s;
+    color: $sc-color-success;
+}
+
+
+.pickup-in-store-fulfillment-options-ship-icon {
+    @extend .icon-truck;
+}
+
+.pickup-in-store-fulfillment-options-pickup-icon {
+    @extend .icon-home;
+}
+
+.pickup-in-store-fulfillment-options-stock-msg-in {
+	@extend .stock-info-in;
+	@extend .product-line-stock-msg;
+}
+
+.pickup-in-store-fulfillment-options-stock-icon-in {
+	@extend .product-line-stock-icon;
+	@extend .stock-info-in-icon;
+}
+
+.pickup-in-store-fulfillment-options-stock-msg-description {
+	@extend .stock-info-description;
+	@extend .product-line-stock-msg;
+}
+
+.pickup-in-store-fulfillment-options-stock-icon-description {
+	@extend .product-line-stock-icon;
+	@extend .icon-info;
+	color: $sc-color-theme-900;
+}

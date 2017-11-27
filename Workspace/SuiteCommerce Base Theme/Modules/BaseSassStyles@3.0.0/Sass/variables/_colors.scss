@@ -1,0 +1,162 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Color palette
+//
+// Here you will find the main user interface color palette for the out of the box theme.
+// Shades of orange, blue-grey, white and grey are used for backgrounds, boders, buttons and text all along the application.
+//
+// Styleguide 1.1
+
+// Primary Color
+//
+// $sc-color-primary - The Primary Color is used for primary actions and highlighted information.
+//
+// Markup:
+// <div class="styleguide-color-primary">sc-color-primary</div>
+//
+// Styleguide 1.1.2
+$sc-color-primary: #e23200;
+
+// Secondary Color
+//
+// $sc-color-secondary - The Secondary Color is used for secondary actions. Different shades of this color are used for theme backgrounds, borders and text.
+//
+// Markup:
+// <div class="styleguide-color-secondary">sc-color-secondary</div>
+//
+// Styleguide 1.1.3
+$sc-color-secondary: #15607b;
+
+// Neutral shades
+//
+// The neutral shade palette is a scale from 1000 (dark) to 0 (light).
+// This theme defines a couple of medium scale values. The developer might find useful to add more intermetiate colors within the scale that might be referenced to this scale.
+//
+// $sc-neutral-shade-900 - The darkest value on this scale is raraly used. It may be found on some texts or backgrounds.
+// $sc-neutral-shade-600 - In occasions you will find this shade assigned to text but most of the times it will be the shade used for shadows.
+// $sc-neutral-shade-300 - This light shade is used exclusively used in texts.
+// $sc-neutral-shade-0 - The lightest value on this scale is largely used and may be usually found in texts, backgrounds and borders.
+//
+//
+// Markup:
+// <div class="styleguide-color-neutral-shade-900">sc-neutral-shade-900</div>
+// <div class="styleguide-color-neutral-shade-600">sc-neutral-shade-600</div>
+// <div class="styleguide-color-neutral-shade-300">sc-neutral-shade-300</div>
+// <div class="styleguide-color-neutral-shade-0">sc-neutral-shade-0</div>
+//
+// Styleguide 1.1.4
+$sc-neutral-shade-base: #222426;
+$sc-neutral-shade-900: $sc-neutral-shade-base;
+$sc-neutral-shade-600: lighten($sc-neutral-shade-base, 18);
+$sc-neutral-shade-300: lighten($sc-neutral-shade-base, 55);
+$sc-neutral-shade-0: lighten($sc-neutral-shade-base, 100);
+
+// Theme Palette
+//
+// Just as the neutral shades palette, the Theme Palette is a scale from 1000 (dark) to 0 (light).
+// This theme defines a couple of medium scale values. The developer might find useful to add more intermetiate colors within the scale that might be referenced to this scale.
+//
+// $sc-color-theme-900 - Used mainly for headings
+// $sc-color-theme-400 - Used mainly for general backgrounds (also referenced as $sc-color-theme-background)
+// $sc-color-theme-300 - Used mainly for borders (also referenced as $sc-color-theme-border-light)
+// $sc-color-theme-200 - Used mainly for borders (also referenced as $sc-color-theme-border)
+//
+// Markup:
+// <div class="styleguide-color-theme-900">sc-color-theme-900</div>
+// <div class="styleguide-color-theme-400">sc-color-theme-400</div>
+// <div class="styleguide-color-theme-300">sc-color-theme-300</div>
+// <div class="styleguide-color-theme-200">sc-color-theme-200</div>
+//
+// Styleguide 1.1.5
+$sc-color-theme-base: $sc-color-secondary;
+$sc-color-theme-900: $sc-color-theme-base;
+$sc-color-theme-400: desaturate(lighten($sc-color-theme-base, 45), 18);
+$sc-color-theme-300: desaturate(lighten($sc-color-theme-base, 60), 22);
+$sc-color-theme-200: desaturate(lighten($sc-color-theme-base, 68), 22);
+
+$sc-color-theme-border: $sc-color-theme-400;
+$sc-color-theme-border-light: $sc-color-theme-300;
+$sc-color-theme-background: $sc-color-theme-200;
+
+// Messagging Palette
+//
+// The message box is defined by a colored text displayed over a colored background with an outline border.
+// It might or may not include an icon in which case it should use the same color as the text.
+// Possible message types are: Success, Warning, Error and Information.
+// Each type is defined by a main color used for text. Background and border colors are calculated according to the main color.
+//
+// $sc-color-success, $sc-color-success-background, $sc-color-success-border - Used for success messages.
+// $sc-color-warning, $sc-color-warning-background, $sc-color-warning-border - Used for warning messages.
+// $sc-color-error, $sc-color-error-background, $sc-color-error-border - Used for error messages.
+// $sc-color-info, $sc-color-info-background, $sc-color-info-border - Used for information messages.
+//
+// Markup:
+// <div class="styleguide-color-success">sc-color-success</div>
+// <div class="styleguide-color-success-border">sc-color-success-border</div>
+// <div class="styleguide-color-success-background">sc-color-success-background</div>
+// <div class="styleguide-color-warning">sc-color-warning</div>
+// <div class="styleguide-color-warning-border">sc-color-warning-border</div>
+// <div class="styleguide-color-warning-background">sc-color-warning-background</div>
+// <div class="styleguide-color-error">sc-color-error</div>
+// <div class="styleguide-color-error-border">sc-color-error-border</div>
+// <div class="styleguide-color-error-background">sc-color-error-background</div>
+// <div class="styleguide-color-info">sc-color-info</div>
+// <div class="styleguide-color-info-border">sc-color-info-border</div>
+// <div class="styleguide-color-info-background">sc-color-info-background</div>
+//
+// Styleguide 1.1.6
+$sc-color-success: #097839;
+$sc-color-success-background: desaturate(lighten($sc-color-success, 69), 20);
+$sc-color-success-border: desaturate(lighten($sc-color-success, 61), 20);
+
+$sc-color-warning: #946a00;
+$sc-color-warning-background: desaturate(lighten($sc-color-warning, 65), 1);
+$sc-color-warning-border: desaturate(lighten($sc-color-warning, 50), 20);
+
+$sc-color-error: #c01a29;
+$sc-color-error-background: lighten($sc-color-error, 54);
+$sc-color-error-border: desaturate(lighten($sc-color-error, 45), 20);
+
+$sc-color-info: $sc-color-secondary;
+$sc-color-info-background: $sc-color-theme-background;
+$sc-color-info-border: $sc-color-theme-border-light;
+
+// Links
+//
+// Links are used primarily as a navigational element. Links may also change what or how data is displayed (view more, show all). If the action taken by the user will change or manipulate data, use a button.
+// Two different color variables are defined for this element:
+//
+// $sc-color-link - The color the link is written with. This color should ensure they look clickable.
+// $sc-color-link-hover - The color with which links are hilighted when hovered.
+//
+// Markup:
+// <div class="styleguide-color-link">sc-color-link</div>
+// <div class="styleguide-color-link-hover">sc-color-link-hover</div>
+//
+// Styleguide 1.1.7
+$sc-color-link: #0067b9;
+$sc-color-link-hover: desaturate(lighten($sc-color-link, 15), 15);
+
+// Copy
+//
+// The out of the box theme uses only 3 different color shades when it comes to rendering text.
+// The shades available are:
+//
+// $sc-color-copy-dark - Used for almost every text on the site.
+// $sc-color-copy - Mainly used for values such as SKU
+// $sc-color-copy-light - Used for labels
+//
+// Markup:
+//<div class="styleguide-color-copy-dark">sc-color-copy-dark</div>
+//<div class="styleguide-color-copy">sc-color-copy</div>
+//<div class="styleguide-color-copy-light">sc-color-copy-light</div>
+//
+// Styleguide 1.1.8
+$sc-color-copy-dark: $sc-neutral-shade-base;
+$sc-color-copy: lighten($sc-neutral-shade-base, 18);
+$sc-color-copy-light: lighten($sc-neutral-shade-base, 35);

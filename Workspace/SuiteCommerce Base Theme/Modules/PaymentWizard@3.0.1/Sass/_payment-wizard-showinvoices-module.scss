@@ -1,0 +1,120 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.payment-wizard-showinvoices-module {
+	margin-bottom: $sc-margin-lv3;
+}
+.payment-wizard-showinvoices-module-expander-head{
+	@extend .accordion-head;
+}
+
+.payment-wizard-showinvoices-module-expander-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.payment-wizard-showinvoices-module-expander-head-toggle-icon{
+	@extend .acordion-head-toggle-icon;
+}
+
+.payment-wizard-showinvoices-module-expander-body{
+	@extend .accordion-body;
+}
+
+.payment-wizard-showinvoices-module-expander-body-wrapper{
+	padding-top: $sc-padding-lv3;
+	padding-bottom: $sc-padding-lv3;
+}
+
+.payment-wizard-showinvoices-module-records{
+	@extend .table-flex;
+
+}
+
+.payment-wizard-showinvoices-module-mobile-header-amount {
+	@extend .sc-label;
+	@media (min-width: $screen-sm-min) {
+		display: none;
+	}
+}
+
+.payment-wizard-showinvoices-module-subtotal {
+	text-align:right;
+	td {
+		border-top: 1px solid $sc-color-theme-border-light;
+		padding:$sc-padding-lv6 $sc-padding-lv3 $sc-padding-lv3 0;
+	}
+}
+
+.payment-wizard-showinvoices-module-subtotal-label {
+	@extend .sc-label;
+}
+
+.payment-wizard-showinvoices-module-value-amount {
+	@extend .sc-value;
+	float:none;
+	@media (min-width: $screen-sm-min) {
+		float:right;
+	}
+}
+
+.payment-wizard-showinvoices-module-value-title {
+	@extend .sc-value;
+	display:block;
+	float:none;
+	@media (min-width: $screen-sm-min) {
+		float:left;
+	}
+}
+
+.payment-wizard-showinvoices-module-value-subtotal{
+	@extend .sc-value;
+	font-weight: $sc-font-weight-bold;
+}
+
+
+.payment-wizard-showinvoices-module-amount{
+	padding-bottom: $sc-padding-lv2;
+	float:none;
+
+	@media (min-width: $screen-sm-min) {
+		float:right;
+	}
+}
+
+.payment-wizard-showinvoices-module-records-head {
+	display:none;
+	@media (min-width: $screen-sm-min) {
+		display: table-row;
+		border-bottom: 1px solid $sc-color-theme-border-light;
+	}
+
+	th {
+		padding-bottom:$sc-padding-lv3;
+	}
+}
+
+.payment-wizard-showinvoices-module-header-number {}
+
+.payment-wizard-showinvoices-module-header-number-value {
+	display:none;
+}
+
+.payment-wizard-showinvoices-module-header-amount {
+	text-align:right;
+	font-weight: $sc-font-weight-normal;
+	width:100%;
+}
+
+.payment-wizard-showinvoices-module-invoices-count{}
+.payment-wizard-showinvoices-module-invoice {
+	td {
+		padding-top:$sc-padding-lv3;
+		padding-bottom:$sc-padding-lv3;
+		width: 100%;
+		clear:both;
+	}
+}

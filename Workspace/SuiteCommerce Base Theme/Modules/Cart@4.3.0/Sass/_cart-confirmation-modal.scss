@@ -1,0 +1,85 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.cart-confirmation-modal {
+	@extend .row;
+}
+.cart-confirmation-modal-img{
+	@extend .col-sm-4;
+}
+.cart-confirmation-modal-details {
+	@extend .col-sm-8;
+
+	.transaction-line-views-price {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+.cart-confirmation-modal-item-name {
+	@extend .medium-title-navigable;
+	margin-bottom: $sc-padding-lv3;
+	display: inline-block;
+}
+.cart-confirmation-modal-price {
+	@extend .middle-price;
+}
+.cart-confirmation-modal-sku{
+}
+.cart-confirmation-modal-sku-label{
+	@extend .sc-sku-label;
+}
+.cart-confirmation-modal-sku-value{
+	@extend .sc-sku-value;
+	}
+.cart-confirmation-modal-quantity-label{
+	@extend .sc-label;
+}
+.cart-confirmation-modal-quantity-value{
+	@extend .sc-value;
+}
+.cart-confirmation-modal-actions {
+	margin-top: $sc-padding-lv3;
+}
+.cart-confirmation-modal-view-cart{
+	@extend .col-sm-6;
+	padding-left: 0;
+	padding-right: 0;
+
+	@media (min-width: $screen-md-min) {
+		padding-right: $sc-padding-lv1;
+	}
+}
+.cart-confirmation-modal-continue-shopping {
+	@extend .col-sm-6;
+	padding-right: 0;
+	padding-left: 0;
+
+	@media (min-width: $screen-md-min) {
+		padding-left: $sc-padding-lv1;
+	}
+}
+.cart-confirmation-modal-view-cart-button {
+	@extend .button-primary;
+	@extend .button-large;
+	width: 100%;
+ 	font-weight: $sc-font-weight-semibold;
+ 	margin-top: $sc-margin-lv3;
+	border: 1px solid $sc-color-primary;
+	text-align: center;
+}
+.cart-confirmation-modal-view-cart-button:disabled{
+	border: 1px solid $sc-color-button-primary-disable;
+}
+.cart-confirmation-modal-continue-shopping-button {
+	@extend .button-tertiary;
+	@extend .button-large;
+	width: 100%;
+	margin-top: $sc-margin-lv3;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.cart-confirmation-modal-options{}
+.cart-confirmation-modal-quantity-number{}

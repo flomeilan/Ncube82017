@@ -1,0 +1,101 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.requestquote-wizard-module-items-line-quantity-qty{
+	@extend .transaction-line-views-cell-actionable-qty;
+}
+
+.requestquote-wizard-module-items-line-quantity-qty-form{
+}
+
+.requestquote-wizard-module-items-line-quantity-container-qty {
+	margin-bottom: 10px;
+
+	.requestquote-wizard-module-items-line-quantity-label-qty {
+		vertical-align: middle;
+		color: $sc-color-copy-dark;
+		margin-bottom:$sc-margin-lv2;
+		font-weight: 600;
+
+		@media (min-width: $screen-sm-min) {
+			display: table-cell;
+		}
+
+		@media (min-width: $screen-md-min) {
+			display: none
+		}
+	}
+	.requestquote-wizard-module-items-line-quantity-input-qty {
+		vertical-align: middle;
+		overflow: hidden;
+		padding-left: 0;
+
+		@media (min-width: $screen-sm-min) {
+			display: table-cell;
+			padding-left: $sc-padding-lv4;
+		}
+
+		@media (min-width: $screen-md-min) {
+			padding-left: 0;
+		}
+	}
+	.quantity-pricing-flyout-content {
+		padding: 0;
+
+		tr {
+			border-bottom: 0;
+}
+		th,
+		.quantity-pricing-table-body-quantity,
+		.quantity-pricing-table-body-price {
+			display: table-cell;
+			padding: $sc-padding-lv1;
+		}
+	}
+}
+
+.requestquote-wizard-module-items-line-quantity-label-qty{
+	@extend .transaction-line-views-cell-actionable-label-qty;
+}
+
+.requestquote-wizard-module-items-line-quantity-input-qty{
+	@extend .transaction-line-views-cell-actionable-qty;
+}
+
+.requestquote-wizard-module-items-line-quantity-amount-value{
+}
+
+.requestquote-wizard-module-items-line-quantity-title-help{
+	clear: both;
+	margin-top: $sc-margin-lv1;
+	display: block;
+	font-weight:$sc-font-weight-light;
+}
+
+.requestquote-wizard-module-items-line-quantity-add, .requestquote-wizard-module-items-line-quantity-remove{
+	@extend .button-secondary;
+	background-color:lighten($sc-color-theme-900, 20%);
+	border:1px solid lighten($sc-color-theme-900, 20%);;
+	width: $sc-target-size-mobile;
+	height: $sc-target-size-mobile;
+	float: left;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.requestquote-wizard-module-items-line-quantity-value {
+	// height: $sc-target-size-mobile;
+ 	padding:$sc-margin-lv2 $sc-padding-lv3 $sc-margin-lv2 $sc-padding-lv3;
+ 	width: 90px;
+ 	text-align: right;
+	background-color: $sc-color-theme-background;
+	border: 0;
+	-webkit-border-radius: 0 0 0 0;
+	border-radius: 0 0 0 0;
+}

@@ -1,0 +1,327 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.list-header-title-ahead {
+  font-size: $sc-font-size-l;
+  margin-top: $sc-margin-lv4;
+  margin-bottom: $sc-margin-lv3;
+  font-weight: $sc-font-weight-semibold;
+
+  @media (min-width:$screen-sm-min) {
+    margin-top: $sc-margin-lv3;
+    float: left;
+  }
+
+  @media (min-width: $screen-md-min) {
+    margin-top: $sc-margin-lv2;
+  }
+}
+
+.list-header-view {
+  border-bottom: 1px solid $sc-color-theme-border-light;
+  position: relative;
+}
+
+.list-header-view-accordion {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+}
+
+.list-header-view-accordion-link {
+
+  margin-bottom:$sc-margin-lv2;
+
+  @media (min-width: $screen-md-min) {
+    margin-bottom:0;
+  }
+
+
+  @media (min-width: $screen-md-min) {
+    margin-bottom:0;
+  }
+
+  a {
+    @extend .sc-value;
+  }
+}
+
+.list-header-view-accordion-header {
+  @extend .list-header-expander;
+  float: none;
+  margin-bottom: $sc-margin-lv3;
+}
+
+.list-header-view-filter-button{
+  @extend .list-header-expander-button;
+  width: auto;
+  overflow: hidden;
+
+  @media (min-width: $screen-sm-min) {
+    position: relative;
+  }
+}
+.list-header-view-filter-button-icon {
+  @extend .list-header-expander-icon;
+  @include rotate(180deg);
+}
+.facet-header-white-well {
+  .list-header-view-filter-button-icon  {
+    @include rotate(0deg);
+  }
+}
+.list-header-view-accordion-body {
+  @extend .list-header-filters;
+  padding-bottom: $sc-padding-lv3;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin: 0;
+  }
+
+  @media (min-width: $screen-md-min) {
+    width: 100%;
+    display: block;
+    padding-bottom: 0;
+  }
+}
+.list-header-view-accordion-body-header {
+  @extend .list-header-filters-wrapper;
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+  padding: $sc-margin-lv3;
+
+  @media (min-width: $screen-md-min) {
+    padding: 0;
+  }
+}
+.list-header-view-accordion-body-label {
+  @extend .list-header-filter-column;
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 $sc-padding-lv1;
+
+  @media (min-width: $screen-md-min){
+    width: auto;
+  }
+  .list-header-view-accordion-body-select {
+    width: calc(100% - #{$sc-margin-lv2});
+  }
+}
+.list-header-view-accordion-body-label-group {
+  @extend .list-header-view-accordion-body-label;
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $screen-md-min){
+    width: auto;
+    margin-left: $sc-margin-lv2;
+  }
+  .list-header-view-accordion-body-select {
+    width: calc(100% - #{$sc-margin-lv2} - 44px);
+
+    @media (min-width: $screen-md-min){
+      float: left;
+    }
+  }
+}
+
+.list-header-view-accordion-body-label:only-child {
+  padding-right: 0;
+}
+
+input.list-header-view-accordion-body-input {
+  @extend .list-header-filter-input;
+  margin-bottom: $sc-margin-lv2;
+  padding: $sc-padding-lv2 $sc-padding-lv1;
+
+  @media (min-width: $screen-sm-min){
+    display: inline-block;
+    width: 100%;
+  }
+
+  @media (min-width: $screen-md-min){
+    margin-bottom: 0;
+    margin-right: $sc-margin-lv2;
+    width: 150px;
+  }
+}
+
+.list-header-view-datepicker-from,
+.list-header-view-datepicker-to {
+  @extend .datepicker-container;
+  margin-right: $sc-margin-lv2;
+  margin-bottom: $sc-margin-lv2;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  label {
+    display: inline-block;
+    margin-right: $sc-margin-lv2;
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+    }
+  }
+
+  .list-header-view-datepicker-container-input {
+    @extend .datepicker-container-input;
+    display: inline-block;
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+.list-header-view-datepicker-from {
+  div.list-header-view-datepicker-container-input {
+    margin-right: $sc-margin-lv1;
+  }
+}
+
+.list-header-view-datepicker-to {
+  div.list-header-view-datepicker-container-input {
+    margin-left: $sc-margin-lv1;
+  }
+}
+
+.list-header-view-accordion-body-calendar-icon {
+  @extend .datepicker-calendar-icon;
+  color: $sc-color-secondary;
+}
+
+.list-header-view-accordion-body-clear {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  font-size: $sc-font-size-m;
+  padding: 12px;
+
+  @media (min-width: $screen-md-min){
+    bottom: 0;
+  }
+}
+.list-header-view-accordion-body-clear-icon {
+  @extend .datepicker-clear-icon;
+}
+.list-header-view-accordion-body-select {
+  @extend .list-header-filter-input;
+  width: calc(100% - #{$sc-margin-lv2} - 44px);
+  margin: 0 $sc-margin-lv2 0 0;
+  float: left;
+
+  @media (min-width: $screen-md-min){
+    display: inline-block;
+    float: none;
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+.list-header-view-accordion-body-button-sort {
+  @extend .icon-button-controls;
+  height: 44px;
+  width: 44px;
+  margin-left: $sc-margin-lv1;
+
+  i {
+    font-size: $sc-font-size-m;
+    width: auto
+  }
+
+  .listheader-filter-sortorder-arrow-selected {
+    color: $sc-color-primary;
+  }
+
+  @media (min-width: $screen-md-min){
+    margin: 0;
+  }
+}
+.list-header-view-accordion-body-button-sort-up {
+  @extend .fa;
+  @extend %fa-long-arrow-up;
+  font-size: $sc-font-size-m;
+  width: auto
+}
+.list-header-view-accordion-body-button-sort-down {
+  @extend .fa;
+  @extend %fa-long-arrow-down;
+  font-size: $sc-font-size-m;
+  width: auto
+}
+.list-header-view-select-all{
+  padding: $sc-padding-lv2 0;
+
+  @media(min-width: $screen-sm-min) {
+    padding-left: $sc-padding-lv2;
+  }
+}
+
+.list-header-view-paginator {
+  @extend .clearfix;
+  margin: $sc-margin-lv4 0 $sc-margin-lv1;
+}
+
+.list-header-view-from {}
+
+.list-header-view-to {}
+
+.list-header-view-sorts {
+  @extend .list-header-view-accordion-body-label-group;
+  margin-bottom: $sc-margin-lv2;
+
+  @media(min-width: $screen-md-min) {
+    float: right;
+  }
+}
+
+.list-header-view-filters {
+  @extend .list-header-view-accordion-body-label;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 0 $sc-padding-lv1 0 0;
+
+  @media(min-width: $screen-md-min) {
+    margin-top: 0;
+    float: right;
+    width: auto;
+    padding: 0;
+  }
+
+  .list-header-view-accordion-body-select {
+    width: 100%;
+
+    @media(min-width: $screen-lg-min) {
+      margin-top: 0;
+    }
+  }
+}
+.Invoices {
+  .list-header-view-sorts {
+    padding-right: 0;
+  }
+  .list-header-view-filters .list-header-view-accordion-body-select {
+
+    @media(min-width: $screen-md-min) {
+      margin-top: 0;
+    }
+  }
+}

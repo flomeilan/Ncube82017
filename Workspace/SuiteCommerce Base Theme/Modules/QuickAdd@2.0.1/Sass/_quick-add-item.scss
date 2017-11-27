@@ -1,0 +1,43 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quick-add-item-results {
+	@extend .item-results;
+}
+
+.quick-add-item-results-image {
+	@extend .item-results-image;
+	padding-left: $sc-padding-lv3;
+}
+
+.quick-add-item-results-content {
+	@extend .item-results-content;
+	.product-views-price-login-to-see-prices {
+    	padding-left: 0;
+	}
+}
+
+.quick-add-item-results-title {
+	@extend .item-results-title;
+}
+.quick-add-item-shadow {
+	@extend .tt-dropdown-menu-shadow-fix;
+}
+.quick-add-item-no-results {
+	@extend .no-results
+}
+.quick-add-item-searching {
+	@extend .searching
+}
+
+.quick-add-item-sku {}
+.quick-add-item-sku-label {
+	@extend .sc-label;
+}
+.quick-add-item-sku-value {
+	@extend .sc-value;
+}

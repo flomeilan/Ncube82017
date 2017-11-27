@@ -1,0 +1,76 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.reorder-items-list-button-back {
+	@extend .button-back;
+}
+
+.reorder-items-list-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.reorder-items-list-hedaer {
+	border-top: 1px solid $sc-color-theme-border-light;
+	padding: $sc-padding-lv3 0;
+}
+
+.reorder-items-list .transaction-line-views-cell-actionable-options {
+	@media (min-width: $screen-sm-min){
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.reorder-items-list .list-header-view-filters {
+	padding: 0;
+}
+.reorder-items-list	.transaction-line-views-cell-actionable-table{
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	@extend .table-row-with-border;
+}
+
+
+.reorder-items-actions-quantity{
+	clear:both;
+	display: block;
+	overflow: hidden;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.reorder-items-list-empty {
+	@extend .list-empty;
+}
+
+
+.reorder-items-list-reorder-items-table{
+	@extend .transaction-line-views-cell-actionable-table;
+}
+
+.reorder-items-list-paginator{
+	@extend .case-list-paginator !optional;
+}
+
+.reorder-items-list-empty-button{}
+
+.reorder-items-list-empty-section {
+	padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+ 	text-align:center;
+}
+.reorder-items-list {
+	.quantity-pricing-flyout-content {
+		padding: 0;
+
+		tr {
+			border-bottom: 0;
+		}
+		th,
+		.quantity-pricing-table-body-quantity,
+		.quantity-pricing-table-body-price {
+			display: table-cell;
+			padding: $sc-padding-lv1;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+/////////////////////////////////////////////////////////////
+//Basic styles for table elements
+
+td, th {
+    vertical-align:top;
+    padding-left: $sc-padding-lv3;
+    padding-right: $sc-padding-lv3;
+}
+
+th {
+    font-size: 14px;
+    color: $sc-color-copy-light;
+}
+
+.column-type-select {
+
+    padding-right: 0;
+    width: 15px;
+
+    input{
+        margin: 0;
+    }
+}
+
+.column-type-image {
+    @include box-sizing(content-box);
+    width: $img-small;
+    min-width: $img-small;
+    text-align:center;
+
+    @media (min-width: $screen-sm-min) {
+        width: $img-medium;
+        min-width: $img-medium;
+        padding-left: $sc-padding-lv3;
+        padding-right: $sc-padding-lv3;
+    }
+}
+
+.column-type-actions {
+    min-width: 140px;
+
+    @media (min-width: $screen-sm-min) {
+        text-align: right;
+    }
+}
+
+.column-type-number {
+
+    @media(min-width: $screen-sm-min) {
+        text-align:right;
+    }
+}
+
+.column-type-date {
+
+    @media(min-width: $screen-sm-min) {
+        text-align:right;
+    }
+}
+
+.column-type-amount {
+
+    @media(min-width: $screen-lg-min) {
+        text-align:right;
+    }
+}
+
+.column-type-quantity {
+
+    @media(min-width: $screen-lg-min) {
+        text-align:right;
+    }
+}

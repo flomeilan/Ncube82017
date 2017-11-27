@@ -1,0 +1,168 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.case-list {
+    @media (min-width: $screen-sm-min) {
+        .case-list-list-header-container {
+            clear: both;
+        }
+    }
+
+    .list-header-view-filters {
+        padding: 0;
+    }
+}
+.case-list-header {
+    @extend .list-header;
+    position: relative;
+    margin-bottom: $sc-margin-lv3;
+    display: inline-block;
+    width: 100%;
+}
+.case-list-title {
+    @extend .list-header-title;
+    float:none;
+    @media (min-width: $screen-sm-min) {
+        float: left;
+    }
+}
+.case-list-header-button-new {
+    @extend .list-header-button;
+    margin-top: $sc-padding-lv4;
+    position: absolute;
+    top:25;
+    z-index:1;
+    right: 0;
+
+    @media (min-width: $screen-sm-min) {
+        margin-top: 0;
+        z-index:0;
+        top: 0;
+        margin-bottom: $sc-margin-lv3;
+    }
+}
+
+.case-list-paginator {
+    margin: $sc-margin-lv3 0;
+    @extend .clearfix;
+
+    .case-list-global-views-pagination,
+    .case-list-global-views-current-page,
+    .global-views-showing-current  {
+        float: right;
+    }
+    .global-views-showing-current {
+
+        @media (min-width: $screen-sm-min) {
+            padding-top: $sc-padding-lv2;
+        }
+    }
+    .case-list-global-views-current-page {
+        margin-right: $sc-margin-lv3;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: $sc-margin-lv2;
+        }
+    }
+}
+
+
+.case-list-content-table {
+    @extend .recordviews-row-header;
+}
+
+.case-list-content-table-header-row {
+    @extend .recordviews-table;
+}
+
+.case-list-content-table-header-row-title {
+    @extend .recordviews-header !optional;
+    width: 20%;
+}
+.case-list-content-table-header-row-subject {
+    @extend .recordviews-header !optional;
+    width: 15%;
+}
+.case-list-content-table-header-row-creation-date {
+    @extend .recordviews-date-header;
+    width: 20%;
+}
+.case-list-content-table-header-row-date {
+    @extend .recordviews-date-header;
+    width: 25%;
+}
+.case-list-content-table-header-row-status {
+    @extend .recordviews-status-header !optional;
+    width: 20%;
+}
+
+.case-list-results-container
+{
+    @media (min-width: $screen-md-min) {
+
+        .recordviews-title {
+            width: 20%;
+        }
+
+        .recordviews-subject {
+            width: 15%;
+        }
+        .recordviews-creation-date {
+            width: 20%;
+            text-align: right;
+        }
+        .recordviews-date {
+            width: 25%;
+        }
+
+        .recordviews-status {
+            width: 20%;
+        }
+    }
+}
+
+.case-list-button-back {
+    @extend .button-back;
+}
+
+.case-list-button-back-icon {
+    @extend .button-back-icon;
+}
+
+.case-list-empty {
+    @extend .list-empty;
+}
+
+.case-list-header {
+    @extend .list-header;
+}
+.case-list-title {
+    @extend .list-header-title;
+}
+.case-list-content-table {
+}
+.case-list-content-table-header-row {
+}
+.case-list-content-table-header-row-title {
+}
+.case-list-content-table-header-row-subject {
+}
+.case-list-content-table-header-row-detail1 {
+}
+.case-list-content-table-header-row-detail2 {
+}
+.case-list-content-table-header-row-status {
+}
+
+.case-list-confirm-message{
+    clear:both;
+    float:none;
+}
+
+.case-list-recordviews-table{
+    @extend .recordviews-table;
+}

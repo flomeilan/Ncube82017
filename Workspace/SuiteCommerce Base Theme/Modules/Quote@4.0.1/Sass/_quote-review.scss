@@ -1,0 +1,465 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quote-review {
+}
+
+.quote-review-header-title {
+}
+
+.quote-review-view-number {
+  margin-bottom: $sc-margin-lv4;
+}
+
+.quote-review-view-number-label {
+  @extend .sc-label;
+}
+
+.quote-review-view-number-value {
+  @extend .sc-value;
+}
+
+.quote-review-content-wrapper {
+  @extend .row;
+}
+
+.quote-review-content-wrapper-col-left {
+  @extend .col-xs-12;
+  @extend .col-sm-7;
+  @extend .col-md-8;
+}
+
+.quote-review-content-wrapper-col-right {
+  @extend .col-xs-12;
+  @extend .col-sm-5;
+  @extend .col-md-4;
+  float: right;
+  margin-bottom: $sc-margin-lv4;
+}
+
+.quote-review-items {
+  margin-bottom: $sc-margin-lv4;
+}
+
+.quote-review-accordion-head {
+  @extend .accordion-head;
+}
+
+.quote-review-accordion-head-toggle {
+  @extend .accordion-head-toggle;
+}
+
+.quote-review-accordion-head-toggle-icon {
+  @extend .acordion-head-toggle-icon;
+}
+
+.quote-review-accordion-body {
+  @extend .accordion-body;
+}
+
+.quote-review-accordion-container {
+  @extend .accordion-container;
+}
+
+.quote-review-table {
+  @extend .table-flex-item-navigable;
+}
+
+.quote-review-accordion-container-table-header {
+  display: none;
+
+  @media (min-width: $screen-md-min) {
+  display: table-header-group;
+  width: 100%;
+  }
+}
+
+.quote-review-accordion-body {
+  .quote-review-accordion-container-table-header-amount,
+  .quote-review-accordion-container-table-header-totalprice,
+  .quote-review-accordion-container-table-header-quantity {
+    @media (min-width: $screen-md-min) {
+      width: 15%;
+      text-align: right;
+    }
+  }
+}
+
+.quote-review-accordion-container-table-header-image {
+  @extend .item-view-cell-navigable-item-image !optional;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.quote-review-accordion-container-table-header-details {
+  color: $sc-color-theme-400;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.quote-review-accordion-container-table-header-quantity {
+  color: $sc-color-theme-400;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.quote-review-accordion-container-table-header-totalprice,
+.quote-review-accordion-container-table-header-amount {
+  color: $sc-color-theme-400;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.quote-review-module-shipping-details {
+  @extend .box-column;
+}
+
+.quote-review-module-shipping-details-body {
+  @extend .row;
+}
+
+.quote-review-module-shipping-details-address,
+.quote-review-module-shipping-details-method {
+  @extend .col-sm-6;
+}
+
+.quote-review-module-shipping-details-method {
+  margin-top: $sc-margin-lv4;
+
+  @media (min-width: $screen-md-min) {
+  margin-top: 0;
+  }
+}
+
+.quote-review-module-shipping-title {
+  margin-bottom: $sc-margin-lv4;
+}
+
+.quote-review-module-shipping-options {
+
+}
+
+.quote-review-module-delivery-method-summary {
+  @extend .info-card;
+  min-height: inherit;
+}
+
+.quote-review-paymentmethod-selector-module {
+  @extend .box-column;
+
+  .creditcard-edit-form {
+    clear: both;
+  }
+
+  .creditcard-edit-form-securitycode {
+    padding: 0;
+  }
+}
+
+.quote-review-paymentmethod-selector-module-header {
+  margin-bottom: $sc-margin-lv3;
+  color: $sc-color-theme-900;
+}
+
+.quote-review-paymentmethod-selector-module-options {
+  @extend .input-large;
+  margin-bottom: $sc-margin-lv2;
+  padding: $sc-padding-lv2;
+}
+
+.quote-review-paymentmethod-invoice-module {
+}
+
+.quote-review-paymentmethod-invoice-module-row {
+  @extend .clearfix;
+  width: 100%;
+  margin-bottom: $sc-margin-lv3;
+}
+
+.quote-review-paymentmethod-invoice-module-terms {
+  float: left;
+  width: 50%;
+}
+
+.quote-review-paymentmethod-invoice-module-terms-label {
+  @extend .sc-value;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.quote-review-paymentmethod-invoice-module-terms-value {
+  @extend .sc-label;
+}
+
+.quote-review-paymentmethod-invoice-module-balance {
+  float: right;
+  width: 50%;
+}
+
+.quote-review-paymentmethod-invoice-module-balance-label {
+  @extend .sc-value;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.quote-review-paymentmethod-invoice-module-balance-value {
+  @extend .sc-label;
+}
+
+.quote-review-paymentmethod-invoice-module-purchase-order-label {
+  @extend .sc-value;
+  display: block;
+  margin-bottom: $sc-margin-lv1;
+  font-size: $sc-font-size-m;
+  font-weight: $sc-font-weight-semibold;
+}
+
+.quote-review-paymentmethod-invoice-module-purchase-order-optional {
+  @extend .input-optional;
+  font-weight: $sc-font-weight-normal;
+}
+
+.quote-review-paymentmethod-invoice-module-purchase-order-value {
+  @extend .input-large;
+  margin-bottom: 0;
+}
+
+.quote-review-paymentmethod-invoice-module-conditions {
+  @extend .sc-label;
+}
+
+.quote-review-showpayments-module-details {
+  @extend .box-column;
+}
+
+.quote-review-showpayments-module-details-body {
+  @extend .row;
+
+  h3 {
+    margin-bottom: $sc-margin-lv3;
+  }
+}
+
+.quote-review-showpayments-module-billing-address {
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+  margin-bottom: $sc-margin-lv3;
+
+  @media (min-width: $screen-sm-min) {
+  margin-bottom: 0;
+  }
+}
+
+.quote-review-showpayments-module-payment-method {
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+
+  .payment-methods-summary {
+    min-height: inherit;
+  }
+}
+
+.payment-methods-summary {
+  @extend .info-card;
+}
+
+.quote-review-showpayments-module-payment-address-edit {
+  margin-top: $sc-margin-lv3;
+  display: inline-block;
+}
+
+.quote-review-showpayments-module-billing-address-edit {
+  margin-bottom: $sc-margin-lv3;
+  margin-top: $sc-margin-lv3;
+  display: inline-block;
+
+  @media (min-width: $screen-sm-min) {
+  margin-bottom: 0;
+  }
+}
+
+.quote-review-showpayments-module-section-header {
+
+}
+
+.quote-review-showpayments-module-payment-methods-summary {
+  @extend .payment-methods-summary;
+}
+
+.quote-review-step-actions {
+  @extend .col-xs-12;
+  @extend .col-sm-7;
+  @extend .col-md-8;
+}
+
+.quote-review-step-button-container {
+  @extend .wizard-step-button-container !optional;
+}
+
+.quote-review-step-button-continue {
+  @extend .wizard-step-button-continue !optional;
+}
+
+.quote-review-step-button-back {
+  @extend .wizard-step-button-back !optional;
+}
+
+.quote-review-summary-container {
+  @extend .summary-container;
+}
+
+.quote-review-summary-container {
+  @extend .summary-container;
+}
+
+.quote-review-summary-body {
+}
+
+.quote-review-summary-title {
+  @extend .summary-title;
+}
+
+.quote-review-summary-grid-float {
+  @extend .summary-grid-float;
+}
+
+.quote-review-summary-grid-right {
+  @extend .summary-grid-right;
+}
+
+.quote-review-summary-subtotal {
+  @extend .summary-subtotal;
+}
+
+.quote-review-summary-subtotal-label {
+}
+
+.quote-review-summary-shipping-cost-applied {
+}
+
+.quote-review-summary-grid-float {
+  @extend .summary-grid-float;
+}
+
+.quote-review-summary-shipping-cost-formatted,
+.quote-review-summary-tax-total-formatted,
+.quote-review-summary-grid-right {
+  @extend .summary-grid-right;
+}
+
+.quote-review-summary-total {
+  p {
+    @extend .summary-total;
+  }
+}
+
+.quote-review-summary-order-message {
+  display: none;
+
+  @media (min-width: $screen-sm-min) {
+  display: block;
+  margin-bottom: $sc-margin-lv2;
+  }
+}
+
+.quote-review-termsandconditions-module-default {
+  display: none;
+
+  @media (min-width: $screen-sm-min) {
+  display: block;
+  float: right;
+  margin-bottom: $sc-margin-lv4;
+  }
+}
+
+.quote-review-termsandconditions-module-text {
+}
+
+.quote-review-termsandconditions-module-top,
+.quote-review-termsandconditions-module-bottom {
+  @media (min-width: $screen-sm-min) {
+    display: none;
+  }
+}
+
+.quote-review-termsandconditions-module-bottom {
+  margin-top: $sc-margin-lv4;
+}
+
+.quote-review-submitbutton-module-top {
+  margin-top: $sc-margin-lv2;
+  margin-bottom: $sc-margin-lv4;
+
+  @media (min-width: $screen-sm-min) {
+  display: none;
+  }
+}
+
+.quote-review-submitbutton-module-button {
+  @extend .wizard-step-button-continue !optional;
+}
+
+.quote-review-summary-button-container {
+  @extend .col-xs-12;
+  background: $sc-color-theme-background;
+  padding: $sc-padding-lv3;
+  margin-bottom: $sc-margin-lv2;
+  display: none;
+
+  @media (min-width: $screen-sm-min) {
+  display: block;
+  }
+}
+
+.quote-review-summary-button-place-order {
+  @extend .button-large;
+  @extend .button-generic;
+  @extend .button-primary;
+  display: block;
+}
+
+.quote-review-summary-promocode {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.quote-review-summary-promocode-expander-head {
+}
+
+.quote-review-summary-promocode-expander-head-toggle {
+  @extend .accordion-head-toggle-secondary;
+}
+
+.quote-review-summary-promocode-expander-toggle-icon {
+  @extend .accordion-toggle-icon-secondary;
+}
+
+.quote-review-summary-promocode-expander-body {
+  @extend .accordion-body-alt;
+}
+
+.quote-review-summary-promocode-tooltip {
+  @extend .sc-tooltip;
+}
+
+.quote-review-summary-promocode-expander-container {
+}
+
+.quote-review-paymentmethod-selector-module-payment-method-selector-content {
+}
+
+.quote-review-disclaimer {
+  @extend .col-md-8;
+  margin-bottom: $sc-margin-lv4;
+  margin-top: $sc-margin-lv2;
+}
+
+.quote-review-disclaimer-message {
+  color: $sc-color-secondary;
+}

@@ -1,0 +1,493 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Labels
+//
+// Clear labels let the user know which data is being requested in each field.
+// An optimal placement of labels would be above the input. This helps the user to scan through the form and increase completion rate.
+// Labels also serve to distinguish between input fields that are required vs those that are optional.
+//
+// Markup:
+// <label>Label</label><br>
+// <label>Label <small>(optional)</small></label><br>
+// <label>Required <small class="required">*</small></label><br>
+//
+// Styleguide 2.3.1
+
+label {
+	display:inline-block;
+	margin-bottom: $sc-margin-lv2;
+	font-size: $sc-font-size-m;
+	color: $sc-color-copy-dark;
+
+	small {
+		font-size: $sc-font-size-s;
+
+		&.required {
+			color: $sc-color-primary;
+		}
+	}
+}
+
+// TODO: This definition should be deleted. Previously used to indicate required fields.
+.input-required {
+	font-size: $sc-font-size-s;
+	color: $sc-color-primary;
+}
+
+// TODO: This definition should be deleted. Previously used to indicate optional fields.
+.input-optional {
+	font-size: $sc-font-size-s;
+}
+
+// Form input fields
+//
+// Text fields are the most common type of fields on forms. They enable the user to enter data.
+//
+// Markup:
+// <label for="sample-field">Sample field:</label>
+// <input type="text" name="sample-field" /><br>
+// <label for="sample-field-disabled">Sample field disabled:</label>
+// <input type="text" name="sample-field-disabled" disabled /><br>
+//
+// Styleguide 2.3.2
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="date"],
+input[type="number"]
+{
+	@include appearance(none);
+	@include placeholder {
+		color: $sc-color-copy-light;
+	}
+	@include border-radius(0);
+	padding: $sc-padding-lv2;
+	display: block;
+	color: $sc-color-copy;
+	font-size: $sc-font-size-m;
+	border: 1px solid $sc-color-theme-border;
+	width: 100%;
+	margin-bottom: $sc-margin-lv2;
+
+	&:disabled {
+		border-color: $sc-color-theme-border-light;
+		background-color: $sc-color-theme-background;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline-block;
+	width: auto;
+	margin-right: $sc-margin-lv2;
+}
+
+input[type="date"]
+{
+	-webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-outer-spin-button, /* Removes arrows */
+input[type="date"]::-webkit-inner-spin-button, /* Removes arrows */
+input[type="date"]::-webkit-clear-button, /* Removes blue cross */
+input[type="date"]::-webkit-calendar-picker-indicator /* Removes arrow calendar */ {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input.input-large, select.input-large {
+	width: auto;
+
+	@media (min-width: $screen-md-min) {
+		min-width: 300px;
+	}
+}
+
+input.input-medium, select.input-medium {
+	width: auto;
+	min-width: 200px;
+
+	@media (min-width: $screen-sm-min) {
+		min-width: 300px;
+	}
+}
+
+input.input-small, select.input-small {
+	width: auto;
+	min-width: 80px;
+}
+
+// Form select fields
+//
+// Select menus are used when multiple pre-populated options are available for the user to select.
+// Use select menus when you have more than 3 options for users to select from otherwise use radio buttons.
+//
+// Markup:
+// <label for="sample-select">Sample select:</label>
+// <select name="sample-select">
+//   <option selected disabled>choose one</option>
+//   <option value="1">1</option>
+//   <option value="2">2</option>
+//   <option value="3">3</option>
+// </select>
+// <label for="sample-select">Sample select disabled:</label>
+// <select name="sample-select" disabled>
+//   <option selected disabled>choose one</option>
+//   <option value="1">1</option>
+//   <option value="2">2</option>
+//   <option value="3">3</option>
+// </select>
+//
+// Styleguide 2.3.3
+
+select {
+	@include angle-down-background($sc-color-theme-900); // TODO: Mixin definition should be changed in order to use chevron icon instead an image background
+	@include appearance(none);
+	@include border-radius(0);
+	display: block;
+	border: 1px solid $sc-color-theme-border;
+
+	padding: $sc-padding-lv2;
+	padding-right: $sc-padding-lv6;
+	margin-bottom: $sc-margin-lv2;
+
+	background-color: $sc-neutral-shade-0;
+	background-repeat: no-repeat;
+	background-size: $sc-navigation-icon-size;
+	background-position: 100% 100%;
+
+	color: $sc-neutral-shade-600;
+	font-size: $sc-font-size-m;
+
+	&:disabled {
+		border:1px solid $sc-color-theme-border-light;
+		background-color: $sc-color-theme-background;
+	}
+}
+
+// Select with icon
+//
+// Markup:
+// <div class="selector">
+// 	<span class="selector-icon">
+// 		<i class="fa fa-globe"></i>
+// 	</span>
+// 	<select class="selector-select">
+// 		<option disabled selected>Choose one</option>
+// 		<option value="1">1</option>
+// 		<option value="2">2</option>
+// 		<option value="3">3</option>
+// 	</select>
+// </div>
+//
+// Styleguide 2.3.4
+
+.selector {
+	display: block;
+	margin: $sc-margin-lv3;
+	float: left;
+	@media(min-width: $screen-md-min) {
+		margin: 0px;
+	}
+
+	&-select {
+		width: 175px;
+		border: 1px solid $sc-color-theme-border-light;
+		border-left: none;
+		height: $sc-target-size;
+		float: right;
+		@media(min-width: $screen-md-min) {
+			width: 233px;
+		}
+	}
+
+	&-icon {
+	  width: 40px;
+	  background: $sc-color-theme-background;
+	  color: $sc-color-theme-900;
+	  font-size: $sc-font-size-xxl;
+	  border: 1px solid $sc-color-theme-border-light;
+	  border-right: none;
+	  float: left;
+	  line-height: 41px;
+	  height: 44px;
+	  text-align: center;
+	}
+}
+
+@media screen and (min-width:0\0) {
+	//ie dont understand appearance on selects. so hide background.
+	select[class] {
+		background-image:none;
+		padding-right: $sc-padding-lv2;
+	}
+}
+
+// Input Type Textarea
+//
+// Text areas are used for multi-line input fields, typically used if the user needs to enter larger data like explanations or messages.
+//
+// Markup:
+// <textarea>Textarea</textarea>
+//
+// Styleguide 2.3.5
+
+textarea {
+	border:1px solid $sc-color-theme-border;
+	padding: $sc-margin-lv2;
+	font-size: $sc-font-size-m;
+	color: $sc-color-copy-dark;
+	width:100%;
+	min-height: 105px;
+	@include appearance(none);
+	@include border-radius(0);
+
+	@media (min-width: $screen-sm-min){
+		width: auto;
+		min-width: 300px;
+	}
+}
+
+// Input Type Checkbox
+//
+// A group of Check boxes are used when multiple choices are possible within a list of options. Selecting one option does not deselect the others.
+// Use a stand-alone check box if there is a single option that the user can turn on or off.
+// Both label and box are tappable, making it easier for the user to check the box.
+//
+// Markup:
+// <div class="checkbox">
+//   <input id="my-checkbox" type="checkbox">
+//   <label for="my-checkbox"> Check me out</label>
+// </div>
+// <br>
+// <div class="checkbox">
+//   <input id="my-checkbox-1-disabled" type="checkbox" checked disabled>
+//   <label for="my-checkbox-1-disabled"> This option is disabled</label>
+//   <br>
+//   <input id="my-checkbox-2-disabled" type="checkbox" disabled>
+//   <label for="my-checkbox-2-disabled"> This option is disabled</label>
+// </div>
+//
+// Styleguide 2.3.6
+
+.checkbox {
+	display: inline;
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	input[type="checkbox"] + label::before {
+		font-family: FontAwesome;
+		content: "\f096";
+		font-size: 18px;
+		color: $sc-color-theme-base;
+		display: inline-block;
+		width: 18px;
+		vertical-align: middle;
+	}
+
+	input[type="checkbox"]:disabled + label {
+		color: $sc-neutral-shade-300;
+	}
+
+	input[type="checkbox"]:disabled + label::before {
+		color: $sc-neutral-shade-300;
+	}
+
+	input[type="checkbox"]:checked + label::before {
+		content: "\f046";
+	}
+}
+
+// Input Type Radio
+//
+// Radio buttons are used when there are a few options to select from and only one selection is allowed.
+// With radio buttons options remain visible and easier to scan.
+//
+// Markup:
+// <div class="radio">
+//  	<input id="radio-1" name="my-radio-button" value="1" type="radio" checked>
+//		<label for="radio-1"> Check me out</label>
+//		<br>
+//  	<input id="radio-2" name="my-radio-button" value="2" type="radio">
+//		<label for="radio-2"> Check me out</label>
+// </div>
+// <br>
+// <div class="radio">
+//  	<input id="radio-disabled-1" name="my-radio-disabled-button" value="1" type="radio" checked disabled>
+//		<label for="radio-disabled-1"> This option is disabled</label>
+//		<br>
+//  	<input id="radio-disabled-2" name="my-radio-disabled-button" value="2" type="radio" disabled>
+//		<label for="radio-disabled-2"> This option is disabled</label>
+// </div>
+//
+// Styleguide 2.3.7
+
+.radio {
+	display: inline;
+
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="radio"] + label::before {
+		font-family: FontAwesome;
+		content: "\f10c";
+		font-size: 18px;
+		color: $sc-color-theme-base;
+		display: inline-block;
+		width: 18px;
+		vertical-align: middle;
+	}
+
+	input[type="radio"]:disabled + label {
+		color: $sc-neutral-shade-300;
+	}
+
+	input[type="radio"]:disabled + label::before {
+		color: $sc-neutral-shade-300;
+	}
+
+	input[type="radio"]:checked + label::before {
+		content: "\f192";
+	}
+}
+
+// Error state
+//
+// If an input returns an error while validating, a wide red border is applied to make it visible and stand out from other input elements.
+// A brief error message is also displayed below.
+//
+// Markup:
+// <div data-validation-error>
+//   <input type="text"  />
+//   <br>
+//   <select>
+//     <option selected disabled>choose one</option>
+//     <option value="1">1</option>
+//     <option value="2">2</option>
+//     <option value="3">3</option>
+//   </select>
+//   <br>
+//   <textarea>Textarea</textarea>
+// </div>
+//
+// Styleguide 2.3.8
+
+[data-validation-error] input,
+[data-validation-error] select,
+[data-validation-error] textarea
+{
+	border-color: $sc-color-error;
+	outline-color: desaturate(lighten($sc-color-error, 18), 35);
+}
+
+// Help Text
+//
+// Use brief and concise help text only when needed. Help text is placed below the field since it's optional for the user to read it.
+// Avoid long help text accompanying the form.
+//
+// Markup:
+// <label>Sample field:</label>
+// <input type="text"  />
+// <small class="help-text"> Help text always must be defined after input.</small>
+//
+// Styleguide 2.3.9
+
+.help-text {
+	color: $sc-color-theme-900;
+	display: block;
+	margin-top: -$sc-margin-lv1;
+	margin-bottom: $sc-margin-lv3;
+}
+
+// Tooltip
+//
+// Use tool-tips for longer descriptions that the user can click on when they need help for that field.
+//
+// Markup:
+// <i class="sc-tooltip" data-toggle="tooltip" data-placement="right" title="Sample text"></i>
+//
+// Styleguide 2.3.10
+
+.sc-tooltip {
+	@extend .fa;
+	@extend %fa-question-circle;
+	color: $sc-color-secondary;
+	cursor:pointer;
+}
+
+.tooltip.in {
+	opacity: 1;
+}
+
+.tooltip > .tooltip-inner {
+	background-color: $sc-color-theme-background;
+	padding: $sc-padding-lv2;
+	color: $sc-color-secondary;
+	border:1px solid $sc-color-theme-border-light;
+	font-size: $sc-font-size-s;
+	text-align: left;
+}
+
+.tooltip.top > .tooltip-arrow {
+	border-top-color: $sc-color-theme-border-light;
+	border-width: 5px 5px 0;
+}
+
+.tooltip.bottom > .tooltip-arrow {
+	border-bottom-color: $sc-color-theme-border-light;
+	border-width: 0 5px 5px;
+}
+
+.tooltip.right .tooltip-arrow,
+.tooltip.left .tooltip-arrow {
+	border-right-color: $sc-color-theme-border-light;
+}
+
+// Popover
+//
+// Markup:
+// <i class="sc-popover" placement="top" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i>
+//
+// Styleguide 2.3.11
+
+.sc-popover {
+	@extend .fa;
+	@extend %fa-question-circle;
+	color: $sc-color-secondary;
+	cursor:pointer;
+}
+
+.popover {
+	border: 1px solid $sc-color-theme-border-light;
+	color: $sc-color-secondary;
+	font-size: $sc-font-size-s;
+	z-index: 99999;
+	padding: 0;
+
+	&.right > .arrow {
+		border-right-color: $sc-color-theme-border-light;
+	}
+
+	&.left > .arrow {
+		border-left-color: $sc-color-theme-border-light;
+	}
+
+	&.bottom > .arrow:after {
+		border-bottom-color: $sc-color-theme-background;
+	}
+}
+
+.popover-title {
+	background-color: $sc-color-theme-background;
+}
+

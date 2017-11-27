@@ -1,0 +1,20 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-register-guest-module-create-account-button{
+	@extend .button-primary;
+	@extend .button-large;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-wizard-register-guest-module-button-toggle-create-account{
+	@extend .button-medium;
+	@extend .button-secondary;
+	margin-bottom:$sc-margin-lv4;
+}
+
+.order-wizard-register-guest-module-form-container{}

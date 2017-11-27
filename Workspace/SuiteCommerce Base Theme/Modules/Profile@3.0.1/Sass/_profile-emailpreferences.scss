@@ -1,0 +1,55 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.profile-emailpreferences{
+	@extend .box-column-bordered
+}
+
+.profile-emailpreferences-form{
+	margin-top: $sc-margin-lv4;
+}
+
+.profile-emailpreferences-subtitle{
+	margin-bottom: $sc-margin-lv2;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.profile-emailpreferences-button-back {
+	@extend .button-back
+}
+
+.profile-emailpreferences-button-back-icon{
+	@extend .button-back-icon;
+}
+
+.profile-emailpreferences-controls-group{
+	margin-top: $sc-margin-lv2;
+}
+
+.profile-emailpreferences-controls-submit{
+	margin-top: $sc-margin-lv6;
+}
+
+.profile-emailpreferences-divider{
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.profile-emailpreferences-submit{
+	@extend .button-primary;
+	@extend .button-medium;
+}
+
+.profile-emailpreferences-reset{
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-positioning-stack2next;
+}
+
+.profile-emailpreferences-title{}
+.profile-emailpreferences-alert-placeholder{}
+.profile-emailpreferences-label{}

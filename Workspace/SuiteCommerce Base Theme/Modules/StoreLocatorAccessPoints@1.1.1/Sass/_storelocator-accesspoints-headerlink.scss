@@ -1,0 +1,39 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.storelocator-accesspoints-headerlink-link {
+	min-width: $sc-target-size;
+	text-align: center;
+	display:inline;
+	color: $sc-color-secondary;
+	float:left;
+	@media(min-width: $screen-sm-min) {
+		float:none;
+	}
+}
+
+
+.storelocator-accesspoints-headerlink-link-icon {
+	@extend .icon-map-marker;
+	color: $sc-color-secondary;
+	font-size:25px;
+	position:relative;
+	top:10px;
+	@media(min-width: $screen-sm-min) {
+		float:none;
+		font-size:15px;
+		margin-right:$sc-margin-lv1;
+		position:static;
+	}
+}
+
+.storelocator-accesspoints-headerlink-link-text {
+	display:none;
+	@media(min-width: $screen-sm-min) {
+		display: inline-block;
+	}
+}

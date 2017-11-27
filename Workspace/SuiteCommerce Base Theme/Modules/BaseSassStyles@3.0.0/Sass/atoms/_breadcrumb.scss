@@ -1,0 +1,51 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Breadcrumb
+//
+// Breadcrumbs allow users to know the current location on a hierarchically structured website.
+// They are commonly used to navigate back to a higher level of hierarchy.
+//
+// Markup:
+// <div class="breadcrumb">
+//   <ul>
+//     <li class="breadcrumb-item"><a href="#">Home</a></li> <span class="breadcrumb-divider">/</span>
+//     <li class="breadcrumb-item"><a href="#">Category</a></li> <span class="breadcrumb-divider">/</span>
+//     <li class="breadcrumb-item">Item</li>
+//   </ul>
+// </div>
+//
+// Styleguide 2.7.1
+
+.breadcrumb {
+	display: none;
+
+	@media(min-width: $screen-md-min) {
+		clear: both;
+		margin-bottom: $sc-margin-lv6;
+		display: block;
+	}
+}
+
+.breadcrumb-item {
+	display: inline;
+}
+
+.breadcrumb-item-active {
+	@extend .breadcrumb-item;
+	color: $sc-color-theme-900;
+}
+
+.breadcrumb-divider {
+	display: inline;
+	padding: 0 $sc-padding-lv1;
+}
+
+.breadcrumb-divider-icon {
+	@extend .icon-angle-right;
+	font-size: $sc-font-size-m;
+}

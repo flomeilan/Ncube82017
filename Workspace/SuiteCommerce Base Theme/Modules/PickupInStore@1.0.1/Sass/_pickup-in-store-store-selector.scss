@@ -1,0 +1,94 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.pickup-in-store-store-selector-search {
+    margin-top: $sc-margin-lv4;
+}
+
+.pac-container {
+    z-index: 1050;
+}
+
+.pickup-in-store-store-selector-search .store-locator-search-search-view {
+    padding: 0;
+}
+
+.pickup-in-store-store-selector-search input {
+    @extend .input-medium;
+}
+
+.pickup-in-store-store-selector-search .store-locator-search-enter-location label {
+    display: block;
+    clear: both;
+    font-weight: normal;
+}
+
+@media (min-width: $screen-md-min) {
+
+    .pickup-in-store-store-selector-search .store-locator-search-group-form-controls {
+
+
+        display: inline-block;
+    }
+    .pickup-in-store-store-selector-search .store-locator-search-input-autocomplete{
+    	width: inherit;
+    }
+
+    .pickup-in-store-store-selector-search .store-locator-search-buttons-container {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: $sc-margin-lv4;
+    }
+
+    .pickup-in-store-store-selector-search .store-locator-search-buttons-container-find {
+        display: inline-block;
+        width: auto;
+        padding-left: 0;
+        float: none;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .pickup-in-store-store-selector-search .store-locator-search-buttons-container-find .store-locator-search-button-find {
+        width: auto;
+    }
+
+    .pickup-in-store-store-selector-search .store-locator-search-buttons-container-or-wrap {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+        padding: 0;
+        float: none;
+    }
+
+    .pickup-in-store-store-selector-search .store-locator-search-buttons-container-or-wrap .store-locator-search-buttons-container-or {
+        width: auto;
+        border: none;
+        padding: 0;
+        float: none;
+        margin-bottom: 0;
+
+        span {
+            padding: 0;
+            top: 0;
+        }
+    }
+
+    .pickup-in-store-store-selector-search .store-locator-search-buttons-container-geolocalization {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        float: none;
+    }
+
+    .pickup-in-store-store-selector-search .store-locator-search-buttons-container-geolocalization .store-locator-search-button-current {
+        width: auto;
+    }
+}
+
+.pickup-in-store-store-selector {}
+.pickup-in-store-store-selector-search {}

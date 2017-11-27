@@ -1,0 +1,37 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-payments-info-cards-row{
+	margin-left:-$sc-margin-lv3;
+	margin-right:-$sc-margin-lv3;
+}
+
+.order-history-payments-info-cards-container {
+	@extend .col-sm-6;
+	@extend .col-xs-12;
+
+	.order-history-payments-info-cards {
+	@extend .info-card;
+	margin-bottom:$sc-margin-lv4;
+	}
+}
+
+.order-history-payments-method-title {
+	margin-bottom: $sc-margin-lv4;
+}
+
+.order-history-payments-label {
+	@extend .order-history-other-payments-table-body-label;
+}
+
+.order-history-payments-label-payment-number {
+	font-size:$sc-font-size-m;
+}
+
+.order-history-payments-info-card-amount-info{}
+.order-history-payments-info-card-date-info{}
+.order-history-payments-info-card-payment-link{}
