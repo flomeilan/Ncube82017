@@ -5,6 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../extensions/SuiteCommerce/SuiteCommerce Base Theme/1.0.0/font-awesome/custom/fontawesome-webfont.eot?v=4.2.0");
@@ -2935,6 +2936,8 @@ hr {
   left: 0;
   right: 0;
   width: 100%; }
+
+body { }
 
 /*
 	© 2017 NetSuite Inc.
@@ -13105,13 +13108,13 @@ input.list-header-view-accordion-body-input {
   background: white; }
 
 .header-subheader {
-  background: #f1f8fa;
+  background: #222;
   display: none;
   text-align: right;
-  font-size: 1rem;
-  color: #15607b;
-  border-top: 1px solid #d2e8f0;
-  border-bottom: 1px solid #d2e8f0; }
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #afafaf;
+  font-family: 'Roboto Condensed', sans-serif; }
   @media (min-width: 768px) {
     .header-subheader {
       display: block; } }
@@ -13119,12 +13122,35 @@ input.list-header-view-accordion-body-input {
 .header-subheader-container {
   padding-right: 30px; }
 
+.header-subheader-login {
+  float: left;
+  height: 36px;
+  text-align: left;
+  display: none; }
+  .header-subheader-login li {
+    display: inline-block;
+    color: #959595;
+    line-height: 36px; }
+    .header-subheader-login li i, .header-subheader-login li a {
+      color: #959595; }
+      .header-subheader-login li i:hover, .header-subheader-login li a:hover {
+        color: #fff; }
+    .header-subheader-login li:nth-child(2) {
+      text-transform: lowercase; }
+  @media (min-width: 768px) {
+    .header-subheader-login {
+      display: block; } }
+
 .header-subheader-options {
   padding-top: 10px;
   padding-bottom: 10px; }
   .header-subheader-options li {
     display: inline;
     padding-left: 15px; }
+    .header-subheader-options li i, .header-subheader-options li a {
+      color: #959595; }
+      .header-subheader-options li i:hover, .header-subheader-options li a:hover {
+        color: #fff; }
 
 .header-subheader-settings-link {
   display: inline;
@@ -13748,6 +13774,9 @@ input.list-header-view-accordion-body-input {
 
 .header-profile-menu-login-container {
   margin-right: 5px; }
+  @media (min-width: 992px) {
+    .header-profile-menu-login-container {
+      display: none; } }
 
 .header-profile-menu-login li {
   display: inline-block; }

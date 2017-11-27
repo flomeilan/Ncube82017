@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2643,6 +2644,8 @@ hr {
   left: 0;
   right: 0;
   width: 100%; }
+
+body { }
 
 /*
 	© 2017 NetSuite Inc.
@@ -11952,13 +11955,13 @@ input.order-wizard-msr-package-creation-edit-quantity-item-editable-quantity-nor
   background: white; }
 
 .header-subheader {
-  background: #f1f8fa;
+  background: #222;
   display: none;
   text-align: right;
-  font-size: 1rem;
-  color: #15607b;
-  border-top: 1px solid #d2e8f0;
-  border-bottom: 1px solid #d2e8f0; }
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #afafaf;
+  font-family: 'Roboto Condensed', sans-serif; }
   @media (min-width: 768px) {
     .header-subheader {
       display: block; } }
@@ -11966,12 +11969,35 @@ input.order-wizard-msr-package-creation-edit-quantity-item-editable-quantity-nor
 .header-subheader-container {
   padding-right: 30px; }
 
+.header-subheader-login {
+  float: left;
+  height: 36px;
+  text-align: left;
+  display: none; }
+  .header-subheader-login li {
+    display: inline-block;
+    color: #959595;
+    line-height: 36px; }
+    .header-subheader-login li i, .header-subheader-login li a {
+      color: #959595; }
+      .header-subheader-login li i:hover, .header-subheader-login li a:hover {
+        color: #fff; }
+    .header-subheader-login li:nth-child(2) {
+      text-transform: lowercase; }
+  @media (min-width: 768px) {
+    .header-subheader-login {
+      display: block; } }
+
 .header-subheader-options {
   padding-top: 10px;
   padding-bottom: 10px; }
   .header-subheader-options li {
     display: inline;
     padding-left: 15px; }
+    .header-subheader-options li i, .header-subheader-options li a {
+      color: #959595; }
+      .header-subheader-options li i:hover, .header-subheader-options li a:hover {
+        color: #fff; }
 
 .header-subheader-settings-link {
   display: inline;
@@ -12595,6 +12621,9 @@ input.order-wizard-msr-package-creation-edit-quantity-item-editable-quantity-nor
 
 .header-profile-menu-login-container {
   margin-right: 5px; }
+  @media (min-width: 992px) {
+    .header-profile-menu-login-container {
+      display: none; } }
 
 .header-profile-menu-login li {
   display: inline-block; }
