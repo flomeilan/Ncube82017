@@ -1,3 +1,4 @@
+
 {{!
 	© 2017 NetSuite Inc.
 	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
@@ -5,12 +6,13 @@
 	may use this code subject to the terms that govern your access and use.
 }}
 
+
 <div data-view="Global.BackToTop"></div>
 <div class="footer-content">
     <div id="banner-footer" class="content-banner banner-footer" data-cms-area="global_banner_footer" data-cms-area-filters="global"></div>
     <div class="footer-content-nav">
 		{{#if showFooterNavigationLinks}}
-<<<<<<< HEAD
+
 			<ul class="footer-content-nav-list">
 				{{#each footerNavigationLinks}}
 					<li>
@@ -94,7 +96,6 @@
             	<div data-view="FooterContent" class="footer-content-nav-list"></div>
         </div>
 		</div>
->>>>>>> 46f29499198648be7a1ea9b67c1e87efb8abe5c1
 		{{/if}}
             <div class="footer-content-copyright">
             {{translate '&copy; 2008-2015 Company Name'}}
