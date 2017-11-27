@@ -289,13 +289,13 @@ th {
 .product-details-quickview-actions-container-add-to-quote, .order-wizard-msr-package-creation-single-address .address-details, .order-wizard-msr-package-details-address-card, .order-wizard-msr-shipmethod-package-address,
 .order-wizard-msr-shipmethod-package-delivery-method, .order-wizard-showshipments-actionable-module-shipping-address, .order-wizard-showshipments-actionable-module-shipping-method, .order-wizard-showshipments-actionable-module-shipping-details-address,
 .order-wizard-showshipments-actionable-module-shipping-details-method, .order-wizard-showshipments-module-shipping-address, .order-wizard-showshipments-module-shipping-method, .col-md-6, .order-wizard-address-module-single .address-details, .order-wizard-paymentmethod-creditcard-module-selected-card, .product-details-full-content-header, .product-details-full-main-content-left, .product-details-full-main-content-right, .col-lg-6, .col-xs-7, .col-sm-7, .backbone-collection-view-cell-span7, .cart-left, .cart-detailed-left, .order-wizard-step-review-main,
-.order-wizard-step-content-main, .order-wizard-step-actions, .order-wizard-address-cell7, .product-details-quickview-details, .col-md-7, .cart-promocode-form-summary-container-input, .col-lg-7, .col-xs-8, .header-mini-cart-subtotal-amount, .col-sm-8, .backbone-collection-view-cell-span8, .cart-confirmation-modal-details, .order-wizard-address-cell8, .order-wizard-paymentmethod-external-module-column-right, .order-wizard-paymentmethod-paypal-module-column-right, .order-wizard-msr-package-creation-shipping-left, .store-locator-main-layout-right, .store-locator-details-layout-right, .col-md-8, .order-wizard-cartitems-pickup-in-store-details-item-list, .order-wizard-showshipments-module-shipping-details-items, .footer-simplified-content-nav, .footer-content-nav, .col-lg-8, .col-xs-9, .transaction-line-views-cell-actionable-expanded-details, .transaction-line-views-cell-actionable-expanded-actions, .transaction-line-views-cell-actionable-details, .transaction-line-views-cell-actionable-actions, .header-mini-cart-item-cell-details, .col-sm-9, .backbone-collection-view-cell-span9, .order-wizard-address-cell9, .col-md-9, .order-wizard-step-review-main,
+.order-wizard-step-content-main, .order-wizard-step-actions, .order-wizard-address-cell7, .product-details-quickview-details, .col-md-7, .cart-promocode-form-summary-container-input, .col-lg-7, .col-xs-8, .header-mini-cart-subtotal-amount, .col-sm-8, .backbone-collection-view-cell-span8, .cart-confirmation-modal-details, .order-wizard-address-cell8, .order-wizard-paymentmethod-external-module-column-right, .order-wizard-paymentmethod-paypal-module-column-right, .order-wizard-msr-package-creation-shipping-left, .store-locator-main-layout-right, .store-locator-details-layout-right, .col-md-8, .order-wizard-cartitems-pickup-in-store-details-item-list, .order-wizard-showshipments-module-shipping-details-items, .footer-simplified-content-nav, .col-lg-8, .col-xs-9, .transaction-line-views-cell-actionable-expanded-details, .transaction-line-views-cell-actionable-expanded-actions, .transaction-line-views-cell-actionable-details, .transaction-line-views-cell-actionable-actions, .header-mini-cart-item-cell-details, .col-sm-9, .backbone-collection-view-cell-span9, .order-wizard-address-cell9, .col-md-9, .order-wizard-step-review-main,
 .order-wizard-step-content-main, .order-wizard-step-actions, .col-lg-9, .cart-left, .cart-detailed-left, .cart-empty, .cart-detailed-empty, .col-xs-10, .col-sm-10, .backbone-collection-view-cell-span10, .order-wizard-address-cell10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .backbone-collection-view-cell-span11, .order-wizard-address-cell11, .col-md-11, .col-lg-11, .col-xs-12, .backbone-collection-view-cell-span2, .backbone-collection-view-cell-span3, .backbone-collection-view-cell-span4, .backbone-collection-view-cell-span5, .backbone-collection-view-cell-span6, .backbone-collection-view-cell-span7, .backbone-collection-view-cell-span8, .backbone-collection-view-cell-span9, .backbone-collection-view-cell-span10, .backbone-collection-view-cell-span11, .backbone-collection-view-cell-span12, .saveforlater-cell, .creditcard-section, .creditcard-security-code-section, .login-register-title, .login-register-wrapper-column-login,
 .login-register-wrapper-column-register, .order-wizard-step-review-main,
 .order-wizard-step-content-main, .order-wizard-step-review-secondary,
 .order-wizard-step-content-secondary, .order-wizard-step-actions, .order-wizard-address-cell2, .order-wizard-address-cell3, .order-wizard-address-cell4, .order-wizard-address-cell5, .order-wizard-address-cell6, .order-wizard-address-cell7, .order-wizard-address-cell8, .order-wizard-address-cell9, .order-wizard-address-cell10, .order-wizard-address-cell11, .order-wizard-address-cell12, .order-wizard-cart-summary-button-container, .order-wizard-cartitems-pickup-in-store-details-address, .order-wizard-cartitems-pickup-in-store-details-item-list, .order-wizard-paymentmethod-external-module-column-left, .order-wizard-paymentmethod-external-module-column-right, .order-wizard-paymentmethod-paypal-module-column-left, .order-wizard-paymentmethod-paypal-module-column-right, .order-wizard-showpayments-module-billing-address, .order-wizard-showpayments-module-payment-method, .product-details-full-main-content-left, .product-details-full-main-content-right, .product-details-quickview-actions-container-add-to-cart, .product-details-quickview-actions-container-add-to-wishlist,
 .product-details-quickview-actions-container-add-to-quote, .order-wizard-msr-shipmethod-package-address,
-.order-wizard-msr-shipmethod-package-delivery-method, .order-wizard-showshipments-actionable-module-shipping-address, .order-wizard-showshipments-actionable-module-shipping-method, .order-wizard-showshipments-module-shipping-address, .order-wizard-showshipments-module-shipping-method, .order-wizard-submitbutton-container, .requestquote-wizard-step-content-right, .store-locator-main-layout-left, .store-locator-details-layout-left, .store-locator-results-buttons-container-find, .store-locator-results-buttons-container-geolocalization, .store-locator-search-buttons-container-find, .store-locator-search-buttons-container-geolocalization, .store-locator-search-buttons-container-or, .footer-simplified-content-nav, .footer-simplified-content-copyright, .footer-content-nav, .footer-content-right, .col-sm-12, .cart-empty, .cart-detailed-empty, .order-wizard-address-module-single .address-details, .col-md-12, .col-lg-12 {
+.order-wizard-msr-shipmethod-package-delivery-method, .order-wizard-showshipments-actionable-module-shipping-address, .order-wizard-showshipments-actionable-module-shipping-method, .order-wizard-showshipments-module-shipping-address, .order-wizard-showshipments-module-shipping-method, .order-wizard-submitbutton-container, .requestquote-wizard-step-content-right, .store-locator-main-layout-left, .store-locator-details-layout-left, .store-locator-results-buttons-container-find, .store-locator-results-buttons-container-geolocalization, .store-locator-search-buttons-container-find, .store-locator-search-buttons-container-geolocalization, .store-locator-search-buttons-container-or, .footer-simplified-content-nav, .footer-simplified-content-copyright, .footer-content-nav, .footer-content-right, .col-sm-12, .cart-empty, .cart-detailed-empty, .order-wizard-address-module-single .address-details, .col-md-12, .footer-content-nav, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -589,8 +589,8 @@ th {
 
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .global-views-rating-by-star-label, .col-md-3, .order-wizard-step-review-secondary,
-  .order-wizard-step-content-secondary, .col-md-4, .order-wizard-cartitems-pickup-in-store-details-address, .order-wizard-showshipments-module-shipping-details-address, .footer-simplified-content-copyright, .footer-content-right, .col-md-5, .cart-promocode-form-summary-promocode-container-button, .global-views-rating-by-star-second-label, .global-views-rating-by-star-percentage-area, .col-md-6, .order-wizard-address-module-single .address-details, .order-wizard-paymentmethod-creditcard-module-selected-card, .product-details-full-content-header, .product-details-full-main-content-left, .product-details-full-main-content-right, .col-md-7, .cart-promocode-form-summary-container-input, .col-md-8, .order-wizard-cartitems-pickup-in-store-details-item-list, .order-wizard-showshipments-module-shipping-details-items, .footer-simplified-content-nav, .footer-content-nav, .col-md-9, .order-wizard-step-review-main,
-  .order-wizard-step-content-main, .order-wizard-step-actions, .col-md-10, .col-md-11, .col-md-12 {
+  .order-wizard-step-content-secondary, .col-md-4, .order-wizard-cartitems-pickup-in-store-details-address, .order-wizard-showshipments-module-shipping-details-address, .footer-simplified-content-copyright, .footer-content-right, .col-md-5, .cart-promocode-form-summary-promocode-container-button, .global-views-rating-by-star-second-label, .global-views-rating-by-star-percentage-area, .col-md-6, .order-wizard-address-module-single .address-details, .order-wizard-paymentmethod-creditcard-module-selected-card, .product-details-full-content-header, .product-details-full-main-content-left, .product-details-full-main-content-right, .col-md-7, .cart-promocode-form-summary-container-input, .col-md-8, .order-wizard-cartitems-pickup-in-store-details-item-list, .order-wizard-showshipments-module-shipping-details-items, .footer-simplified-content-nav, .col-md-9, .order-wizard-step-review-main,
+  .order-wizard-step-content-main, .order-wizard-step-actions, .col-md-10, .col-md-11, .col-md-12, .footer-content-nav {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -607,7 +607,7 @@ th {
     width: 50%; }
   .col-md-7, .cart-promocode-form-summary-container-input {
     width: 58.33333%; }
-  .col-md-8, .order-wizard-cartitems-pickup-in-store-details-item-list, .order-wizard-showshipments-module-shipping-details-items, .footer-simplified-content-nav, .footer-content-nav {
+  .col-md-8, .order-wizard-cartitems-pickup-in-store-details-item-list, .order-wizard-showshipments-module-shipping-details-items, .footer-simplified-content-nav {
     width: 66.66667%; }
   .col-md-9, .order-wizard-step-review-main,
   .order-wizard-step-content-main, .order-wizard-step-actions {
@@ -616,7 +616,7 @@ th {
     width: 83.33333%; }
   .col-md-11 {
     width: 91.66667%; }
-  .col-md-12 {
+  .col-md-12, .footer-content-nav {
     width: 100%; }
   .col-md-pull-0 {
     right: auto; }
@@ -13197,10 +13197,9 @@ footer {
     .footer-content-nav-list {
       text-align: left; } }
 
-.footer-content-nav-list > li {
-  display: inline-block;
+.footer-content-nav-list li {
   margin-right: 10px;
-  font-weight: 300; }
+  font-weight: 200; }
 
 .footer-content-right {
   text-align: center;
@@ -13213,6 +13212,9 @@ footer {
       padding-top: 25px;
       padding-bottom: 25px;
       float: right; } }
+
+.footer-content .social-twitter-icon, .footer-content .social-pinterest-icon, .footer-content .social-google-icon {
+  color: #222426; }
 
 .footer-content-copyright {
   display: block;
