@@ -6,7 +6,7 @@
 */
 
 footer {
-    background: $sc-color-theme-background;
+    background: $sc-color-secondary;
     border-top: 1px solid $sc-color-theme-border-light;
 }
 .footer-content{
@@ -34,9 +34,18 @@ footer {
         text-align: left;
     }
 }
+.footer-content-nav-list h4, .footer-content-nav-list h5 {
+    color: $sc-neutral-shade-0;
+}
+
 .footer-content-nav-list li {
     margin-right: $sc-margin-lv2;
     font-weight: 200;
+    color: $sc-neutral-shade-300
+}
+
+.footer-content-nav-list li a {
+    color: $sc-neutral-shade-300
 }
 
 .footer-content-right {
