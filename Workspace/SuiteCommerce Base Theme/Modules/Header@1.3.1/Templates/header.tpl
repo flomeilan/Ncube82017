@@ -23,6 +23,7 @@
 						{{translate 'Register'}}
 					</a>
 				</li>
+				<li class="header-menu-profile" data-view="Header.Profile"></li>
 			</ul>
 		
 		<ul class="header-subheader-options">
@@ -46,6 +47,11 @@
 			<li data-view="StoreLocatorHeaderLink"></li>
 			<li data-view="RequestQuoteWizardHeaderLink"></li>
 			<li data-view="QuickOrderHeaderLink"></li>
+			<li class="header-menu-cart">
+					<div class="header-menu-cart-dropdown" >
+						<div data-view="Header.MiniCart"></div>
+					</div>
+			</li>
 		</ul>
 		</div>
 	</div>
@@ -61,21 +67,26 @@
 
 		<div class="header-content">
 			<div class="header-logo-wrapper">
-				<div data-view="Header.Logo"></div>
+				WEBSITE LOGO
 			</div>
 
-			<div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar">
+			<div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar"></div>
+			<div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
+			<div class="header-menu-search">
+				<button class="header-menu-search-link" data-action="show-sitesearch" title="{{translate 'Search'}}">
+					<i class="header-menu-search-icon"></i>
+				</button>
+			</div>
 
 			<div class="header-right-menu">
-				<div class="header-menu-profile" data-view="Header.Profile">
-				</div>
+				
 				<div class="header-menu-locator-mobile" data-view="StoreLocatorHeaderLink"></div>
 				<div class="header-menu-searchmobile">
 					<button class="header-menu-searchmobile-link" data-action="show-sitesearch" title="{{translate 'Search'}}">
 						<i class="header-menu-searchmobile-icon"></i>
 					</button>
 				</div>
-				<div class="header-menu-cart">
+				<div class="header-menu-cart-mobile">
 					<div class="header-menu-cart-dropdown" >
 						<div data-view="Header.MiniCart"></div>
 					</div>
@@ -89,8 +100,7 @@
 
 <div class="header-sidebar-overlay" data-action="header-sidebar-hide"></div>
 </div>
-
-<div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
+		
 
 
 

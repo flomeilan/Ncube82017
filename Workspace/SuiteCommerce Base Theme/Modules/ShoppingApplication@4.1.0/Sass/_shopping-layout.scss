@@ -10,7 +10,7 @@
 }
 
 .shopping-layout-header {
-	@include box-shadow(3px 0px 6px $sc-color-theme-400);
+	//@include box-shadow(3px 0px 6px $sc-color-theme-400);
 	margin-bottom: $sc-margin-lv4;
 
   	@media (min-width: $screen-sm-min){

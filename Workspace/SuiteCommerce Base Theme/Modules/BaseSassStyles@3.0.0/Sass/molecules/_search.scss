@@ -7,13 +7,11 @@
 
 //Search Content dropdown
 .nav-search {
-    border-bottom: 1px solid $sc-color-theme-border-light;
-    border-top: 1px solid $sc-color-theme-border-light;
-    width: 100%;
+    border: none;
 
     @media (min-width: $screen-md-min){
         padding: $sc-padding-lv2 0;
-        border-top:0;
+        float: right;
     }
 }
 
@@ -27,7 +25,7 @@
     position:relative;
 
     @media (min-width: $screen-md-min){
-        width: 600px;
+        width: 300px;
         margin:0 auto 0;
     }
 

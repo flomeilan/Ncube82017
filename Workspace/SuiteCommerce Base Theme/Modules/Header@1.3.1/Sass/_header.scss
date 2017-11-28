@@ -50,6 +50,15 @@ $sc-sidebar-size: 246px;
 
 .header-logo-wrapper {
 	float: left;
+	height: $sc-secondary-menu-height;
+	line-height: $sc-secondary-menu-height;
+
+	@media (min-width: $screen-md-min){
+        font-size: 2em;
+        font-weight: 500;
+        margin-right: $sc-margin-lv3 
+    }
+
 }
 
 ///////////////////////////////////////////////////////////////
@@ -116,7 +125,7 @@ $sc-sidebar-size: 246px;
 }
 
 .header-menu-cart {
-	float: left;
+	float: right;
 	position: relative;
 
 	@media (min-width: $screen-md-min) {
@@ -138,6 +147,14 @@ $sc-sidebar-size: 246px;
 
 .header-menu-searchmobile {
 	float: left;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.header-menu-cart-mobile {
+		float: left;
 
 	@media (min-width: $screen-md-min) {
 		display: none;
@@ -226,18 +243,16 @@ $sc-sidebar-size: 246px;
 	bottom: 0;
 	left: - $sc-sidebar-size;
 	width: $sc-sidebar-size;
-	background-color: $sc-color-theme-background;
 	// z-index: 1000;
 
 	@media (min-width: $screen-md-min) {
 		position: relative;
-		background-color: $sc-neutral-shade-0;
-		border-bottom:1px solid $sc-color-theme-border-light;
 		top: auto;
 		bottom: auto;
 		left: auto;
 		width: auto;
 		height: $sc-secondary-menu-height;
+		float: left
 	}
 }
 
@@ -285,7 +300,7 @@ $sc-sidebar-size: 246px;
 }
 .header-site-search {
 	display: none;
-	width: 100%;
+	width: auto;
 	background: $sc-neutral-shade-0;
 }
 .header-menu-cart-dropdown{}

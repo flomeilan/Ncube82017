@@ -6,14 +6,6 @@
 }}
 
 <nav class="header-menu-secondary-nav">
-
-	<div class="header-menu-search">
-		<button class="header-menu-search-link" data-action="show-sitesearch" title="{{translate 'Search'}}">
-			<i class="header-menu-search-icon"></i>
-		</button>
-	</div>
-
-
 	<ul class="header-menu-level1">
 
 		{{#each categories}}

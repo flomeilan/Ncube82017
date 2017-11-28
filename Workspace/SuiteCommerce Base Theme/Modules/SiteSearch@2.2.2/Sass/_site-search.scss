@@ -19,13 +19,12 @@
 .site-search-content-input {
 	@extend .nav-search-content-input;
 	.itemssearcher-input {
-		border: none;
+		border: 1px solid $sc-color-theme-border;
 }
 	.itemssearcher-input:focus{
 		outline:none;
 		outline-style:none;
 		box-shadow:none;
-		border-color:transparent;
 	}
 }
 
