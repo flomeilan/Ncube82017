@@ -20,7 +20,7 @@
 // <div class="styleguide-color-primary">sc-color-primary</div>
 //
 // Styleguide 1.1.2
-$sc-color-primary: #e23200;
+$sc-color-primary: #b58ef9;
 
 // Secondary Color
 //
@@ -140,8 +140,8 @@ $sc-color-info-border: $sc-color-theme-border-light;
 // <div class="styleguide-color-link-hover">sc-color-link-hover</div>
 //
 // Styleguide 1.1.7
-$sc-color-link: #0067b9;
-$sc-color-link-hover: desaturate(lighten($sc-color-link, 15), 15);
+$sc-color-link: #6329c6;
+$sc-color-link-hover: saturate(lighten($sc-color-link, 15), 15);
 
 // Copy
 //

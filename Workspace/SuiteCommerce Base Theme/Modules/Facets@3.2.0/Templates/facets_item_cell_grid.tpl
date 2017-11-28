@@ -30,10 +30,10 @@
 		<div class="facets-item-cell-grid-price" data-view="ItemViews.Price">
 		</div>
 
-		{{#if showRating}}
+		<!--{{#if showRating}}
 			<div class="facets-item-cell-grid-rating" itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating" data-view="GlobalViews.StarRating">
 			</div>
-		{{/if}}
+		{{/if}}-->
 
 		<div data-view="ItemDetails.Options"></div>
 

@@ -4,13 +4,14 @@
 	provided, however, if you are an authorized user with a NetSuite account or log-in, you
 	may use this code subject to the terms that govern your access and use.
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500|Roboto:100,300,400,500');
 
 .main, .layout-container {
 	min-height: 100%;
 	height: auto;
 	width: 100%;
-	font-family: Roboto, Arial, Helvetica;
+	font-family: "Roboto Condensed", sans-serif, Arial, Helvetica;
+	font-weight: 100
 }
 
 %sc-layout {

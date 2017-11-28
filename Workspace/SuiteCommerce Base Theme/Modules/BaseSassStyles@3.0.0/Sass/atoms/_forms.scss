@@ -147,30 +147,67 @@ input.input-small, select.input-small {
 //
 // Styleguide 2.3.3
 
+
 select {
-	@include angle-down-background($sc-color-theme-900); // TODO: Mixin definition should be changed in order to use chevron icon instead an image background
-	@include appearance(none);
-	@include border-radius(0);
-	display: block;
-	border: 1px solid $sc-color-theme-border;
 
-	padding: $sc-padding-lv2;
-	padding-right: $sc-padding-lv6;
-	margin-bottom: $sc-margin-lv2;
 
-	background-color: $sc-neutral-shade-0;
-	background-repeat: no-repeat;
-	background-size: $sc-navigation-icon-size;
-	background-position: 100% 100%;
-
-	color: $sc-neutral-shade-600;
-	font-size: $sc-font-size-m;
-
-	&:disabled {
-		border:1px solid $sc-color-theme-border-light;
-		background-color: $sc-color-theme-background;
-	}
 }
+
+select {
+
+  background-color: white;
+  display: inline-block;
+  border-radius: 0px !important;
+  border-color: $sc-color-theme-border !important;
+  padding: $sc-padding-lv2 $sc-padding-lv9 $sc-padding-lv2 $sc-padding-lv2 ;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, $sc-color-secondary 50%),
+    linear-gradient(135deg, $sc-color-secondary 50%, transparent 50%),
+    linear-gradient(to right, $sc-neutral-shade-300, $sc-neutral-shade-300);
+  background-position:
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 10px) calc(1em + 2px),
+    calc(100% - 2em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  background-image:
+    linear-gradient(45deg, $sc-color-secondary 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, $sc-color-secondary 50%),
+    linear-gradient(to right, $sc-neutral-shade-300, $sc-neutral-shade-300);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: $sc-color-theme-border;
+  outline: 0;
+}
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
 
 // Select with icon
 //

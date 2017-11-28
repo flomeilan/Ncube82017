@@ -35,7 +35,7 @@
 // <div class="styleguide-padding-lv8"><span>sc-padding-lv8</span></div>
 //
 // Styleguide 1.3.1
-$sc-padding-base: 5px;
+$sc-padding-base: 4px;
 $sc-padding-lv1: $sc-padding-base;
 $sc-padding-lv2: $sc-padding-base * 2;
 $sc-padding-lv3: $sc-padding-base * 3;
@@ -44,6 +44,7 @@ $sc-padding-lv5: $sc-padding-base * 5;
 $sc-padding-lv6: $sc-padding-base * 6;
 $sc-padding-lv7: $sc-padding-base * 7;
 $sc-padding-lv8: $sc-padding-base * 8;
+$sc-padding-lv9: $sc-padding-base * 9;
 
 // Margin variables
 //
@@ -71,7 +72,8 @@ $sc-padding-lv8: $sc-padding-base * 8;
 // <div class="styleguide-margin-lv8"><span>sc-margin-lv8</span></div>
 //
 // Styleguide 1.3.2
-$sc-margin-base: 5px;
+$sc-margin-base: 4px;
+$sc-margin-lv0: $sc-margin-base / 2;
 $sc-margin-lv1: $sc-margin-base;
 $sc-margin-lv2: $sc-margin-base * 2;
 $sc-margin-lv3: $sc-margin-base * 3;
