@@ -30,7 +30,7 @@ $sc-color-primary: #e23200;
 // <div class="styleguide-color-secondary">sc-color-secondary</div>
 //
 // Styleguide 1.1.3
-$sc-color-secondary: #15607b;
+$sc-color-secondary: #000000;
 
 // Neutral shades
 //
@@ -78,8 +78,9 @@ $sc-color-theme-900: $sc-color-theme-base;
 $sc-color-theme-400: desaturate(lighten($sc-color-theme-base, 45), 18);
 $sc-color-theme-300: desaturate(lighten($sc-color-theme-base, 60), 22);
 $sc-color-theme-200: desaturate(lighten($sc-color-theme-base, 68), 22);
+$sc-color-theme-100: desaturate(lighten($sc-color-theme-base, 80), 26);
 
-$sc-color-theme-border: $sc-color-theme-400;
+$sc-color-theme-border: $sc-color-theme-100;
 $sc-color-theme-border-light: $sc-color-theme-300;
 $sc-color-theme-background: $sc-color-theme-200;
 
