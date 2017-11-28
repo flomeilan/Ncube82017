@@ -6,7 +6,10 @@
 */
 
 .product-views-price-lead{
-	@extend .middle-price;
+	font-size: $sc-font-size-xl;
+	color: $sc-color-copy-dark;
+	font-family: "Roboto Condensed";
+	font-weight: $sc-font-weight-light;
 }
 
 .product-views-price-old{

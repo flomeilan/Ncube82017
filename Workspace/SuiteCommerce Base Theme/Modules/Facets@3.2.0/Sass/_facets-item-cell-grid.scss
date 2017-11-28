@@ -7,6 +7,7 @@
 
 .facets-item-cell-grid {
 	@extend .item-cell;
+	margin-bottom: 55px;
 	.cart-add-to-cart-button-container {
 		width:100%;
 	}
@@ -15,7 +16,7 @@
 	}
 
 	.cart-quickaddtocart-price {
-		margin-bottom:$sc-margin-lv2;
+		//margin-bottom:$sc-margin-lv2;
 	}
 }
 
@@ -24,7 +25,11 @@
 }
 
 .facets-item-cell-grid-quick-view-link {
-	@extend .item-cell-quick-view-link;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-weight: $sc-font-weight-bold;
+	padding: $sc-padding-lv3;
 }
 
 .facets-item-cell-grid-image-wrapper {
@@ -42,6 +47,7 @@
 
 .facets-item-cell-grid-details {
 	text-align:left;
+	position: relative;
 	.product-line-stock {
 		text-align:left;
 	}
@@ -62,7 +68,7 @@
 
 .facets-item-cell-grid-price {
 	@extend .small-price;
-	margin-bottom:$sc-margin-lv2;
+	//margin-bottom:$sc-margin-lv2;
 }
 
 .facets-item-cell-grid-rating {

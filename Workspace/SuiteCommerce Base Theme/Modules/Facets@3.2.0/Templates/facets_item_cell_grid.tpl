@@ -12,21 +12,15 @@
 		<a class="facets-item-cell-grid-link-image" href="{{url}}">
 			<img class="facets-item-cell-grid-image" src="{{resizeImage thumbnail.url 'thumbnail'}}" alt="{{thumbnail.altimagetext}}" itemprop="image"/>
 		</a>
-		{{#if isEnvironmentBrowser}}
-			<div class="facets-item-cell-grid-quick-view-wrapper">
-				<a href="{{url}}" class="facets-item-cell-grid-quick-view-link" data-toggle="show-in-modal">
-					<i class="facets-item-cell-grid-quick-view-icon"></i>
-					{{translate 'Quick View'}}
-				</a>
-			</div>
-		{{/if}}
 	</div>
 
 	<div class="facets-item-cell-grid-details">
 		<a class="facets-item-cell-grid-title" href="{{url}}">
 			<span itemprop="name">{{name}}</span>
 		</a>
-
+		{{#if isEnvironmentBrowser}}
+			<a href="{{url}}" class="facets-item-cell-grid-quick-view-link" data-toggle="show-in-modal">+</a>
+		{{/if}}
 		<div class="facets-item-cell-grid-price" data-view="ItemViews.Price">
 		</div>
 

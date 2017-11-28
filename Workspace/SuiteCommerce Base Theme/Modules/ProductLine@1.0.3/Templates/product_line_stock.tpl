@@ -5,7 +5,7 @@
 	may use this code subject to the terms that govern your access and use.
 }}
 
-<div class="product-line-stock">
+<!--<div class="product-line-stock">
 	{{#if isNotAvailableInStore}}
 		<div class='product-line-stock-msg-not-available'>{{translate 'This item is no longer available'}}</div>
 	{{else}}
@@ -26,7 +26,7 @@
 			</p>
 		{{/if}}
 	{{/if}}
-</div>
+</div>-->
 
 
 

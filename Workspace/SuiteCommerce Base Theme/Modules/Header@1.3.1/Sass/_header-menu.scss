@@ -9,10 +9,6 @@
 //header secondary nav
 .header-menu-secondary-nav {
 	@extend .container;
-	float: left;
-	width: auto;
-	max-width: 600px;
-	
 }
 
 ///////////////////////////////////////////////////////////////
@@ -79,8 +75,8 @@
 	padding: 0 $sc-padding-lv2;
 	margin-right: $sc-margin-lv1;
 	color:$sc-color-secondary;
-    font-weight:$sc-font-weight-light;
-    text-transform: uppercase;
+    font-weight:$sc-font-weight-semibold;
+    text-transform: capitalize;
 }
 
 .header-menu-level1-anchor:hover{

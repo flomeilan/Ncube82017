@@ -5,12 +5,12 @@
 	may use this code subject to the terms that govern your access and use.
 }}
 
-{{#if showStockDescription}}
+<!--{{#if showStockDescription}}
 	<p class="product-line-stock-description-msg-description {{stockInfo.stockDescriptionClass}}">
 		<i class="product-line-stock-description-icon-description"></i>
 		{{stockInfo.stockDescription}}
 	</p>
-{{/if}}
+{{/if}}-->
 
 
 
