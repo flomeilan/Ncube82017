@@ -25,7 +25,6 @@
                             </li>
                             <li id="footer-menu-item-04" class="footer-menu-line"><a href="#">News & Blog</a>
                             </li>
-                            </li>
                         </ul>
                 </div>
         </div>
@@ -40,7 +39,6 @@
                             <li id="menu-item-07" class="footer-menu-line"><a href="#">Kids</a>
                             </li>
                             <li id="menu-item-08" class="footer-menu-line"><a href="#">On Sale</a>
-                            </li>
                             </li>
                         </ul>
                 </div>
