@@ -13,16 +13,6 @@
     <div class="footer-content-nav">
 		{{#if showFooterNavigationLinks}}
 
-			<ul class="footer-content-nav-list">
-				{{#each footerNavigationLinks}}
-					<li>
-						<a {{objectToAtrributes item}}>
-							{{text}}
-						</a>
-					</li>
-				{{/each}}
-			</ul>
-=======
 		<div class="col-md-2 col-sm-4">
                 <div class="footer-content-nav-list nav_menu-1">
                     <h4>{{translate 'About us'}}</h4>
