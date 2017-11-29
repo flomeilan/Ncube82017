@@ -10,7 +10,7 @@
 .header-profile-register-link,
 .header-profile-loading-link {
 	@extend %header-link;
-	color: $sc-color-secondary;
+	color: $sc-color-theme-200;
 	padding: 0 $sc-padding-lv2;
 
 	&:hover {
@@ -62,18 +62,30 @@
 //login register
 
 .header-profile-menu-login{
-	color: $sc-color-theme-900;
+	color: $sc-color-theme-400;
+
+	@media (min-width: $screen-md-min){
+		color: $sc-color-theme-200;
+	}
 }
 
 .header-profile-menu-login-container{
 	margin-right:$sc-margin-lv1;
 	@media (min-width: $screen-md-min) {
-		display: none;
+		//display: none;
 	}
 }
 
 .header-profile-menu-login li{
 	display:inline-block;
+}
+
+.header-profile-menu-login li a:hover {
+	color: $sc-color-theme-900;
+
+	@media (min-width: $screen-md-min){
+		color: $sc-color-theme-100;
+	}
 }
 
 .header-profile-login-icon{

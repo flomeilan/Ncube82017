@@ -29,8 +29,8 @@
 }
 
 .newsletter-subscription-form-button-subscribe {
-    @extend .button-secondary;
-    @extend .col-sm-5;
+    @extend .button-tertiary;
+    @extend .col-sm-3;
     @extend .col-xs-12;
 
     height: $sc-target-size;

@@ -78,10 +78,10 @@ $sc-color-theme-900: $sc-color-theme-base;
 $sc-color-theme-400: desaturate(lighten($sc-color-theme-base, 45), 18);
 $sc-color-theme-300: desaturate(lighten($sc-color-theme-base, 60), 22);
 $sc-color-theme-200: desaturate(lighten($sc-color-theme-base, 68), 22);
-$sc-color-theme-100: desaturate(lighten($sc-color-theme-base, 80), 26);
+$sc-color-theme-100: desaturate(lighten($sc-color-theme-base, 90), 30);
 
-$sc-color-theme-border: $sc-color-theme-100;
-$sc-color-theme-border-light: $sc-color-theme-300;
+$sc-color-theme-border: $sc-color-theme-200;
+$sc-color-theme-border-light: $sc-color-theme-100;
 $sc-color-theme-background: $sc-color-theme-200;
 
 // Messagging Palette

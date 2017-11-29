@@ -10,22 +10,7 @@
 <div class="header-main-wrapper">
 	<div class="header-subheader">
 		<div class="header-subheader-container">
-		
-			<ul class="header-subheader-login">
-				<li>
-					<a class="header-subheader-login-link" data-touchpoint="login" data-hashtag="login-register" href="#">
-						{{translate 'Login'}}
-					</a>
-				</li>
-				<li> or </li>
-				<li>
-					<a class="header-subheader-register-link" data-touchpoint="register" data-hashtag="login-register" href="#">
-						{{translate 'Register'}}
-					</a>
-				</li>
-				<li class="header-menu-profile" data-view="Header.Profile"></li>
-			</ul>
-		
+		<div class="header-menu-profile" data-view="Header.Profile"></div>
 		<ul class="header-subheader-options">
 			{{#if showLanguagesOrCurrencies}}
 			<li class="header-subheader-settings">

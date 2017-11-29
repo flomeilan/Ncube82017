@@ -10,7 +10,7 @@
 <a class="header-logo" href="{{headerLinkHref}}" data-touchpoint="{{headerLinkTouchPoint}}" data-hashtag="{{headerLinkHashtag}}" title="{{headerLinkTitle}}">
 
 {{#if logoUrl}}
-	WEBSITE LOGO
+	LOGO
 {{else}}
 	<span class="header-logo-sitename">
 		{{siteName}}
