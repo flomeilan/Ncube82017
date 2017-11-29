@@ -62,7 +62,7 @@
 			<nav class="facets-facet-browse-list-header">
 
 				
-				<div class="facets-facet-browse-list-header-actions" data-view="Facets.ItemListDisplaySelector"></div>
+				<!--<div class="facets-facet-browse-list-header-actions" data-view="Facets.ItemListDisplaySelector"></div>-->
 
 				<div class="facets-facet-browse-list-header-expander">
 					<button class="facets-facet-browse-list-header-expander-button collapsed" data-toggle="collapse" data-target="#list-header-filters" aria-expanded="true" aria-controls="list-header-filters">
@@ -76,8 +76,8 @@
 
 						<div class="facets-facet-browse-list-header-filters-row">
 
-							<div class="facets-facet-browse-list-header-filter-column" data-view="Facets.ItemListShowSelector">
-							</div>
+							<!--<div class="facets-facet-browse-list-header-filter-column" data-view="Facets.ItemListShowSelector">
+							</div>-->
 
 							<div class="facets-facet-browse-list-header-filter-column" data-view="Facets.ItemListSortSelector">
 							</div>
