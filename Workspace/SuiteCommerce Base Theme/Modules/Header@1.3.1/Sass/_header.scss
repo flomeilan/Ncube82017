@@ -8,7 +8,7 @@
 $sc-main-nav-height: 55px;
 $sc-main-nav-width: 130px;
 $sc-main-nav-link-height: 44px;
-$sc-secondary-menu-height: 55px;
+$sc-secondary-menu-height: 50px;
 $sc-sidebar-size: 246px;
 
 .header-message {
@@ -39,6 +39,7 @@ $sc-sidebar-size: 246px;
 
 	@media (min-width: $screen-md-min) {
 		background-color: $sc-neutral-shade-0;
+		
 	}
 }
 
@@ -52,11 +53,12 @@ $sc-sidebar-size: 246px;
 	float: left;
 	height: $sc-secondary-menu-height;
 	line-height: $sc-secondary-menu-height;
+	font-size: 2em;
 
 	@media (min-width: $screen-md-min){
-        font-size: 2em;
+       
         font-weight: 500;
-        margin-right: $sc-margin-lv3 
+        margin-right: $sc-margin-lv7 
     }
 
 }
@@ -302,7 +304,7 @@ $sc-sidebar-size: 246px;
 	display: none;
 	width: auto;
 	background: $sc-neutral-shade-0;
-	border-top: 1px solid $sc-color-theme-border;
+	border-top: 1px solid $sc-color-theme-border-light;
 }
 .header-menu-cart-dropdown{}
 .header-sidebar-overlay{}
@@ -334,13 +336,13 @@ $sc-sidebar-size: 246px;
 	display: none;
 	li {
 		display:inline-block;
-		color: #959595;
+		color: $sc-color-theme-200;
 		line-height: 36px;
 
 		i, a {
-			color: #959595;
+			color: $sc-color-theme-200;
 			&:hover {
-				color: #fff;
+				color: $sc-color-theme-100;
 			}
 		}
 		&:nth-child(2) {
@@ -363,7 +365,7 @@ $sc-sidebar-size: 246px;
 		padding-left:$sc-padding-lv3;
 
 		i, a {
-			color: #959595;
+			color: $sc-color-theme-100;
 			&:hover {
 				color: #fff;
 			}

@@ -7,14 +7,16 @@
 
 .shopping-layout {
 	@extend %sc-layout;
+
 }
 
 .shopping-layout-header {
 	//@include box-shadow(3px 0px 6px $sc-color-theme-400);
-	margin-bottom: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv2;
 
   	@media (min-width: $screen-sm-min){
-		margin-bottom: $sc-margin-lv3;
+		margin-bottom: $sc-margin-lv2;
+		border-bottom: 1px solid $sc-color-theme-border-light;
 	}
 }
 
