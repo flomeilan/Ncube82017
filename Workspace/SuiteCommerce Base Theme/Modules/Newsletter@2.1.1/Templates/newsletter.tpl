@@ -9,7 +9,7 @@
 
 	<div data-validation="control-group">
 
-		<h5 class="newsletter-subscription-form-label" for="login-email">{{translate 'Newsletter Sign Up'}}</h5>
+		<h5 class="newsletter-subscription-form-label" for="login-email">{{translate 'Email Sign Up'}}</h5>
 
 		<div class="newsletter-subscription-form-container {{#if showErrorMessage}}error{{/if}}" data-validation="control">
 			<input
@@ -21,7 +21,7 @@
 			>
 
 			<button type="submit" class="newsletter-subscription-form-button-subscribe">
-				{{translate 'Subscribe'}}
+				{{translate 'Sumbit'}}
 			</button>
 
 			<div class="newsletter-alert-placeholder" data-type="alert-placeholder" >
