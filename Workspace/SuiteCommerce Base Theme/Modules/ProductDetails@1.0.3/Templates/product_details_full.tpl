@@ -43,12 +43,12 @@
 
 						<section data-view="Product.Options"></section>
 
-							<div data-view="Product.Sku"></div>
-
 						<div data-view="Product.Price"></div>
 						<div data-view="Quantity.Pricing"></div>
 
 						<div data-view="Product.Stock.Info"></div>
+
+						<div data-view="Product.Sku"></div>
 
 						{{#if isPriceEnabled}}
 							<div data-view="Quantity"></div>
@@ -62,7 +62,7 @@
 								<div class="product-details-full-actions-container">
 									<div data-view="AddToProductList" class="product-details-full-actions-addtowishlist"></div>
 
-									<!--<div data-view="ProductDetails.AddToQuote" class="product-details-full-actions-addtoquote"></div>-->
+									<!--<div data-view="ProductDetails.AddToQuote" class="product-details-full-actions-addtoquote"></div>--> 
 								</div>
 
 							</section>
