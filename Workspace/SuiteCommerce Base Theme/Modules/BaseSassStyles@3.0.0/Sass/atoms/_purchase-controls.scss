@@ -296,11 +296,11 @@ $sc-picker-border: $sc-color-theme-200;
 
 .picker-label {
 	padding: 0 $sc-padding-lv2;
-	border:2px solid $sc-neutral-shade-300;
+	border:1px solid $sc-neutral-shade-300;
 	color: $sc-neutral-shade-300;
 	text-align: center;
-	line-height:36px;
-	font-weight: $sc-font-weight-semibold;
+	line-height:30px;
+	font-weight: $sc-font-weight-normal;
 
     display: inline-block;
 	margin-right: $sc-margin-lv2;
@@ -308,14 +308,17 @@ $sc-picker-border: $sc-color-theme-200;
 	text-transform: capitalize;
 
 	&:hover {
-		border:2px solid $sc-neutral-shade-900;
+		border:1px solid $sc-neutral-shade-900;
 		color: $sc-neutral-shade-900;
+		
 	}
 }
 
 .picker-label.picker-checked {
 	border:2px solid $sc-neutral-shade-900;
 	color: $sc-neutral-shade-900;
+	background-color: $sc-neutral-shade-100;
+
 }
 
 // New Color Picker
@@ -428,13 +431,13 @@ $sc-picker-border: $sc-color-theme-200;
 
 .picker-color-lg {
 	.picker-color-box {
-		height: 5px; //$picker-color-large;
-		width: 20px; //$picker-color-large;
+		height: $picker-color-large;
+		width: $picker-color-large; 
 
 		&:hover:before,
 		&.picker-color-box-active:before {
-			height: 5px; //30px;
-			width: 10px; //30px;
+			height: 20px;
+			width: 20px;
 		}
 		&.picker-color-box-disabled {
 			&:hover:before,
@@ -456,7 +459,7 @@ $sc-picker-border: $sc-color-theme-200;
 
 		&:hover:before,
 		&.picker-color-box-active:before {
-			height: 20px;
+ 			height: 20px;
 			width: 20px;
 		}
 		&.picker-color-box-disabled {
@@ -600,8 +603,8 @@ $sc-picker-border: $sc-color-theme-200;
 	a {
 		&:hover:before,
 		&.active:before {
-			height: 30px;
-			width: 30px;
+			height: $picker-large;
+			width: $picker-large;
 		}
 
 		&.disabled {

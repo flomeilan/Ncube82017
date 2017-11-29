@@ -96,7 +96,7 @@ input.nav-search-input {
     margin: 0;
     width: calc(80% - #{$sc-padding-lv8});
 
-    width: expression(80% - #{$sc-padding-lv8});/* IE-OLD */
+    width: expression(100% - #{$sc-padding-lv8});/* IE-OLD */
 
     -webkit-tap-highlight-color: transparentize($sc-neutral-shade-600, 1);
     border:1px solid $sc-color-theme-border;
