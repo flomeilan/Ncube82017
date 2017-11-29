@@ -20,7 +20,6 @@
 							<div class="home-slide-image-container">
 								<img src="{{resizeImage this ../imageHomeSize}}" alt="" />
 							</div>
-
 							<div class="home-slide-caption">
 								<h2 class="home-slide-caption-title">SAMPLE HEADLINE</h2>
 								<p>Example descriptive text displayed on multiple lines.</p>

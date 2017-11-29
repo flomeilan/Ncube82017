@@ -25,8 +25,12 @@
 }
 
 .header-sidebar-wrapper {
-	height: 100%;
+	height: auto;
 	@extend %scroll-y;
+
+	@media (min-width: $screen-md-min) {
+		height: 100%;
+	}
 }
 
 ///////////////////////////////////////////////////////////////

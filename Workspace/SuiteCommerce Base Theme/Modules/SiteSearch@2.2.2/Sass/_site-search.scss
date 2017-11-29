@@ -19,7 +19,10 @@
 .site-search-content-input {
 	@extend .nav-search-content-input;
 	.itemssearcher-input {
-		border: 1px solid $sc-color-theme-border;
+		border-bottom: 1px solid $sc-color-theme-border;
+		border-top: none;
+		border-right: none;
+		border-left: none;
 }
 	.itemssearcher-input:focus{
 		outline:none;
@@ -41,6 +44,7 @@
 .site-search-button-submit {
 	@extend .nav-search-button-submit;
 	border-radius: $sc-border-radius;
+	margin-left: $sc-margin-lv2
 }
 
 .site-search-button-close {

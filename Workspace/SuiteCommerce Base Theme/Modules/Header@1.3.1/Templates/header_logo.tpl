@@ -10,7 +10,7 @@
 <a class="header-logo" href="{{headerLinkHref}}" data-touchpoint="{{headerLinkTouchPoint}}" data-hashtag="{{headerLinkHashtag}}" title="{{headerLinkTitle}}">
 
 {{#if logoUrl}}
-	<img class="header-logo-image" src="{{getThemeAssetsPathWithDefault logoUrl 'img/SCA_Logo.png'}}" alt="{{siteName}}">
+	WEBSITE LOGO
 {{else}}
 	<span class="header-logo-sitename">
 		{{siteName}}
