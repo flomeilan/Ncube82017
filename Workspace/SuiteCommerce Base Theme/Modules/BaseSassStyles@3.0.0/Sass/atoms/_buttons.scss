@@ -14,7 +14,7 @@ $sc-color-button-secondary: $sc-color-secondary;
 $sc-color-button-secondary-hover: saturate(lighten($sc-color-button-secondary, 4), 4);
 $sc-color-button-secondary-active: darken($sc-color-button-secondary, 6);
 
-$sc-color-button-tertiary: $sc-color-secondary;
+$sc-color-button-tertiary: $sc-neutral-shade-300;
 $sc-color-button-tertiary-hover: saturate(lighten($sc-color-button-tertiary, 4), 4);
 $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 
@@ -104,9 +104,9 @@ $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 // Styleguide 2.1.3
 
 .button-tertiary {
-	color: $sc-color-button-tertiary;
+	color: $sc-color-button-secondary;
 	font-weight: $sc-font-weight-normal;
-	background: $sc-neutral-shade-0;
+	background: $sc-color-button-tertiary;
 	display: inline-block;
 	border: 1px solid $sc-color-button-tertiary;
 	border-radius: $sc-border-radius;
