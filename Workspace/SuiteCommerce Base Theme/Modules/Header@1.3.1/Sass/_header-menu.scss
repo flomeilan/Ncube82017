@@ -9,6 +9,9 @@
 //header secondary nav
 .header-menu-secondary-nav {
 	/*@extend .container;*/
+	text-transform: uppercase;
+	font-weight: 100;
+	margin-left: $sc-margin-lv4
 }
 
 ///////////////////////////////////////////////////////////////
@@ -77,19 +80,20 @@
 	position: relative;
 	height: $sc-secondary-menu-height;
 	line-height: $sc-secondary-menu-height;
-	padding: 0 $sc-padding-lv2;
+	padding: $sc-padding-lv1 $sc-padding-lv2;
 	margin-right: $sc-margin-lv1;
 	color:$sc-color-secondary;
-    font-weight:$sc-font-weight-semibold;
-    text-transform: capitalize;
+    font-weight:$sc-font-weight-light;
+    text-transform: uppercase;
 }
 
 .header-menu-level1-anchor:hover{
-	color: $sc-color-link-hover;
+	border-bottom: 3px solid $sc-color-secondary
 }
 
 .open .header-menu-level1-anchor{
 	color: $sc-color-copy-dark;
+
 }
 
 .header-menu-home-anchor,
