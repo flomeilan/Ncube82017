@@ -7,7 +7,8 @@
 
 .facets-item-cell-grid {
 	@extend .item-cell;
-	margin-bottom: 55px;
+	margin-bottom: $sc-margin-lv8;
+	padding: $sc-padding-lv3;
 	.cart-add-to-cart-button-container {
 		width:100%;
 	}
@@ -17,7 +18,7 @@
 
 	.cart-quickaddtocart-price {
 		//margin-bottom:$sc-margin-lv2;
-	}
+	}	
 }
 
 .facets-item-cell-grid-quick-view-wrapper {
@@ -28,8 +29,9 @@
 	position: absolute;
 	top: 10px;
 	right: 0;
+	font-size: 20px;
 	font-weight: $sc-font-weight-bold;
-	padding: $sc-padding-lv3;
+	padding: 0 $sc-padding-lv3;
 }
 
 .facets-item-cell-grid-image-wrapper {

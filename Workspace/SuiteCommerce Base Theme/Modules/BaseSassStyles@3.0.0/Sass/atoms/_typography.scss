@@ -185,9 +185,9 @@ b, strong {
 
 .xsmall-title-navigable {
     color: $sc-color-secondary;
-    font-size: $sc-font-size-m;
+    font-size: $sc-font-size-xl;
     font-weight: $sc-font-weight-normal;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
     &:hover{
         color: $sc-color-link-hover;

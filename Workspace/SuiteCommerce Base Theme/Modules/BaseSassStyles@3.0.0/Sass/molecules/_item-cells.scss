@@ -20,7 +20,7 @@
 
 .item-cell-title {
 	@extend .xsmall-title-navigable;
-	padding: $sc-padding-lv2 0;
+	padding: $sc-padding-lv2 $sc-padding-lv6 $sc-padding-lv2 0;
 	display: block;
 	text-align: left;
 }
