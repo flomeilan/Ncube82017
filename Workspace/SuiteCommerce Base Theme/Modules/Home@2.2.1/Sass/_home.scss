@@ -260,6 +260,9 @@ $sc-image-slider-max-width-mobile: 767px;
     @media (min-width: $screen-xs-min){
       width: auto;
       position:relative;
+      color: $sc-neutral-shade-0;
+      background-color: $sc-color-primary;
+      border: none;
     }
   }
 }
