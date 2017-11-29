@@ -10,7 +10,7 @@
 		<p>{{translate 'You need to be logged in to write a review, <a href="#" data-touchpoint="login">click here</a> to log in.'}}</p>
 	{{else}}
 
-		<h1>{{{header}}}</h1>
+		<h2>{{{header}}}</h2>
 
 		<!--<div class="product-reviews-form-divider"></div>-->
 
