@@ -85,8 +85,13 @@
         </div>
 		</div>
 		{{/if}}
-            <div class="footer-content-copyright">
-            {{translate '&copy; 2008-2015 Company Name'}}
+        <div class="footer-content-copyright">
+           <span> {{translate '&copy; 2008-2015 Company Name'}}</span>
+           <ul class="footer-content-secondary-nav">
+               <li><a href="">Privacy Policy</a></li>
+               <li><a href="">Terms and conditions</a></li>
+           </ul>
+        </div>
     </div>
 	</div>
 	

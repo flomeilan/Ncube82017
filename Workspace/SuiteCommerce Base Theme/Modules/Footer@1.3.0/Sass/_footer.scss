@@ -19,8 +19,11 @@ footer {
     @extend .col-xs-12;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: $sc-padding-lv8;
     text-align: left; 
     text-transform: uppercase;
+    margin-bottom: $sc-margin-lv5;
+    border-bottom: 1px solid $sc-neutral-shade-900
 }
 .footer-content-nav-list {
     list-style: none;
@@ -60,7 +63,11 @@ footer {
 }
 
 .footer-content-nav-list li a {
-    color: $sc-neutral-shade-300
+    color: $sc-neutral-shade-600;
+
+     &:hover {
+        color: $sc-neutral-shade-300;
+    }
 }
 
 .footer-content-right {
@@ -88,4 +95,38 @@ footer {
     display: block;
     float: none;
     clear: both;
+    color: $sc-neutral-shade-600;
+    font-size: 0.8em;
+    padding: $sc-padding-lv3 $sc-margin-lv2
+    }
+.footer-content-secondary-nav {
+    padding-top: $sc-padding-lv2
+}
+.footer-content-secondary-nav li {
+    display: inline;
+}
+
+.footer-content-secondary-nav li:after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    margin: 0 $sc-margin-lv2;
+    background: $sc-neutral-shade-600;
+}
+.footer-content-secondary-nav li a{
+    color: $sc-neutral-shade-600;
+
+    &:hover {
+        color: $sc-neutral-shade-300;
+    }
+
+    &:focus {
+        color: white;
+    }
+
+    &:active {
+        background: $sc-color-button-primary-active;
+        color: white;
+    }
 }
