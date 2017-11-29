@@ -55,6 +55,9 @@ $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 		pointer-events: none;
 		opacity: 0.6;
 	}
+	&::before {
+		content: '+';
+	}
 }
 
 // Secondary buttons
@@ -73,7 +76,7 @@ $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 	background: $sc-color-button-secondary;
 	display: inline-block;
 	border: 1px solid $sc-color-button-secondary;
-	//border-radius: $sc-border-radius;
+	border-radius: $sc-border-radius;
 
 	&:hover {
 		background: $sc-color-button-secondary-hover;
@@ -104,15 +107,15 @@ $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 
 .button-tertiary {
 	color: $sc-neutral-shade-900;
-	font-weight: $sc-font-weight-normal;
-	background: $sc-neutral-shade-300;
+	font-weight: $sc-font-weight-normal;	
 	display: inline-block;
-	/*border: 1px solid $sc-color-button-tertiary;*/
+	border: 1px solid $sc-neutral-shade-300;
 	border-radius: 0;
+	background: $sc-neutral-shade-0;
+	border-radius: $sc-border-radius;
 
 	&:hover {
-		color: $sc-neutral-shade-300;
-		//background: $sc-color-button-tertiary-hover;
+		background: $sc-neutral-shade-300;
 		text-decoration: none;
 	}
 
@@ -123,6 +126,9 @@ $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 	&:disabled {
 		opacity: 0.6;
 		cursor: default;
+	}
+	&::before {
+		content: '+';
 	}
 }
 

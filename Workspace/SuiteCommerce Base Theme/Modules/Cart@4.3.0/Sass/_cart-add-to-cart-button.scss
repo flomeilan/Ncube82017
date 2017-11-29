@@ -11,9 +11,6 @@
 	width: 100%;
  	font-weight: $sc-font-weight-semibold;
  	margin-top: $sc-margin-lv3;
- 	&::before {
-		content: '+';
-	}
 }
 
 .cart-add-to-cart-button {
