@@ -55,9 +55,6 @@ $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 		pointer-events: none;
 		opacity: 0.6;
 	}
-	&::before {
-		content: '+';
-	}
 }
 
 // Secondary buttons
@@ -126,9 +123,6 @@ $sc-color-button-tertiary-active: darken($sc-color-button-tertiary, 6);
 	&:disabled {
 		opacity: 0.6;
 		cursor: default;
-	}
-	&::before {
-		content: '+';
 	}
 }
 
