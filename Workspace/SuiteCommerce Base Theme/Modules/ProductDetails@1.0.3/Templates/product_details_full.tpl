@@ -43,13 +43,13 @@
 
 						<section data-view="Product.Options"></section>
 
-							<div data-view="Product.Sku"></div>
-
 						<div data-view="Product.Price"></div>
 						<div data-view="Quantity.Pricing"></div>
 
 						<div data-view="Product.Stock.Info"></div>
 
+						<div data-view="Product.Sku"></div>
+						
 						{{#if isPriceEnabled}}
 							<div data-view="Quantity"></div>
 

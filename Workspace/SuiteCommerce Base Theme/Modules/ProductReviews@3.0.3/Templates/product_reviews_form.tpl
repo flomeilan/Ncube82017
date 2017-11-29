@@ -12,7 +12,7 @@
 
 		<h1>{{{header}}}</h1>
 
-		<div class="product-reviews-form-divider"></div>
+		<!--<div class="product-reviews-form-divider"></div>-->
 
 		<div class="product-reviews-form-item-cell">
 			<div data-view="Facets.ItemCell" data-template="facets_item_cell_list"></div>
