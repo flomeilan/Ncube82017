@@ -57,7 +57,7 @@
 }
 .product-reviews-form-content {
     @extend .row;
-    background: $sc-color-theme-background;
+    background: $sc-neutral-shade-0;
     padding: 0;
     @extend .col-md-9;
     @media (min-width: $screen-md-min){
