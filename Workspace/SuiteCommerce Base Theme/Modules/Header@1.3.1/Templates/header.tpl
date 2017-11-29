@@ -47,11 +47,6 @@
 			<li data-view="StoreLocatorHeaderLink"></li>
 			<li data-view="RequestQuoteWizardHeaderLink"></li>
 			<li data-view="QuickOrderHeaderLink"></li>
-			<li class="header-menu-cart">
-					<div class="header-menu-cart-dropdown" >
-						<div data-view="Header.MiniCart"></div>
-					</div>
-			</li>
 		</ul>
 		</div>
 	</div>
@@ -67,11 +62,11 @@
 
 		<div class="header-content">
 			<div class="header-logo-wrapper">
-				WEBSITE LOGO
+				<div data-view="Header.Logo"></div>
 			</div>
 
 			<div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar"></div>
-			<div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
+			
 			<div class="header-menu-search">
 				<button class="header-menu-search-link" data-action="show-sitesearch" title="{{translate 'Search'}}">
 					<i class="header-menu-search-icon"></i>
@@ -86,14 +81,14 @@
 						<i class="header-menu-searchmobile-icon"></i>
 					</button>
 				</div>
-				<div class="header-menu-cart-mobile">
+				<div class="header-menu-cart">
 					<div class="header-menu-cart-dropdown" >
 						<div data-view="Header.MiniCart"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-
+<div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
 		<div id="banner-header-bottom" class="content-banner banner-header-bottom" data-cms-area="header_banner_bottom" data-cms-area-filters="global"></div>
 	</nav>
 </div>

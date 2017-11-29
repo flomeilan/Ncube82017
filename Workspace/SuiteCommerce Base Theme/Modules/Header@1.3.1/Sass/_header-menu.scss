@@ -8,14 +8,19 @@
 ///////////////////////////////////////////////////////////////
 //header secondary nav
 .header-menu-secondary-nav {
-	@extend .container;
+	/*@extend .container;*/
 }
 
 ///////////////////////////////////////////////////////////////
 //header search
 
 .header-menu-search {
+	display: none;
+
+	@media(min-width: $screen-md-min) {
+	display: block;
 	float: right;
+	}
 }
 
 .header-menu-search-link {
