@@ -45,7 +45,7 @@
 .global-views-star-rating-review-total {
   color: $sc-color-secondary;
   line-height: 25px;
-  padding-left:$sc-padding-lv1;
+  padding-left:$sc-padding-lv3;
 }
 .global-views-star-rating-value {
   font-weight: $sc-font-weight-bold;
@@ -142,4 +142,6 @@
 .global-views-star-rating-area-empty-content{}
 .global-views-star-rating-review-total-number{}
 
-.global-views-star-rating-container {}
+.global-views-star-rating-container {
+  margin: $sc-margin-lv4 0;
+}

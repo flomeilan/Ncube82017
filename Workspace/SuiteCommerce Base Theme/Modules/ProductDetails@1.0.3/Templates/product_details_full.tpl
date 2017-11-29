@@ -62,7 +62,7 @@
 								<div class="product-details-full-actions-container">
 									<div data-view="AddToProductList" class="product-details-full-actions-addtowishlist"></div>
 
-									<div data-view="ProductDetails.AddToQuote" class="product-details-full-actions-addtoquote"></div>
+									<!--<div data-view="ProductDetails.AddToQuote" class="product-details-full-actions-addtoquote"></div>-->
 								</div>
 
 							</section>

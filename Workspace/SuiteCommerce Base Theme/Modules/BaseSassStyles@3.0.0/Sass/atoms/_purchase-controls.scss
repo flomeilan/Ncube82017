@@ -428,13 +428,13 @@ $sc-picker-border: $sc-color-theme-200;
 
 .picker-color-lg {
 	.picker-color-box {
-		height: $picker-color-large;
-		width: $picker-color-large;
+		height: 5px; //$picker-color-large;
+		width: 20px; //$picker-color-large;
 
 		&:hover:before,
 		&.picker-color-box-active:before {
-			height: 30px;
-			width: 30px;
+			height: 5px; //30px;
+			width: 10px; //30px;
 		}
 		&.picker-color-box-disabled {
 			&:hover:before,

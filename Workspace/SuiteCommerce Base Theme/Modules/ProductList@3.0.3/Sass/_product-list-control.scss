@@ -15,7 +15,7 @@
 
 .product-list-control-button-wishlist{
 	@extend .button-tertiary;
-	@extend .button-large;
+	@extend .button-small;
 	margin-top: $sc-margin-lv3;
 	font-weight: $sc-font-weight-semibold;
 	width: 100%;
