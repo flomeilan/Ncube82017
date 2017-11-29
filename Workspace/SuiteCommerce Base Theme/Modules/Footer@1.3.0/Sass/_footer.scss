@@ -19,7 +19,8 @@ footer {
     @extend .col-xs-12;
     padding-left: 0;
     padding-right: 0;
-    text-align: left
+    text-align: left; 
+    text-transform: uppercase;
 }
 .footer-content-nav-list {
     list-style: none;
