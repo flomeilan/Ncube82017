@@ -43,8 +43,8 @@
 
 .site-search-button-submit {
 	@extend .nav-search-button-submit;
-	border-radius: $sc-border-radius;
-	margin-left: $sc-margin-lv2
+	//border-radius: $sc-border-radius;
+	margin-left: $sc-margin-lv2;
 }
 
 .site-search-button-close {

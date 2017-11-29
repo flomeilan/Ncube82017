@@ -134,8 +134,8 @@ input.nav-search-input {
 .nav-search-button-submit{
     border-radius:0px;
     border:0px;
-    background: $sc-color-theme-900;
-    color: $sc-neutral-shade-0;
+    background: $sc-neutral-shade-0;
+    color: $sc-neutral-shade-900;
     padding: $sc-padding-lv3;
     float:right;
     visibility: hidden;
@@ -148,8 +148,8 @@ input.nav-search-input {
     }
 
     &:hover, &:focus {
-        background: $sc-color-button-secondary-hover;
-        color: $sc-neutral-shade-0;
+        background: $sc-neutral-shade-300;
+        color: $sc-neutral-shade-900;
     }
 }
 
