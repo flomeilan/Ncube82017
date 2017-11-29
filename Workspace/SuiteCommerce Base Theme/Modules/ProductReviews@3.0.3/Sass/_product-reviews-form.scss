@@ -7,6 +7,7 @@
 
 .product-reviews-form {
   @extend .container;
+  margin-top: $sc-margin-lv6;
     .product-reviews-form-global-star-rating {
         .global-views-star-rating-label{
             display:none;

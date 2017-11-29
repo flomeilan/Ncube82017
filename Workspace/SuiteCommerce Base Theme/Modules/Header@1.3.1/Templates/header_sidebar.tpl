@@ -70,7 +70,6 @@
 				{{/if}}
 			{{/each}}
 
-			<li class="header-sidebar-menu-separator"></li>
 			{{#if showExtendedMenu}}
 			<li class="header-sidebar-menu-myaccount" data-view="Header.Menu.MyAccount"></li>
 			{{/if}}
