@@ -34,6 +34,8 @@
 .header-mini-cart-item-cell-product-price {
 	@extend .middle-price;
 	margin-bottom: $sc-margin-lv2;
+	font-weight: $sc-font-weight-light;
+	color: $sc-color-copy-dark;
 }
 
 .header-mini-cart-item-cell-product-sku {
