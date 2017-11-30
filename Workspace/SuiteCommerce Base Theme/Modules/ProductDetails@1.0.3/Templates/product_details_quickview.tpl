@@ -31,7 +31,7 @@
 
 					<div data-view="Product.Stock.Info"></div>
 
-					<div data-view="Product.Sku"></div>
+					<!--<div data-view="Product.Sku"></div>-->
 
 					<div data-view="Product.Price"></div>
 					<div data-view="Quantity.Pricing"></div>
@@ -46,7 +46,7 @@
 							</div>
 							<div class="product-details-quickview-actions-container">
 								<div data-view="AddToProductList" class="product-details-quickview-actions-container-add-to-wishlist"></div>
-								<div data-view="ProductDetails.AddToQuote" class="product-details-quickview-actions-container-add-to-quote"></div>
+								<!--<div data-view="ProductDetails.AddToQuote" class="product-details-quickview-actions-container-add-to-quote"></div>-->
 							</div>
 
 						</section>
