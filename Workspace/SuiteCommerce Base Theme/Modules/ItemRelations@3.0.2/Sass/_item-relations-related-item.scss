@@ -22,7 +22,7 @@
 
 .item-relations-related-item-title{
 	@extend .small-title-navigable;
-	text-align:center;
+	text-align: left;
 	font-weight:normal;
 	text-transform:capitalize;
 	margin-bottom:$sc-margin-lv2;
@@ -33,7 +33,7 @@
 
 .item-relations-related-item-price{
 	@extend .small-price;
-	margin-bottom:$sc-margin-lv2;
+	//margin-bottom:$sc-margin-lv2;
 	position:relative;
 }
 

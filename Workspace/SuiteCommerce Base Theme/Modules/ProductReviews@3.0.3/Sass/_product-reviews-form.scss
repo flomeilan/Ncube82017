@@ -13,6 +13,9 @@
             display:none;
         }
     }
+    h2 {
+        margin-bottom: $sc-margin-lv6 
+    }
 }
 .product-reviews-form-item-cell {
     @extend .row;
@@ -33,6 +36,7 @@
     }
     .facets-item-cell-list-title {
         padding-top: 0;
+        margin-bottom: 0; 
         a {
             @extend .medium-title-navigable;
         }

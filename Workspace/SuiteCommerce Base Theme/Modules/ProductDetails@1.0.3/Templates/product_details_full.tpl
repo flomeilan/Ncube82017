@@ -56,10 +56,13 @@
 							<section class="product-details-full-actions">
 
 								<div class="product-details-full-actions-container">
+									
 									<div data-view="MainActionView"></div>
 
 								</div>
+
 								<div class="product-details-full-actions-container">
+									
 									<div data-view="AddToProductList" class="product-details-full-actions-addtowishlist"></div>
 
 									<!--<div data-view="ProductDetails.AddToQuote" class="product-details-full-actions-addtoquote"></div>--> 
@@ -90,8 +93,10 @@
 
 		<div class="product-details-full-divider-desktop"></div>
 
-		<div data-view="ProductReviews.Center"></div>
-
+	</article>
+</div>
+<div data-view="ProductReviews.Center"></div>
+<div class="product-details-full">
 		<div class="product-details-full-content-related-items">
 			<div data-view="Related.Items"></div>
 		</div>
@@ -100,7 +105,6 @@
 			<div data-view="Correlated.Items"></div>
 		</div>
 		<div id="banner-details-bottom" class="content-banner banner-details-bottom" data-cms-area="item_details_banner_bottom" data-cms-area-filters="page_type"></div>
-	</article>
 </div>
 
 

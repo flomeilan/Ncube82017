@@ -16,12 +16,15 @@ $sc-color-list-header-view-accordion-body-header: #f1f7fa;
 }
 
 .product-reviews-center {
-  @extend .row;
+  //@extend .row;
+  background: $sc-color-theme-background;
+  padding: $sc-padding-lv4 0;
 }
 
 .product-reviews-center-container{
-  @extend .col-md-6;
-  @extend .col-lg-6;
+  @extend .container;
+  //@extend .col-md-6;
+  //@extend .col-lg-6;
 
   clear:both;
   display:block;
@@ -31,6 +34,7 @@ $sc-color-list-header-view-accordion-body-header: #f1f7fa;
   margin-top:-$sc-margin-lv4;
 
   @media (min-width: $screen-sm-min){
+    margin: 0 auto;
     margin-top: 0;
     padding-top: 0;
   }
