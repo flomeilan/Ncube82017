@@ -6,11 +6,6 @@
 }}
 
 <div class="home">
-	<div class="home-banner-top">
-		<p class="home-banner-top-message">
-			{{translate 'Use promo code <strong>SCADEMO</strong> for <strong>30%</strong> off your purchase'}}
-		</p>
-	</div>
 	<div class="home-slider-container">
 		<div class="home-image-slider">
 			<ul data-slider class="home-image-slider-list">
@@ -21,8 +16,9 @@
 								<img src="{{resizeImage this ../imageHomeSize}}" alt="" />
 							</div>
 							<div class="home-slide-caption">
-								<h2 class="home-slide-caption-title">SAMPLE HEADLINE</h2>
 								<p>Example descriptive text displayed on multiple lines.</p>
+								<h2 class="home-slide-caption-title">SAMPLE HEADLINE</h2>
+								
 								<div class="home-slide-caption-button-container">
 									<a href="/search" class="home-slide-caption-button">Shop Now</a>
 								</div>
@@ -37,8 +33,9 @@
 						</div>
 
 						<div class="home-slide-caption">
-							<h2 class="home-slide-caption-title">SAMPLE HEADLINE</h2>
-							<p>Example descriptive text displayed on multiple lines.</p>
+							<p>We present</p>
+							<h2 class="home-slide-caption-title">LONDON STREET VIEW</h2>
+							
 							<div class="home-slide-caption-button-container">
 								<a href="/search" class="home-slide-caption-button">Shop Now</a>
 							</div>
@@ -110,7 +107,21 @@
     {{/each}}
 	</div>
 
-	<div class="home-merchandizing-zone">
+	<div class="home-banner-promo">
+		<div class="home-banner-promo-title home-slide-caption">
+			<h2 class="home-slide-caption-title">
+				{{translate '<strong>November Sale</strong>'}}
+			</h2>
+			<p>Free shipping over $125 for international orders</p>
+		</div>
+		<div class="home-slide-caption home-banner-promo-button">
+		<div class="home-slide-caption-button-container">
+			<a href="/search" class="home-slide-caption-button">Shop Now</a>
+		</div>
+	</div>
+	</div>
+
+<div class="home-merchandizing-zone">
 		<div data-id="your-merchandising-zone" data-type="merchandising-zone"></div>
 	</div>
 </div>
