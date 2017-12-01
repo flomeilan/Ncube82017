@@ -118,10 +118,11 @@
 			<a href="/search" class="home-slide-caption-button">Shop Now</a>
 		</div>
 	</div>
-	</div>
+
+</div>
 
 <div class="home-merchandizing-zone">
-<div id="home-merch-zone" class="home-merchandizing-zone" data-cms-area="global_banner_homeprefooter" data-cms-area-filters="global"></div>
+<div id="home-merch-zone" class="home-merchandizing-zone" data-cms-area="global_banner_homeprefooter" data-cms-area-filters="path"></div>
 </div>
 
 {{!----
