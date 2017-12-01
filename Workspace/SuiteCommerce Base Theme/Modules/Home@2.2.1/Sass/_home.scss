@@ -1,8 +1,8 @@
 /*
-	© 2017 NetSuite Inc.
-	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
-	provided, however, if you are an authorized user with a NetSuite account or log-in, you
-	may use this code subject to the terms that govern your access and use.
+  © 2017 NetSuite Inc.
+  User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+  provided, however, if you are an authorized user with a NetSuite account or log-in, you
+  may use this code subject to the terms that govern your access and use.
 */
 
 .home {
@@ -26,10 +26,13 @@
 .home-slider-container {
   margin-top:$sc-margin-lv4;
   margin-bottom:$sc-margin-lv4;
-  @extend .row;
+  //@extend .row;
 }
 .home-image-slider {
-  @extend .col-sm-12;}
+  @extend .col-sm-12;
+  padding: 0; 
+  margin-bottom: $sc-margin-lv6; 
+}
 
 // start bx-slider specifics
 $sc-image-slider-height: 400px;
@@ -66,8 +69,7 @@ $sc-image-slider-max-width-mobile: 767px;
     max-width: $sc-image-slider-max-width !important;
     float:right;
     margin: 0 $sc-margin-lv1 * 12 0 0;
-    width:50%;
-    //padding: $sc-margin-lv6;
+    width: 50%;
   }
 }
 
@@ -81,7 +83,7 @@ $sc-image-slider-max-width-mobile: 767px;
 }
 
 .home-gallery-prev-icon {
-  left: $sc-margin-lv6;
+  left: 10px;
   @extend .icon-angle-left;
 
 }
@@ -253,7 +255,7 @@ $sc-image-slider-max-width-mobile: 767px;
     padding-left:$sc-padding-lv4;
     padding-right:$sc-padding-lv4;
     position:absolute;
-    margin-left: -$sc-padding-lv1 *2;
+    //margin-left: -$sc-padding-lv1 *2;
     bottom:-60px;
     width: 100%;
     @media (min-width: $screen-sm-min){
