@@ -21,7 +21,7 @@
 			>
 
 			<button type="submit" class="newsletter-subscription-form-button-subscribe">
-				{{translate 'Sumbit'}}
+				{{translate 'Submit'}}
 			</button>
 
 			<div class="newsletter-alert-placeholder" data-type="alert-placeholder" >

@@ -202,6 +202,7 @@ $sc-image-slider-max-width-mobile: 767px;
 }
 
 .home-slide-main-container{
+  @extend .container;
   background:$sc-color-theme-background;
   overflow:hidden;
   height:400px;
@@ -274,6 +275,28 @@ $sc-image-slider-max-width-mobile: 767px;
       position:relative;
     }
   }
+}
+.home-image-slider {
+  background-color: $sc-color-theme-background
+}
+.home-image-slider-list{}
+.home-banner-promo-title {
+      display: table-cell;
+    vertical-align: middle;
+    padding: 10px 0;
+    float: left;
+}
+.home-banner-promo-button {
+  float: right;
+}
+.home-banner-promo {
+  @extend .container;
+  padding: 15px;
+    background: #FFF;
+    margin-bottom: 20px;
+    border: 1px solid #EEE;
+    -webkit-box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 4px #EEE;
+    box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 4px #EEE;
 }
 
 .home-merchandizing-zone{}
