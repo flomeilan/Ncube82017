@@ -5,7 +5,40 @@
 	may use this code subject to the terms that govern your access and use.
 */
 
-.merchandising-zone-container .bx-wrapper {
+.cms-content-merchzone {
+    @extend .container
+} 
+.cms-content-merchzone .item-cell-grid {
+    @extend .col-sm-3;
+    @extend .col-xs-6;
+}
+.cms-content-merchzone .item-cell-grid {
+    text-align: center;
+}
+.cms-content-merchzone .item-cell-grid img {
+    border: 1px solid $sc-neutral-shade-300;
+    padding: $sc-padding-lv2
+}
+
+.cms-content-merchzone .btn-primary {
+    text-transform: uppercase;
+    text-align: center;
+    background: none;
+    color:  $sc-color-secondary;
+    border: none;
+
+    &:hover {
+        color:  $sc-color-secondary;
+        text-decoration: none;
+    }
+
+
+    &:active {
+        background: $sc-color-button-primary-active;
+        color: white;
+    }
+}
+.merchandising-zone-container .bx-wrapper, {
 	position: relative;
 }
 

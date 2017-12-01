@@ -9,7 +9,7 @@
 
 <div data-view="Global.BackToTop"></div>
 <div class="footer-content">
-    <div id="banner-footer" class="content-banner banner-footer" data-cms-area="global_banner_footer" data-cms-area-filters="global"></div>
+    <div id="banner-footer" class="content-banner banner-footer" data-cms-area="global_banner_footer" data-cms-area-filters="global">Hola</div>
     <div class="footer-content-nav">
 		{{#if showFooterNavigationLinks}}
 

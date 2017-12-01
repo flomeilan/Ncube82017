@@ -121,10 +121,7 @@
 	</div>
 
 <div class="home-merchandizing-zone">
-
-	<div class="home-merchandizing-zone">
-		<div data-id="your-merchandising-zone" data-type="merchandising-zone"></div>
-	</div>
+<div id="home-merch-zone" class="home-merchandizing-zone" data-cms-area="global_banner_homeprefooter" data-cms-area-filters="global"></div>
 </div>
 
 {{!----
